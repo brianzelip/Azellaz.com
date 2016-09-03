@@ -31,6 +31,16 @@
       .script { font-family: 'Pinyon Script', cursive; }
       .h0 { font-size: 3rem; }
       .mbn1 { margin-bottom: -.5rem; }
+      .mx1 {
+        margin-right: .5rem;
+        margin-left: .5rem;
+      }
+      @media(min-width: 40em) {
+        .sm-mx0 {
+          margin-right: 0;
+          margin-left: 0;
+        }
+      }
 
     </style>
   </head>
@@ -38,9 +48,9 @@
   <body class="vh100 flex flex-center justify-center">
 
     <main>
-      <h1 class="ml1 mr1 mt0 mb1 serif h0">Azellaz</h1>
+      <h1 class="mx1 sm-mx0 mt0 mb1 serif h0">Azellaz</h1>
       <img class="mbn1" src="img/gazellaz.jpg" alt="zebra gazelle">
-      <p class="m0 script right-align h0">coming soon</p>
+      <p class="m0 mx1 sm-mx0 script right-align h0">coming soon</p>
     </main>
 
   </body>
