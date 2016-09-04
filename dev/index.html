@@ -6,12 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <link rel="stylesheet" href="https://npmcdn.com/basscss@7.1.1/css/basscss.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/fontawesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="ihover.CUSTOM.css">
     <title>Azellaz</title>
     <meta name="description" content="">
     <meta name="author" content="Abbie Zelip">
     <meta name="author" content="Brian Zelip">
     <meta name="keywords" content="">
     <style>
+
+      /*
+      Box Sizing via http://tachyons.io/docs/layout/box-sizing/
+      */
+
+      html,
+      body,
+      div,
+      article,
+      section,
+      main,
+      footer,
+      header,
+      form,
+      fieldset,
+      pre,
+      code,
+      p,
+      ul,
+      ol,
+      li,
+      dl,
+      dt,
+      dd,
+      textarea,
+      input[type="email"],
+      input[type="number"],
+      input[type="password"],
+      input[type="tel"],
+      input[type="text"],
+      input[type="url"],
+      .border-box {
+      box-sizing: border-box;
+      }
 
       html,
       body,
@@ -43,13 +79,23 @@
         left: 0;
       }
 
+      .logo {
+        position: absolute;
+        height: 200px;
+        background-image: url(images/Azellaz_logo.png);
+        background-position: bottom;
+        z-index: 5;
+      }
+
+      .logoImage { background-image: url(images/Azellaz_logo.png); }
+
       .hshslImage {
         background-image: url(https://raw.githubusercontent.com/hshsl/hshsl.github.io/master/images/inside_hshsl_180.jpg);
       }
 
-      .mainBag {
-        background-image: url(images/main_bag.jpg);
-      }
+      .background-center { background-position: center; }
+
+      .mainBag { background-image: url(images/main_bag.jpg); }
 
       .serif { font-family: Athelas, Georgia, serif; }
 
@@ -102,12 +148,13 @@
         margin-bottom: 1rem;
       }
 
-      .mt10 {
-        margin-top: 10rem;
-      }
-      .mt-8 {
-        margin-top: -8rem;
-      }
+      .mt10 { margin-top: 10rem; }
+      .mtn8 { margin-top: -8rem; }
+      .mtn2 { margin-top: -1rem; }
+      .mtn3 { margin-top: -2rem; }
+      .mtn4 { margin-top: -3rem; }
+      .mtn5 { margin-top: -4rem; }
+      .mbn1 { margin-bottom: -.5rem; }
 
       .btn-blue {
         color: #fff;
@@ -141,43 +188,185 @@
         font-size: 4rem;
       }
 
-      .background-center { background-position: center; }
+      @media(min-width: 40em) {
+        .sm-py3 {
+          padding-top: 2rem;
+          padding-bottom: 2rem;
+        }
+      }
 
-      .mtn2 { margin-top: -1rem; }
-      .mtn3 { margin-top: -2rem; }
-      .mtn4 { margin-top: -3rem; }
-      .mtn5 { margin-top: -4rem; }
+      @media(min-width: 52em) {
+        .md-py4 {
+          padding-top: 3rem;
+          padding-bottom: 3rem;
+        }
+      }
+
+      .top-50per { top: 50%; }
+      .bottom-50per { bottom: 50%; }
+      .bottom-45per { bottom: 45%; }
+
+      .bg-gray { background-color: rgb(227, 227, 227); }
+
+      .lh1 { line-height: 1; }
 
     </style>
   </head>
 
-  <body class="border-box">
+  <body>
+
+    <div id="logo" class="fixed bottom-45per left-0 p2" style="width: 75px;">
+      <a href="">
+        <img src="images/Azellaz_logo_black_on_trans.png" alt="">
+      </a>
+    </div>
+    <!--<div id="logoBottom" class="fixed bottom-0 left-0 mbn1 z3 p2" style="width: 75px;">
+      <a href=""><img src="images/Azellaz_logo_black_on_trans.png" alt=""></a>
+    </div>-->
 
     <section class="fullScreenPic mainBag vh100">
-      <header class="container flex flex-center py2">
+      <header class="container flex flex-start py2">
         <h1 class="m0 white fw500 flex-auto">Azellaz</h1>
         <nav class="flex flex-justify">
-          <a href="" id="nav1" class="btn white hover-underline fw200">about</a>
-          <a href="" id="nav3" class="btn white hover-underline fw200">store</a>
+          <a href="" id="nav1" class="btn white hover-underline fw200">products</a>
+          <a href="" id="nav3" class="btn white hover-underline fw200">about</a>
           <a href="" id="nav4" class="btn white hover-underline fw200">contact</a>
         </nav>
       </header>
-      <div class="vh100 mt-8 flex justify-center align-center flex-column">
+      <div class="vh100 mtn8 flex justify-center align-center flex-column">
         <div class="mtn5 center">
-          <p class="h0 white serif">Azellaz</p>
+          <p class="h0 m0 white serif lh1">Waxed<br>Duffel</p>
           <a href="/" class="btn btn-white h3 fw200">Buy Now</a>
         </div>
       </div>
     </section>
 
-    <section class="vh100">
+    <section class="vh100 py2 sm-py3 md-py2 bg-gray">
+      <div class="container">
+        <div class="flex flex-wrap flex-center">
 
-      <div class="flex justify-center">
-        <a href="" class="btn h2">hi there!</a>
+          <div class="col-4 p1">
+            <div class="ih-item circle effect13 from_left_and_right not-rounded">
+              <a href="#">
+                <div class="img">
+                  <img src="images/plchldr/01.jpg" class="mbn1" alt="">
+                </div>
+                <div class="info overflow-hidden">
+                  <div class="info-back">
+                    <h3 class="h3">Heading here</h3>
+                    <p>Description goes here</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-4 p1">
+            <div class="ih-item circle effect13 from_left_and_right not-rounded">
+              <a href="#">
+                <div class="img">
+                  <img src="images/plchldr/01.jpg" class="mbn1" alt="">
+                </div>
+                <div class="info overflow-hidden">
+                  <div class="info-back">
+                    <h3 class="h3">Heading here</h3>
+                    <p>Description goes here</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-4 p1">
+
+          </div>
+
+          <div class="col-4 p1">
+            <div class="ih-item circle effect13 from_left_and_right not-rounded">
+              <a href="#">
+                <div class="img">
+                  <img src="images/plchldr/01.jpg" class="mbn1" alt="">
+                </div>
+                <div class="info overflow-hidden">
+                  <div class="info-back">
+                    <h3 class="h3">Heading here</h3>
+                    <p>Description goes here</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-4 p1">
+            <div class="ih-item circle effect13 from_left_and_right not-rounded">
+              <a href="#">
+                <div class="img">
+                  <img src="images/plchldr/01.jpg" class="mbn1" alt="">
+                </div>
+                <div class="info overflow-hidden">
+                  <div class="info-back">
+                    <h3 class="h3">Heading here</h3>
+                    <p>Description goes here</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-4 p1">
+            <div class="ih-item circle effect13 from_left_and_right not-rounded">
+              <a href="#">
+                <div class="img">
+                  <img src="images/plchldr/01.jpg" class="mbn1" alt="">
+                </div>
+                <div class="info overflow-hidden">
+                  <div class="info-back">
+                    <h3 class="h3">Heading here</h3>
+                    <p>Description goes here</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-4 p1">
+
+          </div>
+
+          <div class="col-4 p1">
+            <div class="ih-item circle effect13 from_left_and_right not-rounded">
+              <a href="#">
+                <div class="img">
+                  <img src="images/plchldr/01.jpg" class="mbn1" alt="">
+                </div>
+                <div class="info overflow-hidden">
+                  <div class="info-back">
+                    <h3 class="h3">Heading here</h3>
+                    <p>Description goes here</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-4 p1">
+            <div class="ih-item circle effect13 from_left_and_right not-rounded">
+              <a href="#">
+                <div class="img">
+                  <img src="images/plchldr/01.jpg" class="mbn1" alt="">
+                </div>
+                <div class="info overflow-hidden">
+                  <div class="info-back">
+                    <h3 class="h3">Heading here</h3>
+                    <p>Description goes here</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
-
     </section>
-
 
   </body>
 
