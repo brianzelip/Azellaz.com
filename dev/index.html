@@ -178,6 +178,8 @@
         align-content: center;
       }
 
+      .align-start { align-items: flex-start; }
+
       .bagBlue2 {
         color: rgb(80,121,140);
       }
@@ -228,6 +230,9 @@
       .is-active {
         box-shadow: inset 0 0 0 20rem rgba(0,0,0,.125),inset 0 3px 4px 0 rgba(0,0,0,.25),0 0 1px rgba(0,0,0,.125);
       }
+
+      .pb1 { padding-bottom: .5rem; }
+      .pbQuart { padding-bottom: .25rem; }
 
     </style>
   </head>
@@ -398,25 +403,28 @@
       </div>
     </section>
 
-    <footer class="bg-white">
+    <footer class="bg-white px2">
       <div class="py4">
-        <div class="container flex flex-center justify-between">
-          <div class="flex flex-column">
-            <p class="m0 h2 fw200">Azellaz</p>
-            <p class="m0 h5 fw200">Fine leather goods handcrafted in Baltimore, Maryland</p>
+        <div class="container flex align-start justify-between">
+          <div class="flex flex-column ">
+            <p class="m0 pbQuart mb1 h2 border-bottom fw200">Azellaz</p>
+            <p class="m0 h5 fw200">Fine leather goods handcrafted in Baltimore, MD</p>
             <p class="m0 h5 fw200">&copy; 2016, Powered by Shopify</p>
           </div>
-          <ul class="list-reset m0 flex flex-center justify-between">
-            <li class="pointer flex-auto">
-              <img src="images/etsy.png" alt="" class="mbn25" style="width: 1.7rem;">
-            </li>
-            <li class="ml1 pointer flex-grow">
-              <i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i>
-            </li>
-            <li class="ml1 pointer flex-auto">
-              <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
-            </li>
-          </ul>
+          <nav id="contact">
+            <p class="m0 pbQuart mb1 h2 right-align border-bottom fw200"><span class="h3">Contact us</span></p>
+            <ul class="list-reset m0 flex flex-center justify-between">
+              <li class="flex-auto">
+                <a href="" class="h5 fw200 black">Etsy</a>
+              </li>
+              <li class="flex-auto">
+                <a href="" class="ml3 h5 fw200 black">Instagram</a>
+              </li>
+              <li class="flex-auto">
+                <a href="" class="ml3 h5 fw200 black">Email</a>
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
     </footer>
