@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://npmcdn.com/basscss@7.1.1/css/basscss.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/fontawesome/4.6.3/css/font-awesome.min.css">
     <link rel="stylesheet" href="ihover.CUSTOM.css">
+    <script src="https://unpkg.com/isotope-layout@3.0/dist/isotope.pkgd.min.js"></script>
     <title>Azellaz</title>
     <meta name="description" content="">
     <meta name="author" content="Abbie Zelip">
@@ -208,6 +209,11 @@
       .bottom-45per { bottom: 45%; }
 
       .bg-gray { background-color: rgb(227, 227, 227); }
+      .border-gray { border-color: rgb(227, 227, 227); }
+      .border-black { border-color: #111; }
+      .border-silver { border-color: #ddd; }
+      .border-dark-gray { border-color: #aaa; }
+      .dark-gray { color: #aaa; }
 
       .lh1 { line-height: 1; }
 
@@ -218,6 +224,10 @@
       .pointer { cursor: pointer; }
 
       .left-32 { left: 32px; }
+
+      .is-active {
+        box-shadow: inset 0 0 0 20rem rgba(0,0,0,.125),inset 0 3px 4px 0 rgba(0,0,0,.25),0 0 1px rgba(0,0,0,.125);
+      }
 
     </style>
   </head>
@@ -236,7 +246,7 @@
     <section class="fullScreenPic mainBag vh100">
       <header class="container flex flex-start justify-between py2">
         <div class="absolute">
-          <img src="images/Azellaz_logo_white_on_trans.png" class="m0" width="75px" alt="">
+          <img src="images/Azellaz_logo_white_on_trans.png" class="m0" width="55px" alt="">
         </div>
         <h1 class="m0 white fw500 flex-auto hide">Azellaz</h1>
         <nav class="flex flex-justify">
@@ -255,6 +265,14 @@
 
     <section class="vh100 py2 sm-py3 md-py4 bg-gray">
       <div class="container">
+
+        <div class="ml1 mb1 clearfix blue sort-by-button-group sort-buttons">
+          <button type="button" class="left btn btn-outline bagBlue3 border-dark-gray rounded-left" data-sort-value="category">Type</button>
+          <button type="button" class="left btn btn-outline bagBlue3 border-dark-gray not-rounded" data-sort-value="name">Name</button>
+          <button type="button" class="left btn btn-outline bagBlue3 border-dark-gray rounded-right" data-sort-value="price">Price</button>
+        </div>
+
+
         <div class="flex flex-wrap flex-center iso-grid">
 
           <div class="col-4 p1 iso-item">
@@ -265,8 +283,8 @@
                 </div>
                 <div class="info overflow-hidden">
                   <div class="info-back">
-                    <h3>Tote Xyz</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <h3 class="name">Abc Tote</h3>
+                    <p><span class="type">Tote</span> &middot; $<span class="price">200.00</span></p>
                   </div>
                 </div>
               </a>
@@ -281,60 +299,8 @@
                 </div>
                 <div class="info overflow-hidden">
                   <div class="info-back">
-                    <h3>Lorem Pocket</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <div class="col-4 p1 iso-item">
-
-          </div>
-
-          <div class="col-4 p1 iso-item">
-            <div class="ih-item circle effect13 from_left_and_right not-rounded">
-              <a href="#">
-                <div class="img">
-                  <img src="images/plchldr/01.jpg" class="mbn1" alt="">
-                </div>
-                <div class="info overflow-hidden">
-                  <div class="info-back">
-                    <h3>Ear Buds</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <div class="col-4 p1 iso-item">
-            <div class="ih-item circle effect13 from_left_and_right not-rounded">
-              <a href="#">
-                <div class="img">
-                  <img src="images/plchldr/01.jpg" class="mbn1" alt="">
-                </div>
-                <div class="info overflow-hidden">
-                  <div class="info-back">
-                    <h3>Crochet Wallet</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <div class="col-4 p1 iso-item">
-            <div class="ih-item circle effect13 from_left_and_right not-rounded">
-              <a href="#">
-                <div class="img">
-                  <img src="images/plchldr/01.jpg" class="mbn1" alt="">
-                </div>
-                <div class="info overflow-hidden">
-                  <div class="info-back">
-                    <h3>Purse Wrap</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <h3 class="name">Wallet Pocket</h3>
+                    <p><span class="type">Wallet</span> &middot; $<span class="price">75</span></p>
                   </div>
                 </div>
               </a>
@@ -353,8 +319,60 @@
                 </div>
                 <div class="info overflow-hidden">
                   <div class="info-back">
-                    <h3>Duffel To Go</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <h3 class="name">Ear Buds</h3>
+                    <p><span class="type">Earbuds</span> &middot; $<span class="price">65</span></p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-4 p1 iso-item">
+            <div class="ih-item circle effect13 from_left_and_right not-rounded">
+              <a href="#">
+                <div class="img">
+                  <img src="images/plchldr/01.jpg" class="mbn1" alt="">
+                </div>
+                <div class="info overflow-hidden">
+                  <div class="info-back">
+                    <h3 class="name">Crochet Wallet</h3>
+                    <p><span class="type">Wallet</span> &middot; $<span class="price">50</span></p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-4 p1 iso-item">
+            <div class="ih-item circle effect13 from_left_and_right not-rounded">
+              <a href="#">
+                <div class="img">
+                  <img src="images/plchldr/01.jpg" class="mbn1" alt="">
+                </div>
+                <div class="info overflow-hidden">
+                  <div class="info-back">
+                    <h3 class="name">Purse Wrap</h3>
+                    <p><span class="type">Purse</span> &middot; $<span class="price">150</span></p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-4 p1 iso-item">
+
+          </div>
+
+          <div class="col-4 p1 iso-item">
+            <div class="ih-item circle effect13 from_left_and_right not-rounded">
+              <a href="#">
+                <div class="img">
+                  <img src="images/plchldr/01.jpg" class="mbn1" alt="">
+                </div>
+                <div class="info overflow-hidden">
+                  <div class="info-back">
+                    <h3 class="name">Duffel To Go</h3>
+                    <p><span class="type">Duffel</span> &middot; $<span class="price">200</span></p>
                   </div>
                 </div>
               </a>
@@ -369,8 +387,8 @@
                 </div>
                 <div class="info overflow-hidden">
                   <div class="info-back">
-                    <h3>A Fine Piece</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <h3 class="name">A Fine Piece</h3>
+                    <p><span class="type">Tote</span> &middot; $<span class="price">85</span></p>
                   </div>
                 </div>
               </a>
@@ -402,6 +420,50 @@
         </div>
       </div>
     </footer>
+
+    <script>
+
+      var iso = new Isotope( '.iso-grid', {
+        itemSelector: '.iso-item',
+        layoutMode: 'fitRows',
+        getSortData: {
+          name: '.name',
+          category: '.type',
+          price: '.price parseInt'
+        }
+      });
+
+      // bind sort button click
+      var sortByGroup = document.querySelector('.sort-by-button-group');
+      sortByGroup.addEventListener( 'click', function( event ) {
+        // only button clicks
+        if ( !matchesSelector( event.target, '.btn' ) ) {
+          return;
+        }
+        var sortValue = event.target.getAttribute('data-sort-value');
+        iso.arrange({ sortBy: sortValue });
+      });
+
+      // change is-checked class on buttons
+      var buttonGroups = document.querySelectorAll('.sort-by-button-group');
+      for ( var i=0; i < buttonGroups.length; i++ ) {
+        buttonGroups[i].addEventListener( 'click', onButtonGroupClick );
+      }
+
+      function onButtonGroupClick( event ) {
+        // only button clicks
+        if ( !matchesSelector( event.target, '.btn' ) ) {
+          return;
+        }
+        var button = event.target;
+        console.log(button.parentNode.querySelector('.is-active'));
+        if (button.parentNode.querySelector('.is-active')) {
+          button.parentNode.querySelector('.is-active').classList.remove('is-active');
+        }
+        button.classList.add('is-active');
+      }
+
+    </script>
 
   </body>
 
