@@ -178,6 +178,8 @@
         align-content: center;
       }
 
+      .align-items-center { align-items: center; }
+
       .align-start { align-items: flex-start; }
 
       .bagBlue2 {
@@ -272,27 +274,28 @@
       <div class="container">
 
         <div class="ml1 mb1 clearfix blue filters-button-group filter-buttons">
-          <button type="button" class="left btn bagBlue3 border-left border-top" data-filter="*">Show All</button>
-          <button type="button" class="left btn bagBlue3 border-left" data-filter=".tote">Tote</button>
-          <button type="button" class="left btn bagBlue3 border-left" data-filter=".wallet">Wallet</button>
-          <button type="button" class="left btn bagBlue3 border-left" data-filter=".earbuds">Earbuds</button>
-          <button type="button" class="left btn bagBlue3 border-left" data-filter=".purse">Purse</button>
-          <button type="button" class="left btn bagBlue3 " data-filter=".duffel">Duffel</button>
+          <button type="button" class="left btn btn-outline border-dark-gray bagBlue3 rounded-left" data-filter="*">Show All</button>
+          <button type="button" class="left btn btn-outline border-dark-gray bagBlue3 not-rounded" data-filter=".duffel">Duffel</button>
+          <button type="button" class="left btn btn-outline border-dark-gray bagBlue3 not-rounded" data-filter=".tote">Tote</button>
+          <button type="button" class="left btn btn-outline border-dark-gray bagBlue3 not-rounded" data-filter=".handBag">Hand Bag</button>
+          <button type="button" class="left btn btn-outline border-dark-gray bagBlue3 not-rounded" data-filter=".purse">Purse</button>
+          <button type="button" class="left btn btn-outline border-dark-gray bagBlue3 not-rounded" data-filter=".wallet">Wallet</button>
+          <button type="button" class="left btn btn-outline border-dark-gray bagBlue3 rounded-right" data-filter=".earbuds">Earbuds</button>
         </div>
 
 
-        <div class="flex flex-wrap flex-center iso-grid">
+        <div class="flex flex-wrap flex-center align-items-center align-center iso-grid">
 
-          <div class="col-4 p1 iso-item tote">
+          <div class="col-4 p1 iso-item earbuds">
             <div class="ih-item circle effect13 from_left_and_right not-rounded">
               <a href="#">
                 <div class="img">
-                  <img src="images/plchldr/01.jpg" class="mbn1" alt="">
+                  <img src="images/plchldr/earbuds0.jpg" class="mbn1" alt="">
                 </div>
                 <div class="info overflow-hidden">
                   <div class="info-back">
-                    <h3 class="name">Tote Xyz</h3>
-                    <p><span class="type">Tote</span> &middot; $<span class="price">200.00</span></p>
+                    <h3>Earbuds</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam quibusdam tenetur quasi deserunt atque dicta voluptates.</p>
                   </div>
                 </div>
               </a>
