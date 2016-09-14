@@ -88,19 +88,11 @@ body, .h0, h1, h2, h3, h4, h5, h6 {
   margin-right: auto;
 }
 
-.border-red {
-  border-color: #FF4136;
-}
-
-.border-blue {
-  border-color: #0074D9;
-}
-.border-black {
-  border-color: #000;
-}
-.hover-underline:hover {
-  text-decoration: underline;
-}
+.border-red { border-color: #FF4136; }
+.border-blue { border-color: #0074D9 }
+.border-black { border-color: #000 }
+.hover-underline:hover { text-decoration: underline; }
+.hover-no-underline:hover { text-decoration: none; }
 
 .fw200 {
   font-weight: 200;
@@ -206,6 +198,7 @@ body, .h0, h1, h2, h3, h4, h5, h6 {
 .justify-between { justify-content: space-between; }
 .justify-around { justify-content: space-around; }
 .justify-center { justify-content: center; }
+.justify-end { justify-content: flex-end; }
 
 .pointer { cursor: pointer; }
 
@@ -216,4 +209,9 @@ body, .h0, h1, h2, h3, h4, h5, h6 {
 }
 
 .pb1 { padding-bottom: .5rem; }
+.pt1 { padding-top: .5rem; }
+.pt2 { padding-top: 1rem; }
+.pt3 { padding-top: 2rem; }
+.pt4 { padding-top: 2rem; }
+.pl3 { padding-left: 2rem; }
 .pbQuart { padding-bottom: .25rem; }
