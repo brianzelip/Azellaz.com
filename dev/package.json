@@ -1,0 +1,27 @@
+{
+  "name": "azellaz-dev",
+  "version": "0.0.1",
+  "description": "Dev space for Azellaz.com",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brianzelip/Azellaz.com.git"
+  },
+  "keywords": [
+    "fine",
+    "leather",
+    "goods"
+  ],
+  "author": "bzelip",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brianzelip/Azellaz.com/issues"
+  },
+  "homepage": "https://github.com/brianzelip/Azellaz.com#readme",
+  "dependencies": {
+    "lightbox2": "^2.8.2"
+  }
+}
