@@ -1,0 +1,13 @@
+<header class="container flex flex-start justify-between py2">
+  <div>
+    <a href="/">
+      <img src="images/Azellaz_Logo_{% if page.layout == 'blog' %}Soft_Black{% else %}White{% endif %}_v6.svg" class="m0 absolute" width="55px" alt="">
+    </a>
+  </div>
+  <h1 class="hide">Azellaz</h1>
+  <nav class="flex flex-justify right-0">
+    <a href="/about/" class="btn {% if page.layout == 'blog' %}black{% else %}white{% endif %} hover-underline fw200">about</a>
+    <a href="/blog/" class="btn {% if page.layout == 'blog' %}black{% else %}white{% endif %} hover-underline fw200">blog</a>
+    <a href="/contact/" class="btn {% if page.layout == 'blog' %}black{% else %}white{% endif %} hover-underline fw200">contact</a>
+  </nav>
+</header>
