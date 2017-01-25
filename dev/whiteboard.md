@@ -1,5 +1,11 @@
 TODO:
 - optimize images - use that recent online image optimizer app
+  - https://www.jpeg.io/
+  - http://getoptimage.com/
+  - https://chrome.google.com/webstore/detail/tinybeest-image-optimizat/iddlfhoicnaonfnepnjogldeaifkocae
+  - http://cloudinary.com/blog/the_holy_grail_of_image_optimization_or_balancing_visual_quality_and_file_size
+  - http://optimizilla.com/
+  - http://www.imageoptimizer.net/Pages/Home.aspx
 - mobile friendly
 - componentize (in html/css/js) the product view to then be applied to all products
 - 
