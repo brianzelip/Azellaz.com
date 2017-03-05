@@ -1,6 +1,29 @@
+// scroll smooth to #shop
+const shopButton = document.getElementById('goToShop');
+const shopSection = document.getElementById('shop');
+
+// via http://thenewcode.com/507/Smooth-Page-Scroll-in-5-Lines-of-JavaScript
+shopButton.addEventListener('click', function(e){
+  console.log('shopButton clicked!');
+  if (window.scrollTo) {
+    e.preventDefault();
+    window.scrollTo({
+      'behavior': 'smooth',
+      'top': shopSection.offsetTop
+    });
+  };
+});
+
+// init Isotope
 var iso = new Isotope( '.iso-grid', {
   itemSelector: '.iso-item',
   layoutMode: 'fitRows'
+});
+
+// this via http://codepen.io/desandro/pen/PqNBzj
+imagesLoaded( '.iso-grid' ).on( 'progress', function() {
+  // layout Isotope after each image loads
+  iso.layout();
 });
 
 // bind filter button click

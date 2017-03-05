@@ -211,3 +211,5 @@ body, .h0, h1, h2, h3, h4, h5, h6 {
 .pbQuart { padding-bottom: .25rem; }
 
 .transparent { color: transparent; }
+
+.border-2px { border-width: 2px; }

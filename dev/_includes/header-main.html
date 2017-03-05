@@ -6,8 +6,14 @@
   </div>
   <h1 class="hide">Azellaz</h1>
   <nav class="flex flex-justify right-0">
-    <a href="#" class="btn {% if page.layout == 'blog' %}black{% else %}white{% endif %} hover-underline">shop</a>
-    <a href="/about/" class="btn {% if page.layout == 'blog' %}black{% else %}white{% endif %} hover-underline">about</a>
-    <a href="/contact/" class="btn {% if page.layout == 'blog' %}black{% else %}white{% endif %} hover-underline">contact</a>
+    <div class="pointer mr2">
+      <a href="#shop" id="goToShop" class="btn regular btn-outline {% if page.layout == 'blog' %}black{% else %}white{% endif %}">shop</a>
+    </div>
+    <div class="pointer">
+      <a href="#" class="btn regular {% if page.layout == 'blog' %}black{% else %}white{% endif %} hover-underline">about</a>
+    </div>
+    <div class="pointer">
+      <a href="#" class="btn regular {% if page.layout == 'blog' %}black{% else %}white{% endif %} hover-underline">contact</a>
+    </div>
   </nav>
 </header>
