@@ -72,13 +72,9 @@ body, .h0, h1, h2, h3, h4, h5, h6 {
 
 .logoImage { background-image: url(../images/Azellaz_logo.png); }
 
-.hshslImage {
-  background-image: url(https://raw.githubusercontent.com/hshsl/hshsl.github.io/master/images/inside_hshsl_180.jpg);
-}
-
 .background-center { background-position: center; }
 
-.mainBag { background-image: url(../images/main_bag.jpg); }
+.mainBag { background-image: url(../images/optzilla/main_bag-min.jpg); }
 
 .serif { font-family: Athelas, Georgia, serif; }
 
@@ -213,3 +209,5 @@ body, .h0, h1, h2, h3, h4, h5, h6 {
 .pt4 { padding-top: 2rem; }
 .pl3 { padding-left: 2rem; }
 .pbQuart { padding-bottom: .25rem; }
+
+.transparent { color: transparent; }
