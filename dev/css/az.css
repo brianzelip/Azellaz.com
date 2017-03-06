@@ -102,18 +102,6 @@ body, .h0, h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
 }
 
-.bagBlue {
-  color: rgb(146,190,209);
-}
-
-.bagPink {
-  color: rgb(252,231,228);
-}
-
-.bagLightBrown {
-  color: rgb(252,227,white1);
-}
-
 .my2 {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -150,13 +138,11 @@ body, .h0, h1, h2, h3, h4, h5, h6 {
 
 .align-start { align-items: flex-start; }
 
-.bagBlue2 {
-  color: rgb(80,121,140);
-}
+.bagBlue { color: rgb(146,190,209); }
 
-.bagBlue3 {
-  color: rgb(103,151,171);
-}
+.bagBlue2 { color: rgb(80,121,140); }
+
+.bagBlue3 { color: rgb(103,151,171); }
 
 .h0 {
   font-size: 4rem;
