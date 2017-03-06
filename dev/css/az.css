@@ -72,13 +72,9 @@ body, .h0, h1, h2, h3, h4, h5, h6 {
 
 .logoImage { background-image: url(../images/Azellaz_logo.png); }
 
-.hshslImage {
-  background-image: url(https://raw.githubusercontent.com/hshsl/hshsl.github.io/master/images/inside_hshsl_180.jpg);
-}
-
 .background-center { background-position: center; }
 
-.mainBag { background-image: url(../images/main_bag.jpg); }
+.mainBag { background-image: url(../images/optzilla/main_bag-min.jpg); }
 
 .serif { font-family: Athelas, Georgia, serif; }
 
@@ -104,18 +100,6 @@ body, .h0, h1, h2, h3, h4, h5, h6 {
 
 .fw500 {
   font-weight: 500;
-}
-
-.bagBlue {
-  color: rgb(146,190,209);
-}
-
-.bagPink {
-  color: rgb(252,231,228);
-}
-
-.bagLightBrown {
-  color: rgb(252,227,white1);
 }
 
 .my2 {
@@ -154,13 +138,11 @@ body, .h0, h1, h2, h3, h4, h5, h6 {
 
 .align-start { align-items: flex-start; }
 
-.bagBlue2 {
-  color: rgb(80,121,140);
-}
+.bagBlue { color: rgb(146,190,209); }
 
-.bagBlue3 {
-  color: rgb(103,151,171);
-}
+.bagBlue2 { color: rgb(80,121,140); }
+
+.bagBlue3 { color: rgb(103,151,171); }
 
 .h0 {
   font-size: 4rem;
@@ -213,3 +195,7 @@ body, .h0, h1, h2, h3, h4, h5, h6 {
 .pt4 { padding-top: 2rem; }
 .pl3 { padding-left: 2rem; }
 .pbQuart { padding-bottom: .25rem; }
+
+.transparent { color: transparent; }
+
+.border-2px { border-width: 2px; }
