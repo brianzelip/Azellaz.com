@@ -35,4 +35,10 @@ TODO:
 -
 - BrowserSync cli:
   `browser-sync start --server --serveStatic "_site/" --files "*.html, css/*.css"`
--
+- Netlify info
+  - custom domain on godaddy (more depth), https://www.netlify.com/blog/2016/03/14/setting-up-your-custom-domain/
+  - using godaddy (less depth), https://www.netlify.com/blog/2016/03/14/setting-up-your-custom-domain/#godaddy
+  - quick start and cli config, https://www.netlify.com/docs/
+  -
+- Performance checks:
+  - https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/timeline-tool
