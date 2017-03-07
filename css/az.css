@@ -67,7 +67,6 @@ body, .h0, h1, h2, h3, h4, h5, h6 {
   height: 200px;
   background-image: url(../images/Azellaz_logo.png);
   background-position: bottom;
-  z-index: 5;
 }
 
 .logoImage { background-image: url(../images/Azellaz_logo.png); }

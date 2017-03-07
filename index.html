@@ -19,13 +19,7 @@
 
   <body>
 
-    <div id="logo" class="fixed bottom-45per left-0 p2" style="width: 75px;">
-      <a href="">
-        <img src="images/Azellaz_Logo_Soft_Black_v6.svg" alt="">
-      </a>
-    </div>
-
-    <section class="fullScreenPic mainBag vh100">
+    <section class="fullScreenPic mainBag vh100 z1">
       {% include nav-index.html %}
       <div class="vh100 mtn8 flex justify-center align-center flex-column">
         <div class="mtn5 center">
@@ -44,6 +38,10 @@
 
       </div>
     </section>
+
+    <div id="logo" class="fixed bottom-45per left-0 p2" style="width: 75px;">
+      <img src="images/Azellaz_Logo_Soft_Black_v6.svg" alt="">
+    </div>
 
     {% include footer.html %}
 
