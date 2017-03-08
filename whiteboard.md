@@ -42,3 +42,8 @@ TODO:
   -
 - Performance checks:
   - https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/timeline-tool
+- Data schema for bread crumbs and faceted product way finding
+  - small pouch
+  - cross body
+  - tote
+  - duffel
