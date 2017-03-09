@@ -52,6 +52,8 @@ body, .h0, h1, h2, h3, h4, h5, h6 {
   sans-serif;
 }
 
+.container { max-width: 76em; }
+
 .fullScreenPic {
   position: relative;
   background-size: cover;
@@ -76,12 +78,6 @@ body, .h0, h1, h2, h3, h4, h5, h6 {
 .mainBag { background-image: url(../images/optzilla/main_bag-min.jpg); }
 
 .serif { font-family: Athelas, Georgia, serif; }
-
-.container {
-  max-width: 64em;
-  margin-left: auto;
-  margin-right: auto;
-}
 
 .border-red { border-color: #FF4136; }
 .border-blue { border-color: #0074D9 }
