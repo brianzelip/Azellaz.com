@@ -20,6 +20,7 @@
   <body>
 
     <section class="fullScreenPic mainBag vh100 z1">
+
       {% include nav-index.html %}
       <div class="vh100 mtn8 flex justify-center align-center flex-column">
         <div class="mtn5 center">
@@ -27,15 +28,14 @@
           <a href="/" class="btn btn-white h3 fw200">More Info</a>
         </div>
       </div>
+      
     </section>
 
     <section id="shop" class="vh100 py2 sm-py3 md-py4">
       <div class="container">
 
         {% include iso-filter-buttons.html %}
-
         {% include iso-grid.html %}
-
       </div>
     </section>
 
@@ -44,7 +44,6 @@
     </div>
 
     {% include footer.html %}
-
     <script src="js/isotope.pkgd.min.js"></script>
     <script src="js/imagesloaded.min.js"></script>
     <script src="js/smoothscroll.min.js"></script>
