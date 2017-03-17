@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="css/basscss@7.1.1.min.css">
     <link rel="stylesheet" href="css/ihover.CUSTOM.css">
     <link rel="stylesheet" href="css/az.css">
+    <script src="js/lazysizes.min.js"></script>
+    <script>
+      lazySizes.init();
+    </script>
     <title>Azellaz</title>
     <meta name="description" content="">
     <meta name="author" content="Abbie Zelip">
@@ -35,7 +39,7 @@
       <div class="container">
 
         {% include iso-filter-buttons.html %}
-        {% include iso-grid.html %}
+        {% include iso-grid-lazysizes.html %}
       </div>
     </section>
 
