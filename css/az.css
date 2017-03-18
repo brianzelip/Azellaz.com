@@ -189,6 +189,7 @@ body, .h0, h1, h2, h3, h4, h5, h6 {
 .pt3 { padding-top: 2rem; }
 .pt4 { padding-top: 2rem; }
 .pl3 { padding-left: 2rem; }
+.pbQuart { padding-bottom: .25rem; }
 
 .transparent { color: transparent; }
 
@@ -213,6 +214,7 @@ body, .h0, h1, h2, h3, h4, h5, h6 {
 @media (min-width:40em) {
   .sm-vh100 { min-height: 100vh; }
   .sm-h2 { font-size: 1.5rem; }
+  .sm-lh1point5 { line-height: 1.5; }
   .sm-border-bottom {
     border-bottom-style:solid;
     border-bottom-width:1px;
@@ -229,6 +231,7 @@ body, .h0, h1, h2, h3, h4, h5, h6 {
   }
   .sm-m0 { margin: 0; }
   .sm-mb0 { margin-bottom: 0; }
+  .sm-mb1 { margin-bottom: .5rem; }
   .sm-ml3 { margin-left: 2rem; }
   .sm-right-align { text-align: right; }
   .sm-left-align { text-align: left; }
