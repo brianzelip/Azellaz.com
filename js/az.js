@@ -14,6 +14,20 @@ shopButton.addEventListener('click', function(e){
   };
 });
 
+// // WAY OF ISOTOPE + imagesLoaded after all images have loaded
+// var grid = document.querySelector('.iso-grid');
+// var iso;
+//
+// imagesLoaded( grid, function() {
+//   // init Isotope after all images have loaded
+//   iso = new Isotope( grid, {
+//     itemSelector: '.iso-item',
+//     layoutMode: 'fitRows'
+//   });
+// });
+
+
+// WAY OF ISOTPE + imagesLoaded after each image loads
 // init Isotope
 var iso = new Isotope( '.iso-grid', {
   itemSelector: '.iso-item',
