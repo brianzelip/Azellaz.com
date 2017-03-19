@@ -41,6 +41,9 @@ body,
   .sm-vh100 { min-height: 100vh; }
 }
 
+.vh75 { min-height: 75vh; }
+.h100percent { height: 100%; }
+
 @media(max-height: 400px) {
   .minh-400px { min-height: 400px; }
 }
@@ -130,9 +133,7 @@ body, .h0, h1, h2, h3, h4, h5, h6 {
   border-radius: 3px;
 }
 
-.justify-center {
-  justify-content: center;
-}
+.justify-center { justify-content: center; }
 
 .align-center { align-content: center; }
 
@@ -146,9 +147,10 @@ body, .h0, h1, h2, h3, h4, h5, h6 {
 
 .bagBlue3 { color: rgb(103,151,171); }
 
-.h0 {
-  font-size: 4rem;
-}
+.h0 { font-size: 2.5rem; }
+.h00 { font-size: 4rem; }
+
+.small-caps { font-variant-caps: small-caps; }
 
 @media(min-width: 40em) {
   .sm-py3 {
@@ -224,6 +226,7 @@ body, .h0, h1, h2, h3, h4, h5, h6 {
 @media (min-width:40em) {
   .sm-vh100 { min-height: 100vh; }
   .sm-h2 { font-size: 1.5rem; }
+  .sm-h4 { font-size: 1rem; }
   .sm-lh1point5 { line-height: 1.5; }
   .sm-border-bottom {
     border-bottom-style:solid;
@@ -240,6 +243,7 @@ body, .h0, h1, h2, h3, h4, h5, h6 {
     padding-bottom: 4rem;
   }
   .sm-m0 { margin: 0; }
+  .sm-mr2 { margin-right: 1rem; }
   .sm-mb0 { margin-bottom: 0; }
   .sm-mb1 { margin-bottom: .5rem; }
   .sm-ml3 { margin-left: 2rem; }

@@ -1,19 +1,26 @@
-<header class="container flex flex-start justify-between py2">
-        <div class="ml2 lg-ml0">
+<header class="container flex align-items-center justify-center sm-align-start sm-justify-between py2">
+
+        <div class="sm-show ml2 lg-ml0">
           <a href="/">
-            <img src="images/Azellaz_Logo_{% if page.layout == 'blog' %}Soft_Black{% else %}White{% endif %}_v6.svg" class="absolute w-45px md-w-55px" alt="">
+            <img src="images/Azellaz_Logo_{% if page.layout == 'blog' %}Soft_Black{% else %}White{% endif %}_v6.svg" class="w-45px md-w-55px" alt="">
           </a>
         </div>
-        <h1 class="hide">Azellaz</h1>
-        <nav class="flex flex-justify right-0">
-          <div class="pointer mr2">
-            <a href="#shop" id="goToShop" class="btn regular btn-outline {% if page.layout == 'blog' %}black{% else %}white{% endif %}">shop</a>
+
+        <nav class="flex flex-justify">
+          <div class="sm-hide pointer sm-mr2">
+            <a href="#" class="btn {% if page.layout == 'blog' %}black{% else %}white{% endif %} hover-underline">
+              <h1 class="h5 sm-h4 m0 small-caps">azellaz</h1>
+            </a>
+          </div>
+          <div class="pointer sm-mr2">
+            <a href="#shop" id="goToShop" class="btn regular btn-outline h5 sm-h4 {% if page.layout == 'blog' %}black{% else %}white{% endif %}">shop</a>
           </div>
           <div class="pointer">
-            <a href="#" class="btn regular {% if page.layout == 'blog' %}black{% else %}white{% endif %} hover-underline">about</a>
+            <a href="#" class="btn regular h5 sm-h4 {% if page.layout == 'blog' %}black{% else %}white{% endif %} hover-underline">about</a>
           </div>
           <div class="pointer">
-            <a href="#" class="btn regular {% if page.layout == 'blog' %}black{% else %}white{% endif %} hover-underline">contact</a>
+            <a href="#" class="btn regular h5 sm-h4 {% if page.layout == 'blog' %}black{% else %}white{% endif %} hover-underline">contact</a>
           </div>
         </nav>
+
       </header>
