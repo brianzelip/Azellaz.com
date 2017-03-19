@@ -37,6 +37,13 @@ body,
 .vh100 {
   min-height: 100vh;
 }
+@media(min-width: 40em) {
+  .sm-vh100 { min-height: 100vh; }
+}
+
+@media(max-height: 400px) {
+  .minh-400px { min-height: 400px; }
+}
 
 body, .h0, h1, h2, h3, h4, h5, h6 {
   font-family: -apple-system,
@@ -211,6 +218,9 @@ body, .h0, h1, h2, h3, h4, h5, h6 {
   max-width: 300px;
 }
 
+.w-45px { width: 45px; }
+.w-55px { width: 55px; }
+
 @media (min-width:40em) {
   .sm-vh100 { min-height: 100vh; }
   .sm-h2 { font-size: 1.5rem; }
@@ -261,6 +271,7 @@ body, .h0, h1, h2, h3, h4, h5, h6 {
     padding-right: 1rem;
     padding-left: 1rem;
   }
+  .md-w-55px { width: 55px; }
   .md-flex { display:flex;}
   .md-align-start { align-items: flex-start; }
   .md-justify-between { justify-content: space-between; }
@@ -268,6 +279,6 @@ body, .h0, h1, h2, h3, h4, h5, h6 {
   .md-flex-column { flex-direction: column; }
 }
 
-@media (min-width:64em) {
-
+@media (min-width:76em) {
+  .lg-ml0 { margin-left: 0; }
 }
