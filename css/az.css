@@ -107,6 +107,8 @@ body, .h0, h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
 }
 
+.pb4 { padding-bottom: 4rem; }
+
 .my2 {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -226,6 +228,7 @@ body, .h0, h1, h2, h3, h4, h5, h6 {
 
 @media (min-width:40em) {
   .sm-vh100 { min-height: 100vh; }
+  .sm-block { display: block; }
   .sm-h2 { font-size: 1.5rem; }
   .sm-h4 { font-size: 1rem; }
   .sm-lh1point5 { line-height: 1.5; }
