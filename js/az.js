@@ -1,10 +1,15 @@
 // scroll smooth to #shop
-const shopButton = document.getElementById('goToShop');
+const goToShopBtns = document.querySelectorAll('.goToShop');
 const shopSection = document.getElementById('shop');
 
+// via http://stackoverflow.com/a/41018900/2145103
+Array
+  .from(goToShopBtns)
+  .forEach((btn) => btn.addEventListener('click', smoothScroll));
+
 // via http://thenewcode.com/507/Smooth-Page-Scroll-in-5-Lines-of-JavaScript
-shopButton.addEventListener('click', function(e){
-  console.log('shopButton clicked!');
+function smoothScroll(e) {
+  console.log('goToShopBtns clicked!');
   if (window.scrollTo) {
     e.preventDefault();
     window.scrollTo({
@@ -12,7 +17,8 @@ shopButton.addEventListener('click', function(e){
       'top': shopSection.offsetTop
     });
   };
-});
+}
+
 
 // // WAY OF ISOTOPE + imagesLoaded after all images have loaded
 // var grid = document.querySelector('.iso-grid');

@@ -119,6 +119,9 @@ body, .h0, h1, h2, h3, h4, h5, h6 {
 .mtn5 { margin-top: -4rem; }
 .mbn25 { margin-bottom: -0.25rem; }
 .mbn1 { margin-bottom: -.5rem; }
+@media(min-width: 40em) {
+  .sm-mt4 { margin-top: 4rem; }
+}
 
 .btn-blue {
   color: #fff;
@@ -149,7 +152,10 @@ body, .h0, h1, h2, h3, h4, h5, h6 {
 .bagBlue3 { color: rgb(103,151,171); }
 
 .h0 { font-size: 2.5rem; }
-.h00 { font-size: 3rem; }
+.h00 { font-size: 2.25rem; }
+@media(min-width: 40em) {
+  .h00 { font-size: 3rem; }
+}
 
 .small-caps { font-variant-caps: small-caps; }
 
@@ -226,6 +232,10 @@ body, .h0, h1, h2, h3, h4, h5, h6 {
 
 .w-45px { width: 45px; }
 .w-55px { width: 55px; }
+
+.btn-big {
+  padding: 1rem 1.25rem;
+}
 
 @media (min-width:40em) {
   .sm-vh100 { min-height: 100vh; }
