@@ -6,20 +6,22 @@
           </a>
         </div>
 
-        <nav class="flex flex-justify">
-          <div class="sm-hide sm-mr2">
-            <a href="/" class="btn cursor-default {% if page.layout == 'blog' %}black{% else %}white{% endif %}">
-              <h1 class="h5 sm-h4 m0 small-caps">azellaz</h1>
+        <nav class="flex flex-column flex-center">
+          <div class="sm-hide">
+            <a href="/" class="cursor-default {% if page.layout == 'blog' %}black{% else %}white{% endif %}">
+              <h1 class="m0 h1 small-caps">azellaz</h1>
             </a>
           </div>
-          <div class="pointer sm-mr2">
-            <a href="#shop" id="goToShop" class="goToShop btn regular btn-outline h5 sm-h4 {% if page.layout == 'blog' %}black{% else %}white{% endif %}">shop</a>
-          </div>
-          <div class="pointer">
-            <a href="#" class="btn regular h5 sm-h4 {% if page.layout == 'blog' %}black{% else %}white{% endif %} hover-underline">about</a>
-          </div>
-          <div class="pointer">
-            <a href="#" class="btn regular h5 sm-h4 {% if page.layout == 'blog' %}black{% else %}white{% endif %} hover-underline">contact</a>
+          <div class="flex justify-between">
+            <div class="pointer sm-mr2">
+              <a href="#shop" id="goToShop" class="goToShop btn regular btn-outline h5 sm-h4 {% if page.layout == 'blog' %}black{% else %}white{% endif %}">shop</a>
+            </div>
+            <div class="pointer">
+              <a href="#" class="btn regular h5 sm-h4 {% if page.layout == 'blog' %}black{% else %}white{% endif %} hover-underline">about</a>
+            </div>
+            <div class="pointer">
+              <a href="#" class="btn regular h5 sm-h4 {% if page.layout == 'blog' %}black{% else %}white{% endif %} hover-underline">contact</a>
+            </div>
           </div>
         </nav>
 

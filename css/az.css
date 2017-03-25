@@ -233,8 +233,11 @@ body, .h0, h1, h2, h3, h4, h5, h6 {
 .w-45px { width: 45px; }
 .w-55px { width: 55px; }
 
-.btn-big {
-  padding: 1rem 1.25rem;
+@media (min-width:40em) {
+  .sm-btn-hero {
+    line-height: 1;
+    padding: .75rem 1.25rem;
+  }
 }
 
 @media (min-width:40em) {
