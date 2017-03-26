@@ -189,6 +189,7 @@ body, .h0, h1, h2, h3, h4, h5, h6 {
 .border-silver { border-color: #ddd; }
 .border-dark-gray { border-color: #aaa; }
 .dark-gray { color: #aaa; }
+.light-black { color: #3a3a3a; }
 
 .lh1 { line-height: 1; }
 
