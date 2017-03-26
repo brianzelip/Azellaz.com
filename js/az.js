@@ -37,7 +37,8 @@ function smoothScroll(e) {
 // init Isotope
 var iso = new Isotope( '.iso-grid', {
   itemSelector: '.iso-item',
-  layoutMode: 'fitRows'
+  layoutMode: 'fitRows',
+  percentPosition: true
 });
 
 // this via http://codepen.io/desandro/pen/PqNBzj
