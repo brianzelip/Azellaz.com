@@ -104,6 +104,11 @@ body, .h0, h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
 }
 
+.shop-fixed-logo-show { display:none!important; }
+@media (min-width: 84.375em) {
+  .shop-fixed-logo-show { display: block!important; }
+}/* minimum width to show fixed shop logo; 84.375em = 1350px = .container size (76rem) + 75px(75px=logo hard coded width)*2 (account for left and right container gutters)*/
+
 .pb4 { padding-bottom: 4rem; }
 
 .my2 {
@@ -123,6 +128,10 @@ body, .h0, h1, h2, h3, h4, h5, h6 {
 @media(min-width: 40em) {
   .sm-mt4 { margin-top: 4rem; }
   .sm-mb4 { margin-bottom: 4rem; }
+}
+.mx1 {
+  margin-right: .5rem;
+  margin-left: .5rem;
 }
 
 .btn-blue {
@@ -216,6 +225,10 @@ body, .h0, h1, h2, h3, h4, h5, h6 {
 .pt4 { padding-top: 2rem; }
 .pl3 { padding-left: 2rem; }
 .pbQuart { padding-bottom: .25rem; }
+.py-quarter {
+  padding-top: .25rem;
+  padding-bottom: .25rem;
+}
 
 .transparent { color: transparent; }
 
@@ -284,6 +297,7 @@ body, .h0, h1, h2, h3, h4, h5, h6 {
     border-bottom-width:1px;
     border-bottom-color:rgba(0,0,0,.125);
   }
+  .sm-p1 { padding: .5rem; }
   .sm-pbQuart { padding-bottom: .25rem; }
   .sm-px2 {
     padding-right: 1rem;
