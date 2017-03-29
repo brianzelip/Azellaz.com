@@ -1,0 +1,55 @@
+Products get serialized as a json object (collection) of objects (products).
+
+Product data consists of:
+  - metadata
+    - productID (required by snipcart), eg az0001
+    - title (required by snipcart)
+    - price (required by snipcart)
+    - url (required by snipcart)
+    - bag type
+    - description
+    - img__main
+    - img__main_alt
+    - weight (conditional required by snipcart)
+    - height (conditional required by snipcart)
+    - width (conditional required by snipcart)
+    - length (conditional required by snipcart)
+    - quantity in stock
+
+  - images
+    - front
+    - back
+    - sideL
+    - sideR
+    - inside
+    - bottom?
+    - top?
+
+The URI for a product item should be <https://azellaz.com/item-name>.
+
+All the data for each product item should be found in a directory with the name of the product's productID:
+├── products
+│   └── az0001
+│       ├── az00001.json
+│       └── images
+│           ├── az00001-front.jpg
+│           ├── az00001-back.jpg
+│           ├── az00001-sideL.jpg
+│           ├── az00001-sideR.jpg
+│           └── az00001-inside.jpg
+│   └── az0002
+│       ├── az00002.json
+│       └── images
+│           ├── az00002-front.jpg
+│           ├── az00002-back.jpg
+│           ├── az00002-sideL.jpg
+│           ├── az00002-sideR.jpg
+│           └── az00002-inside.jpg
+│   └── az0003
+│       ├── az00003.json
+│       └── images
+│           ├── az00003-front.jpg
+│           ├── az00003-back.jpg
+│           ├── az00003-sideL.jpg
+│           ├── az00003-sideR.jpg
+│           └── az00003-inside.jpg
