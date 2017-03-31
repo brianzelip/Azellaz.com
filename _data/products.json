@@ -1,8 +1,8 @@
 [
  {
-   "id": "az0018",
+   "id": "az0001",
    "name": "Indigo Shibori Duffle",
-   "slug": "indio-shibori-duffle",
+   "slug": "indigo-shibori-duffle",
    "url": "https://azellaz.com/indio-shibori-duffle.html",
    "price": 175,
    "type": "tote",
@@ -19,7 +19,7 @@
    "AZ notes for BZ": ""
  },
  {
-   "id": "az0001",
+   "id": "az0002",
    "name": "Indigo Mountain Medium Tote",
    "slug": "indigo-mountain-medium-tote",
    "url": "https://azellaz.com/indigo-mountain-medium-tote.html",
@@ -38,7 +38,7 @@
    "AZ notes for BZ": "inside image same as Blue Medium Tote"
  },
  {
-   "id": "az0002",
+   "id": "az0003",
    "name": "Cerulean Medium Tote",
    "slug": "cerulean-medium-tote",
    "url": "https://azellaz.com/cerulean-medium-tote.html",
@@ -57,7 +57,7 @@
    "AZ notes for BZ": "inside image same as Indigo Mountain Medium Tote"
  },
  {
-   "id": "az0003",
+   "id": "az0004",
    "name": "Cerulean Small tote",
    "slug": "cerulean-small-tote",
    "url": "https://azellaz.com/cerulean-small-tote.html",
@@ -76,7 +76,7 @@
    "AZ notes for BZ": ""
  },
  {
-   "id": "az0004",
+   "id": "az0005",
    "name": "Indigo Shibori Small Tote",
    "slug": "indigo-shibori-small-tote",
    "url": "https://azellaz.com/indigo-shibori-small-tote.html",
@@ -95,7 +95,7 @@
    "AZ notes for BZ": ""
  },
  {
-   "id": "az0005",
+   "id": "az0006",
    "name": "Indigo Mountain Crossbody with Leather",
    "slug": "indigo-mountain-crossbody-with-leather",
    "url": "https://azellaz.com/indigo-mountain-crossbody-with-leather.html",
@@ -114,7 +114,7 @@
    "AZ notes for BZ": "single inside image for all crossbodies"
  },
  {
-   "id": "az0006",
+   "id": "az0007",
    "name": "Indigo Prairie Crossbody with Leather",
    "slug": "indigo-prairie-crossbody-with-leather",
    "url": "https://azellaz.com/indigo-prairie-crossbody-with-leather.html",
@@ -133,7 +133,7 @@
    "AZ notes for BZ": "single inside image for all crossbodies"
  },
  {
-   "id": "az0007",
+   "id": "az0008",
    "name": "Indigo Shibori Crossbody with Leather",
    "slug": "indigo-shibori-crossbody-with-leather",
    "url": "https://azellaz.com/indigo-shibori-crossbody-with-leather.html",
@@ -152,7 +152,7 @@
    "AZ notes for BZ": "single inside image for all crossbodies"
  },
  {
-   "id": "az0008",
+   "id": "az0009",
    "name": "Cerulean Crossbody with Leather",
    "slug": "cerulean-crossbody-with-leather",
    "url": "https://azellaz.com/cerulean-crossbody-with-leather.html",
@@ -171,7 +171,7 @@
    "AZ notes for BZ": "single inside image for all crossbodies"
  },
  {
-   "id": "az0009",
+   "id": "az0010",
    "name": "Indigo Mountain Crossbody",
    "slug": "indigo-mountain-crossbody",
    "url": "https://azellaz.com/indigo-mountain-crossbody.html",
@@ -190,7 +190,7 @@
    "AZ notes for BZ": "single inside image for all crossbodies"
  },
  {
-   "id": "az0010",
+   "id": "az0011",
    "name": "Indigo Prairie Crossbody",
    "slug": "indigo-prairie-crossbody",
    "url": "https://azellaz.com/indigo-prairie-crossbody.html",
@@ -209,7 +209,7 @@
    "AZ notes for BZ": "single inside image for all crossbodies"
  },
  {
-   "id": "az0011",
+   "id": "az0012",
    "name": "Indigo Cloud Crossbody",
    "slug": "indigo-cloud-crossbody",
    "url": "https://azellaz.com/indigo-cloud-crossbody.html",
@@ -228,7 +228,7 @@
    "AZ notes for BZ": "single inside image for all crossbodies"
  },
  {
-   "id": "az0012",
+   "id": "az0013",
    "name": "Indigo Shibori Crossbody",
    "slug": "indigo-shibori-crossbody",
    "url": "https://azellaz.com/indigo-shibori-crossbody.html",
@@ -247,7 +247,7 @@
    "AZ notes for BZ": "single inside image for all crossbodies"
  },
  {
-   "id": "az0013",
+   "id": "az0014",
    "name": "Indigo Mountain Clutch",
    "slug": "indigo-mountain-clutch",
    "url": "https://azellaz.com/indigo-mountain-clutch.html",
@@ -266,7 +266,7 @@
    "AZ notes for BZ": ""
  },
  {
-   "id": "az0014",
+   "id": "az0015",
    "name": "Indigo Shibori Clutch",
    "slug": "indigo-shibori-clutch",
    "url": "https://azellaz.com/indigo-shibori-clutch.html",
@@ -285,7 +285,7 @@
    "AZ notes for BZ": ""
  },
  {
-   "id": "az0015",
+   "id": "az0016",
    "name": "Indigo Diagonal Clutch",
    "slug": "indigo-diagonal-clutch",
    "url": "https://azellaz.com/indigo-diagonal-clutch.html",
@@ -304,7 +304,7 @@
    "AZ notes for BZ": "inside = phone etc coming out"
  },
  {
-   "id": "az0016",
+   "id": "az0017",
    "name": "Indigo Prairie Clutch",
    "slug": "indigo-prairie-clutch",
    "url": "https://azellaz.com/indigo-prairie-clutch.html",
@@ -323,7 +323,7 @@
    "AZ notes for BZ": "inside = phone etc coming out"
  },
  {
-   "id": "az0017",
+   "id": "az0018",
    "name": "Cerulean Clutch",
    "slug": "cerulean-clutch",
    "url": "https://azellaz.com/cerulean-clutch.html",
