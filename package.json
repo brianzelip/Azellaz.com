@@ -23,5 +23,11 @@
   "homepage": "https://github.com/brianzelip/Azellaz.com#readme",
   "dependencies": {
     "lightbox2": "^2.8.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.7.7",
+    "babel-cli": "^6.24.0",
+    "cssnano": "^3.10.0",
+    "postcss-cli": "^3.0.0"
   }
 }
