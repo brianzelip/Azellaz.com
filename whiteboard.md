@@ -10,7 +10,7 @@ TODO:
     - medium - for main page browsing view
     - medium - for main page browsing view @2x for retina
   - Best practices:
-    - informative filenames; azellaz_duffel_bag_cobalt_leather-thumb.jpg
+    - informative filenames; azellaz_duffle_bag_cobalt_leather-thumb.jpg
     - great alt text:
       - alt=""/>
       - alt="puppy"/>
@@ -46,4 +46,10 @@ TODO:
   - small pouch
   - cross body
   - tote
-  - duffel
+  - duffle
+
+
+Update Jekyll gems:
+```bash
+bundle install #updates both Gemfile and Gemfile.lock
+```
