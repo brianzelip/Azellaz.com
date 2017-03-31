@@ -146,7 +146,11 @@ body, .h0, h1, h2, h3, h4, h5, h6 {
   border-radius: 3px;
 }
 
+.justify-start { justify-content: flex-start; }
 .justify-center { justify-content: center; }
+.justify-between { justify-content: space-between; }
+.justify-around { justify-content: space-around; }
+.justify-end { justify-content: flex-end; }
 
 .align-center { align-content: center; }
 
@@ -202,11 +206,6 @@ body, .h0, h1, h2, h3, h4, h5, h6 {
 
 .lh1 { line-height: 1; }
 
-.justify-between { justify-content: space-between; }
-.justify-around { justify-content: space-around; }
-.justify-center { justify-content: center; }
-.justify-end { justify-content: flex-end; }
-
 .pointer { cursor: pointer; }
 .cursor-default { cursor: default; }
 
@@ -246,7 +245,7 @@ body, .h0, h1, h2, h3, h4, h5, h6 {
 .order1 { order: 1; }
 
 .maxw-300px {
-  width: 300px;
+  width: 250px;
   max-width: 300px;
 }
 
@@ -254,6 +253,17 @@ body, .h0, h1, h2, h3, h4, h5, h6 {
 
 .w-45px { width: 45px; }
 .w-55px { width: 55px; }
+
+.x-btn-group > .btn + .btn { margin-left: -1px; }
+
+.before-cross::before {
+  content: "Cross "
+}
+@media (min-width: 20rem) {
+  .before-cross::before {
+    content: "Cross"
+  }
+}
 
 .btn-hero {
   line-height: 1.125em;
@@ -274,6 +284,15 @@ body, .h0, h1, h2, h3, h4, h5, h6 {
   .btn-hero {
     margin-top: 10rem;
     margin-bottom: 20rem;
+  }
+}
+
+@media (max-width: 30em) {
+  .btn-small {
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+    padding-right: .5rem;
+    padding-left: .5rem;
   }
 }
 
