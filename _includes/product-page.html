@@ -14,38 +14,33 @@
       <p>category 1 > category 2 > final</p>
     </nav> -->
     <div>
-      <a href="/images/launch-photos/{{ product.imgFront }}" data-lightbox="setID" data-title="caption">
-        <img src="/images/launch-photos/{{ product.imgFront }}" class="mbn1" alt="Front view of the {{ product.name }} bag by Azellaz.com" title="{{ product.name }} front"/>
+      <a href="/images/launch-photos-edited-imageOptimized/{{ product.imgFront }}" data-lightbox="setID" data-title="caption">
+        <img src="/images/launch-photos-edited-imageOptimized/{{ product.imgFront }}" class="mbn1" alt="Front view of the {{ product.name }} bag by Azellaz.com" title="{{ product.name }} front"/>
       </a>
     </div>
 
     <div class="flex flex-row py2 mxn1">
       {% if product.imgBack != '' %}
       <div class="flex-auto ml1 mr1">
-        <a href="/images/launch-photos/{{ product.imgBack }}" data-lightbox="setID" data-title="caption">
-          <img src="/images/launch-photos/{{ product.imgBack }}" alt="Back view of the {{ product.name }} bag by Azellaz.com" title="{{ product.name }} back"/>
+        <a href="/images/launch-photos-edited-imageOptimized/{{ product.imgBack }}" data-lightbox="setID" data-title="caption">
+          <img src="/images/launch-photos-edited-imageOptimized/{{ product.imgBack }}" alt="Back view of the {{ product.name }} bag by Azellaz.com" title="{{ product.name }} back"/>
         </a>
       </div>
       {% endif %}
       {% if product.imgSide != '' %}
       <div class="flex-auto ml1 mr1">
-        <a href="/images/launch-photos/{{ product.imgSide }}" data-lightbox="setID" data-title="caption">
-          <img src="/images/launch-photos/{{ product.imgSide }}" alt="Side view of the {{ product.name }} bag by Azellaz.com" title="{{ product.name }} side"/>
+        <a href="/images/launch-photos-edited-imageOptimized/{{ product.imgSide }}" data-lightbox="setID" data-title="caption">
+          <img src="/images/launch-photos-edited-imageOptimized/{{ product.imgSide }}" alt="Side view of the {{ product.name }} bag by Azellaz.com" title="{{ product.name }} side"/>
         </a>
       </div>
       {% endif %}
       {% if product.imgInside != '' %}
       <div class="flex-auto ml1 mr1">
-        <a href="/images/launch-photos/{{ product.imgInside }}" data-lightbox="setID" data-title="caption">
-          <img src="/images/launch-photos/{{ product.imgInside }}" alt="Inside view of the {{ product.name }} bag by Azellaz.com" title="{{ product.name }} inside"/>
+        <a href="/images/launch-photos-edited-imageOptimized/{{ product.imgInside }}" data-lightbox="setID" data-title="caption">
+          <img src="/images/launch-photos-edited-imageOptimized/{{ product.imgInside }}" alt="Inside view of the {{ product.name }} bag by Azellaz.com" title="{{ product.name }} inside"/>
         </a>
       </div>
       {% endif %}
-      <div class="flex-auto ml1 mr1">
-        <a href="/images/optzilla/01-min.jpg" data-lightbox="setID" data-title="caption">
-          <img src="/images/optzilla/01-min.jpg" alt="" />
-        </a>
-      </div>
     </div>
   </div>
 
