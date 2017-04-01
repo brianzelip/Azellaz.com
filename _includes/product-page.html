@@ -1,0 +1,60 @@
+<div class="vh100 flex justify-end">
+
+  <div id="logo" class="fixed left-0 ml2 mt2 top-0" style="">
+    <a href="/index.html#shop" class="hover-no-underline">
+      <div>
+        <img src="/images/Azellaz_Logo_Soft_Black_v6.svg" class="" alt="" width="">
+        <span class="block h5 center black">← return</span>
+      </div>
+    </a>
+  </div>
+
+  <div class="col-7 pt2 flex flex-column">
+    <!-- <nav>
+      <p>category 1 > category 2 > final</p>
+    </nav> -->
+    <div>
+      <a href="/images/launch-photos/{{ product.imgFront }}" data-lightbox="setID" data-title="caption">
+        <img src="/images/launch-photos/{{ product.imgFront }}" class="mbn1" alt="Front view of the {{ product.name }} bag by Azellaz.com" title="{{ product.name }} front"/>
+      </a>
+    </div>
+
+    <div class="flex flex-row py2 mxn1">
+      {% if product.imgBack != '' %}
+      <div class="flex-auto ml1 mr1">
+        <a href="/images/launch-photos/{{ product.imgBack }}" data-lightbox="setID" data-title="caption">
+          <img src="/images/launch-photos/{{ product.imgBack }}" alt="Back view of the {{ product.name }} bag by Azellaz.com" title="{{ product.name }} back"/>
+        </a>
+      </div>
+      {% endif %}
+      {% if product.imgSide != '' %}
+      <div class="flex-auto ml1 mr1">
+        <a href="/images/launch-photos/{{ product.imgSide }}" data-lightbox="setID" data-title="caption">
+          <img src="/images/launch-photos/{{ product.imgSide }}" alt="Side view of the {{ product.name }} bag by Azellaz.com" title="{{ product.name }} side"/>
+        </a>
+      </div>
+      {% endif %}
+      {% if product.imgInside != '' %}
+      <div class="flex-auto ml1 mr1">
+        <a href="/images/launch-photos/{{ product.imgInside }}" data-lightbox="setID" data-title="caption">
+          <img src="/images/launch-photos/{{ product.imgInside }}" alt="Inside view of the {{ product.name }} bag by Azellaz.com" title="{{ product.name }} inside"/>
+        </a>
+      </div>
+      {% endif %}
+      <div class="flex-auto ml1 mr1">
+        <a href="/images/optzilla/01-min.jpg" data-lightbox="setID" data-title="caption">
+          <img src="/images/optzilla/01-min.jpg" alt="" />
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-4 px3 py2">
+    <h1 class="m0 h2 serif">{{ product.name }}</h1>
+    <p class="h2 serif">${{ product.price }}</p>
+    <p class="serif">{{ product.long_description }}</p>
+    <div class="mt4">
+      <button class="btn btn-outline fw200">Add to Cart</button>
+    </div>
+  </div>
+</div>
