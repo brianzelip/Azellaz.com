@@ -52,9 +52,21 @@
   <div class="col-4 px3 py2">
     <h1 class="m0 h2 serif">{{ product.name }}</h1>
     <p class="h2 serif">${{ product.price }}</p>
-    <p class="serif">{{ product.long_description }}</p>
+    <p class="serif">{{ product.descriptionLong }}</p>
     <div class="mt4">
-      <button class="btn btn-outline fw200">Add to Cart</button>
+      <button
+        class="btn btn-outline fw200"
+        data-item-id="{{ product.id }}"
+        data-item-name="{{ product.name }}"
+        data-item-price="{{ product.price }}"
+        data-item-weight="{{ product.weight }}"
+        data-item-height="{{ product.height }}"
+        data-item-width="{{ product.width }}"
+        data-item-length="{{ product.length }}"
+        data-item-url="{{ product.url }}"
+        data-item-description="{{ product.descriptionShort }}">
+        Add to Cart
+      </button>
     </div>
   </div>
 </div>
