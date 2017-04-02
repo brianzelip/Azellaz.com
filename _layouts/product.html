@@ -22,6 +22,7 @@
   </head>
 
   <body>
+    {% include header-product.html %}
     {% for product in site.data.products %}
       {% if page.productID == product.id  %}
         {% include product-page.html %}
