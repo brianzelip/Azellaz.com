@@ -375,6 +375,7 @@ body, .h0, h1, h2, h3, h4, h5, h6 {
     -webkit-flex: 0 0 auto;
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
+  }
 }
 
 @media (min-width: 40em) and (min-height: 68em) {
