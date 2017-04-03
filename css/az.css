@@ -111,6 +111,11 @@ body, .h0, h1, h2, h3, h4, h5, h6 {
 
 .height2r { height: 2rem; }
 
+.px1 {
+  padding-right: .5rem;
+  padding-left: .5rem;
+}
+
 .pb4 { padding-bottom: 4rem; }
 
 .my2 {
@@ -310,6 +315,7 @@ body, .h0, h1, h2, h3, h4, h5, h6 {
 }
 
 @media (min-width:40em) {
+  .sm-width-auto { width: auto; }
   .sm-vh100 { min-height: 100vh; }
   .sm-block { display: block; }
   .sm-h2 { font-size: 1.5rem; }
@@ -337,6 +343,7 @@ body, .h0, h1, h2, h3, h4, h5, h6 {
   .sm-mb0 { margin-bottom: 0; }
   .sm-mb1 { margin-bottom: .5rem; }
   .sm-ml3 { margin-left: 2rem; }
+  .sm-mt4 { margin-top: 4rem; }
   .sm-right-align { text-align: right; }
   .sm-left-align { text-align: left; }
   .sm-flex { display:flex;}
@@ -373,10 +380,12 @@ body, .h0, h1, h2, h3, h4, h5, h6 {
 }
 
 @media (min-width:52em) {
+  .md-mt4 { margin-top: 4rem; }
   .md-px2 {
     padding-right: 1rem;
     padding-left: 1rem;
   }
+  .md-width-auto { width: auto; }
   .md-w-55px { width: 55px; }
   .md-flex { display:flex;}
   .md-align-start { align-items: flex-start; }
