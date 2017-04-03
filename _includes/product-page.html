@@ -1,14 +1,5 @@
 <div class="vh100 container flex flex-column md-flex-row">
 
-  <!-- <div id="logo" class="fixed left-0 ml2 mt2 top-0" style="">
-    <a href="/index.html#shop" class="hover-no-underline">
-      <div>
-        <img src="/images/Azellaz_Logo_Soft_Black_v6.svg" class="" alt="" width="">
-        <span class="block h5 center light-black">← return</span>
-      </div>
-    </a>
-  </div> -->
-
   <div class="md-col-7 p2 flex flex-column">
     <div class="order1">
       <img id="large-image-view" src="/images/launch-photos-edited-imageOptimized/{{ product.imgFront }}" class="mbn1" alt="Front view of the {{ product.name }} bag by Azellaz.com" title="{{ product.name }} front"/>
@@ -17,22 +8,42 @@
     <div class="flex flex-row py2 mxn1 sm-order2">
       {% if product.imgFront != '' %}
       <div class="flex-auto ml1 mr1">
-        <img class ="thumb border pointer border-box" src="/images/launch-photos-edited-imageOptimized/{{ product.imgFront }}" alt="Front view of the {{ product.name }} bag by Azellaz.com" title="{{ product.name }} front"/>
+        <img class="thumb border pointer border-box" src="/images/launch-photos-edited-imageOptimized/{{ product.imgFront }}" alt="Front view of the {{ product.name }} bag by Azellaz.com" title="{{ product.name }} front"/>
       </div>
       {% endif %}
       {% if product.imgBack != '' %}
       <div class="flex-auto ml1 mr1">
-        <img class ="thumb border pointer border-box" src="/images/launch-photos-edited-imageOptimized/{{ product.imgBack }}" alt="Back view of the {{ product.name }} bag by Azellaz.com" title="{{ product.name }} back"/>
+        <img class="thumb border pointer border-box" src="/images/launch-photos-edited-imageOptimized/{{ product.imgBack }}" alt="Back view of the {{ product.name }} bag by Azellaz.com" title="{{ product.name }} back"/>
       </div>
       {% endif %}
       {% if product.imgSide != '' %}
       <div class="flex-auto ml1 mr1">
-        <img class ="thumb border pointer border-box" src="/images/launch-photos-edited-imageOptimized/{{ product.imgSide }}" alt="Side view of the {{ product.name }} bag by Azellaz.com" title="{{ product.name }} side"/>
+        <img class="thumb border pointer border-box" src="/images/launch-photos-edited-imageOptimized/{{ product.imgSide }}" alt="Side view of the {{ product.name }} bag by Azellaz.com" title="{{ product.name }} side"/>
       </div>
       {% endif %}
       {% if product.imgInside != '' %}
       <div class="flex-auto ml1 mr1">
-        <img class ="thumb border pointer border-box" src="/images/launch-photos-edited-imageOptimized/{{ product.imgInside }}" alt="Inside view of the {{ product.name }} bag by Azellaz.com" title="{{ product.name }} inside"/>
+        <img class="thumb border pointer border-box" src="/images/launch-photos-edited-imageOptimized/{{ product.imgInside }}" alt="Inside view of the {{ product.name }} bag by Azellaz.com" title="{{ product.name }} inside"/>
+      </div>
+      {% endif %}
+      {% if product.imgFront == '' %}
+      <div class="flex-auto ml1 mr1">
+        <img class="border-box" src="/images/blank_thumb_2200x2600.png" alt="transparent image" title="small transparent image"/>
+      </div>
+      {% endif %}
+      {% if product.imgBack == '' %}
+      <div class="flex-auto ml1 mr1">
+        <img class="border-box" src="/images/blank_thumb_2200x2600.png" alt="transparent image" title="small transparent image"/>
+      </div>
+      {% endif %}
+      {% if product.imgSide == '' %}
+      <div class="flex-auto ml1 mr1">
+        <img class="border-box" src="/images/blank_thumb_2200x2600.png" alt="transparent image" title="small transparent image"/>
+      </div>
+      {% endif %}
+      {% if product.imgInside == '' %}
+      <div class="flex-auto ml1 mr1">
+        <img class="border-box" src="/images/blank_thumb_2200x2600.png" alt="transparent image" title="small transparent image"/>
       </div>
       {% endif %}
     </div>
