@@ -74,15 +74,15 @@ body, .h0, h1, h2, h3, h4, h5, h6 {
 .logo {
   position: absolute;
   height: 200px;
-  background-image: url(../images/Azellaz_logo.png);
+  background-image: url(/images/Azellaz_logo.png);
   background-position: bottom;
 }
 
-.logoImage { background-image: url(../images/Azellaz_logo.png); }
+.logoImage { background-image: url(/images/Azellaz_logo.png); }
 
 .background-center { background-position: center; }
 
-.mainBag { background-image: url(../images/optzilla/main_bag-min.jpg); }
+.mainBag { background-image: url(/images/optzilla/main_bag-min.jpg); }
 
 .serif { font-family: Athelas, Georgia, serif; }
 
