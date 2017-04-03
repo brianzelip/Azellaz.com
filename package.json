@@ -5,7 +5,7 @@
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "css": "postcss css/src/*.css --dir css/dist/ --watch"
+    "css": "postcss --use cssnano css/src/*.css -d css/dist/"
   },
   "repository": {
     "type": "git",
@@ -27,6 +27,7 @@
     "autoprefixer": "^6.7.7",
     "babel-cli": "^6.24.0",
     "cssnano": "^3.10.0",
+    "postcss": "^5.2.16",
     "postcss-cli": "^3.0.0"
   }
 }
