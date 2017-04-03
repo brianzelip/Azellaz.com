@@ -314,6 +314,8 @@ body, .h0, h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.thumb-border { border: 3px solid rgb(36, 56, 83); }
+
 @media (min-width:40em) {
   .sm-width-auto { width: auto; }
   .sm-vh100 { min-height: 100vh; }
