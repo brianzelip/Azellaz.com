@@ -5,7 +5,7 @@
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "css": "postcss css/src/*.css -d css/dist/ --watch"
+    "css": "postcss -u autoprefixer cssnano -d css/dist/ css/src/*.css --no-map --watch"
   },
   "repository": {
     "type": "git",

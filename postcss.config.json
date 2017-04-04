@@ -1,5 +1,0 @@
-{
-  "use": ["autoprefixer", "cssnano"],
-  "input": "css/src/*.css",
-  "output": "css/dist/"
-}
