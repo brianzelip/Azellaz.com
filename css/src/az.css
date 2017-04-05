@@ -331,7 +331,6 @@ body, .h0, h1, h2, h3, h4, h5, h6 {
 
 @media (min-width:40em) {
   .sm-width-auto { width: auto; }
-  .sm-vh100 { min-height: 100vh; }
   .sm-block { display: block; }
   .sm-h2 { font-size: 1.5rem; }
   .sm-h3 { font-size: 1.25rem; }
@@ -453,6 +452,11 @@ body, .h0, h1, h2, h3, h4, h5, h6 {
   padding: 0 1em;
 }
 */
+
+.ie-FlexContainerWrapper {
+  display: flex;
+  flex-direction: column;
+}
 
 /* THE ABOVE CLASSES COVER THE NECESSARY CLASSES FOR THIS BUG, DON'T FORGET THE FLEX CONTAINER WRAPPER!!
 box-sizing: border-box; /* 1 */ /*

@@ -1,73 +1,75 @@
-<div class="vh100 container flex flex-column md-flex-row mb1 md-mb0">
+<div class="ie-FlexContainerWrapper">
+  <div class="vh100 container flex flex-column md-flex-row mb1 md-mb0">
 
-  <div class="md-col-7 p2 flex flex-column">
-    <div class="order1">
-      <img id="large-image-view" src="/images/launch-photos-edited-imageOptimized/{{ product.imgFront }}" class="mbn1" alt="Front view of the {{ product.name }} bag by Azellaz.com" title="{{ product.name }} front"/>
+    <div class="md-col-7 p2 flex flex-column">
+      <div class="order1">
+        <img id="large-image-view" src="/images/launch-photos-edited-imageOptimized/{{ product.imgFront }}" class="mbn1" alt="Front view of the {{ product.name }} bag by Azellaz.com" title="{{ product.name }} front"/>
+      </div>
+
+      <div class="flex flex-row py2 mxn1 sm-order2">
+        {% if product.imgFront != '' %}
+        <div class="flex-auto flex flex-column product-thumbs ml1 mr1">
+          <img class="thumb border pointer border-box" src="/images/launch-photos-edited-imageOptimized/{{ product.imgFront }}" alt="Front view of the {{ product.name }} bag by Azellaz.com" title="{{ product.name }} front"/>
+        </div>
+        {% endif %}
+        {% if product.imgBack != '' %}
+        <div class="flex-auto flex flex-column product-thumbs ml1 mr1">
+          <img class="thumb border pointer border-box" src="/images/launch-photos-edited-imageOptimized/{{ product.imgBack }}" alt="Back view of the {{ product.name }} bag by Azellaz.com" title="{{ product.name }} back"/>
+        </div>
+        {% endif %}
+        {% if product.imgSide != '' %}
+        <div class="flex-auto flex flex-column product-thumbs ml1 mr1">
+          <img class="thumb border pointer border-box" src="/images/launch-photos-edited-imageOptimized/{{ product.imgSide }}" alt="Side view of the {{ product.name }} bag by Azellaz.com" title="{{ product.name }} side"/>
+        </div>
+        {% endif %}
+        {% if product.imgInside != '' %}
+        <div class="flex-auto flex flex-column product-thumbs ml1 mr1">
+          <img class="thumb border pointer border-box" src="/images/launch-photos-edited-imageOptimized/{{ product.imgInside }}" alt="Inside view of the {{ product.name }} bag by Azellaz.com" title="{{ product.name }} inside"/>
+        </div>
+        {% endif %}
+        {% if product.imgFront == '' %}
+        <div class="flex-auto flex flex-column product-thumbs ml1 mr1">
+          <img class="border-box" src="/images/blank_thumb_2200x2600.png" alt="transparent image" title="small transparent image"/>
+        </div>
+        {% endif %}
+        {% if product.imgBack == '' %}
+        <div class="flex-auto flex flex-column product-thumbs ml1 mr1">
+          <img class="border-box" src="/images/blank_thumb_2200x2600.png" alt="transparent image" title="small transparent image"/>
+        </div>
+        {% endif %}
+        {% if product.imgSide == '' %}
+        <div class="flex-auto flex flex-column product-thumbs ml1 mr1">
+          <img class="border-box" src="/images/blank_thumb_2200x2600.png" alt="transparent image" title="small transparent image"/>
+        </div>
+        {% endif %}
+        {% if product.imgInside == '' %}
+        <div class="flex-auto flex flex-column product-thumbs ml1 mr1">
+          <img class="border-box" src="/images/blank_thumb_2200x2600.png" alt="transparent image" title="small transparent image"/>
+        </div>
+        {% endif %}
+      </div>
     </div>
 
-    <div class="flex flex-row py2 mxn1 sm-order2">
-      {% if product.imgFront != '' %}
-      <div class="flex-auto flex flex-column product-thumbs ml1 mr1">
-        <img class="thumb border pointer border-box" src="/images/launch-photos-edited-imageOptimized/{{ product.imgFront }}" alt="Front view of the {{ product.name }} bag by Azellaz.com" title="{{ product.name }} front"/>
+    <div class="md-col-5 p2">
+      <h1 class="m0 h2 serif light-black">{{ product.name }}</h1>
+      <p class="h2 serif light-black">${{ product.price }}</p>
+      <p class="serif light-black">{{ product.descriptionLong }}</p>
+      <p class="serif light-black"><span class="red">*</span><strong>Availability:</strong> {% if product.inStock %}{{ site.in_stock }}{% else %}{{ site.made_to_order }}{% endif %}</p>
+      <div class="md-mt4">
+        <button
+          class="col-12 md-width-auto btn btn-outline fw200 light-black snipcart-add-item"
+          data-item-id="{{ product.id }}"
+          data-item-name="{{ product.name }}"
+          data-item-price="{{ product.price }}"
+          data-item-weight="{{ product.weight }}"
+          data-item-height="{{ product.height }}"
+          data-item-width="{{ product.width }}"
+          data-item-length="{{ product.length }}"
+          data-item-url="{{ product.url }}"
+          data-item-description="{{ product.descriptionShort }}">
+          Add to Cart
+        </button>
       </div>
-      {% endif %}
-      {% if product.imgBack != '' %}
-      <div class="flex-auto flex flex-column product-thumbs ml1 mr1">
-        <img class="thumb border pointer border-box" src="/images/launch-photos-edited-imageOptimized/{{ product.imgBack }}" alt="Back view of the {{ product.name }} bag by Azellaz.com" title="{{ product.name }} back"/>
-      </div>
-      {% endif %}
-      {% if product.imgSide != '' %}
-      <div class="flex-auto flex flex-column product-thumbs ml1 mr1">
-        <img class="thumb border pointer border-box" src="/images/launch-photos-edited-imageOptimized/{{ product.imgSide }}" alt="Side view of the {{ product.name }} bag by Azellaz.com" title="{{ product.name }} side"/>
-      </div>
-      {% endif %}
-      {% if product.imgInside != '' %}
-      <div class="flex-auto flex flex-column product-thumbs ml1 mr1">
-        <img class="thumb border pointer border-box" src="/images/launch-photos-edited-imageOptimized/{{ product.imgInside }}" alt="Inside view of the {{ product.name }} bag by Azellaz.com" title="{{ product.name }} inside"/>
-      </div>
-      {% endif %}
-      {% if product.imgFront == '' %}
-      <div class="flex-auto flex flex-column product-thumbs ml1 mr1">
-        <img class="border-box" src="/images/blank_thumb_2200x2600.png" alt="transparent image" title="small transparent image"/>
-      </div>
-      {% endif %}
-      {% if product.imgBack == '' %}
-      <div class="flex-auto flex flex-column product-thumbs ml1 mr1">
-        <img class="border-box" src="/images/blank_thumb_2200x2600.png" alt="transparent image" title="small transparent image"/>
-      </div>
-      {% endif %}
-      {% if product.imgSide == '' %}
-      <div class="flex-auto flex flex-column product-thumbs ml1 mr1">
-        <img class="border-box" src="/images/blank_thumb_2200x2600.png" alt="transparent image" title="small transparent image"/>
-      </div>
-      {% endif %}
-      {% if product.imgInside == '' %}
-      <div class="flex-auto flex flex-column product-thumbs ml1 mr1">
-        <img class="border-box" src="/images/blank_thumb_2200x2600.png" alt="transparent image" title="small transparent image"/>
-      </div>
-      {% endif %}
-    </div>
-  </div>
-
-  <div class="md-col-5 p2">
-    <h1 class="m0 h2 serif light-black">{{ product.name }}</h1>
-    <p class="h2 serif light-black">${{ product.price }}</p>
-    <p class="serif light-black">{{ product.descriptionLong }}</p>
-    <p class="serif light-black"><span class="red">*</span><strong>Availability:</strong> {% if product.inStock %}{{ site.in_stock }}{% else %}{{ site.made_to_order }}{% endif %}</p>
-    <div class="md-mt4">
-      <button
-        class="col-12 md-width-auto btn btn-outline fw200 light-black snipcart-add-item"
-        data-item-id="{{ product.id }}"
-        data-item-name="{{ product.name }}"
-        data-item-price="{{ product.price }}"
-        data-item-weight="{{ product.weight }}"
-        data-item-height="{{ product.height }}"
-        data-item-width="{{ product.width }}"
-        data-item-length="{{ product.length }}"
-        data-item-url="{{ product.url }}"
-        data-item-description="{{ product.descriptionShort }}">
-        Add to Cart
-      </button>
     </div>
   </div>
 </div>
