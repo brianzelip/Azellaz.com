@@ -458,6 +458,13 @@ body, .h0, h1, h2, h3, h4, h5, h6 {
   flex-direction: column;
 }
 
+/*
+  NOTE: the situations the above hack pertains to are:
+    - .vh100 [completed]
+    - .minh-400px
+    - .lazyload
+*/
+
 /* THE ABOVE CLASSES COVER THE NECESSARY CLASSES FOR THIS BUG, DON'T FORGET THE FLEX CONTAINER WRAPPER!!
 box-sizing: border-box; /* 1 */ /*
 max-width: 100%; /* 1 */ /*
