@@ -9,42 +9,58 @@
       <div class="flex flex-row py2 mxn1 sm-order2">
         {% if product.imgFront != '' %}
         <div class="flex-auto flex flex-column product-thumbs ml1 mr1">
-          <img class="thumb border pointer border-box" src="/images/launch-photos-edited-imageOptimized/{{ product.imgFront }}" alt="Front view of the {{ product.name }} bag by Azellaz.com" title="{{ product.name }} front"/>
+          <div class="ie-FlexItem">
+            <img class="thumb border pointer border-box" src="/images/launch-photos-edited-imageOptimized/{{ product.imgFront }}" alt="Front view of the {{ product.name }} bag by Azellaz.com" title="{{ product.name }} front"/>
+          </div>
         </div>
         {% endif %}
         {% if product.imgBack != '' %}
         <div class="flex-auto flex flex-column product-thumbs ml1 mr1">
-          <img class="thumb border pointer border-box" src="/images/launch-photos-edited-imageOptimized/{{ product.imgBack }}" alt="Back view of the {{ product.name }} bag by Azellaz.com" title="{{ product.name }} back"/>
+          <div class="ie-FlexItem">
+            <img class="thumb border pointer border-box" src="/images/launch-photos-edited-imageOptimized/{{ product.imgBack }}" alt="Back view of the {{ product.name }} bag by Azellaz.com" title="{{ product.name }} back"/>
+          </div>
         </div>
         {% endif %}
         {% if product.imgSide != '' %}
         <div class="flex-auto flex flex-column product-thumbs ml1 mr1">
-          <img class="thumb border pointer border-box" src="/images/launch-photos-edited-imageOptimized/{{ product.imgSide }}" alt="Side view of the {{ product.name }} bag by Azellaz.com" title="{{ product.name }} side"/>
+          <div class="ie-FlexItem">
+            <img class="thumb border pointer border-box" src="/images/launch-photos-edited-imageOptimized/{{ product.imgSide }}" alt="Side view of the {{ product.name }} bag by Azellaz.com" title="{{ product.name }} side"/>
+          </div>
         </div>
         {% endif %}
         {% if product.imgInside != '' %}
         <div class="flex-auto flex flex-column product-thumbs ml1 mr1">
-          <img class="thumb border pointer border-box" src="/images/launch-photos-edited-imageOptimized/{{ product.imgInside }}" alt="Inside view of the {{ product.name }} bag by Azellaz.com" title="{{ product.name }} inside"/>
+          <div class="ie-FlexItem">
+            <img class="thumb border pointer border-box" src="/images/launch-photos-edited-imageOptimized/{{ product.imgInside }}" alt="Inside view of the {{ product.name }} bag by Azellaz.com" title="{{ product.name }} inside"/>
+          </div>
         </div>
         {% endif %}
         {% if product.imgFront == '' %}
         <div class="flex-auto flex flex-column product-thumbs ml1 mr1">
-          <img class="border-box" src="/images/blank_thumb_2200x2600.png" alt="transparent image" title="small transparent image"/>
+          <div class="ie-FlexItem">
+            <img class="border-box" src="/images/blank_thumb_2200x2600.png" alt="transparent image" title="small transparent image"/>
+          </div>
         </div>
         {% endif %}
         {% if product.imgBack == '' %}
         <div class="flex-auto flex flex-column product-thumbs ml1 mr1">
-          <img class="border-box" src="/images/blank_thumb_2200x2600.png" alt="transparent image" title="small transparent image"/>
+          <div class="ie-FlexItem">
+            <img class="border-box" src="/images/blank_thumb_2200x2600.png" alt="transparent image" title="small transparent image"/>
+          </div>
         </div>
         {% endif %}
         {% if product.imgSide == '' %}
         <div class="flex-auto flex flex-column product-thumbs ml1 mr1">
-          <img class="border-box" src="/images/blank_thumb_2200x2600.png" alt="transparent image" title="small transparent image"/>
+          <div class="ie-FlexItem">
+            <img class="border-box" src="/images/blank_thumb_2200x2600.png" alt="transparent image" title="small transparent image"/>
+          </div>
         </div>
         {% endif %}
         {% if product.imgInside == '' %}
         <div class="flex-auto flex flex-column product-thumbs ml1 mr1">
-          <img class="border-box" src="/images/blank_thumb_2200x2600.png" alt="transparent image" title="small transparent image"/>
+          <div class="ie-FlexItem">
+            <img class="border-box" src="/images/blank_thumb_2200x2600.png" alt="transparent image" title="small transparent image"/>
+          </div>
         </div>
         {% endif %}
       </div>

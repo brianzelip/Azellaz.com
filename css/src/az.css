@@ -460,9 +460,9 @@ body, .h0, h1, h2, h3, h4, h5, h6 {
 
 /*
   NOTE: the situations the above hack pertains to are:
-    - .vh100 [completed]
-    - .minh-400px
-    - .lazyload
+    - .vh100 [completed (a few instances)]
+    - .minh-400px [completed (no instances)]
+    - .lazyload [completed (no instances)]
 */
 
 /* THE ABOVE CLASSES COVER THE NECESSARY CLASSES FOR THIS BUG, DON'T FORGET THE FLEX CONTAINER WRAPPER!!
@@ -497,4 +497,31 @@ Important: using a flex value of something like 1 0 0px can still be a problem b
 
 /* 5. Column flex items don't always preserve intrinsic aspect ratios */
 /* Flexbug demo 5.1.b — workaround */
-/*  */
+/* You can avoid this problem by adding a container element to house the element with the intrinsic aspect ratio. Since doing this causes the element with the intrinsic aspect ratio to no longer be a flex item, it will be sized normally. */
+/**
+ * Flexbug #5 (workaround)
+ *
+ * 1. Add a wrapper element to house
+ *    the element with an intrinsic
+ *    aspect ratio.
+ * 2. Flexbug #2 workaround.
+ */
+
+/*.FlexContainer {
+  background: hsla(0,0%,0%,.1);
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  margin: 1em;
+  width: 300px;
+}*/
+
+
+.ie-FlexItem { /* 1 */
+  flex-shrink: 0; /* 2 */
+}
+
+/*.FlexItem img {
+  height: auto;
+  width: 100%;
+}*/
