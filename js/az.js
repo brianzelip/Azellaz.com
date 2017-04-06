@@ -18,6 +18,8 @@ if (!Array.from) {
     });
 }
 
+console.log('Does Array.from exist?', Array.from);
+
 
 // via http://thenewcode.com/507/Smooth-Page-Scroll-in-5-Lines-of-JavaScript
 function smoothScroll(e) {
