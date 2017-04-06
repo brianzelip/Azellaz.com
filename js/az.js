@@ -3,20 +3,21 @@ const goToShopBtns = document.querySelectorAll('.goToShop');
 const shopSection = document.getElementById('shop');
 
 // es6 approach via http://stackoverflow.com/a/41018900/2145103
-// Array
-//   .from(goToShopBtns)
-//   .forEach((btn) => btn.addEventListener('click', smoothScroll));
+Array
+  .from(goToShopBtns)
+  .forEach((btn) => btn.addEventListener('click', smoothScroll));
 //
 // CHOOSING AGAINST THE ABOVE es6 APPROACH BECAUSE ie11
 
 // es5 approach
-console.log('goToShopBtns.length', goToShopBtns.length);
-[]
-  .forEach
-  .call(goToShopBtns,function(e) {
-    e.addEventListener('click',smoothScroll,false)
-  });
-  
+if (!Array.from) {
+  []
+    .forEach
+    .call(goToShopBtns,function(e) {
+      e.addEventListener('click',smoothScroll,false)
+    });
+}
+
 
 // via http://thenewcode.com/507/Smooth-Page-Scroll-in-5-Lines-of-JavaScript
 function smoothScroll(e) {
