@@ -9,7 +9,6 @@
         <nav class="flex flex-center">
           <div class="flex justify-between align-items-center">
             <div class="sm-hide">
-              <!-- this gets replaced with AZ logo when ready -->
               <a href="/">
                 <img src="/images/AZ_logo_soft_black_on_trans_bg.png" alt="Azellaz logo" title="Azellaz logo" class="btn height2r">
               </a>
@@ -18,10 +17,10 @@
               <a href="/index.html#shop" class="btn regular btn-outline h5 sm-h4 light-black">shop</a>
             </div>
             <div class="pointer">
-              <a href="/about" class="btn regular h5 sm-h4 light-black hover-underline">about</a>
+              <a href="/about" class="btn regular h5 sm-h4 light-black hover-underline{% if page.url == '/about/' %} underline cursor-default{% endif %}">about</a>
             </div>
             <div class="pointer">
-              <a href="/contact" class="btn regular h5 sm-h4 light-black hover-underline">contact</a>
+              <a href="/contact" class="btn regular h5 sm-h4 light-black hover-underline{% if page.url == '/contact/' %} underline cursor-default{% endif %}">contact</a>
             </div>
           </div>
         </nav>
