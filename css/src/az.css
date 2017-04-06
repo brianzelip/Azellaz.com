@@ -358,6 +358,10 @@ body, .h0, h1, h2, h3, h4, h5, h6 {
   .sm-mb1 { margin-bottom: .5rem; }
   .sm-ml3 { margin-left: 2rem; }
   .sm-mt4 { margin-top: 4rem; }
+  .sm-mx-auto {
+    margin-right: auto;
+    margin-left: auto;
+  }
   .sm-right-align { text-align: right; }
   .sm-left-align { text-align: left; }
   .sm-flex { display:flex;}
