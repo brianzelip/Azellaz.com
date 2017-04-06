@@ -94,17 +94,18 @@
   const largeImage = document.getElementById('large-image-view');
   const thumbnails = document.querySelectorAll('.thumb');
 
-  Array
-    .from(thumbnails)
-    .forEach((thumbnail) => thumbnail.addEventListener('click', showLargeImage));
 
-  if (!Array.from) {
-    []
-      .forEach
-      .call(thumbnails,function(e) {
-        e.addEventListener('click',showLargeImage,false)
-      });
-  }
+// es6 way that is not being used
+  // Array
+  //   .from(thumbnails)
+  //   .forEach((thumbnail) => thumbnail.addEventListener('click', showLargeImage));
+
+// es5 way because ie 11
+  []
+    .forEach
+    .call(thumbnails,function(thumbnail) {
+      thumbnail.addEventListener('click', showLargeImage, false)
+    });
 
   function showLargeImage(e) {
     largeImage.src = this.src;
