@@ -5,44 +5,44 @@
       <img id="large-image-view" src="/images/launch-photos-edited-imageOptimized/{{ product.imgFront }}" class="mbn1" alt="Front view of the {{ product.name }} bag by Azellaz.com" title="{{ product.name }} front"/>
     </div>
 
-    <div class="flex flex-row py2 mxn1 sm-order2">
+    <div class="py2 mxn1 sm-order2">
       {% if product.imgFront != '' %}
-      <div class="flex-auto product-thumbs ml1 mr1">
+      <div class="col col-3 product-thumbs px1">
         <img class="thumb border pointer border-box" src="/images/launch-photos-edited-imageOptimized/{{ product.imgFront }}" alt="Front view of the {{ product.name }} bag by Azellaz.com" title="{{ product.name }} front"/>
       </div>
       {% endif %}
       {% if product.imgBack != '' %}
-      <div class="flex-auto product-thumbs ml1 mr1">
+      <div class="col col-3 product-thumbs px1">
         <img class="thumb border pointer border-box" src="/images/launch-photos-edited-imageOptimized/{{ product.imgBack }}" alt="Back view of the {{ product.name }} bag by Azellaz.com" title="{{ product.name }} back"/>
       </div>
       {% endif %}
       {% if product.imgSide != '' %}
-      <div class="flex-auto product-thumbs ml1 mr1">
+      <div class="col col-3 product-thumbs px1">
         <img class="thumb border pointer border-box" src="/images/launch-photos-edited-imageOptimized/{{ product.imgSide }}" alt="Side view of the {{ product.name }} bag by Azellaz.com" title="{{ product.name }} side"/>
       </div>
       {% endif %}
       {% if product.imgInside != '' %}
-      <div class="flex-auto product-thumbs ml1 mr1">
+      <div class="col col-3 product-thumbs px1">
         <img class="thumb border pointer border-box" src="/images/launch-photos-edited-imageOptimized/{{ product.imgInside }}" alt="Inside view of the {{ product.name }} bag by Azellaz.com" title="{{ product.name }} inside"/>
       </div>
       {% endif %}
       {% if product.imgFront == '' %}
-      <div class="flex-auto product-thumbs ml1 mr1">
+      <div class="col col-3 product-thumbs px1">
         <img class="border-box" src="/images/blank_thumb_2200x2600.png" alt="transparent image" title="small transparent image"/>
       </div>
       {% endif %}
       {% if product.imgBack == '' %}
-      <div class="flex-auto product-thumbs ml1 mr1">
+      <div class="col col-3 product-thumbs px1">
         <img class="border-box" src="/images/blank_thumb_2200x2600.png" alt="transparent image" title="small transparent image"/>
       </div>
       {% endif %}
       {% if product.imgSide == '' %}
-      <div class="flex-auto product-thumbs ml1 mr1">
+      <div class="col col-3 product-thumbs px1">
         <img class="border-box" src="/images/blank_thumb_2200x2600.png" alt="transparent image" title="small transparent image"/>
       </div>
       {% endif %}
       {% if product.imgInside == '' %}
-      <div class="flex-auto product-thumbs ml1 mr1">
+      <div class="col col-3 product-thumbs px1">
         <img class="border-box" src="/images/blank_thumb_2200x2600.png" alt="transparent image" title="small transparent image"/>
       </div>
       {% endif %}
