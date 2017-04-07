@@ -1,0 +1,42 @@
+<div class="py2 mxn1 table">
+  {% if product.imgFront != '' %}
+  <div class="table-cell col-3 px1 product-thumbs">
+    <img class="thumb border pointer border-box" src="/images/launch-photos-edited-imageOptimized/{{ product.imgFront }}" alt="Front view of the {{ product.name }} bag by Azellaz.com" title="{{ product.name }} front"/>
+  </div>
+  {% endif %}
+  {% if product.imgBack != '' %}
+  <div class="table-cell col-3 px1 product-thumbs">
+    <img class="thumb border pointer border-box" src="/images/launch-photos-edited-imageOptimized/{{ product.imgBack }}" alt="Back view of the {{ product.name }} bag by Azellaz.com" title="{{ product.name }} back"/>
+  </div>
+  {% endif %}
+  {% if product.imgSide != '' %}
+  <div class="table-cell col-3 px1 product-thumbs">
+    <img class="thumb border pointer border-box" src="/images/launch-photos-edited-imageOptimized/{{ product.imgSide }}" alt="Side view of the {{ product.name }} bag by Azellaz.com" title="{{ product.name }} side"/>
+  </div>
+  {% endif %}
+  {% if product.imgInside != '' %}
+  <div class="table-cell col-3 px1 product-thumbs">
+    <img class="thumb border pointer border-box" src="/images/launch-photos-edited-imageOptimized/{{ product.imgInside }}" alt="Inside view of the {{ product.name }} bag by Azellaz.com" title="{{ product.name }} inside"/>
+  </div>
+  {% endif %}
+  {% if product.imgFront == '' %}
+  <div class="table-cell col-3 px1 product-thumbs">
+    <img class="border-box" src="/images/blank_thumb_2200x2600.png" alt="transparent image" title="small transparent image"/>
+  </div>
+  {% endif %}
+  {% if product.imgBack == '' %}
+  <div class="table-cell col-3 px1 product-thumbs">
+    <img class="border-box" src="/images/blank_thumb_2200x2600.png" alt="transparent image" title="small transparent image"/>
+  </div>
+  {% endif %}
+  {% if product.imgSide == '' %}
+  <div class="table-cell col-3 px1 product-thumbs">
+    <img class="border-box" src="/images/blank_thumb_2200x2600.png" alt="transparent image" title="small transparent image"/>
+  </div>
+  {% endif %}
+  {% if product.imgInside == '' %}
+  <div class="table-cell col-3 px1 product-thumbs">
+    <img class="border-box" src="/images/blank_thumb_2200x2600.png" alt="transparent image" title="small transparent image"/>
+  </div>
+  {% endif %}
+</div>

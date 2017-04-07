@@ -1,51 +1,16 @@
-<div class="vh100 container mb1 md-mb0"><!-- flex flex-column md-flex-row -->
+<div class="vh100 container mb1 md-mb0">
 
-  <div class="col md-col-7 p2"> <!-- flex flex-column -->
-    <div><!--  class="order1" -->
+  <div class="col md-col-7 p2">
+    <div class="sm-hide"><!-- have to double up this component because ie's lack of flexbox column support -->
+      {% include product-thumbnails.html %}
+    </div>
+
+    <div>
       <img id="large-image-view" src="/images/launch-photos-edited-imageOptimized/{{ product.imgFront }}" class="mbn1" alt="Front view of the {{ product.name }} bag by Azellaz.com" title="{{ product.name }} front"/>
     </div>
 
-    <div class="py2 mxn1 sm-order2">
-      {% if product.imgFront != '' %}
-      <div class="col col-3 product-thumbs px1">
-        <img class="thumb border pointer border-box" src="/images/launch-photos-edited-imageOptimized/{{ product.imgFront }}" alt="Front view of the {{ product.name }} bag by Azellaz.com" title="{{ product.name }} front"/>
-      </div>
-      {% endif %}
-      {% if product.imgBack != '' %}
-      <div class="col col-3 product-thumbs px1">
-        <img class="thumb border pointer border-box" src="/images/launch-photos-edited-imageOptimized/{{ product.imgBack }}" alt="Back view of the {{ product.name }} bag by Azellaz.com" title="{{ product.name }} back"/>
-      </div>
-      {% endif %}
-      {% if product.imgSide != '' %}
-      <div class="col col-3 product-thumbs px1">
-        <img class="thumb border pointer border-box" src="/images/launch-photos-edited-imageOptimized/{{ product.imgSide }}" alt="Side view of the {{ product.name }} bag by Azellaz.com" title="{{ product.name }} side"/>
-      </div>
-      {% endif %}
-      {% if product.imgInside != '' %}
-      <div class="col col-3 product-thumbs px1">
-        <img class="thumb border pointer border-box" src="/images/launch-photos-edited-imageOptimized/{{ product.imgInside }}" alt="Inside view of the {{ product.name }} bag by Azellaz.com" title="{{ product.name }} inside"/>
-      </div>
-      {% endif %}
-      {% if product.imgFront == '' %}
-      <div class="col col-3 product-thumbs px1">
-        <img class="border-box" src="/images/blank_thumb_2200x2600.png" alt="transparent image" title="small transparent image"/>
-      </div>
-      {% endif %}
-      {% if product.imgBack == '' %}
-      <div class="col col-3 product-thumbs px1">
-        <img class="border-box" src="/images/blank_thumb_2200x2600.png" alt="transparent image" title="small transparent image"/>
-      </div>
-      {% endif %}
-      {% if product.imgSide == '' %}
-      <div class="col col-3 product-thumbs px1">
-        <img class="border-box" src="/images/blank_thumb_2200x2600.png" alt="transparent image" title="small transparent image"/>
-      </div>
-      {% endif %}
-      {% if product.imgInside == '' %}
-      <div class="col col-3 product-thumbs px1">
-        <img class="border-box" src="/images/blank_thumb_2200x2600.png" alt="transparent image" title="small transparent image"/>
-      </div>
-      {% endif %}
+    <div class="sm-show"><!-- have to double up this component because ie's lack of flexbox column support -->
+      {% include product-thumbnails.html %}
     </div>
   </div>
 
