@@ -7,5 +7,6 @@ npm start
 
 ```
 
-Content &copy; Azellaz.com
-Website &copy; Brian Zelip via [MIT](LICENSE)
+Content &copy; [Azellaz.com](https://www.azellaz.com)
+
+Web app &copy; [Brian Zelip](http://zelip.me) via [MIT](LICENSE)
