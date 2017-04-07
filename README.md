@@ -1,4 +1,4 @@
-# Azellaz.com
+# [Azellaz.com](https://www.azellaz.com)
 
 ```zsh
 # dev mode (jekyll and node)
