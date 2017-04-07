@@ -9,12 +9,11 @@ const shopSection = document.getElementById('shop');
 //
 // CHOOSING AGAINST THE ABOVE es6 APPROACH BECAUSE ie11
 
-// es5 approach via http://stackoverflow.com/a/14626297/2145103
-console.log('goToShopBtns.length', goToShopBtns.length);
+// es5 approach because ie11 via http://stackoverflow.com/a/14626297/2145103
 []
   .forEach
   .call(goToShopBtns,function(btn) {
-    btn.addEventListener('click',smoothScroll,false)
+    btn.addEventListener('click', smoothScroll, false)
   });
 
 

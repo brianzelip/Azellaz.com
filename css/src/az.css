@@ -59,7 +59,11 @@ body, .h0, h1, h2, h3, h4, h5, h6 {
   sans-serif;
 }
 
-.container { max-width: 76em; }
+.container {
+  max-width: 76em;
+  margin-right: auto;
+  margin-left: auto;
+}
 
 .fullScreenPic {
   position: relative;
