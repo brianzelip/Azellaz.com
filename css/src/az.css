@@ -529,10 +529,10 @@ Important: using a flex value of something like 1 0 0px can still be a problem b
   flex-shrink: 0; /* 2 */
 } /* IS THIS HACK NECESSARY FOR MY CODE? MAYBE TRY USING THE STYLES BELOW TOO? */
 
-/*.FlexItem img {
+.ie-FlexItem img {
   height: auto;
   width: 100%;
-}*/
+}
 
 /* 6. The default flex value has changed */
 /* If you have to support IE 10, the best solution is to always set an explicit flex-shrink value on all of your flex items, ... */
