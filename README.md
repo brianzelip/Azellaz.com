@@ -1,12 +1,11 @@
 # [Azellaz.com](https://www.azellaz.com)
 
 ```zsh
-# dev mode (jekyll and node)
+# for local development (requires jekyll and node)
 
 npm start
-
 ```
 
-Content &copy; [Abbie Zelip](https://www.azellaz.com)
+Content &copy; 2017 [Abbie Zelip](https://www.azellaz.com)
 
-Web app &copy; [Brian Zelip](http://zelip.me) via [MIT](LICENSE)
+Web app &copy; 2017 [Brian Zelip](http://zelip.me) via [MIT](LICENSE)
