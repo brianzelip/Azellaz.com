@@ -57,7 +57,7 @@ body, .h0, h1, h2, h3, h4, h5, h6 {
   'Droid Sans',
   'Helvetica Neue',
   sans-serif;
-}
+}/*mods*/
 
 .container {
   max-width: 76em;
@@ -90,11 +90,11 @@ body, .h0, h1, h2, h3, h4, h5, h6 {
 
 .serif { font-family: Athelas, Georgia, serif; }/*mods*/
 
-.border-red { border-color: #FF4136; }
-.border-blue { border-color: #0074D9 }
-.border-black { border-color: #000 }
-.hover-underline:hover { text-decoration: underline; }
-.hover-no-underline:hover { text-decoration: none; }
+.border-red { border-color: #FF4136; }/*mods*/
+.border-blue { border-color: #0074D9 }/*mods*/
+.border-black { border-color: #000 }/*mods*/
+.hover-underline:hover { text-decoration: underline; }/*mods*/
+.hover-no-underline:hover { text-decoration: none; }/*mods*/
 
 .fw200 { font-weight: 200; } /*mods*/
 .fw400 { font-weight: 400; } /*mods*/
@@ -142,13 +142,13 @@ body, .h0, h1, h2, h3, h4, h5, h6 {
   color: #fff;
   background-color: rgb(103,151,171);
   border-radius: 3px;
-}
+}/*mods*/
 
 .btn-white {
   color: rgb(103,151,171);
   background-color: #fff;
   border-radius: 3px;
-}
+}/*mods*/
 
 .justify-start { justify-content: flex-start; }/*mods*/
 .justify-center { justify-content: center; }/*mods*/
@@ -167,13 +167,13 @@ body, .h0, h1, h2, h3, h4, h5, h6 {
 
 .grow { flex-grow: 1; }/*mods*/
 
-.bagBlue { color: rgb(146,190,209); }
+.bagBlue { color: rgb(146,190,209); }/*mods*/
 
-.bagBlue2 { color: rgb(80,121,140); }
+.bagBlue2 { color: rgb(80,121,140); }/*mods*/
 
-.bagBlue3 { color: rgb(103,151,171); }
+.bagBlue3 { color: rgb(103,151,171); }/*mods*/
 
-.navy { color: rgb(36, 56, 83); }
+.navy { color: rgb(36, 56, 83); }/*mods*/
 
 .h0 { font-size: 2.5rem; }/*mods*/
 .h00 { font-size: 2.25rem; }/*mods*/
@@ -205,13 +205,13 @@ body, .h0, h1, h2, h3, h4, h5, h6 {
 .bottom-50per { bottom: 50%; }
 .bottom-45per { bottom: 45%; }
 
-.bg-gray { background-color: rgb(227, 227, 227); }
-.border-gray { border-color: rgb(227, 227, 227); }
-.border-black { border-color: #111; }
-.border-silver { border-color: #ddd; }
-.border-dark-gray { border-color: #aaa; }
-.dark-gray { color: #aaa; }
-.light-black { color: #3a3a3a; }
+.bg-gray { background-color: rgb(227, 227, 227); }/*mods*/
+.border-gray { border-color: rgb(227, 227, 227); }/*mods*/
+.border-black { border-color: #111; }/*mods*/
+.border-silver { border-color: #ddd; }/*mods*/
+.border-dark-gray { border-color: #aaa; }/*mods*/
+.dark-gray { color: #aaa; }/*mods*/
+.light-black { color: #3a3a3a; }/*mods*/
 
 .border-thin { border-width: .5rem; }
 .border-thick { border-width: 1rem; }
@@ -229,8 +229,8 @@ body, .h0, h1, h2, h3, h4, h5, h6 {
 .is-active:hover,
 .is-active:focus {
   box-shadow: inset 0 0 0 20rem rgba(0,0,0,.125),inset 0 3px 4px 0 rgba(0,0,0,.25),0 0 1px rgba(0,0,0,.125);
-}
-.is-active:hover { cursor: default; }
+}/*mods*/
+.is-active:hover { cursor: default; }/*mods*/
 
 .pb1 { padding-bottom: .5rem; }/*mods*/
 .pt1 { padding-top: .5rem; }/*mods*/
@@ -244,9 +244,9 @@ body, .h0, h1, h2, h3, h4, h5, h6 {
   padding-bottom: .25rem;
 }/*mods*/
 
-.transparent { color: transparent; }
+.transparent { color: transparent; }/*mods*/
 
-.border-2px { border-width: 2px; }
+.border-2px { border-width: 2px; }/*mods*/
 
 .lazyload,
 .lazyloading {
@@ -282,25 +282,25 @@ body, .h0, h1, h2, h3, h4, h5, h6 {
 
 .btn-hero {
   line-height: 1.125em;
-}
+}/*mods*/
 @media (min-height: 30em) {
   .btn-hero { margin-bottom: 3rem; }
-}
+}/*mods*/
 @media (min-height: 40em) {
   .btn-hero { margin-bottom: 5rem; }
-}
+}/*mods*/
 @media (min-width: 40em) and (min-height: 36.75em) {
   .btn-hero { margin-bottom: 10rem; }
-}
+}/*mods*/
 @media (min-width: 40em) and (min-height: 50em) {
   .btn-hero { margin-bottom: 13rem; }
-}
+}/*mods*/
 @media (min-width: 40em) and (min-height: 68em) {
   .btn-hero {
     margin-top: 10rem;
     margin-bottom: 20rem;
   }
-}
+}/*mods*/
 
 @media (max-width: 30em) {
   .btn-small {
@@ -309,21 +309,21 @@ body, .h0, h1, h2, h3, h4, h5, h6 {
     padding-right: .5rem;
     padding-left: .5rem;
   }
-}
+}/*mods*/
 
 @media (min-width: 40em) and (min-height: 36.75em) {
   .smxsm-py4 {
     padding-top: 4rem;
     padding-bottom: 4rem;
   }
-}
+}/*mods*/
 
-.product-thumbs { vertical-align: bottom; }
+.v-align-bottom { vertical-align: bottom; }/*mods*/
 @media (min-width: 40em) {
-  .product-thumbs { vertical-align: top; }
-}
+  .sm-v-align-top { vertical-align: top; }
+}/*mods*/
 
-.thumb-border { border: 3px solid rgb(36, 56, 83); }
+.thumb-border { border: 3px solid rgb(36, 56, 83); }/*mods*/
 
 @media (min-width:40em) {
   .sm-width-auto { width: auto; }
