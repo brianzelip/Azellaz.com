@@ -1,0 +1,78 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="stylesheet" href="/css/dist/az.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" data-api-key="{{ site.live_api_key }}" id="snipcart"></script>
+    <link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" rel="stylesheet" type="text/css" />
+    {% if page.layout == 'product' %}
+    <title>{{ product.name }} by Azellaz</title>
+    <meta name="description" content="">
+    <meta name="author" content="Abbie Zelip">
+    <meta name="author" content="Brian Zelip">
+    <meta name="keywords" content="">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@AbiSackmann">
+    <meta name="twitter:title" content="{{ product.name }} by Azellaz">
+    <meta name="twitter:image:alt" content="{{ product.name }} by Azellaz. {{ product.descriptionShort }}">
+    <meta name="twitter:description" content="{{ product.descriptionShort }}">
+    <meta name="twitter:image" content="{{ site.base_url }}{{ site.images_dir }}{{ product.imgFront }}">
+    <meta property="og:url" content="{{ site.base_url }}{{ product.slug }}/" />
+    <meta property="og:type" content="product" />
+    <meta property="og:title" content="{{ product.name }} by Azellaz" />
+    <meta property="og:description" content="{{ product.descriptionShort }}" />
+    <meta property="og:image" content="{{ site.base_url }}{{ site.images_dir }}{{ product.imgFront }}" />
+    {% elsif page.url == '/'  %}
+    <title>Azellaz</title>
+    <meta name="description" content="">
+    <meta name="author" content="Abbie Zelip">
+    <meta name="author" content="Brian Zelip">
+    <meta name="keywords" content="">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@AbiSackmann">
+    <meta name="twitter:title" content="Azellaz">
+    <meta name="twitter:image:alt" content="{{ site.tagline }}">
+    <meta name="twitter:description" content="{{ site.tagline }}">
+    <meta name="twitter:image" content="{{ site.base_url }}{{ site.images_dir }}IMG_0535.JPG">
+    <meta property="og:url" content="{{ site.base_url }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Azellaz" />
+    <meta property="og:description" content="{{ site.tagline }}" />
+    <meta property="og:image" content="{{ site.base_url }}{{ site.images_dir }}IMG_0535.JPG" />
+    {% elsif page.url == '/about/' %}
+    <title>Azellaz</title>
+    <meta name="description" content="">
+    <meta name="author" content="Abbie Zelip">
+    <meta name="author" content="Brian Zelip">
+    <meta name="keywords" content="">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@AbiSackmann">
+    <meta name="twitter:title" content="About Azellaz">
+    <meta name="twitter:image:alt" content="Azellaz workspace">
+    <meta name="twitter:description" content="About Azellaz.com, including tips on caring for your bag made by Azellaz.">
+    <meta name="twitter:image" content="{{ site.base_url }}{{ site.images_dir }}workspace_3.JPG">
+    <meta property="og:url" content="{{ site.base_url }}about/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="About Azellaz" />
+    <meta property="og:description" content="About Azellaz.com, including tips on caring for your bag made by Azellaz." />
+    <meta property="og:image" content="{{ site.base_url }}{{ site.images_dir }}workspace_3.JPG" />
+    {% elsif page.url == '/contact/' %}
+    <title>Azellaz</title>
+    <meta name="description" content="">
+    <meta name="author" content="Abbie Zelip">
+    <meta name="author" content="Brian Zelip">
+    <meta name="keywords" content="">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@AbiSackmann">
+    <meta name="twitter:title" content="Contact Azellaz">
+    <meta name="twitter:image:alt" content="{{ site.tagline }}">
+    <meta name="twitter:description" content="Get in touch with Azellaz.com.">
+    <meta name="twitter:image" content="{{ site.base_url }}{{ site.images_dir }}IMG_0535.JPG">
+    <meta property="og:url" content="{{ site.base_url }}contact/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Contact Azellaz" />
+    <meta property="og:description" content="Get in touch with Azellaz.com." />
+    <meta property="og:image" content="{{ site.base_url }}{{ site.images_dir }}IMG_0535.JPG" />
+    {% endif %}
+  </head>

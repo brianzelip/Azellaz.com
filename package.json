@@ -5,7 +5,7 @@
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "css": "postcss -u autoprefixer cssnano -d css/dist/ css/src/*.css --no-map --watch",
+    "css": "postcss -u postcss-import autoprefixer cssnano -d css/dist/ css/src/az.css --no-map --watch",
     "start": "npm run css & jekyll serve"
   },
   "repository": {
@@ -29,6 +29,9 @@
     "babel-cli": "^6.24.0",
     "cssnano": "^3.10.0",
     "postcss": "^5.2.16",
-    "postcss-cli": "^3.0.0"
+    "postcss-cli": "^3.0.0",
+    "postcss-custom-media": "^5.0.1",
+    "postcss-custom-properties": "^5.0.2",
+    "postcss-import": "^9.1.0"
   }
 }

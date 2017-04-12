@@ -17,7 +17,7 @@
               <a {% if page.url== '/' %}href="#shop" id="goToShop"{% else %}href="/index.html#shop"{% endif %} class="{% if page.url== '/' %}goToShop {% endif %}btn regular btn-outline h5 sm-h4{% if page.url == '/' %} white{% else %} light-black{% endif %}">shop</a>
             </div>
             <div class="pointer">
-              <a href="/about" class="btn regular h5 sm-h4 hover-underline{% if page.url == '/' %} white{% else %} light-black{% endif %}">about</a>
+              <a href="/about" class="btn regular h5 sm-h4 hover-underline{% if page.url == '/' %} white{% else %} light-black{% endif %}{% if page.url == '/about/' %} underline cursor-default{% endif %}">about</a>
             </div>
             <div class="pointer">
               <a href="/contact" class="btn regular h5 sm-h4 hover-underline{% if page.url == '/' %} white{% else %} light-black{% endif %}{% if page.url == '/contact/' %} underline cursor-default{% endif %}">contact</a>
@@ -26,3 +26,8 @@
         </nav>
 
       </header>
+
+
+    <script>
+      Snipcart.api.configure('show_continue_shopping', true);
+    </script>
