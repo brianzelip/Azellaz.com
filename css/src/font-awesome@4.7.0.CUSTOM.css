@@ -63,5 +63,6 @@
 /*removed rules*/
 .fa-etsy:before { content: "\f2d7"; }
 .fa-github:before { content: "\f09b"; }
-.fa-facebook-official:before { content: "\f230"; }
+/*.fa-facebook-official:before { content: "\f230"; }*/
 .fa-instagram:before { content: "\f16d"; }
+.fa-shopping-cart:before { content: "\f07a"; }

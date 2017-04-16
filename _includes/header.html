@@ -13,14 +13,17 @@
                 <img src="/images/Azellaz_logo_short_{% if page.url == '/' %}white{% else %}soft_black{% endif %}_by_Thom_01.svg" alt="Azellaz logo" title="Azellaz logo" class="btn height2r">
               </a>
             </div>
+            <div id="cart" class="snipcart-summary pointer mr2 hide">
+              <a href="#" class="snipcart-checkout btn regular btn-small h6 sm-h4 hover-underline{% if page.url == '/' %} white{% else %} light-black{% endif %}"><i class="fa fa-shopping-cart fa-h2"></i></a>
+            </div>
             <div class="pointer sm-mr2">
-              <a {% if page.url== '/' %}href="#shop" id="goToShop"{% else %}href="/index.html#shop"{% endif %} class="{% if page.url== '/' %}goToShop {% endif %}btn regular btn-outline h5 sm-h4{% if page.url == '/' %} white{% else %} light-black{% endif %}">shop</a>
+              <a {% if page.url== '/' %}href="#shop" id="goToShop"{% else %}href="/index.html#shop"{% endif %} class="{% if page.url== '/' %}goToShop {% endif %}btn regular btn-outline btn-small h6 sm-h4{% if page.url == '/' %} white{% else %} light-black{% endif %}">shop</a>
             </div>
             <div class="pointer">
-              <a href="/about" class="btn regular h5 sm-h4 hover-underline{% if page.url == '/' %} white{% else %} light-black{% endif %}{% if page.url == '/about/' %} underline cursor-default{% endif %}">about</a>
+              <a href="/about" class="btn regular btn-small h6 sm-h4 hover-underline{% if page.url == '/' %} white{% else %} light-black{% endif %}{% if page.url == '/about/' %} underline cursor-default{% endif %}">about</a>
             </div>
             <div class="pointer">
-              <a href="/contact" class="btn regular h5 sm-h4 hover-underline{% if page.url == '/' %} white{% else %} light-black{% endif %}{% if page.url == '/contact/' %} underline cursor-default{% endif %}">contact</a>
+              <a href="/contact" class="btn regular btn-small h6 sm-h4 hover-underline{% if page.url == '/' %} white{% else %} light-black{% endif %}{% if page.url == '/contact/' %} underline cursor-default{% endif %}">contact</a>
             </div>
           </div>
         </nav>
@@ -29,5 +32,41 @@
 
 
     <script>
+      const cartElem = document.getElementById('cart');
+
+      let showCart = function() {
+        cartElem.classList.remove("hide");
+      };
+
+      let hideCart = function() {
+        cartElem.classList.add("hide");
+      };
+
+      Snipcart.subscribe('cart.ready', function() {
+        var count = Snipcart.api.items.count();
+        console.log('CART READY!!! The number of items in the cart is: ', count);
+        if (count > 0) {
+          showCart();
+        };
+
+        Snipcart.subscribe('item.added', function (item) {
+          console.log('An item was just added to the cart! The number of items in the user\'s cart is: ', Snipcart.api.items.count());
+          if (Snipcart.api.items.count() > 0) {
+            showCart();
+          } else {
+            hideCart();
+          };
+        });
+
+        Snipcart.subscribe('item.removed', function (item) {
+          console.log('An item was just removed from the cart! The number of items in the user\'s cart is: ', Snipcart.api.items.count());
+          if (Snipcart.api.items.count() == 0) {
+            hideCart();
+          } else {
+            showCart();
+          };
+        });
+      });
+
       Snipcart.api.configure('show_continue_shopping', true);
     </script>
