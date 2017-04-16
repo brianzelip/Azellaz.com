@@ -5,7 +5,6 @@
 .justify-end { justify-content: flex-end; }
 .align-center { align-content: center; }
 .align-items-center { align-items: center; }
-.align-start { align-items: flex-start; }
 .align-items-start { align-items: flex-start; }
 .align-items-end { align-items: flex-end; }
 .grow { flex-grow: 1; }
