@@ -1,6 +1,6 @@
 <div class="vh100 container mb1 md-mb0">
 
-  <div class="col md-col-7 p2">
+  <div class="col col-12 md-col-7 p2">
     <div class="sm-hide"><!-- have to double up this component because ie's lack of flexbox column support -->
       {% include product-thumbnails.html %}
     </div>
@@ -14,7 +14,7 @@
     </div>
   </div>
 
-  <div class="col md-col-5 p2">
+  <div class="col col-12 md-col-5 p2">
     <h1 class="m0 h2 serif light-black">{{ product.name }}</h1>
     <p class="h2 serif light-black">${{ product.price }}</p>
     <p class="serif light-black">{{ product.descriptionLong }}</p>
