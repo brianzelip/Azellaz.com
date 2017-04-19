@@ -99,8 +99,6 @@ body, .h0, h1, h2, h3, h4, h5, h6 {
   background-position: bottom;
 }
 
-.logoImage { background-image: url(/images/Azellaz_logo.png); }
-
 .background-center { background-position: center; }
 
 .mainBag { background-image: url(/images/launch-photos-edited-imageOptimized/main_bag.jpg); }
