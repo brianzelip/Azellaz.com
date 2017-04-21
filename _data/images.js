@@ -1,4 +1,4 @@
-const rawImgNames = [
+var rawImgNames = [
   "IMG_0535.JPG",
   "IMG_0562.JPG",
   "IMG_0574.JPG",
@@ -66,13 +66,6 @@ const rawImgNames = [
   "workspace_2.jpeg",
   "workspace_3.JPG"
 ];
-
-function changeNames() {
-  var newNames = rawImgNames.map((name) => {
-    let nameArr = name.split('.');
-    name.semImgFront = ;
-  })
-}
 
 var products = [
  {
@@ -436,4 +429,45 @@ var products = [
    "AZ notes for BZ": "inside = phone etc coming out"
  }
 ]
+
+function changeNames() {
+  for (i=0; i<rawImgNames.length; i++) {
+    for (x=0; x<products.length; x++) {
+      if (rawImgNames[i] == products[x].imgFront) {
+        products[x].semanticImgFront = rawImgNames[i];
+      }
+      else if (rawImgNames[i] == products[x].imgBack) {
+        products[x].semanticImgBack = rawImgNames[i];
+      }
+      else if (rawImgNames[i] == products[x].imgSide) {
+        products[x].semanticImgSide = rawImgNames[i];
+      }
+      else if (rawImgNames[i] == products[x].imgInside) {
+        products[x].semanticImgInside = rawImgNames[i];
+      }
+    }
+  }
+  console.log(products);
+}
+
+// rawImgNames.reduce((name) => {
+//   for (x=0; x<products.length; x++) {
+//     if (name == products[x].imgFront) {
+//       products[x].semanticImgFront = rawImgNames[i];
+//     }
+//     else if (rawImgNames[i] == products[x].imgBack) {
+//       products[x].semanticImgBack = rawImgNames[i];
+//     }
+//     else if (rawImgNames[i] == products[x].imgSide) {
+//       products[x].semanticImgSide = rawImgNames[i];
+//     }
+//     else if (rawImgNames[i] == products[x].imgInside) {
+//       products[x].semanticImgInside = rawImgNames[i];
+//     }
+//   }
+// }, {})
+
+changeNames();
+
+
 console.log('products is a(n) ', typeof(products))
