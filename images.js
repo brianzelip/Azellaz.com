@@ -1,3 +1,7 @@
+/*
+  This file was used to automate the process of updating all raw image  filenames to semantic filenames, as well as updating the relevant code that refers to these images. This file was used to create a desired output; it is preserved here for the sake of provenance.
+*/
+
 const fs = require('fs');
 
 var rawImgNames = [
