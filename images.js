@@ -1,3 +1,5 @@
+const fs = require('fs');
+
 var rawImgNames = [
   "IMG_0535.JPG",
   "IMG_0562.JPG",
@@ -430,44 +432,115 @@ var products = [
  }
 ]
 
-function changeNames() {
-  for (i=0; i<rawImgNames.length; i++) {
+function rawToSemanticMap() {
+  var names = rawImgNames;
+  var nameMap = {};
+
+  for (i=0; i<names.length; i++) {
     for (x=0; x<products.length; x++) {
-      if (rawImgNames[i] == products[x].imgFront) {
-        products[x].semanticImgFront = rawImgNames[i];
+      if (names[i] == products[x].imgFront) {
+        products[x].imgFront = products[x].slug + '-front-by-Azellaz.jpg';
+        nameMap[names[i]] = products[x].slug + '-front-by-Azellaz.jpg';
       }
-      else if (rawImgNames[i] == products[x].imgBack) {
-        products[x].semanticImgBack = rawImgNames[i];
+      else if (names[i] == products[x].imgBack) {
+        products[x].imgBack = products[x].slug + '-back-by-Azellaz.jpg';
+        nameMap[names[i]] = products[x].slug + '-back-by-Azellaz.jpg';
       }
-      else if (rawImgNames[i] == products[x].imgSide) {
-        products[x].semanticImgSide = rawImgNames[i];
+      else if (names[i] == products[x].imgSide) {
+        products[x].imgSide = products[x].slug + '-side-by-Azellaz.jpg';
+        nameMap[names[i]] = products[x].slug + '-side-by-Azellaz.jpg';
       }
-      else if (rawImgNames[i] == products[x].imgInside) {
-        products[x].semanticImgInside = rawImgNames[i];
+      else if (names[i] == products[x].imgInside) {
+        products[x].imgInside = products[x].slug + '-inside-by-Azellaz.jpg';
+        nameMap[names[i]] = products[x].slug + '-inside-by-Azellaz.jpg';
       }
     }
   }
-  console.log(products);
+
+  // console.log('nameMap', nameMap);
+  // return JSON.stringify(nameMap, null, '\t');
+  // // return nameMap;
+
+  // console.log('products', products);
+  return JSON.stringify(products, null, '\t');
 }
 
-// rawImgNames.reduce((name) => {
-//   for (x=0; x<products.length; x++) {
-//     if (name == products[x].imgFront) {
-//       products[x].semanticImgFront = rawImgNames[i];
-//     }
-//     else if (rawImgNames[i] == products[x].imgBack) {
-//       products[x].semanticImgBack = rawImgNames[i];
-//     }
-//     else if (rawImgNames[i] == products[x].imgSide) {
-//       products[x].semanticImgSide = rawImgNames[i];
-//     }
-//     else if (rawImgNames[i] == products[x].imgInside) {
-//       products[x].semanticImgInside = rawImgNames[i];
-//     }
-//   }
-// }, {})
+// rawToSemanticMap();
 
-changeNames();
+// fs.writeFile('imageNameMap.json', rawToSemanticMap(), (err) => {
+//  if (err) throw err;
+//  console.log('It\'s saved!');
+// });
+
+var _getAllFilesFromFolder = function(dir) {
+  var files = [];
+
+  fs.readdirSync(dir).forEach(function(file) {
+    file = dir+'/'+file;
+    var stat = fs.statSync(file);
+
+    if (stat && stat.isDirectory()) {
+        files = files.concat(_getAllFilesFromFolder(file))
+    } else files.push(file);
+  });
+
+  // fs.writeFile('listOfFiles.js', files, (err) => {
+  //  if (err) throw err;
+  //  console.log('It\'s saved!');
+  // });
+  // console.log('typeof files', typeof(files));
+  // return JSON.stringify(files, null, '\t');
+  return files;
+};
+
+// fs.writeFile('listOfFiles.js', _getAllFilesFromFolder(__dirname + "/images/launch-photos-edited-imageOptimized"), (err) => {
+//  if (err) throw err;
+//  console.log('listOfFiles.js was written!');
+// });
 
 
-console.log('products is a(n) ', typeof(products))
+
+function renameFiles(files, map) {
+  const dirPath = '/Users/brianzelip/WebProjects/Azellaz.com/images/launch-photos-edited-imageOptimized/';
+  // let fileNames = files.map((file) => file.substr(dirPath.length));
+  // console.log('fileNames', fileNames);
+
+  var newFiles = [];
+  files.map( (file) => {
+    if ( map[file.substr(dirPath.length)] ) {
+      newFiles.push(file.replace(file.substr(dirPath.length), map[file.substr(dirPath.length)]))
+      fs.rename(file, file.replace(file.substr(dirPath.length), map[file.substr(dirPath.length)]));
+    };
+  } );
+  // console.log('newFiles.length', newFiles.length);
+
+  // fs.writeFile('listOfNewFiles.js', JSON.stringify(newFiles, null, '\t'), (err) => {
+  //  if (err) throw err;
+  //  console.log('listOfNewFiles.js was written!');
+  // });
+
+  // return renamedFiles;
+}
+
+function updateProducts() {
+  fs.writeFile('_data/products.json', rawToSemanticMap() + '\n', (err) => {
+   if (err) throw err;
+   console.log('The new products file has been updated!!');
+  });
+  return;
+}
+
+// 1. Change the raw image filenames to semantic image filenames
+// renameFiles(_getAllFilesFromFolder(__dirname + "/images/launch-photos-edited-imageOptimized"), rawToSemanticMap());
+
+// 2. Overwrite `_data/products.json` file with a new object containing semantic image filenames
+updateProducts();
+
+/*
+  REFERENCES
+    - `fs.writeFile` with callback, https://nodejs.org/api/all.html#all_fs_writefile_file_data_options_callback
+
+    - return an array of all files in a directory, http://stackoverflow.com/a/21459809/2145103
+
+    - JSON.stringify with pretty indentation, https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify
+*/
