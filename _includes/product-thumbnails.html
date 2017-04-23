@@ -1,22 +1,22 @@
 <div class="py1 sm-py2 mxn1 flex align-items-end sm-align-items-start">
   {% if product.imgFront != '' %}
   <div class="col col-3 px1">
-    <img class="border pointer thumb" src="/images/launch-photos-edited-imageOptimized/{{ product.imgFront }}" alt="Front view of the {{ product.name }} bag by Azellaz.com" title="{{ product.name }} front"/>
+    <img class="border pointer thumb" src="/{{ site.product_images_dir }}{{ product.imgFront }}" alt="Front view of the {{ product.name }} bag by Azellaz.com" title="{{ product.name }} front"/>
   </div>
   {% endif %}
   {% if product.imgBack != '' %}
   <div class="col col-3 px1">
-    <img class="border pointer thumb" src="/images/launch-photos-edited-imageOptimized/{{ product.imgBack }}" alt="Back view of the {{ product.name }} bag by Azellaz.com" title="{{ product.name }} back"/>
+    <img class="border pointer thumb" src="/{{ site.product_images_dir }}{{ product.imgBack }}" alt="Back view of the {{ product.name }} bag by Azellaz.com" title="{{ product.name }} back"/>
   </div>
   {% endif %}
   {% if product.imgSide != '' %}
   <div class="col col-3 px1">
-    <img class="border pointer thumb" src="/images/launch-photos-edited-imageOptimized/{{ product.imgSide }}" alt="Side view of the {{ product.name }} bag by Azellaz.com" title="{{ product.name }} side"/>
+    <img class="border pointer thumb" src="/{{ site.product_images_dir }}{{ product.imgSide }}" alt="Side view of the {{ product.name }} bag by Azellaz.com" title="{{ product.name }} side"/>
   </div>
   {% endif %}
   {% if product.imgInside != '' %}
   <div class="col col-3 px1">
-    <img class="border pointer thumb" src="/images/launch-photos-edited-imageOptimized/{{ product.imgInside }}" alt="Inside view of the {{ product.name }} bag by Azellaz.com" title="{{ product.name }} inside"/>
+    <img class="border pointer thumb" src="/{{ site.product_images_dir }}{{ product.imgInside }}" alt="Inside view of the {{ product.name }} bag by Azellaz.com" title="{{ product.name }} inside"/>
   </div>
   {% endif %}
   {% if product.imgFront == '' %}

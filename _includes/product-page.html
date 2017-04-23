@@ -6,7 +6,7 @@
     </div>
 
     <div>
-      <img id="large-image-view" src="/images/launch-photos-edited-imageOptimized/{{ product.imgFront }}" class="mbn1" alt="Front view of the {{ product.name }} bag by Azellaz.com" title="{{ product.name }} front"/>
+      <img id="large-image-view" src="/{{ site.product_images_dir }}{{ product.imgFront }}" class="mbn1" alt="Front view of the {{ product.name }} bag by Azellaz.com" title="{{ product.name }} front"/>
     </div>
 
     <div class="sm-show"><!-- have to double up this component because ie's lack of flexbox column support -->
@@ -57,6 +57,8 @@
 
   function showLargeImage(e) {
     largeImage.src = this.src;
+    largeImage.alt = this.alt;
+    largeImage.title = this.title;
   }
 
 </script>

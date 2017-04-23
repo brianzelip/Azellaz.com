@@ -1,5 +1,7 @@
 /*
-  This file was used to automate the process of updating all raw image  filenames to semantic filenames, as well as updating the relevant code that refers to these images. This file was used to create a desired output; it is preserved here for the sake of provenance.
+  This file was used to automate the process of updating all raw image  filenames to semantic filenames, as well as updating the relevant code that refers to these images. This file was created to use only once in order to create a desired output; it is preserved here for the sake of provenance.
+
+  It was ran from the root directory.
 */
 
 const fs = require('fs');

@@ -17,12 +17,12 @@
     <meta name="twitter:title" content="{{ product.name }} by Azellaz">
     <meta name="twitter:image:alt" content="{{ product.name }} by Azellaz. {{ product.descriptionShort }}">
     <meta name="twitter:description" content="{{ product.descriptionShort }}">
-    <meta name="twitter:image" content="{{ site.base_url }}{{ site.images_dir }}{{ product.imgFront }}">
+    <meta name="twitter:image" content="{{ site.base_url }}{{ site.product_images_dir }}{{ product.imgFront }}">
     <meta property="og:url" content="{{ site.base_url }}{{ product.slug }}/" />
     <meta property="og:type" content="product" />
     <meta property="og:title" content="{{ product.name }} by Azellaz" />
     <meta property="og:description" content="{{ product.descriptionShort }}" />
-    <meta property="og:image" content="{{ site.base_url }}{{ site.images_dir }}{{ product.imgFront }}" />
+    <meta property="og:image" content="{{ site.base_url }}{{ site.product_images_dir }}{{ product.imgFront }}" />
     {% elsif page.url == '/'  %}
     <title>Azellaz</title>
     <meta name="description" content="">
@@ -34,12 +34,12 @@
     <meta name="twitter:title" content="Azellaz">
     <meta name="twitter:image:alt" content="{{ site.tagline }}">
     <meta name="twitter:description" content="{{ site.tagline }}">
-    <meta name="twitter:image" content="{{ site.base_url }}{{ site.images_dir }}IMG_0535.JPG">
+    <meta name="twitter:image" content="{{ site.base_url }}{{ site.product_images_dir }}{{ site.featured_bag_image }}">
     <meta property="og:url" content="{{ site.base_url }}" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Azellaz" />
     <meta property="og:description" content="{{ site.tagline }}" />
-    <meta property="og:image" content="{{ site.base_url }}{{ site.images_dir }}IMG_0535.JPG" />
+    <meta property="og:image" content="{{ site.base_url }}{{ site.product_images_dir }}{{ site.featured_bag_image }}" />
     {% elsif page.url == '/about/' %}
     <title>Azellaz</title>
     <meta name="description" content="">
@@ -51,12 +51,12 @@
     <meta name="twitter:title" content="About Azellaz">
     <meta name="twitter:image:alt" content="Azellaz workspace">
     <meta name="twitter:description" content="About Azellaz.com, including tips on caring for your bag made by Azellaz.">
-    <meta name="twitter:image" content="{{ site.base_url }}{{ site.images_dir }}workspace_3.JPG">
+    <meta name="twitter:image" content="{{ site.base_url }}{{ site.images_dir }}Azellaz-work-bench.jpg">
     <meta property="og:url" content="{{ site.base_url }}about/" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="About Azellaz" />
     <meta property="og:description" content="About Azellaz.com, including tips on caring for your bag made by Azellaz." />
-    <meta property="og:image" content="{{ site.base_url }}{{ site.images_dir }}workspace_3.JPG" />
+    <meta property="og:image" content="{{ site.base_url }}{{ site.images_dir }}Azellaz-work-bench.jpg" />
     {% elsif page.url == '/contact/' %}
     <title>Azellaz</title>
     <meta name="description" content="">
@@ -68,11 +68,11 @@
     <meta name="twitter:title" content="Contact Azellaz">
     <meta name="twitter:image:alt" content="{{ site.tagline }}">
     <meta name="twitter:description" content="Get in touch with Azellaz.com.">
-    <meta name="twitter:image" content="{{ site.base_url }}{{ site.images_dir }}IMG_0535.JPG">
+    <meta name="twitter:image" content="{{ site.base_url }}{{ site.product_images_dir }}{{ site.featured_bag_image }}">
     <meta property="og:url" content="{{ site.base_url }}contact/" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Contact Azellaz" />
     <meta property="og:description" content="Get in touch with Azellaz.com." />
-    <meta property="og:image" content="{{ site.base_url }}{{ site.images_dir }}IMG_0535.JPG" />
+    <meta property="og:image" content="{{ site.base_url }}{{ site.product_images_dir }}{{ site.featured_bag_image }}" />
     {% endif %}
   </head>

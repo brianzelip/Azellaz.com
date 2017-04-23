@@ -8,7 +8,9 @@ test_api_key: NjQyNTJmYzUtZGY3Yy00MzE1LTk5ZGUtMmYwN2ZhZjYxYmQyNjM2MjQyNjk5MDU5MD
 live_api_key: NmJjMmI5YTQtNmNlYy00YzJmLWE0NjUtZDQ0YzE5NWQ3YmYzNjM2MjQyNjk5MDU5MDI2MjE2
 base_url: https://www.azellaz.com/
 bas_url_no_trailing_slash: https://www.azellaz.com
-images_dir: images/launch-photos-edited-imageOptimized/
+images_dir: images/
+product_images_dir: images/products/
+featured_bag_image: indigo-shibori-duffle-front-by-Azellaz.jpg
 etsy: https://www.etsy.com/shop/Azellaz
 instagram: https://www.instagram.com/azellaz/
 github: https://github.com/brianzelip/Azellaz.com
