@@ -17,6 +17,7 @@
 		"imgBack": "indigo-shibori-duffle-back-by-Azellaz.jpg",
 		"imgSide": "indigo-shibori-duffle-side-by-Azellaz.jpg",
 		"imgInside": "",
+    "thumbSmallFront": "thumb-sm-indigo-shibori-duffle-front-by-Azellaz.jpg",
 		"AZ notes for BZ": "all dimension measurements are in inches."
 	},
 	{
@@ -37,6 +38,7 @@
 		"imgBack": "indigo-mountain-medium-tote-back-by-Azellaz.jpg",
 		"imgSide": "indigo-mountain-medium-tote-side-by-Azellaz.jpg",
 		"imgInside": "indigo-mountain-medium-tote-inside-by-Azellaz.jpg",
+    "thumbSmallFront": "thumb-sm-indigo-mountain-medium-tote-front-by-Azellaz.jpg",
 		"AZ notes for BZ": "inside image same as Blue Medium Tote"
 	},
 	{
@@ -57,6 +59,7 @@
 		"imgBack": "cerulean-medium-tote-back-by-Azellaz.jpg",
 		"imgSide": "cerulean-medium-tote-side-by-Azellaz.jpg",
 		"imgInside": "cerulean-medium-tote-inside-by-Azellaz.jpg",
+    "thumbSmallFront": "thumb-sm-cerulean-medium-tote-front-by-Azellaz.jpg",
 		"AZ notes for BZ": "inside image same as Indigo Mountain Medium Tote"
 	},
 	{
@@ -77,6 +80,7 @@
 		"imgBack": "",
 		"imgSide": "cerulean-small-tote-side-by-Azellaz.jpg",
 		"imgInside": "",
+    "thumbSmallFront": "thumb-sm-cerulean-small-tote-front-by-Azellaz.jpg",
 		"AZ notes for BZ": ""
 	},
 	{
@@ -97,6 +101,7 @@
 		"imgBack": "",
 		"imgSide": "indigo-shibori-small-tote-side-by-Azellaz.jpg",
 		"imgInside": "",
+    "thumbSmallFront": "thumb-sm-indigo-shibori-small-tote-front-by-Azellaz.jpg",
 		"AZ notes for BZ": ""
 	},
 	{
@@ -117,6 +122,7 @@
 		"imgBack": "indigo-mountain-crossbody-with-leather-back-by-Azellaz.jpg",
 		"imgSide": "indigo-mountain-crossbody-with-leather-side-by-Azellaz.jpg",
 		"imgInside": "indigo-mountain-crossbody-with-leather-inside-by-Azellaz.jpg",
+    "thumbSmallFront": "thumb-sm-indigo-mountain-crossbody-with-leather-front-by-Azellaz.jpg",
 		"AZ notes for BZ": "single inside image for all crossbodies"
 	},
 	{
@@ -137,6 +143,7 @@
 		"imgBack": "indigo-prairie-crossbody-with-leather-back-by-Azellaz.jpg",
 		"imgSide": "indigo-prairie-crossbody-with-leather-side-by-Azellaz.jpg",
 		"imgInside": "indigo-prairie-crossbody-with-leather-inside-by-Azellaz.jpg",
+    "thumbSmallFront": "thumb-sm-indigo-prairie-crossbody-with-leather-front-by-Azellaz.jpg",
 		"AZ notes for BZ": "single inside image for all crossbodies"
 	},
 	{
@@ -157,6 +164,7 @@
 		"imgBack": "indigo-shibori-crossbody-with-leather-back-by-Azellaz.jpg",
 		"imgSide": "indigo-shibori-crossbody-with-leather-side-by-Azellaz.jpg",
 		"imgInside": "indigo-shibori-crossbody-with-leather-inside-by-Azellaz.jpg",
+    "thumbSmallFront": "thumb-sm-indigo-shibori-crossbody-with-leather-front-by-Azellaz.jpg",
 		"AZ notes for BZ": "single inside image for all crossbodies"
 	},
 	{
@@ -177,6 +185,7 @@
 		"imgBack": "cerulean-crossbody-with-leather-back-by-Azellaz.jpg",
 		"imgSide": "cerulean-crossbody-with-leather-side-by-Azellaz.jpg",
 		"imgInside": "cerulean-crossbody-with-leather-inside-by-Azellaz.jpg",
+    "thumbSmallFront": "thumb-sm-cerulean-crossbody-with-leather-front-by-Azellaz.jpg",
 		"AZ notes for BZ": "single inside image for all crossbodies"
 	},
 	{
@@ -197,6 +206,7 @@
 		"imgBack": "indigo-mountain-crossbody-back-by-Azellaz.jpg",
 		"imgSide": "indigo-mountain-crossbody-side-by-Azellaz.jpg",
 		"imgInside": "indigo-mountain-crossbody-inside-by-Azellaz.jpg",
+    "thumbSmallFront": "thumb-sm-indigo-mountain-crossbody-front-by-Azellaz.jpg",
 		"AZ notes for BZ": "single inside image for all crossbodies"
 	},
 	{
@@ -217,6 +227,7 @@
 		"imgBack": "indigo-prairie-crossbody-back-by-Azellaz.jpg",
 		"imgSide": "indigo-prairie-crossbody-side-by-Azellaz.jpg",
 		"imgInside": "indigo-prairie-crossbody-inside-by-Azellaz.jpg",
+    "thumbSmallFront": "thumb-sm-indigo-prairie-crossbody-front-by-Azellaz.jpg",
 		"AZ notes for BZ": "single inside image for all crossbodies"
 	},
 	{
@@ -237,6 +248,7 @@
 		"imgBack": "indigo-cloud-crossbody-back-by-Azellaz.jpg",
 		"imgSide": "indigo-cloud-crossbody-side-by-Azellaz.jpg",
 		"imgInside": "indigo-cloud-crossbody-inside-by-Azellaz.jpg",
+    "thumbSmallFront": "thumb-sm-indigo-cloud-crossbody-front-by-Azellaz.jpg",
 		"AZ notes for BZ": "single inside image for all crossbodies"
 	},
 	{
@@ -257,6 +269,7 @@
 		"imgBack": "indigo-shibori-crossbody-back-by-Azellaz.jpg",
 		"imgSide": "indigo-shibori-crossbody-side-by-Azellaz.jpg",
 		"imgInside": "indigo-shibori-crossbody-inside-by-Azellaz.jpg",
+    "thumbSmallFront": "thumb-sm-indigo-shibori-crossbody-front-by-Azellaz.jpg",
 		"AZ notes for BZ": "single inside image for all crossbodies"
 	},
 	{
@@ -277,6 +290,7 @@
 		"imgBack": "indigo-mountain-clutch-back-by-Azellaz.jpg",
 		"imgSide": "",
 		"imgInside": "indigo-mountain-clutch-inside-by-Azellaz.jpg",
+    "thumbSmallFront": "thumb-sm-indigo-mountain-clutch-front-by-Azellaz.jpg",
 		"AZ notes for BZ": ""
 	},
 	{
@@ -297,6 +311,7 @@
 		"imgBack": "indigo-shibori-clutch-back-by-Azellaz.jpg",
 		"imgSide": "indigo-shibori-clutch-side-by-Azellaz.jpg",
 		"imgInside": "",
+    "thumbSmallFront": "thumb-sm-indigo-shibori-clutch-front-by-Azellaz.jpg",
 		"AZ notes for BZ": ""
 	},
 	{
@@ -317,6 +332,7 @@
 		"imgBack": "indigo-diagonal-clutch-back-by-Azellaz.jpg",
 		"imgSide": "",
 		"imgInside": "indigo-diagonal-clutch-inside-by-Azellaz.jpg",
+    "thumbSmallFront": "thumb-sm-indigo-diagonal-clutch-front-by-Azellaz.jpg",
 		"AZ notes for BZ": "inside = phone etc coming out"
 	},
 	{
@@ -337,6 +353,7 @@
 		"imgBack": "",
 		"imgSide": "",
 		"imgInside": "",
+    "thumbSmallFront": "thumb-sm-indigo-prairie-clutch-front-by-Azellaz.jpg",
 		"AZ notes for BZ": "inside = phone etc coming out"
 	},
 	{
@@ -357,6 +374,7 @@
 		"imgBack": "cerulean-clutch-back-by-Azellaz.jpg",
 		"imgSide": "cerulean-clutch-side-by-Azellaz.jpg",
 		"imgInside": "cerulean-clutch-inside-by-Azellaz.jpg",
+    "thumbSmallFront": "thumb-sm-cerulean-clutch-front-by-Azellaz.jpg",
 		"AZ notes for BZ": "inside = phone etc coming out"
 	}
 ]

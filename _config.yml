@@ -10,7 +10,8 @@ base_url: https://www.azellaz.com/
 bas_url_no_trailing_slash: https://www.azellaz.com
 images_dir: images/
 product_images_dir: images/products/
-product_thumb_images_dir: images/products/thumbs-med/
+product_thumb_sm_images_dir: images/products/thumbs-sm/
+product_thumb_med_images_dir: images/products/thumbs-med/
 thumb_medium_prefix: thumb-med-
 featured_bag_image: indigo-shibori-duffle-front-by-Azellaz.jpg
 etsy: https://www.etsy.com/shop/Azellaz
