@@ -1,5 +1,3 @@
----
----
 <!DOCTYPE html>
 <html lang="en-US">
 
@@ -7,17 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <link rel="stylesheet" href="/css/dist/basscss@7.1.1.min.css">
-    <link rel="stylesheet" href="/css/dist/font-awesome@4.7.0.CUSTOM.css">
     <link rel="stylesheet" href="/css/dist/az.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-    <!-- <script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" data-api-key="{{ site.live_api_key }}" id="snipcart"></script>
-    <link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" rel="stylesheet" type="text/css" /> -->
-    <title>Azellaz Purchase Test</title>
+    <script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" data-api-key="NjQyNTJmYzUtZGY3Yy00MzE1LTk5ZGUtMmYwN2ZhZjYxYmQyNjM2MjQyNjk5MDU5MDI2MjE2" id="snipcart"></script>
+    <link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" rel="stylesheet" type="text/css" />
+
+    <title>Indigo Prairie Clutch by Azellaz</title>
     <meta name="description" content="">
     <meta name="author" content="Abbie Zelip">
     <meta name="author" content="Brian Zelip">
     <meta name="keywords" content="">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@AbiSackmann">
+    <meta name="twitter:title" content="Indigo Prairie Clutch by Azellaz">
+    <meta name="twitter:image:alt" content="Indigo Prairie Clutch by Azellaz. Small indigo-dyed beeswaxed canvas and leather clutch.">
+    <meta name="twitter:description" content="Small indigo-dyed beeswaxed canvas and leather clutch.">
+    <meta name="twitter:image" content="https://www.azellaz.com/images/products/indigo-prairie-clutch-front-by-Azellaz.jpg">
+    <meta property="og:url" content="https://www.azellaz.com/indigo-prairie-clutch/" />
+    <meta property="og:type" content="product" />
+    <meta property="og:title" content="Indigo Prairie Clutch by Azellaz" />
+    <meta property="og:description" content="Small indigo-dyed beeswaxed canvas and leather clutch." />
+    <meta property="og:image" content="https://www.azellaz.com/images/products/indigo-prairie-clutch-front-by-Azellaz.jpg" />
+
   </head>
 
   <body>
@@ -25,100 +34,211 @@
 
         <div class="sm-show">
           <a href="/">
-            <img src="/images/Azellaz_Logo_Soft_Black_v6.svg" class="w-45px md-w-55px" alt="">
+            <img src="/images/Azellaz_Logo_Soft_Black_v6.svg" class="w-45px md-w-55px" alt="Azellaz logo" title="Azellaz large vertical logo">
           </a>
         </div>
 
         <nav class="flex flex-center">
           <div class="flex justify-between align-items-center">
             <div class="sm-hide">
-              <!-- this gets replaced with AZ logo when ready -->
               <a href="/">
-                <img src="/images/AZ_logo_soft_black_on_trans_bg.png" alt="Azellaz logo" title="Azellaz logo" class="btn height2r">
+                <img src="/images/Azellaz_logo_short_soft_black_by_Thom_01.svg" alt="Azellaz logo" title="Azellaz logo" class="btn height2r">
               </a>
             </div>
+            <div id="cart" class="snipcart-summary pointer mr2 hide">
+              <a href="#" class="snipcart-checkout btn regular btn-small h6 sm-h4 hover-underline light-black"><i class="fa fa-shopping-cart fa-h2"></i></a>
+            </div>
             <div class="pointer sm-mr2">
-              <a href="/index.html#shop" class="btn regular btn-outline h5 sm-h4 light-black">shop</a>
+              <a href="/index.html#shop" class="btn regular btn-outline btn-small h6 sm-h4 light-black">shop</a>
             </div>
             <div class="pointer">
-              <a href="/about" class="btn regular h5 sm-h4 light-black hover-underline">about</a>
+              <a href="/about" class="btn regular btn-small h6 sm-h4 hover-underline light-black">about</a>
             </div>
             <div class="pointer">
-              <a href="/contact" class="btn regular h5 sm-h4 light-black hover-underline">contact</a>
+              <a href="/contact" class="btn regular btn-small h6 sm-h4 hover-underline light-black">contact</a>
             </div>
           </div>
         </nav>
 
       </header>
 
-<div class="ie-FlexContainerWrapper">
-  <div class="vh100 container flex justify-end">
 
-    <!-- <div id="logo" class="fixed left-0 ml2 mt2 top-0" style="">
-      <a href="/index.html#shop" class="hover-no-underline">
-        <div>
-          <img src="/images/Azellaz_Logo_Soft_Black_v6.svg" class="" alt="" width="">
-          <span class="block h5 center light-black">← return</span>
-        </div>
-      </a>
-    </div> -->
+    <script>
+      const cartElem = document.getElementById('cart');
 
-    <div class="col-7 p2 flex flex-column">
-      <!-- <nav>
-        <p>category 1 > category 2 > final</p>
-      </nav> -->
-      <div>
-        <img src="https://placehold.it/1000x800" class="mbn1"/>
-      </div>
+      let showCart = function() {
+        cartElem.classList.remove("hide");
+      };
 
-      <div class="flex flex-row py2 mxn1">
+      let hideCart = function() {
+        cartElem.classList.add("hide");
+      };
 
-        <div class="flex-auto ml1 mr1">
-          <img src="https://placehold.it/500"/>
-        </div>
+      Snipcart.subscribe('cart.ready', function() {
+        var count = Snipcart.api.items.count();
+        console.log('CART READY!!! The number of items in the cart is: ', count);
+        if (count > 0) {
+          showCart();
+        };
+
+        Snipcart.subscribe('item.added', function (item) {
+          console.log('An item was just added to the cart! The number of items in the user\'s cart is: ', Snipcart.api.items.count());
+          if (Snipcart.api.items.count() > 0) {
+            showCart();
+          } else {
+            hideCart();
+          };
+        });
+
+        Snipcart.subscribe('item.removed', function (item) {
+          console.log('An item was just removed from the cart! The number of items in the user\'s cart is: ', Snipcart.api.items.count());
+          if (Snipcart.api.items.count() == 0) {
+            hideCart();
+          } else {
+            showCart();
+          };
+        });
+      });
+
+      Snipcart.api.configure('show_continue_shopping', true);
+    </script>
+
+    <div class="vh100 container mb1 md-mb0">
+
+  <div class="col col-12 md-col-7 p2">
+    <div class="sm-hide"><!-- have to double up this component because ie's lack of flexbox column support -->
+      <div class="py1 sm-py2 mxn1 flex align-items-end sm-align-items-start">
+
+  <div class="col col-3 px1">
+    <img class="border pointer thumb" src="/images/products/indigo-prairie-clutch-front-by-Azellaz.jpg" alt="Front view of the Indigo Prairie Clutch bag by Azellaz.com" title="Indigo Prairie Clutch front"/>
+  </div>
 
 
-        <div class="flex-auto ml1 mr1">
-          <img src="https://placehold.it/500"/>
-        </div>
 
 
-        <div class="flex-auto ml1 mr1">
-          <img src="https://placehold.it/500"/>
-        </div>
 
 
-        <div class="flex-auto ml1 mr1">
-          <img src="https://placehold.it/500"/>
-        </div>
+  <div class="col col-3 px1">
+    <img src="/images/blank_thumb_2200x2600.png" alt="transparent image" title="small transparent image"/>
+  </div>
 
-      </div>
+
+  <div class="col col-3 px1">
+    <img src="/images/blank_thumb_2200x2600.png" alt="transparent image" title="small transparent image"/>
+  </div>
+
+
+  <div class="col col-3 px1">
+    <img src="/images/blank_thumb_2200x2600.png" alt="transparent image" title="small transparent image"/>
+  </div>
+
+</div>
+
     </div>
 
-    <div class="col-5 p2">
-      <h1 class="m0 h2 serif light-black">Testing Test Tester</h1>
-      <p class="h2 serif light-black">$1.00</p>
-      <p class="serif light-black">This is just a test.</p>
-      <div class="mt4">
-        <button
-          class="btn btn-outline fw200 light-black snipcart-add-item"
-          data-item-id="azTEST"
-          data-item-name="Testing Test Tester"
-          data-item-price="1.00"
-          data-item-url="https://www.azellaz.com/test.html"
-          data-item-description="This is just a test."
-          data-item-weight="1"
-          data-item-height="1"
-          data-item-width="1"
-          data-item-length="1">
-          Add to Cart
-        </button>
-      </div>
+    <div>
+      <img id="large-image-view" src="/images/products/indigo-prairie-clutch-front-by-Azellaz.jpg" class="mbn1" alt="Front view of the Indigo Prairie Clutch bag by Azellaz.com" title="Indigo Prairie Clutch front"/>
     </div>
+
+    <div class="sm-show"><!-- have to double up this component because ie's lack of flexbox column support -->
+      <div class="py1 sm-py2 mxn1 flex align-items-end sm-align-items-start">
+
+  <div class="col col-3 px1">
+    <img class="border pointer thumb" src="/images/products/indigo-prairie-clutch-front-by-Azellaz.jpg" alt="Front view of the Indigo Prairie Clutch bag by Azellaz.com" title="Indigo Prairie Clutch front"/>
+  </div>
+
+
+
+
+
+
+  <div class="col col-3 px1">
+    <img src="/images/blank_thumb_2200x2600.png" alt="transparent image" title="small transparent image"/>
+  </div>
+
+
+  <div class="col col-3 px1">
+    <img src="/images/blank_thumb_2200x2600.png" alt="transparent image" title="small transparent image"/>
+  </div>
+
+
+  <div class="col col-3 px1">
+    <img src="/images/blank_thumb_2200x2600.png" alt="transparent image" title="small transparent image"/>
+  </div>
+
+</div>
+
+    </div>
+  </div>
+
+  <div class="col col-12 md-col-5 p2">
+    <h1 class="m0 h2 serif light-black">Indigo Prairie Clutch</h1>
+    <p class="h2 serif light-black">$45.00</p>
+    <p class="serif light-black">Great as an evening clutch or, without the strap, a pouch for organizing in a larger bag. Fits the essentials (phone, credit cards, keys). Each piece is hand dyed with indigo and hand waxed with beeswax. The leather is hand veg-tanned in Italy. Includes all brass hardware and a Riri zipper. 7 in wide x 4.5 in tall x 1.5 in deep </p>
+    <p class="serif light-black"><span class="red">*</span><strong>Availability:</strong> Made to order, ships in 1-3 weeks. Items are individually dyed and may vary slightly from these images.</p>
+
+    <div id="product-config" class="md-mt4">
+
+      <form class="">
+        <div class="flex">
+          <p class="serif light-black"><strong>Hardware color</strong>: </p>
+          <div>
+            <div>
+              <input type="radio" name="hardware-color" value="Bronze"> <label class="serif light-black" for="hardware-color"> Bronze</label>
+            </div>
+            <div>
+              <input type="radio" name="hardware-color" value="Nickel"> <label class="serif light-black" for="hardware-color"> Nickel</label>
+            </div>
+          </div>
+        </div>
+      </form>
+
+      <button
+        class="col-12 md-width-auto btn btn-outline fw200 light-black snipcart-add-item"
+        data-item-id="az0017"
+        data-item-name="Indigo Prairie Clutch"
+        data-item-image="https://www.azellaz.com/images/products/thumbs-sm/thumb-sm-indigo-prairie-clutch-front-by-Azellaz.jpg"
+        data-item-price="45.00"
+        data-item-weight="85"
+        data-item-height="11"
+        data-item-width="4"
+        data-item-length="18"
+        data-item-url="https://www.azellaz.com/indigo-prairie-clutch"
+        data-item-description="Small indigo-dyed beeswaxed canvas and leather clutch.">
+        Add to Cart
+      </button>
+    </div>
+
   </div>
 </div>
 
-    <footer class="bg-gray px2">
+
+<script>
+  const largeImage = document.getElementById('large-image-view');
+  const thumbnails = document.querySelectorAll('.thumb');
+
+
+  // es6 way that is not being used
+  // Array
+  //   .from(thumbnails)
+  //   .forEach((thumbnail) => thumbnail.addEventListener('click', showLargeImage));
+
+  // es5 way because ie 11
+  []
+    .forEach
+    .call(thumbnails,function(thumbnail) {
+      thumbnail.addEventListener('click', showLargeImage, false)
+    });
+
+  function showLargeImage(e) {
+    largeImage.src = this.src;
+    largeImage.alt = this.alt;
+    largeImage.title = this.title;
+  }
+
+</script>
+
+    <footer class="col col-12 bg-gray px2">
       <div class="py3 md-py4">
 
         <section class="container flex flex-column sm-flex-row sm-align-items-start sm-justify-between light-black">
@@ -182,7 +302,7 @@
       </div>
     </footer>
 
-    <script>
+    <!-- <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -191,7 +311,7 @@
       ga('create', 'UA-96621786-1', 'auto');
       ga('send', 'pageview');
 
-    </script>
+    </script> -->
 
   </body>
 
