@@ -232,6 +232,7 @@ body, .h0, h1, h2, h3, h4, h5, h6 {
 .lh1 { line-height: 1; }
 
 .pointer { cursor: pointer; }
+.cursor-hover:hover { cursor: default; }
 .cursor-default { cursor: default; }
 
 .left-32 { left: 32px; }
@@ -411,6 +412,10 @@ body, .h0, h1, h2, h3, h4, h5, h6 {
   .md-px2 {
     padding-right: 1rem;
     padding-left: 1rem;
+  }
+  .md-mx0 {
+    margin-right: 0;
+    margin-left: 0;
   }
   .md-width-auto { width: auto; }
   .md-w-55px { width: 55px; }
