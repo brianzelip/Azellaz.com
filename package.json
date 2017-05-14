@@ -1,7 +1,7 @@
 {
   "name": "Azellaz.com",
   "version": "1.2.0",
-  "description": "Dev space for Azellaz.com",
+  "description": "Dev space for Azellaz.com. She's crafty, and she's just my type!",
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
