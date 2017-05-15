@@ -172,12 +172,12 @@
   </div>
 
   <div class="col col-12 md-col-5 p2">
-    <h1 class="m0 h2 serif light-black">Indigo Prairie Clutch</h1>
-    <p class="h2 serif light-black">$45.00</p>
-    <p class="serif light-black">Great as an evening clutch or, without the strap, a pouch for organizing in a larger bag. Fits the essentials (phone, credit cards, keys). Each piece is hand dyed with indigo and hand waxed with beeswax. The leather is hand veg-tanned in Italy. Includes all brass hardware and a Riri zipper. 7 in wide x 4.5 in tall x 1.5 in deep </p>
-    <p class="serif light-black"><span class="red">*</span><strong>Availability:</strong> Made to order, ships in 1-3 weeks. Items are individually dyed and may vary slightly from these images.</p>
-
-    <div class="clearfix"></div>
+    <div class=""><!--THE QUESTION IS where to put clearfix for proper whitespace between this group and the buy button group-->
+      <h1 class="m0 h2 serif light-black">Indigo Prairie Clutch</h1>
+      <p class="h2 serif light-black">$45.00</p>
+      <p class="serif light-black">Great as an evening clutch or, without the strap, a pouch for organizing in a larger bag. Fits the essentials (phone, credit cards, keys). Each piece is hand dyed with indigo and hand waxed with beeswax. The leather is hand veg-tanned in Italy. Includes all brass hardware and a Riri zipper. 7 in wide x 4.5 in tall x 1.5 in deep </p>
+      <p class="serif light-black"><span class="red">*</span><strong>Availability:</strong> Made to order, ships in 1-3 weeks. Items are individually dyed and may vary slightly from these images.</p>
+    </div>
 
     <form id="product-config" class="mt2 md-mt4 mb2">
       <div class="flex md-flex-column">
@@ -323,3 +323,51 @@
   </body>
 
 </html>
+
+<!--
+
+NEXT TODOS:
+- make components out of the hardware form
+- will need a straps form if product.type === clutch
+- should the *Availability be paired with the forms and buy button group? I think so primarily because of the asterisk, the bold first-word.
+
+
+Archive of console work getting values out of radio button group
+
+var radios = document.querySelectorAll('input[name=hardware-color]');
+undefined
+radios
+NodeList [ <input#brass>, <input#nickel> ]
+console.log(document)
+HTMLDocument → http://localhost:4000/test.html
+undefined
+Ignoring get or set of property that has [LenientThis] because the “this” object is incorrect.  test.html
+var form = document.forms;
+undefined
+form
+HTMLCollection [ <form#hardware.mb2> ]
+var formElements = form.elements;
+undefined
+formElements
+undefined
+console.log(formElements)
+undefined
+undefined
+form
+HTMLCollection [ <form#hardware.mb2> ]
+formElements = document.getElementById('hardware').elements;
+HTMLFormControlsCollection { 0: <input#brass>, 1: <input#nickel>, length: 2, 3 more… }
+formElements
+HTMLFormControlsCollection { 0: <input#brass>, 1: <input#nickel>, length: 2, 3 more… }
+formElements[hardware-color]
+ReferenceError: color is not defined [Learn More]
+formElements['hardware-color']
+RadioNodeList [ <input#brass>, <input#nickel> ]
+formElements['hardware-color'].value
+""
+formElements['hardware-color'].value
+"brass"
+formElements['hardware-color'].value
+"nickel"
+
+-->
