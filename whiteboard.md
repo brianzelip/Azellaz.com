@@ -1,3 +1,8 @@
+TABLING (Azellaz in person events)
+  - have a placard that displays what types of payment we take
+  - have the brand name Azellaz displayed more prominently than just on the small cards
+  - need to communicate about hand made waxed, dyed, sewn, from Baltimore, etc.
+
 TODO:
 - IMAGE OPTIMIZATION
   - Need to create a set of images per image:
