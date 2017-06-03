@@ -1,0 +1,174 @@
+[
+	{
+		"product_variations_contained_herein":
+		[
+			"with clutch strap and brass hardware",
+			"with clutch strap and nickel hardware",
+			"with crossbody strap and brass hardware",
+			"with crossbody strap and nickel hardware",
+			"with both straps and brass hardware",
+			"with both straps and nickel hardware"
+		]
+	},
+	{
+		"id": "az0014",
+		"name": "Indigo Mountain Clutch",
+		"slug": "indigo-mountain-clutch",
+		"url": "https://www.azellaz.com/indigo-mountain-clutch",
+		"inStock": false,
+		"price": "45.00",
+		"type": "clutch",
+		"options": {
+			"straps": {
+				"clutch": 0,
+				"crossbody": 10,
+				"both": 15
+			},
+			"hardware": ["Brass", "Nickel"]
+		},
+		"descriptionShort": "Small indigo-dyed beeswaxed canvas and leather clutch.",
+		"descriptionLong": "Great as an evening clutch or, without the strap, a pouch for organizing in a larger bag. Fits the essentials (phone, credit cards, keys). Each piece is hand dyed with indigo and hand waxed with beeswax. The leather is hand veg-tanned in Italy. Includes all brass hardware and a Riri zipper. 7 in wide x 4.5 in tall x 1.5 in deep",
+		"weight": "85",
+		"height": "11",
+		"width": "4",
+		"length": "18",
+		"imgFront": "indigo-mountain-clutch-front-by-Azellaz.jpg",
+		"imgBack": "indigo-mountain-clutch-back-by-Azellaz.jpg",
+		"imgSide": "",
+		"imgInside": "indigo-mountain-clutch-inside-by-Azellaz.jpg",
+    "thumbSmallFront": "thumb-sm-indigo-mountain-clutch-front-by-Azellaz.jpg",
+		"AZ notes for BZ": ""
+	},
+	{
+		"id": "az0015",
+		"name": "Indigo Shibori Clutch",
+		"slug": "indigo-shibori-clutch",
+		"url": "https://www.azellaz.com/indigo-shibori-clutch",
+		"inStock": false,
+		"price": "45.00",
+		"type": "clutch",
+		"options": {
+			"straps": {
+				"clutch": 0,
+				"crossbody": 10,
+				"both": 15
+			},
+			"hardware": ["Brass", "Nickel"]
+		},
+		"descriptionShort": "Small indigo-dyed beeswaxed canvas and leather clutch.",
+		"descriptionLong": "Great as an evening clutch or, without the strap, a pouch for organizing in a larger bag. Fits the essentials (phone, credit cards, keys). Each piece is hand dyed with indigo and hand waxed with beeswax. The leather is hand veg-tanned in Italy. Includes all brass hardware and a Riri zipper. 7 in wide x 4.5 in tall x 1.5 in deep ",
+		"weight": "85",
+		"height": "11",
+		"width": "4",
+		"length": "18",
+		"imgFront": "indigo-shibori-clutch-front-by-Azellaz.jpg",
+		"imgBack": "indigo-shibori-clutch-back-by-Azellaz.jpg",
+		"imgSide": "indigo-shibori-clutch-side-by-Azellaz.jpg",
+		"imgInside": "",
+    "thumbSmallFront": "thumb-sm-indigo-shibori-clutch-front-by-Azellaz.jpg",
+		"AZ notes for BZ": ""
+	},
+	{
+		"id": "az0016",
+		"name": "Indigo Diagonal Clutch",
+		"slug": "indigo-diagonal-clutch",
+		"url": "https://www.azellaz.com/indigo-diagonal-clutch",
+		"inStock": false,
+		"price": "45.00",
+		"type": "clutch",
+		"options": {
+			"straps": {
+				"clutch": 0,
+				"crossbody": 10,
+				"both": 15
+			},
+			"hardware": ["Brass", "Nickel"]
+		},
+		"descriptionShort": "Small indigo-dyed beeswaxed canvas and leather clutch.",
+		"descriptionLong": "Great as an evening clutch or, without the strap, a pouch for organizing in a larger bag. Fits the essentials (phone, credit cards, keys). Each piece is hand dyed with indigo and hand waxed with beeswax. The leather is hand veg-tanned in Italy. Includes all brass hardware and a Riri zipper. 7 in wide x 4.5 in tall x 1.5 in deep ",
+		"weight": "85",
+		"height": "11",
+		"width": "4",
+		"length": "18",
+		"imgFront": "indigo-diagonal-clutch-front-by-Azellaz.jpg",
+		"imgBack": "indigo-diagonal-clutch-back-by-Azellaz.jpg",
+		"imgSide": "",
+		"imgInside": "indigo-diagonal-clutch-inside-by-Azellaz.jpg",
+    "thumbSmallFront": "thumb-sm-indigo-diagonal-clutch-front-by-Azellaz.jpg",
+		"AZ notes for BZ": "inside = phone etc coming out"
+	},
+	{
+		"id": "az0017",
+		"name": "Indigo Prairie Clutch",
+		"slug": "indigo-prairie-clutch",
+		"url": "https://www.azellaz.com/indigo-prairie-clutch",
+		"inStock": false,
+		"price": "45.00",
+		"type": "clutch",
+		"options": {
+			"straps": {
+				"clutch": 0,
+				"crossbody": 10,
+				"both": 15
+			},
+			"hardware": ["Brass", "Nickel"]
+		},
+		"descriptionShort": "Small indigo-dyed beeswaxed canvas and leather clutch.",
+		"descriptionLong": "Great as an evening clutch or, without the strap, a pouch for organizing in a larger bag. Fits the essentials (phone, credit cards, keys). Each piece is hand dyed with indigo and hand waxed with beeswax. The leather is hand veg-tanned in Italy. Includes all brass hardware and a Riri zipper. 7 in wide x 4.5 in tall x 1.5 in deep ",
+		"weight": "85",
+		"height": "11",
+		"width": "4",
+		"length": "18",
+		"imgFront": "indigo-prairie-clutch-front-by-Azellaz.jpg",
+		"imgBack": "",
+		"imgSide": "",
+		"imgInside": "",
+    "thumbSmallFront": "thumb-sm-indigo-prairie-clutch-front-by-Azellaz.jpg",
+		"AZ notes for BZ": "inside = phone etc coming out"
+	},
+	{
+		"id": "az0018",
+		"name": "Cerulean Clutch",
+		"slug": "cerulean-clutch",
+		"url": "https://www.azellaz.com/cerulean-clutch",
+		"inStock": true,
+		"price": "45.00",
+		"type": "clutch",
+		"options": {
+			"straps": {
+				"clutch": {
+					"priceIncrease": 0,
+					"idSuffix": "-cl"
+				},
+				"crossbody": {
+					"priceIncrease": 10,
+					"idSuffix": "-cr"
+				},
+				"both": {
+					"priceIncrease": 15,
+					"idSuffix": "-clcr"
+				}
+			},
+			"hardware": {
+				"brass": {
+					"idSuffix": "-br"
+				},
+				"nickel": {
+					"idSuffix": "-ni"
+				}
+			}
+		},
+		"descriptionShort": "Small beeswaxed canvas and leather clutch.",
+		"descriptionLong": "Great as an evening clutch or, without the strap, a pouch for organizing in a larger bag. Fits the essentials (phone, credit cards, keys). Each piece is hand waxed with beeswax. The leather is hand veg-tanned in Italy. Includes all brass hardware and a Riri zipper. 7 in wide x 4.5 in tall x 1.5 in deep ",
+		"weight": "85",
+		"height": "11",
+		"width": "4",
+		"length": "18",
+		"imgFront": "cerulean-clutch-front-by-Azellaz.jpg",
+		"imgBack": "cerulean-clutch-back-by-Azellaz.jpg",
+		"imgSide": "cerulean-clutch-side-by-Azellaz.jpg",
+		"imgInside": "cerulean-clutch-inside-by-Azellaz.jpg",
+    "thumbSmallFront": "thumb-sm-cerulean-clutch-front-by-Azellaz.jpg",
+		"AZ notes for BZ": "inside = phone etc coming out"
+	}
+]

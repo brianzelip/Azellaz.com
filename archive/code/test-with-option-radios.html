@@ -171,15 +171,78 @@
     </div>
   </div>
 
-  <div id="product-writeup" class="col col-12 md-col-5 p2">
-    <h1 class="m0 h2 serif light-black">Indigo Prairie Clutch</h1>
-    <p class="h2 serif light-black">$<span id="item-price">45.00 +</span></p>
-    <p class="serif light-black">Great as an evening clutch or, without the strap, a pouch for organizing in a larger bag. Fits the essentials (phone, credit cards, keys). Each piece is hand dyed with indigo and hand waxed with beeswax. The leather is hand veg-tanned in Italy. Includes all brass hardware and a Riri zipper. 7 in wide x 4.5 in tall x 1.5 in deep </p>
+  <div id="product-text" class="col col-12 md-col-5 p2">
+    <div class=""><!--THE QUESTION IS where to put clearfix for proper whitespace between this group and the buy button group-->
+      <h1 class="m0 h2 serif light-black">Indigo Prairie Clutch</h1>
+      <p class="h2 serif light-black">$<span id="item-price">45.00 +</span></p>
+      <p class="serif light-black">Great as an evening clutch or, without the strap, a pouch for organizing in a larger bag. Fits the essentials (phone, credit cards, keys). Each piece is hand dyed with indigo and hand waxed with beeswax. The leather is hand veg-tanned in Italy. Includes all brass hardware and a Riri zipper. 7 in wide x 4.5 in tall x 1.5 in deep </p>
+    </div>
 
-    <p class="mt2 md-mt4 serif light-black">Choose your strap (clutch, crossbody, or both) and hardware color (brass or nickel) from within your shopping cart.</p>
-    <p class="serif light-black">
-      <strong>Availability:</strong> Made to order, ships in 1-3 weeks. Items are individually dyed and may vary slightly from these images.
-    </p>
+    <div class="mt2 md-mt4 mb2">
+      <form name="productConfig" class="">
+
+        <p class="serif light-black">
+          <strong>Availability:</strong> Made to order, ships in 1-3 weeks. Items are individually dyed and may vary slightly from these images.
+        </p>
+        <div class="flex md-flex-column">
+
+          <p class="serif light-black mb0">
+            <strong>Hardware color</strong>:
+          </p>
+          <div class="flex md-flex-column serif light-black">
+
+            <div class="mx1 md-mx0">
+              <input id="brass" type="radio" name="hardwareColor" value="brass">
+              <label for="brass" class="align-baseline">Brass</label>
+            </div>
+            <div class="mx1 md-mx0">
+              <input id="nickel" type="radio" name="hardwareColor" value="nickel">
+              <label for="nickel" class="align-baseline">Nickel</label>
+            </div>
+
+          </div>
+
+  <!-- need to add a parent here, one parent for each of the two forms -->
+  <!-- look into the temp file for an example of what I think i prefer -->
+
+          <p class="mt2 serif light-black mb0">
+            <strong>Strap options</strong>:
+          </p>
+
+          <div id="strap-options" class="flex md-flex-column serif light-black">
+            <div class="mx1 md-mx0">
+              <input id="clutch-strap" type="radio" name="strapOptions" value="Clutch strap" data-cost="45.00">
+              <label for="clutch-strap" class="align-baseline">Clutch strap ($45)</label>
+            </div>
+            <div class="mx1 md-mx0">
+              <input id="crossbody-strap" type="radio" name="strapOptions" value="Crossbody strap" data-cost="55.00">
+              <label for="crossbody-strap" class="align-baseline">Crossbody strap ($55)</label>
+            </div>
+            <div class="mx1 md-mx0">
+              <input id="both-straps" type="radio" name="strapOptions" value="Both straps" data-cost="60.00">
+              <label for="both-straps" class="align-baseline">Both straps ($60)</label>
+            </div>
+
+          </div>
+
+          <script>// update price item with the selected strap option
+            const itemPrice = document.getElementById('item-price');
+            const straps = document.forms.productConfig.elements.strapOptions;
+
+            for (let i=0; i<straps.length; i++) {
+              straps[i].addEventListener('change', updateItemPriceWithStrap, false);
+            };
+
+            function updateItemPriceWithStrap(e) {
+              itemPrice.innerHTML = this.dataset.cost;
+              console.log('The strap option was changed.');
+            };
+          </script>
+
+        </div>
+      </form>
+
+    </div>
 
     <button title="Please select hardware and strap options first"
       class="col-12 md-width-auto btn btn-outline fw200 light-black snipcart-add-item"
@@ -201,6 +264,11 @@
       data-item-custom2-options="Clutch +$0|Crossbody +$10[+10.00]|Both +$15[+15.00]">
       Add to Cart
     </button>
+
+    <script>
+      const buyBtn = document.querySelector('button');
+
+    </script>
 
   </div>
 </div>
