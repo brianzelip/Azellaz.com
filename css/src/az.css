@@ -122,6 +122,16 @@ body, .h0, h1, h2, h3, h4, h5, h6 {
 
 .height2r { height: 2rem; }
 
+.mxn-quarter {
+  margin-right: -.25rem;
+  margin-left: -.25rem;
+}
+
+.px-quarter {
+  padding-right: .25rem;
+  padding-left: .25rem;
+}
+
 .px1 {
   padding-right: .5rem;
   padding-left: .5rem;
