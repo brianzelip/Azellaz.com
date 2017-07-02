@@ -34,7 +34,7 @@ mkdir thumbs-med && mkdir thumbs-sm
 
 ```
 #5
-cp -R <editedPhotosDir>/* thumbs-med/ && cp -R <editedPhotosDir>/* thumb-sm
+cp -R PHOTOS/* thumbs-med && cp -R PHOTOS/* thumbs-sm
 ```
 
 6. Add the appropriate prefix to each of the `thumbs` directories
@@ -50,14 +50,16 @@ cd thumbs-sm/ && for f in * ; do mv "$f" "thumb-sm-$f" ; done && cd ../
 
 ```
 #7
-cd thumbs-med/ for file in thumbs-med/*.JPG; do mv "$file" "${file/.JPG/.jpg}"; done && cd ../
+cd thumbs-med/ && for f in *.JPG; do mv "$f" "${f/.JPG/.jpg}"; done && cd ../
 
-cd thumbs-sm/ for file in thumbs-sm/*.JPG; do mv "$file" "${file/.JPG/.jpg}"; done && cd ../
+cd thumbs-sm/ && for f in *.JPG; do mv "$f" "${f/.JPG/.jpg}"; done && cd ../
 ```
 
 8. Resize the photos in each of the thumbnail directories as appropriate
 
 ```
 #8
-mogrify -resize 25% thumbs-med/*.jpg && mogrify -resize 50x50 thumbs-sm/*.jpg
+mogrify -resize 25% thumbs-med/*.jpg && mogrify -resize 100x100 thumbs-sm/*.jpg
 ```
+
+9. Move all of the photos inside `PHOTOS/` to `../products/` as the largest set of photos, then move (or add to) `thumbs-med` and `thumbs-sm` to `../products/`
