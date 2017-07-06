@@ -10,9 +10,9 @@ log
 - Optimized the photos from `./new - needs to be optimized/*`, put them into `../PHOTOS/`.
 - copied the already-optimized photos from `./old - already optimized/*` into `../PHOTOS/`.
 - for the 23 products ready to be go live on the website (as found in `./AA-metadata.csv`), created `./products.csv` and `./products.json`, which contain the same content in different formats.
+- all photos in `../PHOTOS/` have been appropriately renamed, and the two sets of smaller thumbnails have been created. All photos are now production ready, and have been moved from from `../../staging/` to `../../products/`.
 
 NEXT STEPS:
-- Abbie needs to rename the photos in `../PHOTOS/` according to the photo filenames in both `./products.csv` & `./products.json`. Since both files contain the same data, choose to copy/paste from whichever data file you feel more comfortable with. 
-    DONE EXCEPT I didn't remove "no-leather" from any of the names. -AZ20170705
-- Once `../PHOTOS/*` are all appropriately renamed, Brian will run the image resizing scripts to create the two sets of smaller images, then move all production-ready content from `../../staging/` to `../../products/`, and clean up the staging directory, including archiving the appropriate files, and removing the unnecessary files.
+-  clean up the staging directory, including archiving the appropriate files, and removing the unnecessary files.
+- then Abbie will add the appropriate product data to either `./products.csv` or `./products.json` (ie, shortDescription, longDescription, measurements, etc)
 - then submit PR from `develop` branch to `master` branch to deploy.
