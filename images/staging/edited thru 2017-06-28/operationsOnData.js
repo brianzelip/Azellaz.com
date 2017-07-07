@@ -421,15 +421,49 @@ const fs = require('fs');
 
 //console.log(products.map( (product) => addImgFileNames(product) ));
 
-var json;
+// var json;
+//
+// fs.readFile('_products.json', (err, data) => {
+//   if (err) throw err;
+//   json = JSON.parse(data);
+//   // console.log(json.length);
+//   console.log(json.map( (product) => addImgFileNames(product) ));
+//   fs.writeFile('products.json', JSON.stringify(json, null, 2), (err) => {
+//     if (err) throw err;
+//     console.log('The file has been saved!');
+//   });
+// });
 
-fs.readFile('_products.json', (err, data) => {
+
+var newP = require("./newProducts.json");
+// represents the latest version of the next version of the products.json data file
+
+var oldP = require("./oldProducts.json");
+// represents the current version of the products.json data file in production
+
+
+function updateData(nData, oData) {
+  return nData
+    .map( (obj) => {
+      for (let i=0; i<oData.length; i++) {
+        if (oData[i].id == obj.OLDid) {
+          obj.descriptionShort = oData[i].descriptionShort;
+          obj.descriptionLong = oData[i].descriptionLong;
+          obj.weight = oData[i].weight;
+          obj.height = oData[i].height;
+          obj.width = oData[i].width;
+          obj.length = oData[i].length;
+        };
+      };
+      obj.url = `https://www.azellaz.com/${obj.slug}`;
+      obj.thumbSmallFront = `thumb-sm-${obj.imgFront}`;
+      return obj;
+    });
+};
+
+console.log(updateData(newP, oldP));
+
+fs.writeFile('newProducts2.json', JSON.stringify(updateData(newP, oldP), null, 2), (err) => {
   if (err) throw err;
-  json = JSON.parse(data);
-  // console.log(json.length);
-  console.log(json.map( (product) => addImgFileNames(product) ));
-  fs.writeFile('products.json', JSON.stringify(json, null, 2), (err) => {
-    if (err) throw err;
-    console.log('The file has been saved!');
-  });
+  console.log('newProducts2.json has been saved!');
 });
