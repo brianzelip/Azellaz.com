@@ -17,7 +17,9 @@
   <div class="col col-12 md-col-5 p2">
     <h1 class="m0 h2 serif light-black">{{ product.name }}</h1>
     <p class="h2 serif light-black">${{ product.price }}</p>
-    <p class="serif light-black">{{ product.descriptionLong }}</p>
+    {% for paragraph in product.descriptionLong %}
+    <p class="serif light-black">{{ paragraph }}</p>
+    {% endfor %}
     <p class="serif light-black"><span class="red">*</span><strong>Availability:</strong> {% if product.inStock %}{{ site.in_stock }}{% else %}{{ site.made_to_order }}{% endif %}</p>
     <div class="md-mt4">
       <button
