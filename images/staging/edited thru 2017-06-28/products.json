@@ -11,7 +11,9 @@
     "price": 45,
     "type": "Clutch",
     "descriptionShort": "Small beeswaxed canvas and leather clutch.",
-    "descriptionLong": "Great as an evening clutch or, without the strap, a pouch for organizing in a larger bag. Fits the essentials (phone, credit cards, keys). Each piece is hand waxed with beeswax. The leather is hand veg-tanned in Italy. Includes all brass hardware and a Riri zipper. 7 in wide x 4.5 in tall x 1.5 in deep ",
+    "descriptionLong": [
+      "Great as an evening clutch or, without the strap, a pouch for organizing in a larger bag. Fits the essentials (phone, credit cards, keys). Each piece is hand waxed with beeswax. The leather is hand veg-tanned in Italy. Includes all brass hardware and a Riri zipper. 7 in wide x 4.5 in tall x 1.5 in deep "
+    ],
     "weight": "85",
     "height": "11",
     "width": "4",
@@ -37,7 +39,9 @@
     "price": 45,
     "type": "Clutch",
     "descriptionShort": "Small indigo-dyed beeswaxed canvas and leather clutch.",
-    "descriptionLong": "Great as an evening clutch or, without the strap, a pouch for organizing in a larger bag. Fits the essentials (phone, credit cards, keys). Each piece is hand dyed with indigo and hand waxed with beeswax. The leather is hand veg-tanned in Italy. Includes all brass hardware and a Riri zipper. 7 in wide x 4.5 in tall x 1.5 in deep",
+    "descriptionLong": [
+      "Great as an evening clutch or, without the strap, a pouch for organizing in a larger bag. Fits the essentials (phone, credit cards, keys). Each piece is hand dyed with indigo and hand waxed with beeswax. The leather is hand veg-tanned in Italy. Includes all brass hardware and a Riri zipper. 7 in wide x 4.5 in tall x 1.5 in deep"
+    ],
     "weight": "85",
     "height": "11",
     "width": "4",
@@ -63,7 +67,9 @@
     "price": 45,
     "type": "Clutch",
     "descriptionShort": "",
-    "descriptionLong": "",
+    "descriptionLong": [
+      ""
+    ],
     "weight": "",
     "height": "",
     "width": "",
@@ -89,7 +95,9 @@
     "price": 45,
     "type": "Clutch",
     "descriptionShort": "",
-    "descriptionLong": "",
+    "descriptionLong": [
+      ""
+    ],
     "weight": "",
     "height": "",
     "width": "",
@@ -115,7 +123,9 @@
     "price": 45,
     "type": "Clutch",
     "descriptionShort": "",
-    "descriptionLong": "",
+    "descriptionLong": [
+      ""
+    ],
     "weight": "",
     "height": "",
     "width": "",
@@ -141,7 +151,9 @@
     "price": 45,
     "type": "Clutch",
     "descriptionShort": "Small indigo-dyed beeswaxed canvas and leather clutch.",
-    "descriptionLong": "Great as an evening clutch or, without the strap, a pouch for organizing in a larger bag. Fits the essentials (phone, credit cards, keys). Each piece is hand dyed with indigo and hand waxed with beeswax. The leather is hand veg-tanned in Italy. Includes all brass hardware and a Riri zipper. 7 in wide x 4.5 in tall x 1.5 in deep ",
+    "descriptionLong": [
+      "Great as an evening clutch or, without the strap, a pouch for organizing in a larger bag. Fits the essentials (phone, credit cards, keys). Each piece is hand dyed with indigo and hand waxed with beeswax. The leather is hand veg-tanned in Italy. Includes all brass hardware and a Riri zipper. 7 in wide x 4.5 in tall x 1.5 in deep "
+    ],
     "weight": "85",
     "height": "11",
     "width": "4",
@@ -167,7 +179,9 @@
     "price": 45,
     "type": "Clutch",
     "descriptionShort": "",
-    "descriptionLong": "",
+    "descriptionLong": [
+      ""
+    ],
     "weight": "",
     "height": "",
     "width": "",
@@ -193,7 +207,9 @@
     "price": 90,
     "type": "Crossbody",
     "descriptionShort": "Crossbody bag made from beeswaxed canvas and leather.",
-    "descriptionLong": "An everyday bag that fits all of the essentials (phone, wallet, keys) + a few extras (book, sunglasses, etc). Each piece is hand waxed with beeswax. The leather is hand veg-tanned in Italy. Includes all brass hardware and a Riri zipper. 11 in wide x 10 in tall x 2.5 in deep",
+    "descriptionLong": [
+      "An everyday bag that fits all of the essentials (phone, wallet, keys) + a few extras (book, sunglasses, etc). Each piece is hand waxed with beeswax. The leather is hand veg-tanned in Italy. Includes all brass hardware and a Riri zipper. 11 in wide x 10 in tall x 2.5 in deep"
+    ],
     "weight": "284",
     "height": "25",
     "width": "6",
@@ -219,7 +235,9 @@
     "price": 90,
     "type": "Crossbody",
     "descriptionShort": "Indigo-dyed beeswaxed canvas and leather crossbody bag.",
-    "descriptionLong": "An everyday bag that fits all of the essentials (phone, wallet, keys) + a few extras (book, sunglasses, etc). Each piece is hand dyed with indigo and hand waxed with beeswax. The leather is hand veg-tanned in Italy. Includes all brass hardware and a Riri zipper. 11 in wide x 10 in tall x 2.5 in deep",
+    "descriptionLong": [
+      "An everyday bag that fits all of the essentials (phone, wallet, keys) + a few extras (book, sunglasses, etc). Each piece is hand dyed with indigo and hand waxed with beeswax. The leather is hand veg-tanned in Italy. Includes all brass hardware and a Riri zipper. 11 in wide x 10 in tall x 2.5 in deep"
+    ],
     "weight": "284",
     "height": "25",
     "width": "6",
@@ -245,7 +263,9 @@
     "price": 70,
     "type": "Crossbody",
     "descriptionShort": "Indigo-dyed beeswaxed canvas crossbody bag.",
-    "descriptionLong": "An everyday bag that fits all of the essentials (phone, wallet, keys) + a few extras (book, sunglasses, etc). Each piece is hand dyed with indigo and hand waxed with beeswax. Includes all brass hardware and a Riri zipper. 11 in wide x 10 in tall x 2.5 in deep",
+    "descriptionLong": [
+      "An everyday bag that fits all of the essentials (phone, wallet, keys) + a few extras (book, sunglasses, etc). Each piece is hand dyed with indigo and hand waxed with beeswax. Includes all brass hardware and a Riri zipper. 11 in wide x 10 in tall x 2.5 in deep"
+    ],
     "weight": "227",
     "height": "24",
     "width": "6",
@@ -271,7 +291,9 @@
     "price": 90,
     "type": "Crossbody",
     "descriptionShort": "Indigo-dyed beeswaxed canvas and leather crossbody bag.",
-    "descriptionLong": "An everyday bag that fits all of the essentials (phone, wallet, keys) + a few extras (book, sunglasses, etc). Each piece is hand dyed with indigo and hand waxed with beeswax. The leather is hand veg-tanned in Italy. Includes all brass hardware and a Riri zipper. 11 in wide x 10 in tall x 2.5 in deep",
+    "descriptionLong": [
+      "An everyday bag that fits all of the essentials (phone, wallet, keys) + a few extras (book, sunglasses, etc). Each piece is hand dyed with indigo and hand waxed with beeswax. The leather is hand veg-tanned in Italy. Includes all brass hardware and a Riri zipper. 11 in wide x 10 in tall x 2.5 in deep"
+    ],
     "weight": "284",
     "height": "25",
     "width": "6",
@@ -297,7 +319,9 @@
     "price": 90,
     "type": "Crossbody",
     "descriptionShort": "Indigo-dyed beeswaxed canvas and leather crossbody bag.",
-    "descriptionLong": "An everyday bag that fits all of the essentials (phone, wallet, keys) + a few extras (book, sunglasses, etc). Each piece is hand dyed with indigo and hand waxed with beeswax. The leather is hand veg-tanned in Italy. Includes all brass hardware and a Riri zipper. 11 in wide x 10 in tall x 2.5 in deep",
+    "descriptionLong": [
+      "An everyday bag that fits all of the essentials (phone, wallet, keys) + a few extras (book, sunglasses, etc). Each piece is hand dyed with indigo and hand waxed with beeswax. The leather is hand veg-tanned in Italy. Includes all brass hardware and a Riri zipper. 11 in wide x 10 in tall x 2.5 in deep"
+    ],
     "weight": "284",
     "height": "25",
     "width": "6",
@@ -323,7 +347,9 @@
     "price": 90,
     "type": "Crossbody",
     "descriptionShort": "",
-    "descriptionLong": "",
+    "descriptionLong": [
+      ""
+    ],
     "weight": "",
     "height": "",
     "width": "",
@@ -349,7 +375,9 @@
     "price": 70,
     "type": "Crossbody",
     "descriptionShort": "Indigo-dyed beeswaxed canvas crossbody bag.",
-    "descriptionLong": "An everyday bag that fits all of the essentials (phone, wallet, keys) + a few extras (book, sunglasses, etc). Each piece is hand dyed with indigo and hand waxed with beeswax. Includes all brass hardware and a Riri zipper. 11 in wide x 10 in tall x 2.5 in deep",
+    "descriptionLong": [
+      "An everyday bag that fits all of the essentials (phone, wallet, keys) + a few extras (book, sunglasses, etc). Each piece is hand dyed with indigo and hand waxed with beeswax. Includes all brass hardware and a Riri zipper. 11 in wide x 10 in tall x 2.5 in deep"
+    ],
     "weight": "227",
     "height": "24",
     "width": "6",
@@ -375,7 +403,9 @@
     "price": 250,
     "type": "Duffle",
     "descriptionShort": "Indigo-dyed waxed canvas and leather duffle.",
-    "descriptionLong": "Sized to fit carry-on restrictions, this duffle is made to be your reliable travel companion. Includes two side pockets and one front pocket. Each piece is hand dyed with indigo and hand waxed with beeswax. The leather is hand veg-tanned in Italy. Includes all brass hardware and a Riri zipper. 21 in wide x 8.5 in tall x 11.5 in deep",
+    "descriptionLong": [
+      "Sized to fit carry-on restrictions, this duffle is made to be your reliable travel companion. Includes two side pockets and one front pocket. Each piece is hand dyed with indigo and hand waxed with beeswax. The leather is hand veg-tanned in Italy. Includes all brass hardware and a Riri zipper. 21 in wide x 8.5 in tall x 11.5 in deep"
+    ],
     "weight": "907",
     "height": "23",
     "width": "31",
@@ -401,7 +431,9 @@
     "price": 150,
     "type": "Medium Tote",
     "descriptionShort": "Medium-sized waxed canvas and leather tote with shoulder strap.",
-    "descriptionLong": "This is the pocket-lover's tote! It includes four outside pockets in waxed canvas and two internal pockets in navy cotton lining. It has both short tote straps and a removable shoulder strap. Fits a small laptop or tablet in addition to all of the essentials.  Includes all brass hardware and a Riri zipper. 16.5 in wide x 12 in tall x 3.5 in deep",
+    "descriptionLong": [
+      "This is the pocket-lover's tote! It includes four outside pockets in waxed canvas and two internal pockets in navy cotton lining. It has both short tote straps and a removable shoulder strap. Fits a small laptop or tablet in addition to all of the essentials.  Includes all brass hardware and a Riri zipper. 16.5 in wide x 12 in tall x 3.5 in deep"
+    ],
     "weight": "595",
     "height": "31",
     "width": "10",
@@ -427,7 +459,9 @@
     "price": 150,
     "type": "Medium Tote",
     "descriptionShort": "Medium-sized indigo-dyed waxed canvas and leather tote with shoulder strap.",
-    "descriptionLong": "This is the pocket-lover's tote! It includes four outside pockets in indigo-dyed waxed canvas and two internal pockets in navy cotton lining. It has both short tote straps and a removable shoulder strap. Fits a small laptop or tablet in addition to all of the essentials.  Includes all brass hardware and a Riri zipper. 16.5 in wide x 12 in tall x 3.5 in deep",
+    "descriptionLong": [
+      "This is the pocket-lover's tote! It includes four outside pockets in indigo-dyed waxed canvas and two internal pockets in navy cotton lining. It has both short tote straps and a removable shoulder strap. Fits a small laptop or tablet in addition to all of the essentials.  Includes all brass hardware and a Riri zipper. 16.5 in wide x 12 in tall x 3.5 in deep"
+    ],
     "weight": "595",
     "height": "31",
     "width": "10",
@@ -453,7 +487,9 @@
     "price": 150,
     "type": "Medium Tote",
     "descriptionShort": "",
-    "descriptionLong": "",
+    "descriptionLong": [
+      ""
+    ],
     "weight": "",
     "height": "",
     "width": "",
@@ -479,7 +515,9 @@
     "price": 150,
     "type": "Medium Tote",
     "descriptionShort": "",
-    "descriptionLong": "",
+    "descriptionLong": [
+      ""
+    ],
     "weight": "",
     "height": "",
     "width": "",
@@ -505,7 +543,9 @@
     "price": 75,
     "type": "Small tote",
     "descriptionShort": "Small waxed canvas and leather tote.",
-    "descriptionLong": "This minimalist tote has two outside pockets and a magnetic snap closure. All brass hardware. 12.5 in wide x 12.5 in tall x 3.5 in deep",
+    "descriptionLong": [
+      "This minimalist tote has two outside pockets and a magnetic snap closure. All brass hardware. 12.5 in wide x 12.5 in tall x 3.5 in deep"
+    ],
     "weight": "454",
     "height": "33",
     "width": "9",
@@ -531,7 +571,9 @@
     "price": 75,
     "type": "Small tote",
     "descriptionShort": "",
-    "descriptionLong": "",
+    "descriptionLong": [
+      ""
+    ],
     "weight": "",
     "height": "",
     "width": "",
@@ -557,7 +599,9 @@
     "price": 75,
     "type": "Small tote",
     "descriptionShort": "",
-    "descriptionLong": "",
+    "descriptionLong": [
+      ""
+    ],
     "weight": "",
     "height": "",
     "width": "",
@@ -583,7 +627,9 @@
     "price": 75,
     "type": "Small tote",
     "descriptionShort": "Small indigo-dyed waxed canvas and leather tote.",
-    "descriptionLong": "This minimalist tote has two outside pockets and a magnetic snap closure. All brass hardware. 12.5 in wide x 12.5 in tall x 3.5 in deep",
+    "descriptionLong": [
+      "This minimalist tote has two outside pockets and a magnetic snap closure. All brass hardware. 12.5 in wide x 12.5 in tall x 3.5 in deep"
+    ],
     "weight": "454",
     "height": "33",
     "width": "9",
