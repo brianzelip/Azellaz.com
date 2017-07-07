@@ -8,7 +8,11 @@
 		"price": "250.00",
 		"type": "duffle",
 		"descriptionShort": "Indigo-dyed waxed canvas and leather duffle.",
-		"descriptionLong": "Sized to fit carry-on restrictions, this duffle is made to be your reliable travel companion. Includes two side pockets and one front pocket. Each piece is hand dyed with indigo and hand waxed with beeswax. The leather is hand veg-tanned in Italy. Includes all brass hardware and a Riri zipper. 21 in wide x 8.5 in tall x 11.5 in deep",
+		"descriptionLong": [
+		  "Sized to fit carry-on restrictions, this duffle is made to be your reliable travel companion. Includes two side pockets and one front pocket. Each piece is hand dyed with indigo and hand waxed with beeswax. The leather is hand veg-tanned in Italy. Includes all brass hardware and a Riri zipper. 21 in wide x 8.5 in tall x 11.5 in deep.",
+		  "hello world",
+		  "good bye world"
+		],
 		"weight": "907",
 		"height": "23",
 		"width": "31",
