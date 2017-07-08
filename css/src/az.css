@@ -127,6 +127,8 @@ body, .h0, h1, h2, h3, h4, h5, h6 {
   .shop-fixed-logo-show { display: block!important; }
 }/* minimum width to show fixed shop logo; 84.375em = 1350px = .container size (76rem) + 75px(75px=logo hard coded width)*2 (account for left and right container gutters)*/
 
+.col-sevenths { width: calc(100%/7); }
+
 .height2r { height: 2rem; }
 
 .px1 {
