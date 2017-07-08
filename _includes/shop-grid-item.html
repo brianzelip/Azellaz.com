@@ -6,8 +6,8 @@
                 </div>
                 <div class="info overflow-hidden">
                   <div class="info-back">
-                    <h3 class="name">{{ product.name }}</h3>
-                    <p>$<span class="price">{{ product.price }}</span></p>
+                    <h3 class="name">{{ product.displayName }}</h3>
+                    <p>$<span class="price">{{ product.price }}</span>{% if product.type == 'clutch'  %}+{% endif %}</p>
                   </div>
                 </div>
               </a>

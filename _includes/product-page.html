@@ -6,7 +6,7 @@
     </div>
 
     <div>
-      <img id="large-image-view" src="/{{ site.product_images_dir }}{{ product.imgFront }}" class="mbn1" alt="Front view of the {{ product.name }} bag by Azellaz.com" title="{{ product.name }} front"/>
+      <img id="large-image-view" src="/{{ site.product_images_dir }}{{ product.imgFront }}" class="mbn1" alt="Front view of the {{ product.displayName }} bag by Azellaz.com" title="{{ product.displayName }} front"/>
     </div>
 
     <div class="sm-show"><!-- have to double up this component because ie's lack of flexbox column support -->
@@ -15,15 +15,17 @@
   </div>
 
   <div class="col col-12 md-col-5 p2">
-    <h1 class="m0 h2 serif light-black">{{ product.name }}</h1>
-    <p class="h2 serif light-black">${{ product.price }}</p>
-    <p class="serif light-black">{{ product.descriptionLong }}</p>
+    <h1 class="m0 h2 serif light-black">{{ product.displayName }}</h1>
+    <p class="h2 serif light-black">${{ product.price }}{% if product.type == 'clutch'  %}+{% endif %}</p>
+    {% for paragraph in product.descriptionLong %}
+    <p class="serif light-black">{{ paragraph }}</p>
+    {% endfor %}
     <p class="serif light-black"><span class="red">*</span><strong>Availability:</strong> {% if product.inStock %}{{ site.in_stock }}{% else %}{{ site.made_to_order }}{% endif %}</p>
     <div class="md-mt4">
       <button
         class="col-12 md-width-auto btn btn-outline fw200 light-black snipcart-add-item"
         data-item-id="{{ product.id }}"
-        data-item-name="{{ product.name }}"
+        data-item-name="{{ product.displayName }}"
         data-item-image="{{ site.base_url }}{{ site.product_thumb_sm_images_dir }}{{ product.thumbSmallFront }}"
         data-item-price="{{ product.price }}"
         data-item-weight="{{ product.weight }}"
@@ -31,7 +33,10 @@
         data-item-width="{{ product.width }}"
         data-item-length="{{ product.length }}"
         data-item-url="{{ product.url }}"
-        data-item-description="{{ product.descriptionShort }}">
+        data-item-description="{{ product.descriptionShort }}"{% if product.type == 'clutch'  %}
+        data-item-custom1-name="Strap options"
+        data-item-custom1-required="true"
+        data-item-custom1-options="No strap, $45|Wrist, $55[+10.00]|Crossbody, $65[+20.00]|Both straps, $75[+30.00]"{% endif %}>
         Add to Cart
       </button>
     </div>
