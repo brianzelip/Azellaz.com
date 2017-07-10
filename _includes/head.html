@@ -7,20 +7,20 @@
     <script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" data-api-key="{{ site.live_api_key }}" id="snipcart"></script>
     <link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" rel="stylesheet" type="text/css" />
     {% if page.layout == 'product' %}
-    <title>{{ product.name }} by Azellaz</title>
+    <title>{{ product.displayName }} by Azellaz</title>
     <meta name="description" content="">
     <meta name="author" content="Abbie Zelip">
     <meta name="author" content="Brian Zelip">
     <meta name="keywords" content="">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@AbiSackmann">
-    <meta name="twitter:title" content="{{ product.name }} by Azellaz">
-    <meta name="twitter:image:alt" content="{{ product.name }} by Azellaz. {{ product.descriptionShort }}">
+    <meta name="twitter:title" content="{{ product.displayName }} by Azellaz">
+    <meta name="twitter:image:alt" content="{{ product.displayName }} by Azellaz. {{ product.descriptionShort }}">
     <meta name="twitter:description" content="{{ product.descriptionShort }}">
     <meta name="twitter:image" content="{{ site.base_url }}{{ site.product_images_dir }}{{ product.imgFront }}">
     <meta property="og:url" content="{{ site.base_url }}{{ product.slug }}/" />
     <meta property="og:type" content="product" />
-    <meta property="og:title" content="{{ product.name }} by Azellaz" />
+    <meta property="og:title" content="{{ product.displayName }} by Azellaz" />
     <meta property="og:description" content="{{ product.descriptionShort }}" />
     <meta property="og:image" content="{{ site.base_url }}{{ site.product_images_dir }}{{ product.imgFront }}" />
     {% elsif page.url == '/'  %}
