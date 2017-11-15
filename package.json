@@ -30,6 +30,7 @@
     "cssnano": "^3.10.0",
     "postcss": "^5.2.16",
     "postcss-cli": "^3.0.0",
+    "postcss-color-function": "^4.0.1",
     "postcss-custom-media": "^5.0.1",
     "postcss-custom-properties": "^5.0.2",
     "postcss-import": "^9.1.0"
