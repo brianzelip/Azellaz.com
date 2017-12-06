@@ -1,22 +1,20 @@
 {
   "name": "Azellaz.com",
   "version": "1.3.0",
-  "description": "Dev space for Azellaz.com. She's crafty, and she's just my type!",
+  "description":
+    "Dev space for Azellaz.com. She's crafty, and she's just my type!",
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "css": "postcss -u postcss-import autoprefixer cssnano -d css/dist/ css/src/az.css --no-map --watch",
+    "css":
+      "postcss -u postcss-custom-properties postcss-color-function postcss-import autoprefixer cssnano -d css/dist/ css/src/az.css --no-map --watch",
     "start": "npm run css & jekyll serve"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/brianzelip/Azellaz.com.git"
   },
-  "keywords": [
-    "fine",
-    "leather",
-    "goods"
-  ],
+  "keywords": ["fine", "leather", "goods"],
   "author": "bzelip",
   "license": "MIT",
   "bugs": {
@@ -30,6 +28,7 @@
     "cssnano": "^3.10.0",
     "postcss": "^5.2.16",
     "postcss-cli": "^3.0.0",
+    "postcss-color-function": "^4.0.1",
     "postcss-custom-media": "^5.0.1",
     "postcss-custom-properties": "^5.0.2",
     "postcss-import": "^9.1.0"
