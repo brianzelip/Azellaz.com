@@ -1,26 +1,41 @@
 /*!
 
-  AZELLAZ.com
+  www.AZELLAZ.com style
 
-  by @bzelip
+    by @bzelip
 
-  w/ special guests:
-    - [Basscss](http://basscss.com/)
-    - [iHover](http://gudh.github.io/ihover/dist/index.html)
-    - [Font Awesome](http://fontawesome.io/)
+    w/ special guests:
+      - [Basscss](http://basscss.com/)
+      - [iHover](http://gudh.github.io/ihover/dist/index.html)
+      - [Font Awesome](http://fontawesome.io/)
 
-  * * * * * * * * * * * * * * * * *
-  *                               *
-  *    She's crafty,              *
-  *    and she's just my type!    *
-  *                               *
-  * * * * * * * * * * * * * * * * *
+    * * * * * * * * * * * * * * * * *
+    *                               *
+    *    She's crafty,              *
+    *    and she's just my type!    *
+    *                               *
+    * * * * * * * * * * * * * * * * *
 
 */
 
+/*!
+ * 1/4 - Basscss
+ */
 @import './basscss@7.1.1.min.css';
+
+/*!
+ * 2/4 - iHover
+ */
 @import './ihover.CUSTOM.css';
+
+/*!
+ * 3/4 - FontAwesome
+ */
 @import './font-awesome@4.7.0.CUSTOM.css';
+
+/*!
+ * 4/4 - Azellaz.theme
+ */
 
 :root {
   --blue: rgb(82, 141, 191);
