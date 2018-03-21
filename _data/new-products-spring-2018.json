@@ -3,10 +3,7 @@
     "NOTE 1": {
       "DO NOT WORRY ABOUT THESE FIELDS": ["id", "slug", "url"]
     },
-    "NOTE 2": {
-      "REGARDING IMAGES": "fill is whatever you can per product"
-    },
-    "NOTE 3":
+    "NOTE 2":
       "The first object below (id: AZ0010) is an exisiting product data example."
   },
   {
@@ -58,15 +55,7 @@
     "height": 0,
     "width": 0,
     "length": 0,
-    "One to two word descriptions, separated by comma, of available pictures":
-      "",
-    "imgFront": "",
-    "imgBack": "",
-    "imgSide": "",
-    "imgInside": "",
-    "imgStrap1": "",
-    "imgStrap2": "",
-    "imgStrap3": "",
-    "thumbSmallFront": ""
+    "imgPrimary": "",
+    "imgSet": ["fileName1", "fileName2", "fileName3", "fileName4"]
   }
 ]
