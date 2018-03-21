@@ -61,4 +61,4 @@ cd thumbs-sm/ && for f in * ; do mv "$f" "thumb-sm-$f" ; done && cd ../
 mogrify -resize 25% thumbs-med/*.jpg && mogrify -resize 100x100 thumbs-sm/*.jpg
 ```
 
-9.  Move all of the photos inside `PHOTOS/` to `../products/` as the largest set of photos, then move (or add to) `thumbs-med` and `thumbs-sm` to `../products/`
+9.  Move all of the photos inside `PHOTOS/` to `../products/` as the largest set of photos, then move (or add to) `thumbs-med/` and `thumbs-sm/` to `../products/`
