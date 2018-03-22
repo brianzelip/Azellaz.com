@@ -139,6 +139,16 @@ h6 {
   background-image: url(/images/hero-indigo-shibori-duffle-front-by-Azellaz.jpg);
 }
 
+.mainBag2 {
+  background-image: url(/images/staging/PHOTOS/carousel/clutch-indigo-mountain-lisaro-leather-lookbook5.jpg);
+}
+.mainBag3 {
+  background-image: url(/images/staging/PHOTOS/carousel/medium-tote-felt-indigo-mountain-tan-leather-lookbook1.jpg);
+}
+.mainBag4 {
+  background-image: url(/images/staging/PHOTOS/carousel/small-tote-indigo-shibori-white-maroon-leather-lookbook3.jpg);
+}
+
 .serif {
   font-family: Athelas, Georgia, serif;
 } /*mods*/
@@ -179,7 +189,7 @@ h6 {
 } /* minimum width to show fixed shop logo; 84.375em = 1350px = .container size (76rem) + 75px(75px=logo hard coded width)*2 (account for left and right container gutters)*/
 
 .col-sevenths {
-  width: calc(100%/7);
+  width: calc(100% / 7);
 }
 
 .height2r {
@@ -245,7 +255,8 @@ h6 {
 
 .btn-blue {
   color: #fff;
-  background-color: rgb(103, 151, 171);
+  /* background-color: rgb(103, 151, 171); */
+  background-color: var(--blue);
   border-radius: 3px;
 } /*mods*/
 
@@ -254,6 +265,11 @@ h6 {
   background-color: #fff;
   border-radius: 3px;
 } /*mods*/
+
+.btn-light-black {
+  background-color: #3a3a3a;
+  border-radius: 3px;
+}
 
 .justify-start {
   justify-content: flex-start;
