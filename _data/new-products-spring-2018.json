@@ -22,7 +22,7 @@
     "width": 13,
     "length": 38,
     "imgPrimary": "backpack-black-front-by-Azellaz.jpg",
-    "imgSet": [
+    "imgSecondarySet": [
       "backpack-black-back-by-Azellaz.jpg",
       "backpack-black-side-by-Azellaz.jpg",
       "backpack-black-inside-by-Azellaz.jpg",
@@ -52,7 +52,7 @@
     "width": 13,
     "length": 38,
     "imgPrimary": "backpack-tan-front-by-Azellaz.jpg",
-    "imgSet": ["backpacks-by-Azellaz.jpg"]
+    "imgSecondarySet": ["backpacks-by-Azellaz.jpg"]
   },
   {
     "id": "AZ00501",
@@ -76,7 +76,7 @@
     "width": 8,
     "length": 15.5,
     "imgPrimary": "circle-pouch-mini-black-ganges-hand2-by-Azellaz.jpg",
-    "imgSet": [
+    "imgSecondarySet": [
       "circle-pouch-mini-black-ganges-front-by-Azellaz.jpg",
       "circle-pouch-mini-black-ganges-hand-by-Azellaz.jpg",
       "circle-pouch-mini-black-ganges-top-by-Azellaz.jpg"
@@ -104,7 +104,7 @@
     "width": 8,
     "length": 15.5,
     "imgPrimary": "circle-pouch-mini-blue-ganges-hand2-by-Azellaz.jpg",
-    "imgSet": [
+    "imgSecondarySet": [
       "circle-pouch-mini-blue-ganges-front-by-Azellaz.jpg",
       "circle-pouch-mini-blue-ganges-hand-by-Azellaz.jpg",
       "circle-pouch-mini-blue-ganges-side-by-Azellaz.jpg"
@@ -132,7 +132,7 @@
     "width": 8,
     "length": 15.5,
     "imgPrimary": "circle-pouch-small-black-gingko-front-by-Azellaz.jpg",
-    "imgSet": [
+    "imgSecondarySet": [
       "circle-pouch-small-black-gingko-hand-by-Azellaz.jpg",
       "circle-pouch-small-black-gingko-side-by-Azellaz.jpg"
     ]
@@ -159,7 +159,7 @@
     "width": 8,
     "length": 15.5,
     "imgPrimary": "circle-pouch-small-indigo-mountain-front-by-Azellaz.jpg",
-    "imgSet": [
+    "imgSecondarySet": [
       "circle-pouch-small-indigo-mountain-front2-by-Azellaz.jpg",
       "circle-pouch-small-indigo-mountain-side-by-Azellaz.jpg",
       "circle-pouch-small-indigo-mountain-back-by-Azellaz"
@@ -187,7 +187,7 @@
     "width": 8,
     "length": 15.5,
     "imgPrimary": "circle-pouch-small-red-circle-front-by-Azellaz.jpg",
-    "imgSet": []
+    "imgSecondarySet": []
   },
   {
     "id": "AZ0049",
@@ -213,7 +213,7 @@
     "length": 48,
     "imgPrimary":
       "medium-tote-felt-indigo-mountain-maroon-leather-front-by-Azellaz.jpg",
-    "imgSet": [
+    "imgSecondarySet": [
       "medium-tote-felt-indigo-mountain-maroon-leather-side-by-Azellaz.jpg",
       "medium-tote-felt-indigo-mountain-maroon-leather-inside-by-Azellaz.jpg"
     ]
