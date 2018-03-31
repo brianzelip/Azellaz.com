@@ -8,6 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "css":
       "postcss -u postcss-custom-properties postcss-color-function postcss-import autoprefixer cssnano -d css/dist/ css/src/az.css --no-map --watch",
+    "newPreJekyllBuildProductPages": "node newProductPages.js",
     "start": "npm run css & jekyll serve"
   },
   "repository": {
