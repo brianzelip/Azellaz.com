@@ -1,7 +1,7 @@
 const fs = require('fs');
 const products = require('./_data/products.json');
 
-const productFilesDir = './test/';
+const productFilesDir = './new-products/';
 
 removeOldProductFiles(productFilesDir);
 createNewProductFiles(productFilesDir);
