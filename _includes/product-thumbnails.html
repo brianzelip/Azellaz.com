@@ -1,7 +1,7 @@
 <div class="py1 sm-py2 mxn1 flex align-items-end sm-align-items-start">
-  {% if product.imgFront != '' %}
+  {% if product.imgPrimary != '' %}
   <div class="col col-sevenths px1">
-    <img class="border pointer thumb" src="/{{ site.product_images_dir }}{{ product.imgFront }}" alt="Front view of the {{ product.name }} bag by Azellaz.com" title="{{ product.name }} front"/>
+    <img class="border pointer thumb" src="/{{ site.product_images_dir }}{{ product.imgPrimary }}" alt="Front view of the {{ product.name }} bag by Azellaz.com" title="{{ product.name }} front"/>
   </div>
   {% endif %}
   {% if product.imgBack != '' %}
@@ -34,7 +34,7 @@
     <img class="border pointer thumb" src="/{{ site.product_images_dir }}{{ product.imgStrap3 }}" alt="Strap 3 view of the {{ product.name }} bag by Azellaz.com" title="{{ product.name }} strap 2"/>
   </div>
   {% endif %}
-  {% if product.imgFront == '' %}
+  {% if product.imgPrimary == '' %}
   <div class="col col-sevenths px1">
     <img src="/images/blank_thumb_2200x2600.png" alt="transparent image" title="small transparent image"/>
   </div>
