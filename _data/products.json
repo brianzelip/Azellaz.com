@@ -702,5 +702,241 @@
     "imgSecondarySet": [
       "small-tote-indigo-shibori-white-black-leather-side-by-Azellaz.jpg"
     ]
+  },
+  {
+    "id": "AZ0046",
+    "name": "Backpack - black",
+    "displayName": "Leather and Felt Backpack / Black",
+    "slug": "backpack-black",
+    "url": "https://www.azellaz.com/backpack-black",
+    "inStock": false,
+    "stockOnHand": 0,
+    "price": 265,
+    "type": "backpack",
+    "materials": ["felt", "leather"],
+    "currentListing": true,
+    "descriptionShort": "Screenprinted felt and leather backpack",
+    "descriptionLong": [
+      "This backpack is made from Horween leather and hand-printed industrial wool felt. It is built to last while providing a practical and beautiful accessory for your daily adventures.",
+      "Designed and made from scratch by me, in Baltimore.",
+      "Includes an interior leather pocket, snap closure, and all solid brass hardware.",
+      "Approximate dimensions: 13 inches wide x 14 inches tall x 3 inches deep",
+      "*Availability: Items are made to order and will ship in 2-3 weeks. Each design is printed by hand and may vary slightly from these images."
+    ],
+    "weight": 737,
+    "height": 38,
+    "width": 13,
+    "length": 38,
+    "imgPrimary": "backpack-black-front-by-Azellaz.jpg",
+    "imgSecondarySet": [
+      "backpack-black-back-by-Azellaz.jpg",
+      "backpack-black-side-by-Azellaz.jpg",
+      "backpack-black-inside-by-Azellaz.jpg",
+      "backpack-black-front2-by-Azellaz.jpg"
+    ]
+  },
+  {
+    "id": "AZ0047",
+    "name": "Backpack - english tan",
+    "displayName": "Leather and Felt Backpack / English Tan",
+    "slug": "backpack-tan",
+    "url": "https://www.azellaz.com/backpack-tan",
+    "inStock": false,
+    "stockOnHand": 0,
+    "price": 265,
+    "type": "backpack",
+    "materials": ["felt", "leather"],
+    "currentListing": true,
+    "descriptionShort": "Screenprinted felt and leather backpack",
+    "descriptionLong": [
+      "This backpack is made from Horween leather and hand-printed industrial wool felt. It is built to last while providing a practical and beautiful accessory for your daily adventures.",
+      "Designed and made from scratch by me, in Baltimore.",
+      "Includes an interior leather pocket, snap closure, and all solid brass hardware.",
+      "Approximate dimensions: 13 inches wide x 14 inches tall x 3 inches deep",
+      "*Availability: Items are made to order and will ship in 2-3 weeks. Each design is printed by hand and may vary slightly from these images."
+    ],
+    "weight": 737,
+    "height": 38,
+    "width": 13,
+    "length": 38,
+    "imgPrimary": "backpack-tan-front-by-Azellaz.jpg",
+    "imgSecondarySet": ["backpacks-by-Azellaz.jpg"]
+  },
+  {
+    "id": "AZ00501",
+    "name": "Circular pouch - felt - mini - black ganges",
+    "displayName": "Mini Felt Circle Pouch / Black River",
+    "slug": "circle-pouch-mini-black-ganges",
+    "url": "https://www.azellaz.com/circle-pouch-mini-black-ganges",
+    "inStock": false,
+    "stockOnHand": 0,
+    "price": 20,
+    "type": "pouch",
+    "materials": ["felt"],
+    "currentListing": true,
+    "descriptionShort": "Screenprinted felt pouch",
+    "descriptionLong": [
+      "A practical and lovely little pouch for all of your organizing needs. Great for change, or small craft supplies and tools on the go.",
+      "Made from industrial wool felt and printed with dye. Each print is going to be slightly different as the design is much larger than the footprint of the pouch. Nylon YKK zipper.",
+      "Designed, hand-printed, and sewn by me, in Baltimore.",
+      "Approximate dimensions: 5 inches wide x 2 inches tall x 2 inches deep"
+    ],
+    "weight": 57,
+    "height": 10,
+    "width": 8,
+    "length": 15.5,
+    "imgPrimary": "circle-pouch-mini-black-ganges-hand2-by-Azellaz.jpg",
+    "imgSecondarySet": [
+      "circle-pouch-mini-black-ganges-front-by-Azellaz.jpg",
+      "circle-pouch-mini-black-ganges-hand-by-Azellaz.jpg",
+      "circle-pouch-mini-black-ganges-top-by-Azellaz.jpg"
+    ]
+  },
+  {
+    "id": "AZ00502",
+    "name": "Circular pouch - felt - mini - blue ganges",
+    "displayName": "Mini Felt Circle Pouch / Blue River",
+    "slug": "circle-pouch-mini-blue-ganges",
+    "url": "https://www.azellaz.com/circle-pouch-mini-blue-ganges",
+    "inStock": false,
+    "stockOnHand": 0,
+    "price": 20,
+    "type": "pouch",
+    "materials": ["felt"],
+    "currentListing": true,
+    "descriptionShort": "Screenprinted felt pouch",
+    "descriptionLong": [
+      "A practical and lovely little pouch for all of your organizing needs. Great for change, or small craft supplies and tools on the go.",
+      "Made from industrial wool felt and printed with dye. Each print is going to be slightly different as the design is much larger than the footprint of the pouch. Nylon YKK zipper.",
+      "Designed, hand-printed, and sewn by me, in Baltimore.",
+      "Approximate dimensions: 5 inches wide x 2 inches tall x 2 inches deep"
+    ],
+    "weight": 57,
+    "height": 10,
+    "width": 8,
+    "length": 15.5,
+    "imgPrimary": "circle-pouch-mini-blue-ganges-hand2-by-Azellaz.jpg",
+    "imgSecondarySet": [
+      "circle-pouch-mini-blue-ganges-front-by-Azellaz.jpg",
+      "circle-pouch-mini-blue-ganges-hand-by-Azellaz.jpg",
+      "circle-pouch-mini-blue-ganges-side-by-Azellaz.jpg"
+    ]
+  },
+  {
+    "id": "AZ00482",
+    "name": "Circular pouch - felt - small - black gingko",
+    "displayName": "Small Felt Circle Pouch / Black Gingko",
+    "slug": "circle-pouch-small-black-gingko",
+    "url": "https://www.azellaz.com/circle-pouch-small-black-gingko",
+    "inStock": false,
+    "stockOnHand": 0,
+    "price": 25,
+    "type": "pouch",
+    "materials": ["felt"],
+    "currentListing": true,
+    "descriptionShort": "Screenprinted felt pouch",
+    "descriptionLong": [
+      "A practical and lovely little pouch for all of your organizing needs. Great for small craft supplies and tools on the go. ",
+      "Made from industrial wool felt and printed with solvent-free inks. Nylon YKK zipper.",
+      "Designed, hand-printed, and sewn by me in Baltimore.",
+      "Approximate dimensions: 5.5 inches wide x 3.5 inches tall x 2.5 inches deep"
+    ],
+    "weight": 57,
+    "height": 10,
+    "width": 8,
+    "length": 15.5,
+    "imgPrimary": "circle-pouch-small-black-gingko-front-by-Azellaz.jpg",
+    "imgSecondarySet": [
+      "circle-pouch-small-black-gingko-hand-by-Azellaz.jpg",
+      "circle-pouch-small-black-gingko-side-by-Azellaz.jpg"
+    ]
+  },
+  {
+    "id": "AZ00484",
+    "name": "Circular pouch - felt - small - indigo mountain",
+    "displayName": "Small Felt Circle Pouch / Indigo Mountain",
+    "slug": "circle-pouch-small-indigo-mountain",
+    "url": "https://www.azellaz.com/circle-pouch-small-indigo-mountain",
+    "inStock": false,
+    "stockOnHand": 0,
+    "price": 25,
+    "type": "pouch",
+    "materials": ["felt"],
+    "currentListing": true,
+    "descriptionShort": "Hand-dyed felt pouch",
+    "descriptionLong": [
+      "A practical and lovely little pouch for all of your organizing needs. Great for small craft supplies and tools on the go. ",
+      "Made from industrial wool felt and dip-dyed with natural indigo. Nylon YKK zipper.",
+      "Designed, hand-dyed, and sewn by me in Baltimore.",
+      "Approximate dimensions: 5.5 inches wide x 3.5 inches tall x 2.5 inches deep"
+    ],
+    "weight": 57,
+    "height": 10,
+    "width": 8,
+    "length": 15.5,
+    "imgPrimary": "circle-pouch-small-indigo-mountain-front-by-Azellaz.jpg",
+    "imgSecondarySet": [
+      "circle-pouch-small-indigo-mountain-front2-by-Azellaz.jpg",
+      "circle-pouch-small-indigo-mountain-side-by-Azellaz.jpg",
+      "circle-pouch-small-indigo-mountain-back-by-Azellaz.jpg"
+    ]
+  },
+  {
+    "id": "AZ00485",
+    "name": "Circular pouch - felt - small - red circle",
+    "displayName": "Small Felt Circle Pouch / Red Circle",
+    "slug": "circle-pouch-small-red-circle",
+    "url": "https://www.azellaz.com/circle-pouch-small-red-circle",
+    "inStock": false,
+    "stockOnHand": 0,
+    "price": 25,
+    "type": "pouch",
+    "materials": ["felt"],
+    "currentListing": true,
+    "descriptionShort": "Screenprinted felt pouch",
+    "descriptionLong": [
+      "A practical and lovely little pouch for all of your organizing needs. Great for small craft supplies and tools on the go. ",
+      "Made from industrial wool felt and printed with dye. Nylon YKK zipper.",
+      "Designed, hand-printed, and sewn by me in Baltimore.",
+      "Approximate dimensions: 5.5 inches wide x 3.5 inches tall x 2.5 inches deep"
+    ],
+    "weight": 57,
+    "height": 10,
+    "width": 8,
+    "length": 15.5,
+    "imgPrimary": "circle-pouch-small-red-circle-front-by-Azellaz.jpg",
+    "imgSecondarySet": []
+  },
+  {
+    "id": "AZ0049",
+    "name": "Medium tote - felt - mountain - maroon",
+    "displayName": "Indigo Mountain Medium Felt Tote / Maroon Leather",
+    "slug": "medium-tote-felt-indigo-mountain-maroon-leather",
+    "url":
+      "https://www.azellaz.com/medium-tote-felt-indigo-mountain-maroon-leather",
+    "inStock": false,
+    "stockOnHand": 0,
+    "price": 180,
+    "type": "tote",
+    "materials": ["felt", "leather"],
+    "currentListing": true,
+    "descriptionShort": "Indigo-dyed felt and leather tote bag",
+    "descriptionLong": [
+      "This is the pocket-lover's tote! It includes four outside pockets in indigo-dyed felt. Fits a laptop or tablet in addition to all of the essentials.",
+      "The felt is the highest density of industrial wool felt and will not pill. The leather is English Bridle leather that is luxurious, water resistant, and durable. It is vegetable tanned in Pennsylvania by a company that was founded in 1867, from North American cattle. Includes all brass hardware.",
+      "For cleaning, a lint roller is your best friend. You may spot clean with water and gentle detergent, but do not submerge in water. Indigo is a physical bond with wool and will fade slightly over time.",
+      "Approximate dimensions: 15 inches wide x 13 inches tall x 3 inches deep.",
+      "*Availability: Made to order, ships in 1-3 weeks. Items are individually dyed and may vary slightly from these images."
+    ],
+    "weight": 567,
+    "height": 36,
+    "width": 13,
+    "length": 48,
+    "imgPrimary":
+      "medium-tote-felt-indigo-mountain-maroon-leather-front-by-Azellaz.jpg",
+    "imgSecondarySet": [
+      "medium-tote-felt-indigo-mountain-maroon-leather-side-by-Azellaz.jpg",
+      "medium-tote-felt-indigo-mountain-maroon-leather-inside-by-Azellaz.jpg"
+    ]
   }
 ]
