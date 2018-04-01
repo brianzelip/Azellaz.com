@@ -6,7 +6,13 @@
     </div>
 
     <div>
-      <img id="large-image-view" src="/{{ site.product_images_dir }}{{ product.imgPrimary }}" class="mbn1" alt="Front view of the {{ product.displayName }} bag by Azellaz.com" title="{{ product.displayName }} front"/>
+      <img
+        id="large-image-view"
+        class="mbn1"
+        src="/{{ site.product_images_dir }}{{ product.imgPrimary }}" 
+        alt="{{ product.imgPrimary | remove: product.slug | remove_first: "-" | remove: "-by-Azellaz.jpg" | capitalize }} view of the {{ product.displayName }} bag by Azellaz.com"
+        title="{{ product.imgPrimary | remove: product.slug | remove_first: "-" | remove: "-by-Azellaz.jpg" | capitalize }} view of the {{ product.displayName }} bag by Azellaz.com"
+      />
     </div>
 
     <div class="sm-show"><!-- have to double up this component because ie's lack of flexbox column support -->
