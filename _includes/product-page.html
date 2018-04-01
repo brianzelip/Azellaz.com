@@ -68,9 +68,14 @@
     });
 
   function showLargeImage(e) {
-    largeImage.src = this.src;
+    largeImage.src = getLargerImgSrcFromThumbSrc(this.src);
     largeImage.alt = this.alt;
     largeImage.title = this.title;
+  }
+
+  function getLargerImgSrcFromThumbSrc(src) {
+    const thumbSubstr = /\/thumbs-med\/thumb-med-/;
+    return src.replace(thumbSubstr, '/');
   }
 
 </script>
