@@ -1,16 +1,21 @@
 <div class="py1 sm-py2 mxn1 flex align-items-end sm-align-items-start">
   {% if product.imgPrimary != '' %}
   <div class="col col-sevenths px1">
-    <img class="border pointer thumb" src="/{{ site.product_images_dir }}{{ product.imgPrimary }}" alt="Front view of the {{ product.name }} bag by Azellaz.com" title="{{ product.name }} front"/>
+    <img
+      class="border pointer thumb"
+      src="/{{ site.product_thumb_med_images_dir }}{{ site.thumb_medium_prefix }}{{ product.imgPrimary }}"
+      alt="{{ product.imgPrimary | remove: product.slug | remove_first: "-" | remove: "-by-Azellaz.jpg" | capitalize }} view of the {{ product.displayName }} bag by Azellaz.com"
+      title="{{ product.imgPrimary | remove: product.slug | remove_first: "-" | remove: "-by-Azellaz.jpg" | capitalize }} view of the {{ product.displayName }} bag by Azellaz.com"
+    />
   </div>
   {% endif %}
   {% for img in product.imgSecondarySet %}
   <div class="col col-sevenths px1">
     <img
       class="border pointer thumb"
-      src="/{{ site.product_images_dir }}{{ img }}"
-      alt="{{ img | remove: product.slug | remove_first: "-" | remove: "-by-Azellaz.jpg"}} view of the {{ product.name }} bag by Azellaz.com"
-      title="{{ product.name }} back"
+      src="/{{ site.product_thumb_med_images_dir }}{{ site.thumb_medium_prefix }}{{ img }}"
+      alt="{{ img | remove: product.slug | remove_first: "-" | remove: "-by-Azellaz.jpg" | capitalize }} view of the {{ product.displayName }} bag by Azellaz.com"
+      title="{{ img | remove: product.slug | remove_first: "-" | remove: "-by-Azellaz.jpg" | capitalize }} view of the {{ product.displayName }} bag by Azellaz.com"
     />
   </div>
   {% endfor %}
