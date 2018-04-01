@@ -32,7 +32,7 @@
         class="col-12 md-width-auto btn btn-outline fw200 light-black snipcart-add-item"
         data-item-id="{{ product.id }}"
         data-item-name="{{ product.displayName }}"
-        data-item-image="/{{ site.product_thumb_sm_images_dir }}{{ site.thumb_small_prefix }}{{ product.imgPrimary }}"
+        data-item-image="{{ site.base_url }}{{ site.product_thumb_sm_images_dir }}{{ site.thumb_small_prefix }}{{ product.imgPrimary }}"
         data-item-price="{{ product.price }}"
         data-item-weight="{{ product.weight }}"
         data-item-height="{{ product.height }}"
