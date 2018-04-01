@@ -9,7 +9,9 @@ createNewProductFiles(productFilesDir);
 function removeOldProductFiles(dir) {
   const oldFiles = fs.readdirSync(dir);
 
-  console.log(`Deleting ${oldFiles.length} old product files...`);
+  console.log(
+    `Deleting ${oldFiles.length} old product files in ${productFilesDir} ...`
+  );
 
   let count = 0;
   for (const file of oldFiles) {
@@ -24,22 +26,24 @@ function removeOldProductFiles(dir) {
 }
 
 function createNewProductFiles(dir) {
-  console.log(`Generating ${products.length} new Azellaz product pages...`);
+  console.log(`Generating new Azellaz product pages in ${productFilesDir} ...`);
 
   let count = 0;
 
   for (const product of products) {
-    count++;
+    if (product.currentListing) {
+      count++;
 
-    const fileContent = `---
+      const fileContent = `---
 layout: product
 permalink: /${product.slug}/
 productID: ${product.id}
 ---
 `;
 
-    fs.writeFileSync(`${dir}${product.slug}.html`, fileContent);
-    console.log(`${count}. ${product.slug}.html`);
+      fs.writeFileSync(`${dir}${product.slug}.html`, fileContent);
+      console.log(`${count}. ${product.slug}.html`);
+    }
   }
   return;
 }
