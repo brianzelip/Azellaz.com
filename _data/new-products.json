@@ -206,7 +206,7 @@
     "inStock": false,
     "stockOnHand": 0,
     "price": 180,
-    "type": "pouch",
+    "type": "tote",
     "materials": ["felt", "leather"],
     "descriptionShort": "Indigo-dyed felt and leather tote bag",
     "descriptionLong": [
