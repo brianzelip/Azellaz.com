@@ -66,7 +66,7 @@
     "stockOnHand": 0,
     "price": 20,
     "type": "pouch",
-    "materials": ["felt", "leather"],
+    "materials": ["felt"],
     "descriptionShort": "Screenprinted felt pouch",
     "descriptionLong": [
       "A practical and lovely little pouch for all of your organizing needs. Great for change, or small craft supplies and tools on the go.",
@@ -95,7 +95,7 @@
     "stockOnHand": 0,
     "price": 20,
     "type": "pouch",
-    "materials": ["felt", "leather"],
+    "materials": ["felt"],
     "descriptionShort": "Screenprinted felt pouch",
     "descriptionLong": [
       "A practical and lovely little pouch for all of your organizing needs. Great for change, or small craft supplies and tools on the go.",
@@ -124,7 +124,7 @@
     "stockOnHand": 0,
     "price": 25,
     "type": "pouch",
-    "materials": ["felt", "leather"],
+    "materials": ["felt"],
     "descriptionShort": "Screenprinted felt pouch",
     "descriptionLong": [
       "A practical and lovely little pouch for all of your organizing needs. Great for small craft supplies and tools on the go. ",
@@ -152,7 +152,7 @@
     "stockOnHand": 0,
     "price": 25,
     "type": "pouch",
-    "materials": ["felt", "leather"],
+    "materials": ["felt"],
     "descriptionShort": "Hand-dyed felt pouch",
     "descriptionLong": [
       "A practical and lovely little pouch for all of your organizing needs. Great for small craft supplies and tools on the go. ",
@@ -181,7 +181,7 @@
     "stockOnHand": 0,
     "price": 25,
     "type": "pouch",
-    "materials": ["felt", "leather"],
+    "materials": ["felt"],
     "descriptionShort": "Screenprinted felt pouch",
     "descriptionLong": [
       "A practical and lovely little pouch for all of your organizing needs. Great for small craft supplies and tools on the go. ",
