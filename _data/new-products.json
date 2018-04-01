@@ -10,6 +10,7 @@
     "price": 265,
     "type": "backpack",
     "materials": ["felt", "leather"],
+    "currentListing": true,
     "descriptionShort": "Screenprinted felt and leather backpack",
     "descriptionLong": [
       "This backpack is made from Horween leather and hand-printed industrial wool felt. It is built to last while providing a practical and beautiful accessory for your daily adventures.",
@@ -41,6 +42,7 @@
     "price": 265,
     "type": "backpack",
     "materials": ["felt", "leather"],
+    "currentListing": true,
     "descriptionShort": "Screenprinted felt and leather backpack",
     "descriptionLong": [
       "This backpack is made from Horween leather and hand-printed industrial wool felt. It is built to last while providing a practical and beautiful accessory for your daily adventures.",
@@ -67,6 +69,7 @@
     "price": 20,
     "type": "pouch",
     "materials": ["felt"],
+    "currentListing": true,
     "descriptionShort": "Screenprinted felt pouch",
     "descriptionLong": [
       "A practical and lovely little pouch for all of your organizing needs. Great for change, or small craft supplies and tools on the go.",
@@ -96,6 +99,7 @@
     "price": 20,
     "type": "pouch",
     "materials": ["felt"],
+    "currentListing": true,
     "descriptionShort": "Screenprinted felt pouch",
     "descriptionLong": [
       "A practical and lovely little pouch for all of your organizing needs. Great for change, or small craft supplies and tools on the go.",
@@ -125,6 +129,7 @@
     "price": 25,
     "type": "pouch",
     "materials": ["felt"],
+    "currentListing": true,
     "descriptionShort": "Screenprinted felt pouch",
     "descriptionLong": [
       "A practical and lovely little pouch for all of your organizing needs. Great for small craft supplies and tools on the go. ",
@@ -153,6 +158,7 @@
     "price": 25,
     "type": "pouch",
     "materials": ["felt"],
+    "currentListing": true,
     "descriptionShort": "Hand-dyed felt pouch",
     "descriptionLong": [
       "A practical and lovely little pouch for all of your organizing needs. Great for small craft supplies and tools on the go. ",
@@ -182,6 +188,7 @@
     "price": 25,
     "type": "pouch",
     "materials": ["felt"],
+    "currentListing": true,
     "descriptionShort": "Screenprinted felt pouch",
     "descriptionLong": [
       "A practical and lovely little pouch for all of your organizing needs. Great for small craft supplies and tools on the go. ",
@@ -208,6 +215,7 @@
     "price": 180,
     "type": "tote",
     "materials": ["felt", "leather"],
+    "currentListing": true,
     "descriptionShort": "Indigo-dyed felt and leather tote bag",
     "descriptionLong": [
       "This is the pocket-lover's tote! It includes four outside pockets in indigo-dyed felt. Fits a laptop or tablet in addition to all of the essentials.",
