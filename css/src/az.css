@@ -557,6 +557,81 @@ h6 {
   }
 } /*mods*/
 
+@media (max-width: 23.125em) {
+  .btn-filter {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    padding-right: 0.1rem;
+    padding-left: 0.1rem;
+    word-break: break-word;
+    font-weight: 400;
+  }
+}
+
+@media (min-width: 23.125em) and (max-width: 25.1875em) {
+  .btn-filter {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    padding-right: 0.25rem;
+    padding-left: 0.25rem;
+    font-weight: 700;
+  }
+}
+
+@media (min-width: 25.1875em) and (max-width: 28.6875em) {
+  .btn-filter {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+}
+
+@media (min-width: 28.6875em) and (max-width: 32.1875em) {
+  .btn-filter {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
+  }
+}
+
+@media (min-width: 32.1875em) and (max-width: 32.875em) {
+  .btn-filter {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    padding-right: 0.85rem;
+    padding-left: 0.85rem;
+  }
+}
+
+@media (min-width: 32.875em) and (max-width: 34.3125em) {
+  .btn-filter {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    padding-right: 0.9rem;
+    padding-left: 0.9rem;
+  }
+}
+
+@media (min-width: 34.3125em) and (max-width: 34.75em) {
+  .btn-filter {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    padding-right: 0.93rem;
+    padding-left: 0.93rem;
+  }
+}
+
+@media (min-width: 34.75em) and (max-width: 35em) {
+  .btn-filter {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    padding-right: 0.97rem;
+    padding-left: 0.97rem;
+  }
+}
+
 @media (min-width: 40em) and (min-height: 36.75em) {
   .smxsm-py4 {
     padding-top: 4rem;
