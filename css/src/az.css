@@ -500,12 +500,21 @@ h6 {
   margin-left: -1px;
 }
 
-.before-cross::before {
+.before-crossbody::before {
   content: 'Cross ';
 }
-@media (min-width: 20rem) {
-  .before-cross::before {
+@media (min-width: 35rem) {
+  .before-crossbody::before {
     content: 'Cross';
+  }
+}
+
+.before-backpack::before {
+  content: 'Back ';
+}
+@media (min-width: 35rem) {
+  .before-backpack::before {
+    content: 'Back';
   }
 }
 
