@@ -52,38 +52,78 @@ imagesLoaded('.iso-grid').on('progress', function() {
   iso.layout();
 });
 
-// bind filter button click
-var filtersElem = document.querySelector('.filters-button-group');
-filtersElem.addEventListener('click', function(event) {
-  // only work with buttons
-  if (!matchesSelector(event.target, '.btn')) {
-    return;
-  }
-  var filterValue = event.target.getAttribute('data-filter');
-  // use matching filter function
+/**
+ * start work on combinator-filters branch
+ */
+
+// comment out previous production iso layout
+
+// // bind filter button click
+// var filtersElem = document.querySelector('.filter-buttons-group');
+// filtersElem.addEventListener('click', function(event) {
+//   // only work with buttons
+//   if (!matchesSelector(event.target, '.btn')) {
+//     return;
+//   }
+//   var filterValue = event.target.getAttribute('data-filter');
+//   // use matching filter function
+//   iso.arrange({ filter: filterValue });
+// });
+
+// // change is-checked class on buttons
+// var buttonGroups = document.querySelectorAll('.filter-buttons-group');
+// for (var i = 0, len = buttonGroups.length; i < len; i++) {
+//   var buttonGroup = buttonGroups[i];
+//   radioButtonGroup(buttonGroup);
+// }
+
+// function radioButtonGroup(buttonGroup) {
+//   buttonGroup.addEventListener('click', function(event) {
+//     // only work with buttons
+//     if (!matchesSelector(event.target, '.btn')) {
+//       return;
+//     }
+//     var button = event.target;
+//     console.log(button.parentNode.querySelector('.is-active'));
+//     if (button.parentNode.querySelector('.is-active')) {
+//       button.parentNode
+//         .querySelector('.is-active')
+//         .classList.remove('is-active');
+//     }
+//     button.classList.add('is-active');
+//   });
+// }
+
+// start new code,
+// via https://isotope.metafizzy.co/filtering.html#combination-filters
+var filters = {};
+
+$('.filter-buttons-group').on('click', '.btn', function() {
+  var $this = $(this);
+  // get group key
+  var $buttonGroup = $this.parents('.filter-buttons');
+  var filterGroup = $buttonGroup.attr('data-filter-group');
+  // set filter for group
+  filters[filterGroup] = $this.attr('data-filter');
+  // combine filters
+  var filterValue = concatValues(filters);
   iso.arrange({ filter: filterValue });
 });
 
-// change is-checked class on buttons
-var buttonGroups = document.querySelectorAll('.filters-button-group');
-for (var i = 0, len = buttonGroups.length; i < len; i++) {
-  var buttonGroup = buttonGroups[i];
-  radioButtonGroup(buttonGroup);
+// flatten object by concatting values
+function concatValues(obj) {
+  var value = '';
+  for (var prop in obj) {
+    value += obj[prop];
+  }
+  return value;
 }
 
-function radioButtonGroup(buttonGroup) {
-  buttonGroup.addEventListener('click', function(event) {
-    // only work with buttons
-    if (!matchesSelector(event.target, '.btn')) {
-      return;
-    }
-    var button = event.target;
-    console.log(button.parentNode.querySelector('.is-active'));
-    if (button.parentNode.querySelector('.is-active')) {
-      button.parentNode
-        .querySelector('.is-active')
-        .classList.remove('is-active');
-    }
-    button.classList.add('is-active');
+// change is-checked class on buttons
+$('.filter-buttons-group').each(function(i, buttonGroup) {
+  var $buttonGroup = $(buttonGroup);
+  $buttonGroup.on('click', 'button', function() {
+    $buttonGroup.find('.is-active').removeClass('is-active');
+    $(this).addClass('is-active');
   });
-}
+});
