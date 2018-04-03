@@ -43,6 +43,9 @@
   --color-info: color(var(--state-info) lightness(25%));
   --bg-color-info: color(var(--state-info) tint(75%));
   --border-color-info: color(var(--bg-color-info) shade(25%));
+
+  --navy: rgb(36, 56, 83);
+  --light-black: #3a3a3a;
 }
 
 /*!
@@ -317,8 +320,22 @@ h6 {
 } /*mods*/
 
 .navy {
-  color: rgb(36, 56, 83);
-} /*mods*/
+  color: var(--navy);
+} /*mods*/ /*NEEDS UPDATING IN MODS*/
+.inset-shadow-hover:hover {
+  box-shadow: inset 0 0 0 20rem rgba(0, 0, 0, 0.0625);
+}
+.hover-light-black-bg-white:hover {
+  color: var(--light-black);
+  background-color: #fff;
+  border-color: #fff;
+  box-shadow: inset 0 0 0 20rem rgba(0, 0, 0, 0.0625);
+}
+.hover-white-bg-navy:hover {
+  color: #fff;
+  background-color: var(--navy);
+  border-color: var(--navy);
+}
 
 .h0 {
   font-size: 2.5rem;
@@ -389,7 +406,7 @@ h6 {
   color: #aaa;
 } /*mods*/
 .light-black {
-  color: #3a3a3a;
+  color: var(--light-black);
 } /*mods*/
 
 .border-thin {

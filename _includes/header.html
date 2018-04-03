@@ -14,16 +14,16 @@
               </a>
             </div>
             <div id="cart" class="snipcart-summary pointer mr2 hide">
-              <a href="#" class="snipcart-checkout btn regular btn-small h6 sm-h4 hover-underline{% if page.url == '/' %} white{% else %} light-black{% endif %}"><i class="fa fa-shopping-cart fa-h2"></i></a>
+              <a href="#" class="snipcart-checkout btn regular btn-small h6 sm-h4{% if page.url == '/' %} white{% else %} light-black{% endif %}"><i class="fa fa-shopping-cart fa-h2"></i></a>
             </div>
             <div class="pointer sm-mr2">
-              <a {% if page.url== '/' %}href="#shop" id="goToShop"{% else %}href="/index.html#shop"{% endif %} class="{% if page.url== '/' %}goToShop {% endif %}btn regular btn-outline btn-small h6 sm-h4{% if page.url == '/' %} white{% else %} light-black{% endif %}">shop</a>
+              <a {% if page.url== '/' %}href="#shop" id="goToShop"{% else %}href="/index.html#shop"{% endif %} class="{% if page.url== '/' %}goToShop {% endif %}btn regular btn-small h6 sm-h4{% if page.url == '/' %} btn-white light-black inset-shadow-hover{% else %} btn-outline light-black{% endif %}">shop</a>
+            </div>
+            <div class="pointer sm-mr2">
+              <a href="/about" class="btn regular btn-small h6 sm-h4{% if page.url == '/' %} btn-outline white hover-light-black-bg-white{% else %} light-black hover-underline{% endif %}{% if page.url == '/about/' %} underline cursor-default{% endif %}">about</a>
             </div>
             <div class="pointer">
-              <a href="/about" class="btn regular btn-small h6 sm-h4 hover-underline{% if page.url == '/' %} white{% else %} light-black{% endif %}{% if page.url == '/about/' %} underline cursor-default{% endif %}">about</a>
-            </div>
-            <div class="pointer">
-              <a href="/contact" class="btn regular btn-small h6 sm-h4 hover-underline{% if page.url == '/' %} white{% else %} light-black{% endif %}{% if page.url == '/contact/' %} underline cursor-default{% endif %}">contact</a>
+              <a href="/contact" class="btn regular btn-small h6 sm-h4{% if page.url == '/' %} btn-outline white hover-light-black-bg-white{% else %} light-black hover-underline{% endif %}{% if page.url == '/contact/' %} underline cursor-default{% endif %}">contact</a>
             </div>
           </div>
         </nav>
