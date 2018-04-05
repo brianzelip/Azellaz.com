@@ -46,6 +46,9 @@
 
   --navy: rgb(36, 56, 83);
   --light-black: #3a3a3a;
+  --bagBlue: rgb(146, 190, 209);
+  --bagBlue2: rgb(80, 121, 140);
+  --bagBlue3: rgb(103, 151, 171);
 }
 
 /*!
@@ -308,16 +311,16 @@ h6 {
 } /*mods*/
 
 .bagBlue {
-  color: rgb(146, 190, 209);
-} /*mods*/
+  color: var(--bagBlue);
+} /*mods*/ /*NEEDS UPDATING IN MODS*/
 
 .bagBlue2 {
-  color: rgb(80, 121, 140);
-} /*mods*/
+  color: var(--bagBlue2);
+} /*mods*/ /*NEEDS UPDATING IN MODS*/
 
 .bagBlue3 {
-  color: rgb(103, 151, 171);
-} /*mods*/
+  color: var(--bagBlue3);
+} /*mods*/ /*NEEDS UPDATING IN MODS*/
 
 .navy {
   color: var(--navy);
@@ -396,6 +399,9 @@ h6 {
 .bg-light-black {
   background-color: var(--light-black);
 }
+.bg-white {
+  background-color: #fff;
+}
 
 .bg-gray {
   background-color: rgb(227, 227, 227);
@@ -430,6 +436,9 @@ h6 {
 }
 .border-mustard {
   border-color: rgb(168, 120, 38);
+}
+.border-white {
+  border-color: #fff;
 }
 
 .lh1 {
