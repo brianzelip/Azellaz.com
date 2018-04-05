@@ -24,17 +24,17 @@
         {% else %}
         href="/index.html#shop"
         {% endif %}
-        class="{% if page.url== '/' %}goToShop {% endif %}btn btn-outline btn-small h6 sm-h4 regular{% if page.url == '/' %} white hover-light-black-bg-white{% else %} light-black{% endif %}">shop</a>
+        class="{% if page.url== '/' %}goToShop {% endif %}btn btn-outline btn-small h6 sm-h4 regular{% if page.url == '/' %} white hover-light-black-bg-white{% else %} light-black hover-white-bg-light-black{% endif %}">shop</a>
     </div>
     <div class="pointer sm-mr2">
       <a
         href="/about"
-        class="btn regular btn-small h6 sm-h4{% if page.url == '/' %} white hover-light-black-bg-white rounded{% else %} light-black hover-underline{% endif %}{% if page.url == '/about/' %} underline cursor-default{% endif %}">about</a>
+        class="btn regular btn-small rounded h6 sm-h4{% if page.url == '/' %} white hover-light-black-bg-white{% elsif page.url == '/about/' %} white bg-light-black cursor-default{% else %} light-black hover-white-bg-light-black{% endif %}">about</a>
     </div>
     <div class="pointer">
       <a
         href="/contact"
-        class="btn regular btn-small h6 sm-h4{% if page.url == '/' %} white hover-light-black-bg-white rounded{% else %} light-black hover-underline{% endif %}{% if page.url == '/contact/' %} underline cursor-default{% endif %}">contact</a>
+        class="btn regular btn-small rounded h6 sm-h4{% if page.url == '/' %} white hover-light-black-bg-white{% elsif page.url == '/contact/' %} white bg-light-black cursor-default{% else %} light-black hover-white-bg-light-black{% endif %}">contact</a>
     </div>
   </div>
 </nav>

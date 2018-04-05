@@ -331,6 +331,12 @@ h6 {
   border-color: #fff;
   box-shadow: inset 0 0 0 20rem rgba(0, 0, 0, 0.0625);
 }
+.hover-white-bg-light-black:hover {
+  color: #fff;
+  background-color: var(--light-black);
+  border-color: var(--light-black);
+}
+
 .hover-white-bg-navy:hover {
   color: #fff;
   background-color: var(--navy);
@@ -385,6 +391,10 @@ h6 {
 }
 .bottom-45per {
   bottom: 45%;
+}
+
+.bg-light-black {
+  background-color: var(--light-black);
 }
 
 .bg-gray {
