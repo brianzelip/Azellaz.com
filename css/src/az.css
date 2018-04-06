@@ -243,6 +243,10 @@ h6 {
 .mbn1 {
   margin-bottom: -0.5rem;
 } /*mods*/
+
+.mln2 {
+  margin-left: -1rem;
+}
 @media (min-width: 40em) {
   .sm-mt0 {
     margin-top: 0;
@@ -422,6 +426,70 @@ h6 {
 }
 .bg-light-black-transp8 {
   background-color: color(var(--light-black) a(80%));
+}
+.sm-hide-bg-light-black-transp1 {
+  background-color: color(var(--light-black) a(10%));
+}
+@media (min-width: 40em) {
+  .sm-hide-bg-light-black-transp1 {
+    background-color: transparent;
+  }
+}
+.sm-hide-bg-light-black-transp2 {
+  background-color: color(var(--light-black) a(20%));
+}
+@media (min-width: 40em) {
+  .sm-hide-bg-light-black-transp2 {
+    background-color: transparent;
+  }
+}
+.sm-hide-bg-light-black-transp3 {
+  background-color: color(var(--light-black) a(30%));
+}
+@media (min-width: 40em) {
+  .sm-hide-bg-light-black-transp3 {
+    background-color: transparent;
+  }
+}
+.sm-hide-bg-light-black-transp4 {
+  background-color: color(var(--light-black) a(40%));
+}
+@media (min-width: 40em) {
+  .sm-hide-bg-light-black-transp4 {
+    background-color: transparent;
+  }
+}
+.sm-hide-bg-light-black-transp5 {
+  background-color: color(var(--light-black) a(50%));
+}
+@media (min-width: 40em) {
+  .sm-hide-bg-light-black-transp5 {
+    background-color: transparent;
+  }
+}
+.sm-hide-bg-light-black-transp6 {
+  background-color: color(var(--light-black) a(60%));
+}
+@media (min-width: 40em) {
+  .sm-hide-bg-light-black-transp6 {
+    background-color: transparent;
+  }
+}
+.sm-hide-bg-light-black-transp7 {
+  background-color: color(var(--light-black) a(70%));
+}
+@media (min-width: 40em) {
+  .sm-hide-bg-light-black-transp7 {
+    background-color: transparent;
+  }
+}
+.sm-hide-bg-light-black-transp8 {
+  background-color: color(var(--light-black) a(80%));
+}
+@media (min-width: 40em) {
+  .sm-hide-bg-light-black-transp8 {
+    background-color: transparent;
+  }
 }
 .bg-white {
   background-color: #fff;
