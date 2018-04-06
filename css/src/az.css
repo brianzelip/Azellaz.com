@@ -399,6 +399,30 @@ h6 {
 .bg-light-black {
   background-color: var(--light-black);
 }
+.bg-light-black-transp1 {
+  background-color: color(var(--light-black) a(10%));
+}
+.bg-light-black-transp2 {
+  background-color: color(var(--light-black) a(20%));
+}
+.bg-light-black-transp3 {
+  background-color: color(var(--light-black) a(30%));
+}
+.bg-light-black-transp4 {
+  background-color: color(var(--light-black) a(40%));
+}
+.bg-light-black-transp5 {
+  background-color: color(var(--light-black) a(50%));
+}
+.bg-light-black-transp6 {
+  background-color: color(var(--light-black) a(60%));
+}
+.bg-light-black-transp7 {
+  background-color: color(var(--light-black) a(70%));
+}
+.bg-light-black-transp8 {
+  background-color: color(var(--light-black) a(80%));
+}
 .bg-white {
   background-color: #fff;
 }
