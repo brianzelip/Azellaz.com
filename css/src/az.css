@@ -325,7 +325,7 @@ h6 {
 .navy {
   color: var(--navy);
 } /*mods*/ /*NEEDS UPDATING IN MODS*/
-.inset-shadow-hover:hover {
+.hover-inset-shadow:hover {
   box-shadow: inset 0 0 0 20rem rgba(0, 0, 0, 0.0625);
 }
 .hover-light-black-bg-white:hover {
