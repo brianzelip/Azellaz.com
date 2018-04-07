@@ -6,9 +6,9 @@ The intended workflow for adding new photos is for Abbie to add new photos to th
 
 ---
 
-# Photo optimization workflow
+## Photo optimization workflow
 
-> run the following commands from `/images/staging/`
+**_Run the following commands from `/images/staging/`_**
 
 1.  Import the new raw photos AND the initial edited version of the new photos, where "edited" means:
 
@@ -62,3 +62,9 @@ mogrify -resize 25% thumbs-med/*.jpg && mogrify -resize 100x100 thumbs-sm/*.jpg
 ```
 
 9.  Move all of the photos inside `PHOTOS/` to `../products/` as the largest set of photos, then move (or add to) `thumbs-med/` and `thumbs-sm/` to `../products/`
+
+---
+
+## Hero image
+
+See the screenshots prefixed with 'Hero-' in `./imageOptim_config/` for the ImageOptim config settings.
