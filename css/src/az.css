@@ -810,12 +810,19 @@ h6 {
   .sm-p1 {
     padding: 0.5rem;
   }
+  .sm-pt0 {
+    padding-top: 0;
+  }
   .sm-pbQuart {
     padding-bottom: 0.25rem;
   }
   .sm-px2 {
     padding-right: 1rem;
     padding-left: 1rem;
+  }
+  .sm-py1 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
   }
   .sm-py4 {
     padding-top: 4rem;
