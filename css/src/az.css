@@ -627,6 +627,13 @@ h6 {
 .x-btn-group > .btn + .btn {
   margin-left: -1px;
 }
+.x-btn-group > .btn:hover + .btn {
+  /* this corrects the appearance of
+     the right border of the hovered button
+     not changing on hover
+  */
+  border-left-color: currentColor;
+}
 
 .before-crossbody::before {
   content: 'Cross ';
