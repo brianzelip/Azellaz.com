@@ -241,7 +241,7 @@
     "inStock": false,
     "stockOnHand": 0,
     "price": "54.00",
-    "type": "clutch",
+    "type": "pouch",
     "descriptionShort": "Small beeswaxed canvas and leather clutch.",
     "materials": ["waxed canvas", "leather"],
     "currentListing": false,
@@ -272,7 +272,7 @@
     "inStock": false,
     "stockOnHand": 0,
     "price": "54.00",
-    "type": "clutch",
+    "type": "pouch",
     "descriptionShort":
       "Small indigo-dyed beeswaxed canvas and leather clutch.",
     "materials": ["waxed canvas", "leather"],
@@ -304,7 +304,7 @@
     "inStock": false,
     "stockOnHand": 0,
     "price": "54.00",
-    "type": "clutch",
+    "type": "pouch",
     "descriptionShort":
       "Small indigo-dyed beeswaxed canvas and leather clutch.",
     "materials": ["waxed canvas", "leather"],
@@ -337,7 +337,7 @@
     "inStock": false,
     "stockOnHand": 0,
     "price": "54.00",
-    "type": "clutch",
+    "type": "pouch",
     "descriptionShort":
       "Small indigo-dyed beeswaxed canvas and leather clutch.",
     "materials": ["waxed canvas", "leather"],
@@ -371,7 +371,7 @@
     "inStock": false,
     "stockOnHand": 0,
     "price": "54.00",
-    "type": "clutch",
+    "type": "pouch",
     "descriptionShort":
       "Small indigo-dyed beeswaxed canvas and leather clutch.",
     "materials": ["waxed canvas", "leather"],
@@ -404,7 +404,7 @@
     "inStock": false,
     "stockOnHand": 0,
     "price": "54.00",
-    "type": "clutch",
+    "type": "pouch",
     "descriptionShort":
       "Small indigo-dyed beeswaxed canvas and leather clutch.",
     "materials": ["waxed canvas", "leather"],
@@ -435,7 +435,7 @@
     "inStock": false,
     "stockOnHand": 0,
     "price": "54.00",
-    "type": "clutch",
+    "type": "pouch",
     "descriptionShort":
       "Small indigo-dyed beeswaxed canvas and leather clutch.",
     "materials": ["waxed canvas", "leather"],
