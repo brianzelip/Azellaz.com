@@ -1,7 +1,16 @@
-<div class="mx1 mb2 h6 sm-h4 flex justify-center blue filters-button-group filter-buttons x-btn-group">
-          <button type="button" class="btn btn-small btn-outline border-dark-gray navy rounded-left is-active" data-filter="*">Show All</button>
-          <button type="button" class="btn btn-small btn-outline border-dark-gray navy not-rounded" data-filter="[data-type='duffle']">Duffle</button>
-          <button type="button" class="btn btn-small btn-outline border-dark-gray navy not-rounded" data-filter="[data-type='tote']">Tote</button>
-          <button type="button" class="btn btn-small btn-outline border-dark-gray navy not-rounded before-cross" data-filter="[data-type='crossbody']">body</button>
-          <button type="button" class="btn btn-small btn-outline border-dark-gray navy rounded-right" data-filter="[data-type='clutch']">Clutch</button>
+<div class="mx1 mb2 h6 sm-h4 flex justify-center filter-buttons-group filter-buttons x-btn-group" data-filter-group="type">
+          <button type="button" class="btn btn-filter btn-outline border-dark-gray light-black rounded-left is-active" data-filter="[data-type]">All Types</button>
+          <button type="button" class="btn btn-filter btn-outline border-dark-gray light-black not-rounded" data-filter="[data-type='duffle']">Duffle</button>
+          <button type="button" class="btn btn-filter btn-outline border-dark-gray light-black not-rounded before-backpack" data-filter="[data-type='backpack']">pack</button>
+          <button type="button" class="btn btn-filter btn-outline border-dark-gray light-black not-rounded" data-filter="[data-type='tote']">Tote</button>
+          <button type="button" class="btn btn-filter btn-outline border-dark-gray light-black not-rounded before-crossbody" data-filter="[data-type='crossbody']">body</button>
+          <button type="button" class="btn btn-filter btn-outline border-dark-gray light-black rounded-right" data-filter="[data-type='pouch']">Pouch</button>
         </div>
+
+        <div class="mx1 mb2 h6 sm-h4 flex justify-center blue filter-buttons-group filter-buttons x-btn-group" data-filter-group="materials">
+          <button type="button" class="btn btn-filter btn-outline border-dark-gray light-black rounded-left is-active" data-filter="[data-materials]">All Materials</button>
+          <button type="button" class="btn btn-filter btn-outline border-dark-gray light-black not-rounded" data-filter="[data-materials~='felt']">Felt</button>
+          <button type="button" class="btn btn-filter btn-outline border-dark-gray light-black not-rounded" data-filter="[data-materials~='leather']">Leather</button>
+          <button type="button" class="btn btn-filter btn-outline border-dark-gray light-black rounded-right" data-filter="[data-materials~='canvas']">Waxed Canvas</button>
+        </div>
+

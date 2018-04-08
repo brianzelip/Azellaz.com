@@ -6,7 +6,13 @@
     </div>
 
     <div>
-      <img id="large-image-view" src="/{{ site.product_images_dir }}{{ product.imgFront }}" class="mbn1" alt="Front view of the {{ product.displayName }} bag by Azellaz.com" title="{{ product.displayName }} front"/>
+      <img
+        id="large-image-view"
+        class="mbn1"
+        src="/{{ site.product_images_dir }}{{ product.imgPrimary }}" 
+        alt="{{ product.imgPrimary | remove: product.slug | remove_first: "-" | remove: "-by-Azellaz.jpg" | capitalize }} view of the {{ product.displayName }} by Azellaz"
+        title="{{ product.displayName }} by Azellaz"
+      />
     </div>
 
     <div class="sm-show"><!-- have to double up this component because ie's lack of flexbox column support -->
@@ -26,7 +32,7 @@
         class="col-12 md-width-auto btn btn-outline fw200 light-black snipcart-add-item"
         data-item-id="{{ product.id }}"
         data-item-name="{{ product.displayName }}"
-        data-item-image="{{ site.base_url }}{{ site.product_thumb_sm_images_dir }}{{ product.thumbSmallFront }}"
+        data-item-image="{{ site.base_url }}{{ site.product_thumb_sm_images_dir }}{{ site.thumb_small_prefix }}{{ product.imgPrimary }}"
         data-item-price="{{ product.price }}"
         data-item-weight="{{ product.weight }}"
         data-item-height="{{ product.height }}"
@@ -62,9 +68,14 @@
     });
 
   function showLargeImage(e) {
-    largeImage.src = this.src;
+    largeImage.src = getLargerImgSrcFromThumbSrc(this.src);
     largeImage.alt = this.alt;
     largeImage.title = this.title;
+  }
+
+  function getLargerImgSrcFromThumbSrc(src) {
+    const thumbSubstr = /\/thumbs-med\/thumb-med-/;
+    return src.replace(thumbSubstr, '/');
   }
 
 </script>

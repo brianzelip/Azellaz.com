@@ -1,15 +1,24 @@
-<div class="col-12 sm-col-6 md-col-4 py-quarter px1 sm-p1 iso-item" data-type="{{ product.type }}">
-            <div class="ih-item circle effect13 from_left_and_right not-rounded">
-              <a href="{{ product.slug }}">
-                <div class="img">
-                  <img src="{{ site.product_thumb_med_images_dir }}{{ site.thumb_medium_prefix }}{{ product.imgFront }}" class="mbn1" alt="">
+<div
+  class="col-12 sm-col-6 md-col-4 py-quarter px1 sm-p1 iso-item"
+  data-type="{{ product.type }}"
+  data-materials="{% for material in product.materials %}{{ material }}{% if forloop.last == false %}{{ ' ' }}{% endif %}{% endfor %}"
+>
+                <div class="ih-item circle effect13 from_left_and_right not-rounded">
+                  <a href="{{ product.slug }}">
+                    <div class="img">
+                      <img
+                        src="{{ site.product_thumb_med_images_dir }}{{ site.thumb_medium_prefix }}{{ product.imgPrimary }}" 
+                        class="mbn1"
+                        alt="{{ product.imgPrimary | remove: product.slug | remove_first: "-" | remove: "-by-Azellaz.jpg" | capitalize }} view of the {{ product.displayName }} by Azellaz"
+                        title="{{ product.displayName }} by Azellaz"
+                      />
+                    </div>
+                    <div class="info overflow-hidden">
+                      <div class="info-back">
+                        <h3 class="name">{{ product.displayName }}</h3>
+                        <p>$<span class="price">{{ product.price }}</span>{% if product.type == 'clutch'  %}+{% endif %}</p>
+                      </div>
+                    </div>
+                  </a>
                 </div>
-                <div class="info overflow-hidden">
-                  <div class="info-back">
-                    <h3 class="name">{{ product.displayName }}</h3>
-                    <p>$<span class="price">{{ product.price }}</span>{% if product.type == 'clutch'  %}+{% endif %}</p>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
+              </div>

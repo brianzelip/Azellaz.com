@@ -1,72 +1,22 @@
 <div class="py1 sm-py2 mxn1 flex align-items-end sm-align-items-start">
-  {% if product.imgFront != '' %}
+  {% if product.imgPrimary != '' %}
   <div class="col col-sevenths px1">
-    <img class="border pointer thumb" src="/{{ site.product_images_dir }}{{ product.imgFront }}" alt="Front view of the {{ product.name }} bag by Azellaz.com" title="{{ product.name }} front"/>
+    <img
+      class="border pointer thumb"
+      src="/{{ site.product_thumb_med_images_dir }}{{ site.thumb_medium_prefix }}{{ product.imgPrimary }}"
+      alt="{{ product.imgPrimary | remove: product.slug | remove_first: "-" | remove: "-by-Azellaz.jpg" | capitalize }} view of the {{ product.displayName }} by Azellaz"
+      title="{{ product.imgPrimary | remove: product.slug | remove_first: "-" | remove: "-by-Azellaz.jpg" | capitalize }} view of the {{ product.displayName }} by Azellaz"
+    />
   </div>
   {% endif %}
-  {% if product.imgBack != '' %}
+  {% for img in product.imgSecondarySet %}
   <div class="col col-sevenths px1">
-    <img class="border pointer thumb" src="/{{ site.product_images_dir }}{{ product.imgBack }}" alt="Back view of the {{ product.name }} bag by Azellaz.com" title="{{ product.name }} back"/>
+    <img
+      class="border pointer thumb"
+      src="/{{ site.product_thumb_med_images_dir }}{{ site.thumb_medium_prefix }}{{ img }}"
+      alt="{{ img | remove: product.slug | remove_first: "-" | remove: "-by-Azellaz.jpg" | capitalize }} view of the {{ product.displayName }} by Azellaz"
+      title="{{ img | remove: product.slug | remove_first: "-" | remove: "-by-Azellaz.jpg" | capitalize }} view of the {{ product.displayName }} by Azellaz"
+    />
   </div>
-  {% endif %}
-  {% if product.imgSide != '' %}
-  <div class="col col-sevenths px1">
-    <img class="border pointer thumb" src="/{{ site.product_images_dir }}{{ product.imgSide }}" alt="Side view of the {{ product.name }} bag by Azellaz.com" title="{{ product.name }} side"/>
-  </div>
-  {% endif %}
-  {% if product.imgInside != '' %}
-  <div class="col col-sevenths px1">
-    <img class="border pointer thumb" src="/{{ site.product_images_dir }}{{ product.imgInside }}" alt="Inside view of the {{ product.name }} bag by Azellaz.com" title="{{ product.name }} inside"/>
-  </div>
-  {% endif %}
-  {% if product.imgStrap1 != '' %}
-  <div class="col col-sevenths px1">
-    <img class="border pointer thumb" src="/{{ site.product_images_dir }}{{ product.imgStrap1 }}" alt="Strap 1 view of the {{ product.name }} bag by Azellaz.com" title="{{ product.name }} strap 1"/>
-  </div>
-  {% endif %}
-  {% if product.imgStrap2 != '' %}
-  <div class="col col-sevenths px1">
-    <img class="border pointer thumb" src="/{{ site.product_images_dir }}{{ product.imgStrap2 }}" alt="Strap 2 view of the {{ product.name }} bag by Azellaz.com" title="{{ product.name }} strap 2"/>
-  </div>
-  {% endif %}
-  {% if product.imgStrap3 != '' %}
-  <div class="col col-sevenths px1">
-    <img class="border pointer thumb" src="/{{ site.product_images_dir }}{{ product.imgStrap3 }}" alt="Strap 3 view of the {{ product.name }} bag by Azellaz.com" title="{{ product.name }} strap 2"/>
-  </div>
-  {% endif %}
-  {% if product.imgFront == '' %}
-  <div class="col col-sevenths px1">
-    <img src="/images/blank_thumb_2200x2600.png" alt="transparent image" title="small transparent image"/>
-  </div>
-  {% endif %}
-  {% if product.imgBack == '' %}
-  <div class="col col-sevenths px1">
-    <img src="/images/blank_thumb_2200x2600.png" alt="transparent image" title="small transparent image"/>
-  </div>
-  {% endif %}
-  {% if product.imgSide == '' %}
-  <div class="col col-sevenths px1">
-    <img src="/images/blank_thumb_2200x2600.png" alt="transparent image" title="small transparent image"/>
-  </div>
-  {% endif %}
-  {% if product.imgInside == '' %}
-  <div class="col col-sevenths px1">
-    <img src="/images/blank_thumb_2200x2600.png" alt="transparent image" title="small transparent image"/>
-  </div>
-  {% endif %}
-  {% if product.imgStrap1 == '' %}
-  <div class="col col-sevenths px1">
-    <img src="/images/blank_thumb_2200x2600.png" alt="transparent image" title="small transparent image"/>
-  </div>
-  {% endif %}
-  {% if product.imgStrap2 == '' %}
-  <div class="col col-sevenths px1">
-    <img src="/images/blank_thumb_2200x2600.png" alt="transparent image" title="small transparent image"/>
-  </div>
-  {% endif %}
-  {% if product.imgStrap3 == '' %}
-  <div class="col col-sevenths px1">
-    <img src="/images/blank_thumb_2200x2600.png" alt="transparent image" title="small transparent image"/>
-  </div>
-  {% endif %}
+  {% endfor %}
 </div>

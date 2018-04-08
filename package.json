@@ -1,6 +1,6 @@
 {
-  "name": "Azellaz.com",
-  "version": "1.4.0",
+  "name": "azellaz.com",
+  "version": "1.6.2",
   "description":
     "Dev space for Azellaz.com. She's crafty, and she's just my type!",
   "main": "index.html",
@@ -8,6 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "css":
       "postcss -u postcss-custom-properties postcss-color-function postcss-import autoprefixer cssnano -d css/dist/ css/src/az.css --no-map --watch",
+    "newPreJekyllBuildProductPages": "node newProductPages.js",
     "start": "npm run css & jekyll serve"
   },
   "repository": {
