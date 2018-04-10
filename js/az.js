@@ -26,6 +26,12 @@ function smoothScroll(e) {
   }
 }
 
+/**
+ * Carousel landing page hero
+ */
+/**
+ * code goes here
+ */
 // // WAY OF ISOTOPE + imagesLoaded after all images have loaded
 // var grid = document.querySelector('.iso-grid');
 // var iso;
