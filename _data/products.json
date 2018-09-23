@@ -276,7 +276,7 @@
     "descriptionShort":
       "Small indigo-dyed beeswaxed canvas and leather clutch.",
     "materials": ["waxed canvas", "leather"],
-    "currentListing": true,
+    "currentListing": false,
     "descriptionLong": [
       "Great as an evening clutch, a small crossbody bag, a pouch for organizing in a larger bag, or all three! Fits the essentials (phone, credit cards, keys). I particularly love this bag for travel as it fits compactly in a suitcase and can be used for both nights out and minimalist day trips.",
       "Each piece is hand dyed with indigo and hand waxed with beeswax. The base of the bag is made from lisaro leather, which is hand tanned and luxurious. Includes all brass hardware and a Riri zipper.",
@@ -308,7 +308,7 @@
     "descriptionShort":
       "Small indigo-dyed beeswaxed canvas and leather clutch.",
     "materials": ["waxed canvas", "leather"],
-    "currentListing": true,
+    "currentListing": false,
     "descriptionLong": [
       "Great as an evening clutch, a small crossbody bag, a pouch for organizing in a larger bag, or all three! Fits the essentials (phone, credit cards, keys). I particularly love this bag for travel as it fits compactly in a suitcase and can be used for both nights out and minimalist day trips.",
       "Each piece is hand dyed with indigo and hand waxed with beeswax. The base of the bag is made from English Bridle leather which is luxurious, water resistant, and durable; vegetable tanned in Pennsylvania by a company that was founded in 1867, from North American cattle. Includes all brass hardware and a Riri zipper.",
@@ -375,7 +375,7 @@
     "descriptionShort":
       "Small indigo-dyed beeswaxed canvas and leather clutch.",
     "materials": ["waxed canvas", "leather"],
-    "currentListing": true,
+    "currentListing": false,
     "descriptionLong": [
       "Great as an evening clutch, a small crossbody bag, a pouch for organizing in a larger bag, or all three! Fits the essentials (phone, credit cards, keys). I particularly love this bag for travel as it fits compactly in a suitcase and can be used for both nights out and minimalist day trips.",
       "Each piece is hand dyed with indigo and hand waxed with beeswax. The base of the bag is made from English Bridle leather which is luxurious, water resistant, and durable; vegetable tanned in Pennsylvania by a company that was founded in 1867, from North American cattle. Includes all brass hardware and a Riri zipper.",
@@ -439,7 +439,7 @@
     "descriptionShort":
       "Small indigo-dyed beeswaxed canvas and leather clutch.",
     "materials": ["waxed canvas", "leather"],
-    "currentListing": true,
+    "currentListing": false,
     "descriptionLong": [
       "Great as an evening clutch, a small crossbody bag, a pouch for organizing in a larger bag, or all three! Fits the essentials (phone, credit cards, keys). I particularly love this bag for travel as it fits compactly in a suitcase and can be used for both nights out and minimalist day trips.",
       "Each piece is hand dyed with indigo and hand waxed with beeswax. The base of the bag is made from English Bridle leather which is luxurious, water resistant, and durable; vegetable tanned in Pennsylvania by a company that was founded in 1867, from North American cattle. Includes all brass hardware and a Riri zipper.",
@@ -470,7 +470,7 @@
     "price": "90.00",
     "type": "crossbody",
     "materials": ["waxed canvas", "leather"],
-    "currentListing": true,
+    "currentListing": false,
     "descriptionShort": "Crossbody bag made from beeswaxed canvas and leather.",
     "descriptionLong": [
       "An everyday bag that fits all of the essentials (phone, wallet, keys) + a few extras (book, sunglasses, knitting, etc). The crossbody strap is adjustable and removable, so the bag can also be used as a clutch.",
@@ -500,7 +500,7 @@
     "price": "90.00",
     "type": "crossbody",
     "materials": ["waxed canvas", "leather"],
-    "currentListing": true,
+    "currentListing": false,
     "descriptionShort":
       "Indigo-dyed beeswaxed canvas and leather crossbody bag.",
     "descriptionLong": [
@@ -561,7 +561,7 @@
     "price": "90.00",
     "type": "crossbody",
     "materials": ["waxed canvas", "leather"],
-    "currentListing": true,
+    "currentListing": false,
     "descriptionShort":
       "Indigo-dyed beeswaxed canvas and leather crossbody bag.",
     "descriptionLong": [
@@ -625,7 +625,7 @@
     "price": "90.00",
     "type": "crossbody",
     "materials": ["waxed canvas", "leather"],
-    "currentListing": true,
+    "currentListing": false,
     "descriptionShort":
       "Indigo-dyed beeswaxed canvas and leather crossbody bag.",
     "descriptionLong": [
@@ -656,7 +656,7 @@
     "price": "70.00",
     "type": "crossbody",
     "materials": ["waxed canvas", "leather"],
-    "currentListing": true,
+    "currentListing": false,
     "descriptionShort": "Indigo-dyed beeswaxed canvas crossbody bag.",
     "descriptionLong": [
       "An everyday bag that fits all of the essentials (phone, wallet, keys) + a few extras (book, sunglasses, knitting, etc). The crossbody strap is adjustable and removable, so the bag can also be used as a clutch.",
@@ -686,7 +686,7 @@
     "price": "300.00",
     "type": "duffle",
     "materials": ["waxed canvas", "leather"],
-    "currentListing": true,
+    "currentListing": false,
     "descriptionShort": "Indigo-dyed waxed canvas and leather duffle.",
     "descriptionLong": [
       "Sized to fit carry-on restrictions, this duffle is made to be your reliable travel companion. Includes two side pockets and one front pocket.",
@@ -714,7 +714,7 @@
     "price": "170.00",
     "type": "tote",
     "materials": ["waxed canvas", "leather"],
-    "currentListing": true,
+    "currentListing": false,
     "descriptionShort":
       "Medium-sized waxed canvas and leather tote with shoulder strap.",
     "descriptionLong": [
@@ -836,7 +836,7 @@
     "price": "105.00",
     "type": "tote",
     "materials": ["waxed canvas", "leather"],
-    "currentListing": true,
+    "currentListing": false,
     "descriptionShort": "Small waxed canvas and leather tote.",
     "descriptionLong": [
       "This minimalist tote has two outside pockets and a magnetic snap closure. Fits everything you'd want to carry on a daily basis - wallet, hardcover book, knitting project, extra scarf, etc.",
@@ -891,7 +891,7 @@
     "price": "105.00",
     "type": "tote",
     "materials": ["waxed canvas", "leather"],
-    "currentListing": false,
+    "currentListing": true,
     "descriptionShort": "Small indigo-dyed waxed canvas and leather tote.",
     "descriptionLong": [
       "This minimalist tote has two outside pockets and a magnetic snap closure. Fits everything you'd want to carry on a daily basis - wallet, hardcover book, knitting project, extra scarf, etc.",
