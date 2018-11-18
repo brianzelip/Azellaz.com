@@ -39,10 +39,15 @@
 
 :root {
   --blue: rgb(82, 141, 191);
+  --yellow: rgb(255, 193, 7);
   --state-info: var(--blue);
+  --state-warning: var(--yellow);
   --color-info: color(var(--state-info) lightness(25%));
+  --color-warning: color(var(--state-warning) lightness(25%));
   --bg-color-info: color(var(--state-info) tint(75%));
+  --bg-color-warning: color(var(--state-warning) tint(75%));
   --border-color-info: color(var(--bg-color-info) shade(25%));
+  --border-color-warning: color(var(--bg-color-warning) shade(25%));
 
   --navy: rgb(36, 56, 83);
   --light-black: #3a3a3a;
@@ -1069,4 +1074,9 @@ Important: using a flex value of something like 1 0 0px can still be a problem b
   color: var(--color-info);
   background-color: var(--bg-color-info);
   border: 1px solid var(--border-color-info);
+}
+.warning-flash {
+  color: var(--color-warning);
+  background-color: var(--bg-color-warning);
+  border: 1px solid var(--border-color-warning);
 }
