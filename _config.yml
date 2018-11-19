@@ -28,8 +28,8 @@ exclude:
   - node_modules/
   - archive/
   - images/raw-dog-and-others/
-  - "package*"
-  - "Gem*"
+  - 'package*'
+  - 'Gem*'
   - LICENSE
-  - "*.pptx"
+  - '*.pptx'
   - newProductPages.js
