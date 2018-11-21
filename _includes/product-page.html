@@ -31,8 +31,8 @@
     <p class="serif light-black">{{ paragraph }}</p>
     {% endfor %}
     <p class="serif light-black"><span class="red">*</span><strong>Availability:</strong> {% if product.inStock %}{{ site.in_stock }}{% else %}{{ site.made_to_order }}{% endif %}</p>
-    <div class="md-mt4">
-      {%- comment -%} <button
+    {%- comment -%} <div class="md-mt4">
+      <button
         class="col-12 md-width-auto btn btn-outline fw200 light-black snipcart-add-item"
         data-item-id="{{ product.id }}"
         data-item-name="{{ product.displayName }}"
@@ -48,8 +48,8 @@
         data-item-custom1-required="true"
         data-item-custom1-options="No strap, $54|Wrist, $64[+10.00]|Crossbody, $74[+20.00]|Both straps, $84[+30.00]"{% endif %}>
         Add to Cart
-      </button> {%- endcomment -%}
-    </div>
+      </button>
+    </div> {%- endcomment -%}
   </div>
 </div>
 
