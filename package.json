@@ -1,13 +1,11 @@
 {
   "name": "azellaz.com",
-  "version": "1.6.5",
-  "description":
-    "Dev space for Azellaz.com. She's crafty, and she's just my type!",
+  "version": "1.6.7",
+  "description": "Dev space for Azellaz.com. She's crafty, and she's just my type!",
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "css":
-      "postcss -u postcss-custom-properties postcss-color-function postcss-import autoprefixer cssnano -d css/dist/ css/src/az.css --no-map --watch",
+    "css": "postcss -u postcss-custom-properties postcss-color-function postcss-import autoprefixer cssnano -d css/dist/ css/src/az.css --no-map --watch",
     "newPreJekyllBuildProductPages": "node newProductPages.js",
     "start": "npm run css & jekyll serve"
   },
@@ -15,7 +13,11 @@
     "type": "git",
     "url": "git+https://github.com/brianzelip/Azellaz.com.git"
   },
-  "keywords": ["fine", "leather", "goods"],
+  "keywords": [
+    "fine",
+    "leather",
+    "goods"
+  ],
   "author": "bzelip",
   "license": "MIT",
   "bugs": {
@@ -25,10 +27,10 @@
   "dependencies": {},
   "devDependencies": {
     "autoprefixer": "^6.7.7",
-    "babel-cli": "^6.24.0",
+    "babel-cli": "^6.26.0",
     "cssnano": "^3.10.0",
     "postcss": "^5.2.16",
-    "postcss-cli": "^3.0.0",
+    "postcss-cli": "^6.0.1",
     "postcss-color-function": "^4.0.1",
     "postcss-custom-media": "^5.0.1",
     "postcss-custom-properties": "^5.0.2",
