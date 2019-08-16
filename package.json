@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/brianzelip/Azellaz.com#readme",
   "dependencies": {
-    "braces": "^2.3.1"
+    "braces": "^2.3.2"
   },
   "devDependencies": {
     "autoprefixer": "^6.7.7",
