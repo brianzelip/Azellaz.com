@@ -25,3 +25,5 @@ This document started at v1.6.10 and only documents work after v1.6.10.
 - CHANGELOG.md
 
 ### Updated
+
+- package\*: Responded to a npm audit by upgrading braces to 2.3.1, still got the warning; upgraded to 2.3.2, still got the warning. So even though package.json is now polluted with this sub sub sub dependency, I'm keeping it as is and will deal with audits down the line.
