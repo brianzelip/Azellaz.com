@@ -23,6 +23,7 @@ This document started at v1.6.10 and only documents work after v1.6.10.
 ### Added
 
 - CHANGELOG.md
+- gallery.json
 
 ### Updated
 
