@@ -58,6 +58,7 @@
 
 /*!
 Box Sizing via http://tachyons.io/docs/layout/box-sizing/
+(figure is an Azellaz addition)
 */
 
 html,
@@ -70,6 +71,7 @@ footer,
 header,
 form,
 fieldset,
+figure,
 pre,
 code,
 p,
