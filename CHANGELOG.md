@@ -24,8 +24,9 @@ This document started at v1.6.10 and only documents work after v1.6.10.
 
 - CHANGELOG.md
 - gallery.json
-- shop-grid.html
-- shop-grid-item.html
+- gallery.html
+- gallery-grid.html
+- gallery-grid-item.html
 
 ### Updated
 
