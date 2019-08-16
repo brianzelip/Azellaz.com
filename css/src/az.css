@@ -333,6 +333,16 @@ h6 {
   color: var(--bagBlue3);
 } /*mods*/ /*NEEDS UPDATING IN MODS*/
 
+.bg-bagBlue {
+  background-color: var(--bagBlue);
+}
+.bg-bagBlue2 {
+  background-color: var(--bagBlue2);
+}
+.bg-bagBlue3 {
+  background-color: var(--bagBlue3);
+}
+
 .navy {
   color: var(--navy);
 } /*mods*/ /*NEEDS UPDATING IN MODS*/
