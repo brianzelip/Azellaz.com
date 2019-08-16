@@ -18,6 +18,6 @@ Here are the files that changed and how to update them to re-open Azellaz.com:
 
 ---
 
-Content &copy; 2017 [Abbie Zelip](https://www.azellaz.com)
+Content &copy; 2019 [Abbie Zelip](https://www.azellaz.com)
 
-Web app &copy; 2017 [Brian Zelip](http://zelip.me) via [MIT](LICENSE)
+Web app &copy; 2019 [Brian Zelip](http://zelip.me) via [MIT](LICENSE)
