@@ -34,3 +34,4 @@ This document started at v1.6.10 and only documents work after v1.6.10.
 - Gemfile.lock: Couldn't get jekyll serving on a laptop with a newer ruby stack given the old lock file from my main dev machine. I kept the old lock file (renamed to Gemfile.old.lock) in case the main dev machine needs it - don't really want to wade into the weeds of updating ruby stuff on main dev machine!
   - see this [!so answer](https://stackoverflow.com/a/54876869/2145103)
   - and [this informative !so post](https://stackoverflow.com/a/44980854/2145103)
+- az.css: Add some color styles for design debugging
