@@ -32,9 +32,12 @@ This document started at v1.6.10 and only documents work after v1.6.10.
 
 - package\*: Responded to a npm audit by upgrading braces to 2.3.1, still got the warning; upgraded to 2.3.2, still got the warning. So even though package.json is now polluted with this sub sub sub dependency, I'm keeping it as is and will deal with audits down the line.
 - Gemfile.lock: I ran into build problems when working on this feature branch on a different computer with a newer ruby set up. I banged my head against the wall for a good amount of time, then figured it out. The 3 files associated with the ruby nature of the project are:
+
   1. .ruby-version: this is useful for netlify, as well as local development, but not necessary
   2. Gemfile: this is the main file, basically the dependencies and devDependencies in node - it just lists the main libraries to bring into the project (of course, they bring in other depdencies too).
   3. Gemfile.lock: this is auto generated, doesn't seem to care about the ruby -v, but does record bundle -v
+
+  _Note_: the bundle -v is impacted by the presence of "BUNDLED WITH" in a Gemfile.lock if it exists. So if you want to see a specific bundle -v, you may have to delete the lock file, then run bundle -v to see the desired -v, then run bundle install to re-create the lock file.
 
 **Don't forget about RVM!**
 
