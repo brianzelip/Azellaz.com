@@ -1,12 +1,16 @@
 <section id="portfolio" class="py3 md-py4">
-      <h1 class="mt0 center serif light-black">Portfolio</h1>
-      <div class="container">
-        {% include portfolio-grid.html %}
-        {% include fixed-logo.html %}
-      </div>
-    </section>
+  <h1 class="mt0 center serif light-black">Portfolio</h1>
+  <p class="center serif">
+    This page includes photos of past work only. Current bags are available in
+    <a href="/index.html#shop" class="light-black underline">our shop</a>.
+  </p>
+  <div class="container">
+    {% include portfolio-grid.html %}
+    {% include fixed-logo.html %}
+  </div>
+</section>
 
-    <script>
-      // TODO: fade in logo when user scrolls the header logo out of site
-      const logo = document.querySelector('.fixed-logo-show');
-    </script>
+<script>
+  // TODO: fade in logo when user scrolls the header logo out of site
+  const logo = document.querySelector(".fixed-logo-show");
+</script>
