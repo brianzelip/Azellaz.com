@@ -925,6 +925,9 @@ h6 {
   .md-mt4 {
     margin-top: 4rem;
   }
+  .md-mb4 {
+    margin-bottom: 4rem;
+  }
   .md-px2 {
     padding-right: 1rem;
     padding-left: 1rem;
