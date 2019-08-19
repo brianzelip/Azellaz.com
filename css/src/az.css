@@ -58,6 +58,7 @@
 
 /*!
 Box Sizing via http://tachyons.io/docs/layout/box-sizing/
+(figure is an Azellaz addition)
 */
 
 html,
@@ -70,6 +71,7 @@ footer,
 header,
 form,
 fieldset,
+figure,
 pre,
 code,
 p,
@@ -190,11 +192,11 @@ h6 {
   font-weight: 500;
 } /*mods*/
 
-.shop-fixed-logo-show {
+.fixed-logo-show {
   display: none !important;
 }
 @media (min-width: 84.375em) {
-  .shop-fixed-logo-show {
+  .fixed-logo-show {
     display: block !important;
   }
 } /* minimum width to show fixed shop logo; 84.375em = 1350px = .container size (76rem) + 75px(75px=logo hard coded width)*2 (account for left and right container gutters)*/
@@ -330,6 +332,16 @@ h6 {
 .bagBlue3 {
   color: var(--bagBlue3);
 } /*mods*/ /*NEEDS UPDATING IN MODS*/
+
+.bg-bagBlue {
+  background-color: var(--bagBlue);
+}
+.bg-bagBlue2 {
+  background-color: var(--bagBlue2);
+}
+.bg-bagBlue3 {
+  background-color: var(--bagBlue3);
+}
 
 .navy {
   color: var(--navy);
@@ -801,6 +813,9 @@ h6 {
   .sm-p1 {
     padding: 0.5rem;
   }
+  .sm-p2 {
+    padding: 1rem;
+  }
   .sm-pt0 {
     padding-top: 0;
   }
@@ -909,6 +924,9 @@ h6 {
 @media (min-width: 52em) {
   .md-mt4 {
     margin-top: 4rem;
+  }
+  .md-mb4 {
+    margin-bottom: 4rem;
   }
   .md-px2 {
     padding-right: 1rem;

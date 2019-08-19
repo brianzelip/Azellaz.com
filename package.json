@@ -1,6 +1,6 @@
 {
   "name": "azellaz.com",
-  "version": "1.6.10",
+  "version": "1.7.0",
   "description": "Dev space for Azellaz.com. She's crafty, and she's just my type!",
   "main": "index.html",
   "scripts": {
@@ -24,7 +24,9 @@
     "url": "https://github.com/brianzelip/Azellaz.com/issues"
   },
   "homepage": "https://github.com/brianzelip/Azellaz.com#readme",
-  "dependencies": {},
+  "dependencies": {
+    "braces": "^2.3.2"
+  },
   "devDependencies": {
     "autoprefixer": "^6.7.7",
     "babel-cli": "^6.26.0",
