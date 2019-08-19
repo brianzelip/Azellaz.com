@@ -11,7 +11,7 @@ This document started at v1.6.10 and only documents work after v1.6.10.
 
 ## [Unreleased]
 
-## [1.7.0] - 2019-08-
+## [1.7.0] - 2019-08-19
 
 ### Meta
 
@@ -20,13 +20,15 @@ This document started at v1.6.10 and only documents work after v1.6.10.
   - add a gallery of older products
   - clean up other odds and ends (like adding this changelog)
 
+The project started out named 'Gallery', but ended up with 'Portfolio'.
+
 ### Added
 
 - CHANGELOG.md
 - ~~gallery.json~~: I started by creating a json file with an array of all the image gallery file names, but this introduced another layer of abstraction that would need maintenance every time Abbie wants to change the order of the gallery display. Instead of maintaining this data file, I utilized Jekyll's [static_files](https://jekyllrb.com/docs/static-files/) api, which allows me to loop over an arbitrary collection of static files, like those in images/Gallery!
-- gallery.html
-- gallery-grid.html
-- gallery-grid-item.html
+- portfolio.html
+- portfolio-grid.html
+- portfolio-grid-item.html
 
 ### Updated
 
