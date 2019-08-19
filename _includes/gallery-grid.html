@@ -1,6 +1,0 @@
-<div class="flex flex-wrap">
-  {% assign gallery = site.static_files | where: "gallery", true %}
-  {% for image in gallery %}
-    {% include gallery-grid-item.html %}
-  {% endfor %}
-</div>
