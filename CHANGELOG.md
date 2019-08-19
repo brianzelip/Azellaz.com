@@ -23,7 +23,7 @@ This document started at v1.6.10 and only documents work after v1.6.10.
 ### Added
 
 - CHANGELOG.md
-- gallery.json
+- ~~gallery.json~~: I started by creating a json file with an array of all the image gallery file names, but this introduced another layer of abstraction that would need maintenance every time Abbie wants to change the order of the gallery display. Instead of maintaining this data file, I utilized Jekyll's [static_files](https://jekyllrb.com/docs/static-files/) api, which allows me to loop over an arbitrary collection of static files, like those in images/Gallery!
 - gallery.html
 - gallery-grid.html
 - gallery-grid-item.html
@@ -47,3 +47,5 @@ In the future, when wanting to upgrade or downgrade ruby -v and bundle -v, use R
 - and [this informative !so post](https://stackoverflow.com/a/44980854/2145103)
 - az.css: Add some color styles for design debugging
 - shop-fixed-logo.html: Renamed fixed-logo.html for greater scope
+- _config.yml: Added a `defaults` property to remove a layer of abstraction in maintaining the gallery photos by "adding front matter" to the gallery images. This pseudo front matter makes it easy to query for a set of static files and do something with them, via the Jekyll [static_files api](https://jekyllrb.com/docs/static-files/). Via Jekyll docs:
+  > The `defaults` key holds an array of scope/values pairs that define what defaults should be set for a particular file path
