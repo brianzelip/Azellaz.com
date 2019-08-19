@@ -46,3 +46,4 @@ In the future, when wanting to upgrade or downgrade ruby -v and bundle -v, use R
 - see this [!so answer](https://stackoverflow.com/a/54876869/2145103)
 - and [this informative !so post](https://stackoverflow.com/a/44980854/2145103)
 - az.css: Add some color styles for design debugging
+- shop-fixed-logo.html: Renamed fixed-logo.html for greater scope
