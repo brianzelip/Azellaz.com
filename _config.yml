@@ -25,7 +25,7 @@ flash_holiday_orders_from_now: Orders placed today will be shipped in January 20
 
 defaults:
   - scope:
-      path: "images/Portfolio"
+      path: "images/portfolio"
     values:
       portfolio: true
 
