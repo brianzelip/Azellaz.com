@@ -601,6 +601,11 @@ h6 {
   padding-bottom: 0.25rem;
 } /*mods*/
 
+.py-half {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
 .transparent {
   color: transparent;
 } /*mods*/
@@ -812,6 +817,9 @@ h6 {
   }
   .sm-p1 {
     padding: 0.5rem;
+  }
+  .sm-p2 {
+    padding: 1rem;
   }
   .sm-pt0 {
     padding-top: 0;
