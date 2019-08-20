@@ -11,6 +11,17 @@ This document started at v1.6.10 and only documents work after v1.6.10.
 
 ## [Unreleased]
 
+## [1.7.1] - 2019-08-20
+
+### Meta
+
+- branch: master
+
+### Updated
+
+- \_includes/hero.html: Add portfolio button
+- \_includes/shop-filter-buttons.html: Change font weights to normal
+
 ## [1.7.0] - 2019-08-19
 
 ### Meta
@@ -49,5 +60,5 @@ In the future, when wanting to upgrade or downgrade ruby -v and bundle -v, use R
 - and [this informative !so post](https://stackoverflow.com/a/44980854/2145103)
 - az.css: Add some color styles for design debugging
 - shop-fixed-logo.html: Renamed fixed-logo.html for greater scope
-- _config.yml: Added a `defaults` property to remove a layer of abstraction in maintaining the gallery photos by "adding front matter" to the gallery images. This pseudo front matter makes it easy to query for a set of static files and do something with them, via the Jekyll [static_files api](https://jekyllrb.com/docs/static-files/). Via Jekyll docs:
+- \_config.yml: Added a `defaults` property to remove a layer of abstraction in maintaining the gallery photos by "adding front matter" to the gallery images. This pseudo front matter makes it easy to query for a set of static files and do something with them, via the Jekyll [static_files api](https://jekyllrb.com/docs/static-files/). Via Jekyll docs:
   > The `defaults` key holds an array of scope/values pairs that define what defaults should be set for a particular file path
