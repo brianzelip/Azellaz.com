@@ -11,7 +11,7 @@ This document started at v1.6.10 and only documents work after v1.6.10.
 
 ## [Unreleased]
 
-## [1.8.0] - 2019-08-
+## [1.8.0] - 2019-08-20
 
 ### Meta
 
