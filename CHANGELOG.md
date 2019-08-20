@@ -11,11 +11,23 @@ This document started at v1.6.10 and only documents work after v1.6.10.
 
 ## [Unreleased]
 
+## [1.7.2] - 2019-08-
+
+### Meta
+
+- branch: seo
+- description: Add metadata to portfolio page
+
+### Updated
+
+- 
+
 ## [1.7.1] - 2019-08-20
 
 ### Meta
 
 - branch: master
+- description: quick patch home page buttons
 
 ### Updated
 
