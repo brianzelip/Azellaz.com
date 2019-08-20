@@ -11,16 +11,24 @@ This document started at v1.6.10 and only documents work after v1.6.10.
 
 ## [Unreleased]
 
-## [1.7.2] - 2019-08-
+## [1.8.0] - 2019-08-
 
 ### Meta
 
 - branch: seo
-- description: Add metadata to portfolio page
+- description: Started out by wanting to add metadata for the portfolio page. Then scope changed to refactor the approach to generating page metadata.
+
+### Added
+
+- _includes/meta-about.html
+- _includes/meta-contact.html
+- _includes/meta-home.html
+- _includes/meta-portfolio.html
+- _includes/meta-product.html
 
 ### Updated
 
-- 
+- head.html: replaced hardcoded logic with includes
 
 ## [1.7.1] - 2019-08-20
 
