@@ -20,9 +20,16 @@ This document started at v1.6.10 and only documents work after v1.6.10.
 
 Also, the metadata includes are filled with repetition. While the last release abstracted out the metadata page modules from one long include, they can still be boiled down more.
 
+Also, \_config.yml needs to be organized into sections, like "social links", "images", "meta images", "prose content", etc.
+
 ### Added
 
+- images/meta/: create dir with duplicated images to be used strictly for metadata
+
 ### Updated
+
+- \_config.yml: refactored meta image property names
+- \_includes/meta-\*.html: Updated image content, removed meta tags with empty keyword content
 
 ## [1.8.0] - 2019-08-20
 
