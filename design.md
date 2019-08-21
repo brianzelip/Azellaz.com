@@ -16,4 +16,3 @@ This doc started at v1.9.2.
 - remove netlify and snipcart links on footer
 - add a shows page (places where Abbie has had a table)
 - add a "stockists" page (places that stock Azellaz - even if ephemeral)
-- 
