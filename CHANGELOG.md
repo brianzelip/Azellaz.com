@@ -11,6 +11,26 @@ This document started at v1.6.10 and only documents work after v1.6.10.
 
 ## [Unreleased]
 
+## [1.9.0] - 2019-08-2
+
+### Meta
+
+- branch: metadata-images
+- description: I need to get a grasp on the seo metadata images. Hithertofore, the "featured image" base file name was added to \_config.yml, but the file name was an older convention that Abbie changed soon after, but the metadata featured image did not get updated, so the image has been broke in the twitter card for some time now. Instead of hardcoding in the name of the preferred image at any given time, there should be some directory in images/ that is named something like images/meta/. There should be some docs that mention the meta images as a task that needs to be maintained over time. (there should be other maintenance things listed in the docs too, like deleting/generating new product pages when products.json is updated, meta images, twitter card validator for new pages, etc.)
+
+Also, the metadata includes are filled with repetition. While the last release abstracted out the metadata page modules from one long include, they can still be boiled down more.
+
+Also, \_config.yml needs to be organized into sections, like "social links", "images", "meta images", "prose content", etc.
+
+### Added
+
+- images/meta/: create dir with duplicated images to be used strictly for metadata
+
+### Updated
+
+- \_config.yml: refactored meta image property names
+- \_includes/meta-\*.html: Updated image content, removed meta tags with empty keyword content
+
 ## [1.8.0] - 2019-08-20
 
 ### Meta
@@ -20,11 +40,11 @@ This document started at v1.6.10 and only documents work after v1.6.10.
 
 ### Added
 
-- _includes/meta-about.html
-- _includes/meta-contact.html
-- _includes/meta-home.html
-- _includes/meta-portfolio.html
-- _includes/meta-product.html
+- \_includes/meta-about.html
+- \_includes/meta-contact.html
+- \_includes/meta-home.html
+- \_includes/meta-portfolio.html
+- \_includes/meta-product.html
 
 ### Updated
 
