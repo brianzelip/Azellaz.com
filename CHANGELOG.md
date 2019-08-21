@@ -19,6 +19,12 @@ This document started at v1.6.10 and only documents work after v1.6.10.
 - description: Refactor all rounded corners to not rounded
   - Also thinking of design possibilities while looking at https://www.pawenastudio.com/ and https://shopdanabechert.com/; see these notes in design.md
 
+### Added
+
+- design.md: Notes on future design changes
+
+### Updated
+
 ## [1.9.2] - 2019-08-21
 
 ### Meta
