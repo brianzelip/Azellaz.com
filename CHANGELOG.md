@@ -25,6 +25,10 @@ This document started at v1.6.10 and only documents work after v1.6.10.
 
 ### Updated
 
+- _includes/hero.html
+- _includes/header.html
+- _includes/shop-filter-btns.html
+
 ## [1.9.2] - 2019-08-21
 
 ### Meta
