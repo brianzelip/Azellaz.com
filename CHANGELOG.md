@@ -11,6 +11,17 @@ This document started at v1.6.10 and only documents work after v1.6.10.
 
 ## [Unreleased]
 
+## [1.9.2] - 2019-08-21
+
+### Meta
+
+- branch: master
+- description: Old products were still getting generated because of a folder that was still around from the debugging phase before I implemented the newProductPages.js workflow.
+
+### Deleted
+
+- new-products/
+
 ## [1.9.1] - 2019-08-20
 
 ### Meta
