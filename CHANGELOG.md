@@ -11,6 +11,24 @@ This document started at v1.6.10 and only documents work after v1.6.10.
 
 ## [Unreleased]
 
+## [1.9.3] - 2019-08-21
+
+### Meta
+
+- branch: corner-borders
+- description: Refactor all rounded corners to not rounded
+  - Also thinking of design possibilities while looking at https://www.pawenastudio.com/ and https://shopdanabechert.com/; see these notes in design.md
+
+### Added
+
+- design.md: Notes on future design changes
+
+### Updated
+
+- _includes/hero.html
+- _includes/header.html
+- _includes/shop-filter-btns.html
+
 ## [1.9.2] - 2019-08-21
 
 ### Meta
