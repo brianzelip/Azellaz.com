@@ -11,6 +11,20 @@ This document started at v1.6.10 and only documents work after v1.6.10.
 
 ## [Unreleased]
 
+## [1.9.1] - 2019-08-20
+
+### Meta
+
+- branch: update-product-pages
+- description: I noticed the products/ dir has more pages than are currently listed in the shop. This means that the last time we updated products.json and the shop, we didn't run newProductPages.js.
+
+This needs to be added to some docs!
+
+### Updated
+
+- products/
+- maintenance.md
+
 ## [1.9.0] - 2019-08-20
 
 ### Meta
