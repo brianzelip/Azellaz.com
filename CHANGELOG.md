@@ -11,6 +11,18 @@ This document started at v1.6.10 and only documents work after v1.6.10.
 
 ## [Unreleased]
 
+## [1.9.4] - 2019-08-23
+
+### Meta
+
+- branch: corner-borders-patch
+- description: Previous patch missed unrounding the flash borders
+
+### Updated
+
+- hiatus-flash.html
+- holiday-flash.html
+
 ## [1.9.3] - 2019-08-21
 
 ### Meta
