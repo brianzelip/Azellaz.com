@@ -29,6 +29,9 @@ This document started at v1.6.10 and only documents work after v1.6.10.
 
 ### Updated
 
+- hero.html: Unround the `<p>` corners
+- header.html: Unround the `<nav>` corners
+
 ## [1.9.3] - 2019-08-21
 
 ### Meta
