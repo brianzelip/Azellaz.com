@@ -20,8 +20,14 @@ This document started at v1.6.10 and only documents work after v1.6.10.
 
 ### Updated
 
-- hiatus-flash.html
-- holiday-flash.html
+## [1.9.5] - 2019-08-26
+
+### Meta
+
+- branch: corner-borders-patch-2
+- description: Previous patch missed unrounding the hero page bg-darken wrappers
+
+### Updated
 
 ## [1.9.3] - 2019-08-21
 
@@ -37,9 +43,9 @@ This document started at v1.6.10 and only documents work after v1.6.10.
 
 ### Updated
 
-- _includes/hero.html
-- _includes/header.html
-- _includes/shop-filter-btns.html
+- \_includes/hero.html
+- \_includes/header.html
+- \_includes/shop-filter-btns.html
 
 ## [1.9.2] - 2019-08-21
 
