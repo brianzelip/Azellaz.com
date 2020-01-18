@@ -11,6 +11,22 @@ This document started at v1.6.10 and only documents work after v1.6.10.
 
 ## [Unreleased]
 
+## [1.9.6] - 2020-01-??
+
+- branch: archive-working-files
+- branched off: dev
+- description: prep for porting from Jekyll to 11ty with Netlify CMS, get rid of old files that were working files at the time but are not stale.
+
+### Removed
+
+- test.html
+-
+
+### Updated
+
+- \_config.yml:
+  - delete test.html
+
 ## [1.9.5] - 2019-08-26
 
 ### Meta
