@@ -27,7 +27,6 @@ plugins:
   - jekyll-sitemap
 exclude:
   - whiteboard.md
-  - test.html
   - node_modules/
   - archive/
   - images/raw-dog-and-others/
