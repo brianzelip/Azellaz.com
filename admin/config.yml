@@ -8,7 +8,7 @@ collections:
     name: 'products'
     folder: 'cms'
     create: true
-    slug: { { fields.slug } }
+    slug: "{{ fields.slug }}"
     fields:
       - { label: 'title', name: 'Title', widget: 'string' }
       - { label: 'id', name: 'id', widget: 'string' }
@@ -38,3 +38,4 @@ collections:
           name: 'imgSecondarySet',
           widget: 'string',
         }
+       - {label: "Body", name: "body", widget: "markdown"}
