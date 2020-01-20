@@ -26,7 +26,11 @@ This document started at v1.6.10 and only documents work after v1.6.10.
 - have a stories/articles/info-sharing section - something that doesn't have to be updated, a la https://hester-demo.squarespace.com/blog
 - have a stockists page, a la https://ventura-demo.squarespace.com/stockists
 
-## [1.10.0] - 2020-01-?
+## TODO
+
+After merging init-netlifycms into dev, work on dev, and update the branch and base url source in netlify cms config to dev and dev--azellaz.netlify.com.
+
+## [1.10.0] - 2020-01-20
 
 - branch: init-netlifycms
 - description: Wire up Netlify CMS
@@ -36,6 +40,10 @@ This document started at v1.6.10 and only documents work after v1.6.10.
 - /admin
   - index.html
   - config.yml
+
+### Updated
+
+- index.html: Added netlify identity widget to bottom of page
 
 ## [1.9.5] - 2019-08-26
 
