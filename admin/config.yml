@@ -9,6 +9,7 @@ collections:
     folder: 'products'
     create: true
     fields:
+      - { label: 'title', name: 'Title', widget: 'string' }
       - { label: 'id', name: 'id', widget: 'string' }
       - { label: 'name', name: 'name', widget: 'string' }
       - { label: 'displayName', name: 'displayName', widget: 'string' }
