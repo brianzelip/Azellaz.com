@@ -11,6 +11,32 @@ This document started at v1.6.10 and only documents work after v1.6.10.
 
 ## [Unreleased]
 
+### TODO
+
+- cms admin
+  - each product has its own .md page, and this is what is edited in the cms
+  - ability to create create a page with certain UI and design
+    - like a grid of items, regardless of if for shop or portfolio
+    - this means having a talk with Abbie about what kinds of different views she wants
+- carousel landing page
+
+### Talk w/ Abbie
+
+- do you like call out sections with bigger text, a la https://crosby-demo.squarespace.com/our-story?
+- have a stories/articles/info-sharing section - something that doesn't have to be updated, a la https://hester-demo.squarespace.com/blog
+- have a stockists page, a la https://ventura-demo.squarespace.com/stockists
+
+## [1.10.0] - 2020-01-?
+
+- branch: init-netlifycms
+- description: Wire up Netlify CMS
+
+### Added
+
+- /admin
+  - index.html
+  - config.yml
+
 ## [1.9.5] - 2019-08-26
 
 ### Meta
