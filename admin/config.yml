@@ -8,19 +8,11 @@ collections:
     name: 'products'
     folder: 'cms'
     create: true
+    identifier_field: name
     fields:
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Featured Image', name: 'thumbnail', widget: 'image' }
+      - { label: 'Name', name: 'name', widget: 'string' }
+      - { label: 'id', name: 'id', widget: 'string' }
       - { label: 'Description', name: 'body', widget: 'markdown' }
-  # - label: 'Products'
-  #   name: 'products'
-  #   folder: 'cms'
-  #   create: true
-  #   identifier_field: slug
-  #   fields:
-  #     - { label: 'title', name: 'Title', widget: 'string' }
-  #     - { label: 'id', name: 'id', widget: 'string' }
-  #     - { label: 'name', name: 'name', widget: 'string' }
   #     - { label: 'displayName', name: 'displayName', widget: 'string' }
   #     - { label: 'slug', name: 'slug', widget: 'string' }
   #     - { label: 'url', name: 'url', widget: 'string' }
