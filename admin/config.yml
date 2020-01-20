@@ -4,38 +4,47 @@ backend:
 media_folder: 'images/uploads'
 site_url: https://dev--azellaz.netlify.com/
 collections:
+collections:
   - label: 'Products'
     name: 'products'
     folder: 'cms'
     create: true
-    slug: '{{ fields.slug }}'
     fields:
-      - { label: 'title', name: 'Title', widget: 'string' }
-      - { label: 'id', name: 'id', widget: 'string' }
-      - { label: 'name', name: 'name', widget: 'string' }
-      - { label: 'displayName', name: 'displayName', widget: 'string' }
-      - { label: 'slug', name: 'slug', widget: 'string' }
-      - { label: 'url', name: 'url', widget: 'string' }
-      - { label: 'inStock', name: 'inStock', widget: 'string' }
-      - { label: 'stockOnHand', name: 'stockOnHand', widget: 'string' }
-      - { label: 'price', name: 'price', widget: 'string' }
-      - { label: 'type', name: 'type', widget: 'string' }
-      - { label: 'materials', name: 'materials', widget: 'string' }
-      - { label: 'currentListing', name: 'currentListing', widget: 'string' }
-      - {
-          label: 'short description',
-          name: 'descriptionShort',
-          widget: 'string',
-        }
-      - { label: 'long description', name: 'descriptionLong', widget: 'string' }
-      - { label: 'weight', name: 'weight', widget: 'string' }
-      - { label: 'height', name: 'height', widget: 'string' }
-      - { label: 'width', name: 'width', widget: 'string' }
-      - { label: 'length', name: 'length', widget: 'string' }
-      - { label: 'primary image', name: 'imgPrimary', widget: 'string' }
-      - {
-          label: 'set of secondary images',
-          name: 'imgSecondarySet',
-          widget: 'string',
-        }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Featured Image', name: 'thumbnail', widget: 'image' }
+      - { label: 'Description', name: 'description', widget: 'markdown' }
+  # - label: 'Products'
+  #   name: 'products'
+  #   folder: 'cms'
+  #   create: true
+  #   identifier_field: slug
+  #   fields:
+  #     - { label: 'title', name: 'Title', widget: 'string' }
+  #     - { label: 'id', name: 'id', widget: 'string' }
+  #     - { label: 'name', name: 'name', widget: 'string' }
+  #     - { label: 'displayName', name: 'displayName', widget: 'string' }
+  #     - { label: 'slug', name: 'slug', widget: 'string' }
+  #     - { label: 'url', name: 'url', widget: 'string' }
+  #     - { label: 'inStock', name: 'inStock', widget: 'string' }
+  #     - { label: 'stockOnHand', name: 'stockOnHand', widget: 'string' }
+  #     - { label: 'price', name: 'price', widget: 'string' }
+  #     - { label: 'type', name: 'type', widget: 'string' }
+  #     - { label: 'materials', name: 'materials', widget: 'string' }
+  #     - { label: 'currentListing', name: 'currentListing', widget: 'string' }
+  #     - {
+  #         label: 'short description',
+  #         name: 'descriptionShort',
+  #         widget: 'string',
+  #       }
+  #     - { label: 'long description', name: 'descriptionLong', widget: 'string' }
+  #     - { label: 'weight', name: 'weight', widget: 'string' }
+  #     - { label: 'height', name: 'height', widget: 'string' }
+  #     - { label: 'width', name: 'width', widget: 'string' }
+  #     - { label: 'length', name: 'length', widget: 'string' }
+  #     - { label: 'primary image', name: 'imgPrimary', widget: 'string' }
+  #     - {
+  #         label: 'set of secondary images',
+  #         name: 'imgSecondarySet',
+  #         widget: 'string',
+  #       }
+  #     - { label: 'Body', name: 'body', widget: 'markdown' }
