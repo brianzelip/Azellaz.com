@@ -4,7 +4,6 @@ backend:
 media_folder: 'images/uploads'
 site_url: https://dev--azellaz.netlify.com/
 collections:
-collections:
   - label: 'Products'
     name: 'products'
     folder: 'cms'
