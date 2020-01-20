@@ -8,6 +8,7 @@ collections:
     name: 'products'
     folder: 'cms'
     create: true
+    slug: { { fields.slug } }
     fields:
       - { label: 'title', name: 'Title', widget: 'string' }
       - { label: 'id', name: 'id', widget: 'string' }
