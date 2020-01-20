@@ -6,7 +6,7 @@ site_url: https://dev--azellaz.netlify.com/
 collections:
   - label: 'Products'
     name: 'products'
-    folder: 'products'
+    folder: 'cms'
     create: true
     fields:
       - { label: 'title', name: 'Title', widget: 'string' }
