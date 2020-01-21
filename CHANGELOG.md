@@ -28,7 +28,7 @@ This document started at v1.6.10 and only documents work after v1.6.10.
 
 ## TODO
 
-After merging init-netlifycms into dev, work on dev, and update the branch and base url source in netlify cms config to dev and dev--azellaz.netlify.com.
+~~After merging init-netlifycms into dev, work on dev, and update the branch and base url source in netlify cms config to dev and dev--azellaz.netlify.com.~~
 
 ## [1.10.0] - 2020-01-20
 
