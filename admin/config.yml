@@ -11,31 +11,61 @@ collections:
     identifier_field: name
     fields:
       - { label: 'Name', name: 'name', widget: 'string' }
+      - {
+          label: 'Layout',
+          name: 'layout',
+          widget: 'hidden',
+          default: 'product',
+        }
       - { label: 'id', name: 'id', widget: 'string' }
       - { label: 'Description', name: 'body', widget: 'markdown' }
-  #     - { label: 'displayName', name: 'displayName', widget: 'string' }
-  #     - { label: 'slug', name: 'slug', widget: 'string' }
-  #     - { label: 'url', name: 'url', widget: 'string' }
-  #     - { label: 'inStock', name: 'inStock', widget: 'string' }
-  #     - { label: 'stockOnHand', name: 'stockOnHand', widget: 'string' }
-  #     - { label: 'price', name: 'price', widget: 'string' }
-  #     - { label: 'type', name: 'type', widget: 'string' }
-  #     - { label: 'materials', name: 'materials', widget: 'string' }
-  #     - { label: 'currentListing', name: 'currentListing', widget: 'string' }
-  #     - {
-  #         label: 'short description',
-  #         name: 'descriptionShort',
-  #         widget: 'string',
-  #       }
-  #     - { label: 'long description', name: 'descriptionLong', widget: 'string' }
-  #     - { label: 'weight', name: 'weight', widget: 'string' }
-  #     - { label: 'height', name: 'height', widget: 'string' }
-  #     - { label: 'width', name: 'width', widget: 'string' }
-  #     - { label: 'length', name: 'length', widget: 'string' }
-  #     - { label: 'primary image', name: 'imgPrimary', widget: 'string' }
-  #     - {
-  #         label: 'set of secondary images',
-  #         name: 'imgSecondarySet',
-  #         widget: 'string',
-  #       }
-  #     - { label: 'Body', name: 'body', widget: 'markdown' }
+      - { label: 'Display name', name: 'displayName', widget: 'string' }
+      - { label: 'slug', name: 'slug', widget: 'string' }
+      - { label: 'url', name: 'url', widget: 'string' }
+      - { label: 'Is in stock?', name: 'inStock', widget: 'boolean' }
+      - { label: 'stockOnHand', name: 'stockOnHand', widget: 'number' }
+      - { label: 'price', name: 'price', widget: 'number' }
+      - {
+          label: 'Type',
+          name: 'type',
+          widget: 'select',
+          options:
+            [
+              'backpack',
+              'circular pouch',
+              'clutch',
+              'crossbody',
+              'duffle',
+              'medium tote',
+              'small tote',
+            ],
+        }
+      - {
+          label: 'Materials',
+          name: 'materials',
+          widget: 'select',
+          multiple: true,
+          options: ['felt', 'leather', 'waxed canvas'],
+        }
+      - {
+          label: 'Include item in shop?',
+          name: 'currentListing',
+          widget: 'boolean',
+        }
+      - { label: 'Short description', name: 'descriptionShort', widget: 'text' }
+      - { label: 'Long description', name: 'descriptionLong', widget: 'text' }
+      - { label: 'Weight', name: 'weight', widget: 'number' }
+      - { label: 'Height', name: 'height', widget: 'number' }
+      - { label: 'Width', name: 'width', widget: 'number' }
+      - { label: 'Length', name: 'length', widget: 'number' }
+      - {
+          label: 'Primary image',
+          name: 'imgPrimary',
+          widget: 'image',
+          allow_multiple: false,
+        }
+      - {
+          label: 'Set of secondary images',
+          name: 'imgSecondarySet',
+          widget: 'image',
+        }
