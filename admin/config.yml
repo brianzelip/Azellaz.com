@@ -8,7 +8,7 @@ collections:
     name: 'products'
     folder: 'cms'
     create: true
-    identifier_field: name
+    identifier_field: displayName
     fields:
       - {
           label: 'Layout',
@@ -16,21 +16,32 @@ collections:
           widget: 'hidden',
           default: 'product',
         }
-      - { label: 'Name', name: 'name', widget: 'string' }
+      - { label: 'Name', name: 'displayName', widget: 'string' }
       - {
           label: 'Include item in shop?',
           name: 'currentListing',
           widget: 'boolean',
+          default: false,
         }
-      - { label: 'Is in stock?', name: 'inStock', widget: 'boolean' }
-      - { label: 'stockOnHand', name: 'stockOnHand', widget: 'number' }
+      - {
+          label: 'Is currently in stock?',
+          name: 'inStock',
+          widget: 'boolean',
+          default: false,
+        }
+      - {
+          label: 'Number of stock currently on hand',
+          name: 'stockOnHand',
+          widget: 'number',
+          valueType: 'int',
+          default: 0,
+        }
       - { label: 'id', name: 'id', widget: 'string' }
-      - { label: 'Display name', name: 'displayName', widget: 'string' }
       - { label: 'slug', name: 'slug', widget: 'string' }
       - { label: 'url', name: 'url', widget: 'string' }
-      - { label: 'price', name: 'price', widget: 'number' }
+      - { label: 'price', name: 'price', widget: 'number', valueType: 'int' }
       - {
-          label: 'Type',
+          label: 'Bag type',
           name: 'type',
           widget: 'select',
           options:
@@ -53,10 +64,10 @@ collections:
         }
       - { label: 'Short description', name: 'descriptionShort', widget: 'text' }
       - { label: 'Long description', name: 'descriptionLong', widget: 'text' }
-      - { label: 'Weight', name: 'weight', widget: 'number' }
-      - { label: 'Height', name: 'height', widget: 'number' }
-      - { label: 'Width', name: 'width', widget: 'number' }
-      - { label: 'Length', name: 'length', widget: 'number' }
+      - { label: 'Weight', name: 'weight', widget: 'number', valueType: 'int' }
+      - { label: 'Height', name: 'height', widget: 'number', valueType: 'int' }
+      - { label: 'Width', name: 'width', widget: 'number', valueType: 'int' }
+      - { label: 'Length', name: 'length', widget: 'number', valueType: 'int' }
       - {
           label: 'Primary image',
           name: 'imgPrimary',
@@ -67,4 +78,5 @@ collections:
           label: 'Set of secondary images',
           name: 'imgSecondarySet',
           widget: 'image',
+          allow_multiple: true,
         }
