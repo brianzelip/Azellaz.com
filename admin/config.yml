@@ -10,20 +10,24 @@ collections:
     create: true
     identifier_field: name
     fields:
-      - { label: 'Name', name: 'name', widget: 'string' }
       - {
           label: 'Layout',
           name: 'layout',
           widget: 'hidden',
           default: 'product',
         }
+      - { label: 'Name', name: 'name', widget: 'string' }
+      - {
+          label: 'Include item in shop?',
+          name: 'currentListing',
+          widget: 'boolean',
+        }
+      - { label: 'Is in stock?', name: 'inStock', widget: 'boolean' }
+      - { label: 'stockOnHand', name: 'stockOnHand', widget: 'number' }
       - { label: 'id', name: 'id', widget: 'string' }
-      - { label: 'Description', name: 'body', widget: 'markdown' }
       - { label: 'Display name', name: 'displayName', widget: 'string' }
       - { label: 'slug', name: 'slug', widget: 'string' }
       - { label: 'url', name: 'url', widget: 'string' }
-      - { label: 'Is in stock?', name: 'inStock', widget: 'boolean' }
-      - { label: 'stockOnHand', name: 'stockOnHand', widget: 'number' }
       - { label: 'price', name: 'price', widget: 'number' }
       - {
           label: 'Type',
@@ -46,11 +50,6 @@ collections:
           widget: 'select',
           multiple: true,
           options: ['felt', 'leather', 'waxed canvas'],
-        }
-      - {
-          label: 'Include item in shop?',
-          name: 'currentListing',
-          widget: 'boolean',
         }
       - { label: 'Short description', name: 'descriptionShort', widget: 'text' }
       - { label: 'Long description', name: 'descriptionLong', widget: 'text' }
