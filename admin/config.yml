@@ -99,5 +99,10 @@ collections:
         widget: 'object'
         fields:
           - { label: 'id', name: 'id', widget: 'string' }
-          - { label: 'slug', name: 'slug', widget: 'string' }
+          - {
+              label: 'slug',
+              name: 'slug',
+              widget: 'hidden',
+              default: '{{slug}}',
+            }
           - { label: 'url', name: 'url', widget: 'string' }
