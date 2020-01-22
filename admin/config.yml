@@ -68,22 +68,22 @@ collections:
         widget: 'number'
         valueType: 'int'
         required: false
-      - label: 'Weight'
+      - label: 'Weight in grams'
         name: 'weight'
         widget: 'number'
         valueType: 'int'
         required: false
-      - label: 'Height'
+      - label: 'Height in centimeters'
         name: 'height'
         widget: 'number'
         valueType: 'int'
         required: false
-      - label: 'Width'
+      - label: 'Width in centimeters'
         name: 'width'
         widget: 'number'
         valueType: 'int'
         required: false
-      - label: 'Length'
+      - label: 'Length in centimeters'
         name: 'length'
         widget: 'number'
         valueType: 'int'
