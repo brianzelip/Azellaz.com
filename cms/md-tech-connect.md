@@ -18,6 +18,7 @@ length: 1
 imgPrimary: /images/uploads/cat-2902978_1920.jpg
 imgSecondarySet:
   - /images/uploads/drink on edge of destruction.png
+  - /images/uploads/cat-2902978_1920.jpg
 id: AZ0045
 ---
 
