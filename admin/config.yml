@@ -9,7 +9,6 @@ collections:
     folder: 'cms'
     create: true
     identifier_field: name
-    slug: '{{slug}}'
     fields:
       - label: 'Layout'
         name: 'layout'
@@ -17,93 +16,70 @@ collections:
         default: 'product'
       - { label: 'Name', name: 'name', widget: 'string' }
       - { label: 'Full display name', name: 'displayName', widget: 'string' }
-      - label: 'Shop'
-        name: 'shop'
-        widget: 'object'
-        fields:
-          - label: 'Include item in shop?'
-            name: 'currentListing'
-            widget: 'boolean'
-            default: false
-          - label: 'Is currently in stock?'
-            name: 'inStock'
-            widget: 'boolean'
-            default: false
-          - label: 'Number of stock currently on hand'
-            name: 'stockOnHand'
-            widget: 'number'
-            valueType: 'int'
-            default: 0
-      - label: 'Bag'
-        name: 'bag'
-        widget: 'object'
-        fields:
-          - label: 'Bag type'
-            name: 'type'
-            widget: 'select'
-            options:
-              [
-                'backpack',
-                'circular pouch',
-                'clutch',
-                'crossbody',
-                'duffle',
-                'medium tote',
-                'small tote',
-              ]
-          - label: 'Short description'
-            name: 'descriptionShort'
-            widget: 'text'
-          - label: 'Long description'
-            name: 'descriptionLong'
-            widget: 'text'
-          - label: 'Materials'
-            name: 'materials'
-            widget: 'select'
-            multiple: true
-            options: ['felt', 'leather', 'waxed canvas']
-          - label: 'price'
-            name: 'price'
-            widget: 'number'
-            valueType: 'int'
-          - label: 'Weight'
-            name: 'weight'
-            widget: 'number'
-            valueType: 'int'
-          - label: 'Height'
-            name: 'height'
-            widget: 'number'
-            valueType: 'int'
-          - label: 'Width'
-            name: 'width'
-            widget: 'number'
-            valueType: 'int'
-          - label: 'Length'
-            name: 'length'
-            widget: 'number'
-            valueType: 'int'
-      - label: 'Photos'
-        name: 'photos'
-        widget: 'object'
-        fields:
-          - label: 'Primary photo'
-            name: 'imgPrimary'
-            widget: 'image'
-            allow_multiple: false
-          - label: 'Set of secondary photos'
-            name: 'imgSecondarySet'
-            widget: 'list'
-            allow_multiple: true
-            field: { label: Image, name: image, widget: image }
-      - label: 'Meta'
-        name: 'meta'
-        widget: 'object'
-        fields:
-          - { label: 'id', name: 'id', widget: 'string' }
-          - {
-              label: 'slug',
-              name: 'slug',
-              widget: 'hidden',
-              default: {{slug}},
-            }
-          - { label: 'url', name: 'url', widget: 'string' }
+      - label: 'Include item in shop?'
+        name: 'currentListing'
+        widget: 'boolean'
+        default: false
+      - label: 'Is currently in stock?'
+        name: 'inStock'
+        widget: 'boolean'
+        default: false
+      - label: 'Number of stock currently on hand'
+        name: 'stockOnHand'
+        widget: 'number'
+        valueType: 'int'
+        default: 0
+      - label: 'Bag type'
+        name: 'type'
+        widget: 'select'
+        options:
+          [
+            'backpack',
+            'circular pouch',
+            'clutch',
+            'crossbody',
+            'duffle',
+            'medium tote',
+            'small tote',
+          ]
+      - label: 'Short description'
+        name: 'descriptionShort'
+        widget: 'text'
+      - label: 'Long description'
+        name: 'descriptionLong'
+        widget: 'text'
+      - label: 'Materials'
+        name: 'materials'
+        widget: 'select'
+        multiple: true
+        options: ['felt', 'leather', 'waxed canvas']
+      - label: 'price'
+        name: 'price'
+        widget: 'number'
+        valueType: 'int'
+      - label: 'Weight'
+        name: 'weight'
+        widget: 'number'
+        valueType: 'int'
+      - label: 'Height'
+        name: 'height'
+        widget: 'number'
+        valueType: 'int'
+      - label: 'Width'
+        name: 'width'
+        widget: 'number'
+        valueType: 'int'
+      - label: 'Length'
+        name: 'length'
+        widget: 'number'
+        valueType: 'int'
+      - label: 'Primary photo'
+        name: 'imgPrimary'
+        widget: 'image'
+        allow_multiple: false
+      - label: 'Secondary photos'
+        name: 'imgSecondarySet'
+        widget: 'list'
+        allow_multiple: true
+        field: { label: Image, name: image, widget: image }
+      - { label: 'id', name: 'id', widget: 'string', default: 'AZ00' }
