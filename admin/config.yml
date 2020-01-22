@@ -104,6 +104,6 @@ collections:
               label: 'slug',
               name: 'slug',
               widget: 'hidden',
-              default: '{{slug}}',
+              default: {{slug}},
             }
           - { label: 'url', name: 'url', widget: 'string' }
