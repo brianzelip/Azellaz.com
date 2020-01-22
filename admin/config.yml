@@ -16,6 +16,7 @@ collections:
         default: 'product'
       - { label: 'Name', name: 'name', widget: 'string' }
       - { label: 'Full display name', name: 'displayName', widget: 'string' }
+      - { label: 'id', name: 'id', widget: 'string', default: 'AZ00' }
       - label: 'Include item in shop?'
         name: 'currentListing'
         widget: 'boolean'
@@ -82,4 +83,3 @@ collections:
         widget: 'list'
         allow_multiple: true
         field: { label: Image, name: image, widget: image }
-      - { label: 'id', name: 'id', widget: 'string', default: 'AZ00' }
