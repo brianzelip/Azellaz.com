@@ -92,8 +92,9 @@ collections:
             allow_multiple: false
           - label: 'Set of secondary photos'
             name: 'imgSecondarySet'
-            widget: 'image'
+            widget: 'list'
             allow_multiple: true
+            field: { label: Image, name: image, widget: image }
       - label: 'Meta'
         name: 'meta'
         widget: 'object'
