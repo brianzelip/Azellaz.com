@@ -15,7 +15,12 @@ collections:
         widget: 'hidden'
         default: 'product'
       - { label: 'Name', name: 'name', widget: 'string' }
-      - { label: 'Full display name', name: 'displayName', widget: 'string' }
+      - {
+          label: 'Full display name',
+          name: 'displayName',
+          widget: 'string',
+          required: false,
+        }
       - { label: 'id', name: 'id', widget: 'string', default: 'AZ00' }
       - label: 'Include item in shop?'
         name: 'currentListing'
@@ -43,43 +48,54 @@ collections:
             'medium tote',
             'small tote',
           ]
+        required: false
       - label: 'Short description'
         name: 'descriptionShort'
         widget: 'text'
+        required: false
       - label: 'Long description'
         name: 'descriptionLong'
         widget: 'text'
+        required: false
       - label: 'Materials'
         name: 'materials'
         widget: 'select'
         multiple: true
         options: ['felt', 'leather', 'waxed canvas']
+        required: false
       - label: 'price'
         name: 'price'
         widget: 'number'
         valueType: 'int'
+        required: false
       - label: 'Weight'
         name: 'weight'
         widget: 'number'
         valueType: 'int'
+        required: false
       - label: 'Height'
         name: 'height'
         widget: 'number'
         valueType: 'int'
+        required: false
       - label: 'Width'
         name: 'width'
         widget: 'number'
         valueType: 'int'
+        required: false
       - label: 'Length'
         name: 'length'
         widget: 'number'
         valueType: 'int'
+        required: false
       - label: 'Primary photo'
         name: 'imgPrimary'
         widget: 'image'
         allow_multiple: false
+        required: false
       - label: 'Secondary photos'
         name: 'imgSecondarySet'
         widget: 'list'
         allow_multiple: true
         field: { label: Image, name: image, widget: image }
+        required: false
