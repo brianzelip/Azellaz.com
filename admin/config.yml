@@ -9,6 +9,7 @@ collections:
     folder: 'cms'
     create: true
     identifier_field: name
+    slug: '{{ slug }}'
     fields:
       - label: 'Layout'
         name: 'layout'
@@ -98,5 +99,15 @@ collections:
         widget: 'object'
         fields:
           - { label: 'id', name: 'id', widget: 'string' }
-          - { label: 'slug', name: 'slug', widget: 'string' }
-          - { label: 'url', name: 'url', widget: 'string' }
+          - {
+              label: 'slug',
+              name: 'slug',
+              widget: 'string',
+              default: '{{slug}}',
+            }
+          - {
+              label: 'url',
+              name: 'url',
+              widget: 'string',
+              default: 'https://www.azellaz.com/{{slug}}',
+            }
