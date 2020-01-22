@@ -1,33 +1,41 @@
 const fs = require('fs');
-const products = require('./_data/products.json');
+const data = require('./_data/products.json');
 
-const productFilesDir = './products/';
+function jsArray2Yaml(arr) {
+  return arr.length > 0
+    ? arr
+        .map(
+          item => `
+  - "${item}"`
+        )
+        .join('')
+    : ``;
+}
 
-products.forEach(product => {
-  const fileContent = `---
+const output = data.forEach((product, i) => {
+  const content = `---
 layout: product
-published: ${product.currentListing ? true : false}
-permalink: /${product.slug}/
-productID: ${product.id}
-id: ${product.id}
-name: ${product.name}
-displayName: ${product.displayName}
-slug: ${product.slug}
-url: ${product.url}
+name: "${product.name}"
+displayName: "${product.displayName}"
+id: "${product.id}"
+currentListing: ${product.currentListing}
 inStock: ${product.inStock}
 stockOnHand: ${product.stockOnHand}
+type: "${product.type}"
+descriptionShort: "${product.descriptionShort}"
+descriptionLong: ${jsArray2Yaml(product.descriptionLong)}
+materials: ${jsArray2Yaml(product.materials)}
 price: ${product.price}
-type: ${product.type}
-materials: ${product.materials}
-currentListing: ${product.currentListing}
-descriptionShort: ${product.descriptionShort}
-descriptionLong: ${product.descriptionLong}
 weight: ${product.weight}
 height: ${product.height}
 width: ${product.width}
 length: ${product.length}
-imgPrimary: ${product.imgPrimary}
-imgSecondarySet: ${product.imgSecondarySet}
+imgPrimary: "${product.imgPrimary}"
+imgSecondarySet: ${jsArray2Yaml(product.imgSecondarySet)}
 ---
 `;
+
+  fs.writeFileSync(`./products/cms/${product.slug}.md`, content);
+  console.log(`FILE #${i} WRITTEN: ${product.slug}.md 🎉`);
+  console.log(content);
 });
