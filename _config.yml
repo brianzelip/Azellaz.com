@@ -36,6 +36,13 @@ exclude:
   - LICENSE
   - '*.pptx'
   - newProductPages.js
+  - productsDataToProductsFiles.js
+
+# Collections
+collections:
+  products:
+    output: true
+    permalink: /:name/
 
 # Static files api
 defaults:
