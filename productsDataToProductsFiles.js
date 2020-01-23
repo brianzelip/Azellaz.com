@@ -1,17 +1,6 @@
 const fs = require('fs');
 const data = require('./_data/products.json');
 
-function jsArray2Yaml(arr) {
-  return arr.length > 0
-    ? arr
-        .map(
-          item => `
-  - "${item}"`
-        )
-        .join('')
-    : ``;
-}
-
 const output = data.forEach((product, i) => {
   const content = `---
 layout: product
