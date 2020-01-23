@@ -6,7 +6,7 @@ meta_about_page_image: images/Azellaz-work-bench.jpg
 
 # Paths
 base_url: https://www.azellaz.com/
-bas_url_no_trailing_slash: https://www.azellaz.com
+base_url_no_trailing_slash: https://www.azellaz.com
 images_dir: images/
 product_images_dir: images/products/
 product_thumb_sm_images_dir: images/products/thumbs-sm/
