@@ -16,13 +16,14 @@ collections:
         default: 'product'
       - { label: 'Name', name: 'name', widget: 'string' }
       - {
-          label: 'Slug (the URL suffix after https://www.azellaz.com/)',
-          name: 'slug',
-          widget: 'string',
-        }
-      - {
           label: 'Full display name',
           name: 'displayName',
+          widget: 'string',
+          required: false,
+        }
+      - {
+          label: "Web page name if different from Name above (comes after 'https://www.azellaz.com/')",
+          name: 'slug',
           widget: 'string',
           required: false,
         }
