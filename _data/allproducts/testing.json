@@ -1,0 +1,10 @@
+{
+  "layout": "product",
+  "name": "Testing",
+  "displayName": "Testing",
+  "slug": "testing",
+  "id": "AZ00",
+  "currentListing": false,
+  "inStock": false,
+  "stockOnHand": 0
+}
