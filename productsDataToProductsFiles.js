@@ -7,6 +7,7 @@ data.forEach((obj, i) => {
     name: obj.name,
     displayName: obj.displayName,
     id: obj.id,
+    slug: obj.slug,
     currentListing: obj.currentListing,
     inStock: obj.inStock,
     stockOnHand: obj.stockOnHand,
