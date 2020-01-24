@@ -43,7 +43,7 @@
         data-item-width="{{ product.width }}"
         data-item-length="{{ product.length }}"
         data-item-url="{{ site.base_url_no_trailing_slash }}{{ page.url }}"
-        data-item-description="{{ product.descriptionShort }}"{% if slug contains 'clutch' %}
+        data-item-description="{{ product.descriptionShort }}"{% if product.slug contains 'clutch' %}
         data-item-custom1-name="Strap options"
         data-item-custom1-required="true"
         data-item-custom1-options="No strap, $54|Wrist, $64[+10.00]|Crossbody, $74[+20.00]|Both straps, $84[+30.00]"{% endif %}>
