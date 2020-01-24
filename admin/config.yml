@@ -6,7 +6,7 @@ site_url: https://dev--azellaz.netlify.com/
 collections:
   - label: 'Products'
     name: 'products'
-    folder: '_products'
+    folder: '_data/allproducts'
     create: true
     identifier_field: name
     fields:
