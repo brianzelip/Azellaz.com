@@ -39,14 +39,15 @@ function createNewProductPages() {
 layout: product
 name: "${data.name}"
 displayName: "${data.displayName}"
-slug: "/${data.slug}/"
+slug: "${data.slug}"
+permalink: "/${data.slug}/"
 id: "${data.id}"
 currentListing: ${data.currentListing}
 inStock: ${data.inStock}
 stockOnHand: ${data.stockOnHand}
 type: "${data.type}"
 descriptionShort: "${data.descriptionShort}"
-descriptionLong: ${data.descriptionLong}
+descriptionLong: "${data.descriptionLong}"
 materials: ${data.materials}
 price: ${data.price}
 weight: ${data.weight}
@@ -54,7 +55,7 @@ height: ${data.height}
 width: ${data.width}
 length: ${data.length}
 imgPrimary: "${data.imgPrimary}"
-imgSecondarySet: ${data.imgSecondarySet}
+imgSecondarySet: "${data.imgSecondarySet}"
 ---
 `;
 
