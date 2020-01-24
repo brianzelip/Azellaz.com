@@ -1,7 +1,7 @@
 const fs = require('fs');
 
-const productDataDir = './_data/allproducts';
-const productPagesDir = './_products/';
+const productDataDir = './_data/allproducts/';
+const productPagesDir = './products/';
 
 removeOldProductPages();
 createNewProductPages();
@@ -27,14 +27,19 @@ function createNewProductPages() {
 
   const dataFiles = fs.readdirSync(productDataDir);
 
+  let count = 0;
+
   dataFiles.forEach((path, i) => {
     const data = JSON.parse(fs.readFileSync(`${productDataDir}${path}`));
 
     if (data.currentListing) {
+      count++;
+
       const pageContent = `---
 layout: product
 name: "${data.name}"
 displayName: "${data.displayName}"
+slug: "${data.slug}"
 id: "${data.id}"
 currentListing: ${data.currentListing}
 inStock: ${data.inStock}
@@ -53,27 +58,8 @@ imgSecondarySet: ${data.imgSecondarySet}
 ---
 `;
 
-      fs.writeFileSync(`${dir}${product.slug}.html`, fileContent);
-      console.log(`${count}. ${product.slug}.html`);
+      fs.writeFileSync(`${productPagesDir}${data.slug}.md`, pageContent);
+      console.log(`${count}. ${data.slug}.md`);
     }
   });
-
-  let count = 0;
-
-  for (const product of products) {
-    if (product.currentListing) {
-      count++;
-
-      const fileContent = `---
-layout: product
-permalink: /${product.slug}/
-productID: ${product.id}
----
-`;
-
-      fs.writeFileSync(`${dir}${product.slug}.html`, fileContent);
-      console.log(`${count}. ${product.slug}.html`);
-    }
-  }
-  return;
 }
