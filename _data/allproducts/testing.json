@@ -4,7 +4,7 @@
   "displayName": "Testing",
   "slug": "testing",
   "id": "AZ00",
-  "currentListing": false,
+  "currentListing": true,
   "inStock": false,
   "stockOnHand": 0
 }
