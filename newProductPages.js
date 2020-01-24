@@ -39,7 +39,7 @@ function createNewProductPages() {
 layout: product
 name: "${data.name}"
 displayName: "${data.displayName}"
-slug: "${data.slug}"
+slug: "/${data.slug}/"
 id: "${data.id}"
 currentListing: ${data.currentListing}
 inStock: ${data.inStock}
