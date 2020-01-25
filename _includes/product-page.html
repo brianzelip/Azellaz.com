@@ -14,7 +14,7 @@
         id="large-image-view"
         class="mbn1"
         src="/{{ site.product_images_dir }}{{ product.imgPrimary }}" 
-        alt="{{ product.imgPrimary | remove: slug | remove_first: "-" | remove: "-by-Azellaz.jpg" | capitalize }} view of the {{ product.displayName }} by Azellaz"
+        alt="{{ product.imgPrimary | remove: product.slug | remove_first: "-" | remove: "-by-Azellaz.jpg" | capitalize }} view of the {{ product.displayName }} by Azellaz"
         title="{{ product.displayName }} by Azellaz"
       />
     </div>
