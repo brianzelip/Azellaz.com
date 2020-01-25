@@ -28,6 +28,15 @@ This document started at v1.6.10 and only documents work after v1.6.10.
 - have a stories/articles/info-sharing section - something that doesn't have to be updated, a la https://hester-demo.squarespace.com/blog
 - have a stockists page, a la https://ventura-demo.squarespace.com/stockists
 
+## [1.12.3] - 2020-01-25
+
+- branch: dev
+- description: Fix version number DOH!
+
+### Updated
+
+- package\*.json
+
 ## [1.12.2] - 2020-01-25
 
 - branch: dev
