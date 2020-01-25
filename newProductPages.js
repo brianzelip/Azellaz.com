@@ -25,6 +25,19 @@ function removeOldProductPages() {
 function createNewProductPages() {
   console.log(`Generating new Azellaz product pages in ${productPagesDir} ...`);
 
+  function jsArray2Yaml(arr) {
+    return arr
+      ? arr.length > 0
+        ? arr
+            .map(
+              item => `
+  - "${item}"`
+            )
+            .join('')
+        : ``
+      : ``;
+  }
+
   const dataFiles = fs.readdirSync(productDataDir);
 
   let count = 0;
@@ -55,7 +68,7 @@ height: ${data.height}
 width: ${data.width}
 length: ${data.length}
 imgPrimary: "${data.imgPrimary}"
-imgSecondarySet: "${data.imgSecondarySet}"
+imgSecondarySet: ${jsArray2Yaml(data.imgSecondarySet)}
 ---
 `;
 
