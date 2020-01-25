@@ -60,7 +60,7 @@ inStock: ${data.inStock}
 stockOnHand: ${data.stockOnHand}
 type: "${data.type}"
 descriptionShort: "${data.descriptionShort}"
-descriptionLong: "${data.descriptionLong}"
+descriptionLong: ${jsArray2Yaml(data.descriptionLong)}
 materials: ${data.materials}
 price: ${data.price}
 weight: ${data.weight}
