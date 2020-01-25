@@ -13,9 +13,9 @@
       <img
         id="large-image-view"
         class="mbn1"
-        src="/{{ site.product_images_dir }}{{ product.imgPrimary }}" 
-        alt="{{ product.imgPrimary | remove: product.slug | remove_first: "-" | remove: "-by-Azellaz.jpg" | capitalize }} view of the {{ product.displayName }} by Azellaz"
-        title="{{ product.displayName }} by Azellaz"
+        src="/{{ site.product_images_dir }}{{ page.imgPrimary }}" 
+        alt="{{ page.imgPrimary | remove: page.slug | remove_first: "-" | remove: "-by-Azellaz.jpg" | capitalize }} view of the {{ page.displayName }} by Azellaz"
+        title="{{ page.displayName }} by Azellaz"
       />
     </div>
 
@@ -25,25 +25,25 @@
   </div>
 
   <div class="col col-12 md-col-5 p2">
-    <h1 class="m0 h2 serif light-black">{{ product.displayName }}</h1>
-    <p class="h2 serif light-black">${{ product.price }}{% if product.type == 'clutch'  %}+{% endif %}</p>
-    {% for paragraph in product.descriptionLong %}
+    <h1 class="m0 h2 serif light-black">{{ page.displayName }}</h1>
+    <p class="h2 serif light-black">${{ page.price }}{% if page.type == 'clutch'  %}+{% endif %}</p>
+    {% for paragraph in page.descriptionLong %}
     <p class="serif light-black">{{ paragraph }}</p>
     {% endfor %}
-    <p class="serif light-black"><span class="red">*</span><strong>Availability:</strong> {% if product.inStock %}{{ site.in_stock }}{% else %}{{ site.made_to_order }}{% endif %}</p>
+    <p class="serif light-black"><span class="red">*</span><strong>Availability:</strong> {% if page.inStock %}{{ site.in_stock }}{% else %}{{ site.made_to_order }}{% endif %}</p>
     {%- comment -%} <div class="md-mt4">
       <button
         class="col-12 md-width-auto btn btn-outline fw200 light-black snipcart-add-item"
-        data-item-id="{{ product.id }}"
-        data-item-name="{{ product.displayName }}"
-        data-item-image="{{ site.base_url }}{{ site.product_thumb_sm_images_dir }}{{ site.thumb_small_prefix }}{{ product.imgPrimary }}"
-        data-item-price="{{ product.price }}"
-        data-item-weight="{{ product.weight }}"
-        data-item-height="{{ product.height }}"
-        data-item-width="{{ product.width }}"
-        data-item-length="{{ product.length }}"
+        data-item-id="{{ page.id }}"
+        data-item-name="{{ page.displayName }}"
+        data-item-image="{{ site.base_url }}{{ site.product_thumb_sm_images_dir }}{{ site.thumb_small_prefix }}{{ page.imgPrimary }}"
+        data-item-price="{{ page.price }}"
+        data-item-weight="{{ page.weight }}"
+        data-item-height="{{ page.height }}"
+        data-item-width="{{ page.width }}"
+        data-item-length="{{ page.length }}"
         data-item-url="{{ site.base_url_no_trailing_slash }}{{ page.url }}"
-        data-item-description="{{ product.descriptionShort }}"{% if product.slug contains 'clutch' %}
+        data-item-description="{{ page.descriptionShort }}"{% if page.slug contains 'clutch' %}
         data-item-custom1-name="Strap options"
         data-item-custom1-required="true"
         data-item-custom1-options="No strap, $54|Wrist, $64[+10.00]|Crossbody, $74[+20.00]|Both straps, $84[+30.00]"{% endif %}>
