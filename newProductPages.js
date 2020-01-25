@@ -10,12 +10,15 @@ function removeOldProductPages() {
   const oldFiles = fs.readdirSync(productPagesDir);
 
   console.log(
-    `Deleting ${oldFiles.length} old Azellaz product files in ${productPagesDir} ...`
+    `Deleting ${oldFiles.length -
+      1} old Azellaz product files in ${productPagesDir} ...`
   );
 
   oldFiles.forEach((file, i) => {
-    console.log(`${i}. ${file}`);
-    fs.unlinkSync(`${productPagesDir}${file}`);
+    if (file !== '.gitkeep') {
+      console.log(`${i}. ${file}`);
+      fs.unlinkSync(`${productPagesDir}${file}`);
+    }
   });
 
   console.log('\n');
