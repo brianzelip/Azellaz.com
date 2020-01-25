@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-const productDataDir = './_data/allproducts/';
+const productDataDir = './_data/products/';
 const productPagesDir = './products/';
 
 removeOldProductPages();
