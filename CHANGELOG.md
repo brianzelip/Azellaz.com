@@ -26,9 +26,52 @@ This document started at v1.6.10 and only documents work after v1.6.10.
 - have a stories/articles/info-sharing section - something that doesn't have to be updated, a la https://hester-demo.squarespace.com/blog
 - have a stockists page, a la https://ventura-demo.squarespace.com/stockists
 
-## TODO
+## [1.11.0] - 2020-01-24
 
-~~After merging init-netlifycms into dev, work on dev, and update the branch and base url source in netlify cms config to dev and dev--azellaz.netlify.com.~~
+- branch: dev
+- description: Get netlify cms back end working (ie: publishing new pages and editing old pages). The principle dynamic is between `admin/config.yml` and `_data/allproducts/*.json`, and then the yaml front matter in the auto-generated pages (via `newProductPages.js`) in `products/*.md`.
+
+This really represents v2, since the way for the staff user to update the site has now changed. Although it's still possible to edit json files in the repo; though doing so will always be possible.
+
+### Documentation with this bump:
+
+1. Make new cms users
+
+BZ Netlify > azellaz > Identity > Invite Users > input user email
+
+2. Login
+
+url: https://www.azellaz.com/admin
+
+3. Un/Publish a page
+
+a. Login
+b. Choose the collection of information to edit on the left (currently only "Products")
+c. Choose file to edit, or click the "New Products" button
+d. Toggle the "Include item in shop?" on to publish page, toggle it off to not publish or unpublish page
+
+1. `products/` is now auto-refreshed via
+
+`newProductPages.js` is called before `jekyll build` via `npm build`
+
+5. `_data/products.json` has been destructured into `_data/allproducts/*.json`
+
+6. Made data parity between each product json file and the Netlify CMS config
+
+### Added
+
+- productsDataToProductsFiles.js - single-purpose tool to use the work already put into defining the data in `_data/products.json` by creating new data files for each object
+- \_data/allproducts/: A json file for each product contained in \_data/products.json. This is the folder that Netlify CMS looks at for editing products collection data.
+
+### Updated
+
+- admin/config.yml:
+  - add the appropriate fields to match product data model
+  - change the branch and site_url fields for dev work
+- \_includes/meta-product.html: refactor use of slug
+- \_includes/product-page.html: refactor use of slug
+- \_includes/product-thumbnails.html: refactor use of slug
+- \_layouts/product.html: remove for loop and if statement at root of html
 
 ## [1.10.0] - 2020-01-20
 
