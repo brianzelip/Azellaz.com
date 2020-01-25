@@ -33,15 +33,15 @@ collections:
         name: 'currentListing'
         widget: 'boolean'
         default: false
-      - label: 'Is currently in stock?'
-        name: 'inStock'
-        widget: 'boolean'
-        default: false
       - label: 'Number of stock currently on hand'
         name: 'stockOnHand'
         widget: 'number'
         valueType: 'int'
         default: 0
+      - label: 'Is currently in stock?'
+        name: 'inStock'
+        widget: 'boolean'
+        default: false
       - label: 'Bag type'
         name: 'type'
         widget: 'select'
