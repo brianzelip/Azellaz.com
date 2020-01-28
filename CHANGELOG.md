@@ -11,6 +11,8 @@ This document started at v1.6.10 and only documents work after v1.6.10.
 
 ## [Unreleased]
 
+- Added `images/uploads/thumbs` and `images/uploads/thumbs2` to see if netlify cms allows nested media folders
+
 ### TODO
 
 - cms admin
