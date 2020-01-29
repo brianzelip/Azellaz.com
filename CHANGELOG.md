@@ -43,6 +43,17 @@ This document started at v1.6.10 and only documents work after v1.6.10.
 - branch: dev
 - description: Merge latest dev work on implementing Netlify CMS into master branch. The major change comes in because there is a new product data model and product page creation/editing/publication workflow via Netlify CMS.
 
+## [1.13.0] - 2020-01-29
+
+- branch: cloudinary
+- description: refactor media library via Cloudinary
+
+### Added
+
+### Updated
+
+- every template that renders an image
+
 ## [1.12.3] - 2020-01-25
 
 - branch: dev
