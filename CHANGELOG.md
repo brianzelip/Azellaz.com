@@ -75,10 +75,27 @@ This document started at v1.6.10 and only documents work after v1.6.10.
 
 Maybe all image "fields" or units should have their associated metadata - no, because then the data inputter has to manually input all that. Go w/ the template being the source for how the base image is used.
 
+### Cloudinary test runs
+
+Steps taken:
+
+1. Make 3 copies of the original image (11 MB) of the current home page hero image (`images/staging/PHOTOS/carousel/small-tote-indigo-shibori-white-maroon-leather-lookbook3.jpg`).
+2. Apply the following ImageOptim config to each photo
+   1. Strip metadata, no lossy minification, optimization level `extra`; the output saved 5.3% (10.7 MB end size)
+   2. Strip metadata, enable lossy minification to 99% jpg quality, optimization level `extra`, the output saved 14.3% (7.9 MB end size)
+   3. Strip metadata, enable lossy minification to 97% jpg quality, optimization level `extra`, the output saved 50.3% (5.6 MB end size)
+
+```yaml
+image_2_with_q_auto_transformation:
+  - url: https://res.cloudinary.com/dn6buftkw/image/upload/v1580318832/q_auto/hero-at-97-percent-optimized_small-tote-indigo-shibori-white-maroon-leather-lookbook3.jpg
+  - transfer_size: 1.27 MB
+```
+
 ### Added
 
 ### Updated
 
+- az.css: Change `.mainBag4` background-image url to a cloudinary url that includes a quality transformation -- the difference is
 - every template that renders an image
 
 ## [1.12.3] - 2020-01-25
