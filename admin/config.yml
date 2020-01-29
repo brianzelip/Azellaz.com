@@ -106,3 +106,14 @@ collections:
         allow_multiple: true
         field: { label: Image, name: image, widget: image }
         required: false
+      - label: 'Cloudinary photo'
+        name: 'cloudinary'
+        widget: 'image'
+        allow_multiple: false
+        required: false
+        media_library:
+          name: cloudinary
+          config:
+            cloud_name: dn6buftkw
+            api_key: 873978129422982
+          output_filename_only: true
