@@ -48,6 +48,33 @@ This document started at v1.6.10 and only documents work after v1.6.10.
 - branch: cloudinary
 - description: refactor media library via Cloudinary
 
+### Audit of current image transformations
+
+1. Minimally process raw JPG from camera
+2. ~~Make a new directory called `PHOTOS`, then copy all of the edited photos into `PHOTOS`~~ (don't have to do this)
+3. Run ImageOptim
+4. ~~Rename raw file extensions from `.JPG` to `.jpg`~~ (don't have to do this)
+5. ~~Create two new directories titled `thumbs-med` and `thumbs-sm`~~ (don't have to do this)
+6. ~~Copy all photos in `PHOTOS` to each of the `thumbs` directories~~ (don't have to do this)
+7. ~~Add the appropriate prefix to each of the `thumbs` directories~~ (don't have to do this)
+8. Resize the photos in each of the thumbnail directories as appropriate
+
+- `mogrify -resize 25% thumbs-med/*.jpg && mogrify -resize 100x100 thumbs-sm/*.jpg`
+
+9. ~~Move all of the photos inside `PHOTOS/` to `../products/` as the largest set of photos, then move (or add to) `thumbs-med/` and `thumbs-sm/` to `../products/`~~ (don't have to do this)
+
+### TODO via Cloudinary
+
+1. Minimally process raw JPG from camera
+2. Run ImageOptim
+3. Resize the photos in each of the thumbnail directories as appropriate
+
+- `mogrify -resize 25% thumbs-med/*.jpg && mogrify -resize 100x100 thumbs-sm/*.jpg`
+
+### Thoughts on product data model re: images
+
+Maybe all image "fields" or units should have their associated metadata - no, because then the data inputter has to manually input all that. Go w/ the template being the source for how the base image is used.
+
 ### Added
 
 ### Updated
