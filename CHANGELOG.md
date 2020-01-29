@@ -12,7 +12,14 @@ This document started at v1.6.10 and only documents work after v1.6.10.
 ## [Unreleased]
 
 - Added `images/uploads/thumbs` and `images/uploads/thumbs2` to see if netlify cms allows nested media folders
+
   - IT DID NOT WORK - Netlify CMS does not support nested media folders
+
+- Choosing to go forward with Netlify CMS for media via the following product image strategy:
+
+  1. **EXPLICITLY DECIDING TO NOT PORT THE OLD PRODUCT DATA TO A NEW SYSTEM** Keep all exisiting (through v1) product data and infrastructure (markup and image directory structure) in use in production. Since all the previous product page data files contain working images (the markup points to existing files), just use it.
+  2. ~~**USE THE NETLIFY CMS FLAT MEDIA FOLDER STRUCTURE FOR ALL NEW PRODUCT DATA** This includes a new \_layout file and a ?????? ARGHHSHSHSH~~
+  3. **USE CLOUDINARY FOR HOSTING, OPTIMIZATION, and MANIPULATION** This means the front end will be hitting cloudinary urls for every image. The workflow here though, makes it much simpler! Just upload the raw JPG photos from the camera and processed a little bit, BUT NOT RESIZED! Just upload images at most 10 MB. Then use cloudinary url parameters to create thumbnails, and medium sized-images, all optimized for web performance and image quality.
 
 ### TODO
 
