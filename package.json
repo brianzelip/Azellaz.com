@@ -5,10 +5,11 @@
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "css": "postcss -u postcss-custom-properties postcss-color-function postcss-import autoprefixer cssnano -d css/dist/ css/src/az.css --no-map --watch",
+    "css:dev": "postcss -u postcss-custom-properties postcss-color-function postcss-import autoprefixer cssnano -d css/dist/ css/src/az.css --no-map --watch",
+    "css:build": "postcss -u postcss-custom-properties postcss-color-function postcss-import autoprefixer cssnano -d css/dist/ css/src/az.css --no-map",
     "refreshProductPages": "node newProductPages.js",
-    "start": "npm run refreshProductPages && npm run css & jekyll serve",
-    "build": "npm run refreshProductPages && jekyll build"
+    "start": "npm run refreshProductPages && npm run css:dev & jekyll serve",
+    "build": "npm run refreshProductPages && npm run css:build && jekyll build"
   },
   "repository": {
     "type": "git",
