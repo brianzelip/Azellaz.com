@@ -1,7 +1,12 @@
 backend:
   name: git-gateway
   branch: dev # Branch to update (optional; defaults to master)
-media_folder: 'images/uploads'
+media_library:
+  name: cloudinary
+  config:
+    cloud_name: dn6buftkw
+    api_key: 873978129422982
+  output_filename_only: true
 site_url: https://dev--azellaz.netlify.com/
 collections:
   - label: 'Products'
@@ -111,9 +116,3 @@ collections:
         widget: 'image'
         allow_multiple: false
         required: false
-        media_library:
-          name: cloudinary
-          config:
-            cloud_name: dn6buftkw
-            api_key: 873978129422982
-          output_filename_only: true
