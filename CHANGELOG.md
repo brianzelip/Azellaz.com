@@ -69,7 +69,23 @@ This document started at v1.6.10 and only documents work after v1.6.10.
 2. Run ImageOptim
 3. Resize the photos in each of the thumbnail directories as appropriate
 
-- `mogrify -resize 25% thumbs-med/*.jpg && mogrify -resize 100x100 thumbs-sm/*.jpg`
+```bash
+# Azellaz v1
+# REAL CODE
+mogrify -resize 25% thumbs-med/*.jpg && mogrify -resize 100x100 thumbs-sm/*.jpg
+```
+
+```html
+<!-- Azellaz v2 -->
+<!-- FAKE CODE EXCEPT FOR CLOUDINARY IMAGE TRANSFORMATIONS -->
+<img
+  src="https://res.cloudinary.com/demo/image/upload/azellaz/w_0.25/thumbs-med-product.jpg"
+/>
+<!-- see https://cloudinary.com/documentation/image_transformations?query=scale&c_query=Resizing%20and%20cropping%20images%20%E2%80%BA%20scale#limit -->
+<img
+  src="https://res.cloudinary.com/demo/image/upload/azellaz/w_100,h_100,c_limit/thumbs-sm-product.jpg"
+/>
+```
 
 ### Thoughts on product data model re: images
 
@@ -90,6 +106,16 @@ image_2_with_q_auto_transformation:
   - url: https://res.cloudinary.com/dn6buftkw/image/upload/v1580318832/q_auto/hero-at-97-percent-optimized_small-tote-indigo-shibori-white-maroon-leather-lookbook3.jpg
   - transfer_size: 1.27 MB
 ```
+
+### Lineage of initial Azellaz Cloudinary data
+
+1. Make a copy of all files in `images/raw-dog-and-others/archived-from-staging/edited thru 2017-06-28/new - needs to be optimized`
+
+2. Run imageoptim with standard jpg exif strip, no lossy minification, and insane optimization speed
+
+3. Upload to cloudinary under official Azellaz account
+
+It's number 2 above that needs to be repeated for each image before uploading to cloudinary
 
 ### Added
 
