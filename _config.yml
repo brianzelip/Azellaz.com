@@ -37,6 +37,7 @@ exclude:
   - '*.pptx'
   - newProductPages.js
   - productsDataToProductsFiles.js
+  - notes/
 
 # Static files api
 defaults:
