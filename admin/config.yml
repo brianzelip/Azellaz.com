@@ -4,8 +4,8 @@ backend:
 media_library:
   name: cloudinary
   config:
-    cloud_name: dn6buftkw
-    api_key: 873978129422982
+    cloud_name: azellaz
+    api_key: 598778136512764
   output_filename_only: true
 site_url: https://dev--azellaz.netlify.com/
 collections:
