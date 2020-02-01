@@ -21,12 +21,12 @@ data.forEach((obj, i) => {
     width: obj.width,
     length: obj.length,
     imgPreAzellazV2: true,
-    imgPrimary: obj.imgPrimary,
-    imgSecondarySet: obj.imgSecondarySet
+    imgPrimary: obj.imgPrimary.split('.')[0], //split for Cloudinary
+    imgSecondarySet: obj.imgSecondarySet.map(img => img.split('.')[0])
   };
 
   fs.writeFileSync(
-    `./_data/allproducts/${obj.slug}.json`,
+    `./_data/products/${obj.slug}.json`,
     JSON.stringify(content, null, 2)
   );
   console.log(`FILE #${i} WRITTEN: ${obj.slug}.json 🎉`);
