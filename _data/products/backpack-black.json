@@ -25,11 +25,11 @@
   "width": "13",
   "length": "38",
   "imgPreAzellazV2": true,
-  "imgPrimary": "backpack-black-front-by-Azellaz.jpg",
+  "imgPrimary": "backpack-black-front-by-Azellaz",
   "imgSecondarySet": [
-    "backpack-black-back-by-Azellaz.jpg",
-    "backpack-black-side-by-Azellaz.jpg",
-    "backpack-black-inside-by-Azellaz.jpg",
-    "backpack-black-front2-by-Azellaz.jpg"
+    "backpack-black-back-by-Azellaz",
+    "backpack-black-side-by-Azellaz",
+    "backpack-black-inside-by-Azellaz",
+    "backpack-black-front2-by-Azellaz"
   ]
 }
