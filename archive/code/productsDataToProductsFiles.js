@@ -20,6 +20,7 @@ data.forEach((obj, i) => {
     height: obj.height,
     width: obj.width,
     length: obj.length,
+    imgPreAzellazV2: true,
     imgPrimary: obj.imgPrimary,
     imgSecondarySet: obj.imgSecondarySet
   };
