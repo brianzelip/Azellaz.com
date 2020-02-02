@@ -13,8 +13,8 @@
       <img
         id="large-image-view"
         class="mbn1"
-        src="/{{ site.product_images_dir }}{{ page.imgPrimary }}" 
-        alt="{{ page.imgPrimary | remove: page.slug | remove_first: "-" | remove: "-by-Azellaz.jpg" | capitalize }} view of the {{ page.displayName }} by Azellaz"
+        src="{{ site.cloudinary }}{{ page.imgPrimary }}" 
+        alt="{{ page.imgPrimary | remove: page.slug | remove_first: "-" | remove: "-by-Azellaz" | capitalize }} view of the {{ page.displayName }} by Azellaz"
         title="{{ page.displayName }} by Azellaz"
       />
     </div>
@@ -36,7 +36,7 @@
         class="col-12 md-width-auto btn btn-outline fw200 light-black snipcart-add-item"
         data-item-id="{{ page.id }}"
         data-item-name="{{ page.displayName }}"
-        data-item-image="{{ site.base_url }}{{ site.product_thumb_sm_images_dir }}{{ site.thumb_small_prefix }}{{ page.imgPrimary }}"
+        data-item-image="{{ site.cloudinary }}{{ site.trnsfrm_thumb}}{{ page.imgPrimary }}"
         data-item-price="{{ page.price }}"
         data-item-weight="{{ page.weight }}"
         data-item-height="{{ page.height }}"
