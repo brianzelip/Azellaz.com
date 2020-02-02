@@ -4,9 +4,9 @@
   <div class="col col-sevenths px1">
     <img
       class="border pointer thumb"
-      src="/{{ site.product_thumb_med_images_dir }}{{ site.thumb_medium_prefix }}{{ page.imgPrimary }}"
-      alt="{{ page.imgPrimary | remove: page.slug | remove_first: "-" | remove: "-by-Azellaz.jpg" | capitalize }} view of the {{ page.displayName }} by Azellaz"
-      title="{{ page.imgPrimary | remove: page.slug | remove_first: "-" | remove: "-by-Azellaz.jpg" | capitalize }} view of the {{ page.displayName }} by Azellaz"
+      src="{{ site.cloudinary }}{{ site.trnsfrm_med }}{{ page.imgPrimary }}"
+      alt="{{ page.imgPrimary | remove: page.slug | remove_first: "-" | remove: "-by-Azellaz" | capitalize }} view of the {{ page.displayName }} by Azellaz"
+      title="{{ page.imgPrimary | remove: page.slug | remove_first: "-" | remove: "-by-Azellaz" | capitalize }} view of the {{ page.displayName }} by Azellaz"
     />
   </div>
   {% endif %}
@@ -14,9 +14,9 @@
   <div class="col col-sevenths px1">
     <img
       class="border pointer thumb"
-      src="/{{ site.product_thumb_med_images_dir }}{{ site.thumb_medium_prefix }}{{ img }}"
-      alt="{{ img | remove: page.slug | remove_first: "-" | remove: "-by-Azellaz.jpg" | capitalize }} view of the {{ page.displayName }} by Azellaz"
-      title="{{ img | remove: page.slug | remove_first: "-" | remove: "-by-Azellaz.jpg" | capitalize }} view of the {{ page.displayName }} by Azellaz"
+      src="{{ site.cloudinary }}{{ site.trnsfrm_med }}{{ img }}"
+      alt="{{ img | remove: page.slug | remove_first: "-" | remove: "-by-Azellaz" | capitalize }} view of the {{ page.displayName }} by Azellaz"
+      title="{{ img | remove: page.slug | remove_first: "-" | remove: "-by-Azellaz" | capitalize }} view of the {{ page.displayName }} by Azellaz"
     />
   </div>
   {% endfor %}
