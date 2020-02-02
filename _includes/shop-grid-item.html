@@ -7,9 +7,9 @@
                   <a href="{{ product.slug }}">
                     <div class="img">
                       <img
-                        src="{{ site.product_thumb_med_images_dir }}{{ site.thumb_medium_prefix }}{{ product.imgPrimary }}" 
+                        src="{{ site.cloudinary }}{{ site.trnsfrm_med }}{{ product.imgPrimary }}"
                         class="mbn1"
-                        alt="{{ product.imgPrimary | remove: product.slug | remove_first: "-" | remove: "-by-Azellaz.jpg" | capitalize }} view of the {{ product.displayName }} by Azellaz"
+                        alt="{{ product.imgPrimary | remove: product.slug | remove_first: "-" | remove: "-by-Azellaz" | capitalize }} view of the {{ product.displayName }} by Azellaz"
                         title="{{ product.displayName }} by Azellaz"
                       />
                     </div>
