@@ -16,6 +16,11 @@ product_thumb_med_images_dir: images/products/thumbs-med/
 thumb_medium_prefix: thumb-med-
 thumb_small_prefix: thumb-sm-
 
+# Cloudinary
+cloudinary: https://res.cloudinary.com/azellaz/image/upload/q_auto:eco/
+trnsfrm_med: w_0.25/
+trnsfrm_thumb: w_100,h_100,c_limit
+
 # Content
 in_stock: This item is in stock and ready to ship. Items are individually dyed and may vary slightly from these images.
 made_to_order: Made to order, ships in 1-3 weeks. Items are individually dyed and may vary slightly from these images.
