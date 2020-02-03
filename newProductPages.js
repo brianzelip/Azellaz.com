@@ -1,4 +1,5 @@
 const fs = require('fs');
+const yaml = require('yaml-front-matter');
 
 const productDataDir = './_data/products/';
 const productPagesDir = './products/';
@@ -46,37 +47,38 @@ function createNewProductPages() {
   let count = 0;
 
   dataFiles.forEach((path, i) => {
-    const data = JSON.parse(fs.readFileSync(`${productDataDir}${path}`));
-
-    if (data.currentListing) {
-      count++;
-
-      const pageContent = `---
-layout: product
-name: "${data.name}"
-displayName: "${data.displayName}"
-slug: "${data.slug}"
-permalink: "/${data.slug}/"
-id: "${data.id}"
-currentListing: ${data.currentListing}
-inStock: ${data.inStock}
-stockOnHand: ${data.stockOnHand}
-type: "${data.type}"
-descriptionShort: "${data.descriptionShort}"
-descriptionLong: ${jsArray2Yaml(data.descriptionLong)}
-materials: ${data.materials}
-price: ${data.price}
-weight: ${data.weight}
-height: ${data.height}
-width: ${data.width}
-length: ${data.length}
-imgPrimary: "${data.imgPrimary}"
-imgSecondarySet: ${jsArray2Yaml(data.imgSecondarySet)}
----
-`;
-
-      fs.writeFileSync(`${productPagesDir}${data.slug}.md`, pageContent);
-      console.log(`${count}. ${data.slug}.md`);
-    }
+    const file = fs.readFileSync(path);
+    console.log('yaml.loadFront(file):::::', yaml.loadFront(file));
+    //     const data = JSON.parse(fs.readFileSync(`${productDataDir}${path}`));
+    //     if (data.currentListing) {
+    //       count++;
+    //       const pageContent = `---
+    // layout: product
+    // name: "${data.name}"
+    // displayName: "${data.displayName}"
+    // slug: "${data.slug}"
+    // permalink: "/${data.slug}/"
+    // id: "${data.id}"
+    // currentListing: ${data.currentListing}
+    // inStock: ${data.inStock}
+    // stockOnHand: ${data.stockOnHand}
+    // type: "${data.type}"
+    // descriptionShort: "${data.descriptionShort}"
+    // descriptionLong: ${jsArray2Yaml(data.descriptionLong)}
+    // materials: ${data.materials}
+    // price: ${data.price}
+    // weight: ${data.weight}
+    // height: ${data.height}
+    // width: ${data.width}
+    // length: ${data.length}
+    // imgPrimary: "${data.imgPrimary.split('.')[0]}"
+    // imgSecondarySet: ${jsArray2Yaml(
+    //         data.imgSecondarySet.map(item => item.split('.')[0])
+    //       )}
+    // ---
+    // `;
+    //       fs.writeFileSync(`${productPagesDir}${data.slug}.md`, pageContent);
+    //       console.log(`${count}. ${data.slug}.md`);
+    //     }
   });
 }
