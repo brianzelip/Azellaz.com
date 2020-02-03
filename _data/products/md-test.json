@@ -1,9 +1,21 @@
 {
+  "descriptionShort": "Nice Pair",
+  "stockOnHand": 0,
+  "width": 8,
+  "length": 9,
+  "height": 8,
+  "price": 10,
   "layout": "product",
   "name": "MD Test",
-  "id": "AZ00MD",
-  "currentListing": false,
-  "stockOnHand": 0,
+  "currentListing": true,
+  "materials": [
+    "leather"
+  ],
+  "displayName": "MD Test",
   "inStock": false,
-  "writeUp": "This backpack is made from Horween leather and hand-printed industrial wool felt. It is built to last while providing a practical and beautiful accessory for your daily adventures.\n\nDesigned and made from scratch by me, in Baltimore.\n\nIncludes an interior leather pocket, snap closure, and all solid brass hardware.\n\nApproximate dimensions: 13 inches wide x 14 inches tall x 3 inches deep\n\n*Availability: Made to order, ships in 1-3 weeks. Items are individually dyed and may vary slightly from these images."
+  "descriptionLong": "Really nice pair!",
+  "weight": 4,
+  "writeUp": "This backpack is made from Horween leather and hand-printed industrial wool felt. It is built to last while providing a practical and beautiful accessory for your daily adventures.\n\nHi there, here is another sentence:\n\n* one\n* two\n* three\n\n1. one\n2. two\n3. three\n\nThen another line.\n\nDesigned and made from scratch by me, in Baltimore.\n\nIncludes an interior leather pocket, snap closure, and all solid brass hardware.\n\nApproximate dimensions: 13 inches wide x 14 inches tall x 3 inches deep\n\n\\*Availability: Made to order, ships in 1-3 weeks. Items are individually dyed and may vary slightly from these images.",
+  "type": "circular pouch",
+  "id": "AZ00MD"
 }
