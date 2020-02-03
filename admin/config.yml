@@ -116,3 +116,7 @@ collections:
         widget: 'image'
         allow_multiple: false
         required: false
+      - label: 'Write up'
+        name: 'writeUp'
+        widget: 'markdown'
+        required: false
