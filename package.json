@@ -38,7 +38,6 @@
     "postcss-color-function": "^4.0.1",
     "postcss-custom-media": "^5.0.1",
     "postcss-custom-properties": "^5.0.2",
-    "postcss-import": "^9.1.0",
-    "yaml-front-matter": "^4.1.0"
+    "postcss-import": "^9.1.0"
   }
 }
