@@ -28,7 +28,7 @@
     <h1 class="m0 h2 serif light-black">{{ page.displayName }}</h1>
     <p class="h2 serif light-black">${{ page.price }}{% if page.type == 'clutch'  %}+{% endif %}</p>
 
-    <p class="serif light-black">{{ content }}</p>
+    <div data-markdown="product-description">{{ content }}</div>
 
     <p class="serif light-black"><span class="red">*</span><strong>Availability:</strong> {% if page.inStock %}{{ site.in_stock }}{% else %}{{ site.made_to_order }}{% endif %}</p>
     {%- comment -%} <div class="md-mt4">
