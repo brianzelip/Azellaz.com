@@ -54,7 +54,6 @@ layout: product
 name: "${data.name}"
 displayName: "${data.displayName}"
 slug: "${data.slug}"
-permalink: "/${data.slug}/"
 id: "${data.id}"
 currentListing: ${data.currentListing}
 inStock: ${data.inStock}
@@ -67,16 +66,14 @@ weight: ${data.weight}
 height: ${data.height}
 width: ${data.width}
 length: ${data.length}
-imgPrimary: "${data.imgPrimary.split('.')[0]}"
-imgSecondarySet: ${jsArray2Yaml(
-        data.imgSecondarySet.map(item => item.split('.')[0])
-      )}
+imgPrimary: "${data.imgPrimary}"
+imgSecondarySet: ${jsArray2Yaml(data.imgSecondarySet)}
 ---
 
-${data.descriptionLong.join('\n\n')}
+${data.body}
 `;
-      fs.writeFileSync(`${productPagesDir}${data.slug}v2.md`, pageContent);
-      console.log(`${count}. ${data.slug}v2.md`);
+      fs.writeFileSync(`${productPagesDir}${data.slug}.md`, pageContent);
+      console.log(`${count}. ${data.slug}.md`);
     }
   });
 }
