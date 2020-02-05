@@ -1,0 +1,14 @@
+{
+  "stockOnHand": 0,
+  "layout": "product",
+  "name": "IMage test",
+  "currentListing": false,
+  "inStock": false,
+  "imgSecondarySet": [
+    "/small-tote-indigo-mountain-maroon-leather-side-by-Azellaz.jpg",
+    "/medium-tote-indigo-shibori-natural-tan-leather-inside-by-Azellaz.jpg"
+  ],
+  "writeUp": "Hey Yo! How does the system handle this?\n\n**What about this yo!?!?!?!**\n\nAnd what about a [link](https://zelip.me)?\n\n* one\n* two\n* three",
+  "id": "AZ00IMGTEST",
+  "imgPrimary": "/small-tote-indigo-mountain-tan-leather-side-by-Azellaz.jpg"
+}
