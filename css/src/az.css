@@ -1098,3 +1098,11 @@ Important: using a flex value of something like 1 0 0px can still be a problem b
   background-color: var(--bg-color-warning);
   border: 1px solid var(--border-color-warning);
 }
+
+/**
+ * Markdown product pages
+ */
+[data-markdown='product-description'] p {
+  font-family: Athelas, Georgia, serif;
+  color: var(--light-black);
+}
