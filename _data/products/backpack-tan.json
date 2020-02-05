@@ -1,5 +1,4 @@
 {
-  "layout": "product",
   "name": "Backpack - english tan",
   "displayName": "Leather and Felt Backpack / English Tan",
   "id": "AZ0047",
@@ -9,12 +8,7 @@
   "stockOnHand": 0,
   "type": "backpack",
   "descriptionShort": "Screenprinted felt and leather backpack.",
-  "descriptionLong": [
-    "This backpack is made from Horween leather and hand-printed industrial wool felt. It is built to last while providing a practical and beautiful accessory for your daily adventures.",
-    "Designed and made from scratch by me, in Baltimore.",
-    "Includes an interior leather pocket, snap closure, and all solid brass hardware.",
-    "Approximate dimensions: 13 inches wide x 14 inches tall x 3 inches deep"
-  ],
+  "body": "This backpack is made from Horween leather and hand-printed industrial wool felt. It is built to last while providing a practical and beautiful accessory for your daily adventures.\n\nDesigned and made from scratch by me, in Baltimore.\n\nIncludes an interior leather pocket, snap closure, and all solid brass hardware.\n\nApproximate dimensions: 13 inches wide x 14 inches tall x 3 inches deep",
   "materials": [
     "felt",
     "leather"
@@ -24,9 +18,8 @@
   "height": "38",
   "width": "13",
   "length": "38",
-  "imgPreAzellazV2": true,
-  "imgPrimary": "backpack-tan-front-by-Azellaz",
+  "imgPrimary": "/backpack-tan-front-by-Azellaz.jpg",
   "imgSecondarySet": [
-    "backpacks-by-Azellaz"
+    "/backpacks-by-Azellaz.jpg"
   ]
 }
