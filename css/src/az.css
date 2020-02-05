@@ -54,6 +54,8 @@
   --bagBlue: rgb(146, 190, 209);
   --bagBlue2: rgb(80, 121, 140);
   --bagBlue3: rgb(103, 151, 171);
+
+  --serif: Athelas, Georgia, serif;
 }
 
 /*!
@@ -163,7 +165,7 @@ h6 {
 }
 
 .serif {
-  font-family: Athelas, Georgia, serif;
+  font-family: var(--serif);
 } /*mods*/
 
 .border-red {
@@ -1103,6 +1105,6 @@ Important: using a flex value of something like 1 0 0px can still be a problem b
  * Markdown product pages
  */
 [data-markdown='product-description'] p {
-  font-family: Athelas, Georgia, serif;
+  font-family: var(--serif);
   color: var(--light-black);
 }
