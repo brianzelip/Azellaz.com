@@ -1,0 +1,22 @@
+{
+  "descriptionShort": "This cms widget should be input type=\"text\".",
+  "body": "This should be the shit.\n\n*hello!*\n\n_another_\n\nlist:\n\n- one\n- two\n- three",
+  "stockOnHand": 0,
+  "width": 20,
+  "length": 20,
+  "height": 20,
+  "price": 200,
+  "layout": "product",
+  "name": "Go Test",
+  "slug": "go-test",
+  "currentListing": true,
+  "materials": [
+    "leather",
+    "waxed canvas"
+  ],
+  "displayName": "Go Test Finale",
+  "inStock": false,
+  "weight": 20,
+  "type": "clutch",
+  "id": "AZ00GOTEST"
+}
