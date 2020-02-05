@@ -28,7 +28,7 @@ collections:
           required: false,
         }
       - {
-          label: "Web page name if different from Name above (comes after 'https://www.azellaz.com/')",
+          label: "Page URL (lowercase, with hyphens between words, ie: 'backpack-tan')",
           name: 'slug',
           widget: 'string',
           required: false,
@@ -61,13 +61,13 @@ collections:
             'small tote',
           ]
         required: false
-      - label: 'Short description'
+      - label: 'Short description (one sentence)'
         name: 'descriptionShort'
         widget: 'text'
         required: false
       - label: 'Long description'
-        name: 'descriptionLong'
-        widget: 'text'
+        name: 'body'
+        widget: 'markdown'
         required: false
       - label: 'Materials'
         name: 'materials'
@@ -75,7 +75,7 @@ collections:
         multiple: true
         options: ['felt', 'leather', 'waxed canvas']
         required: false
-      - label: 'price'
+      - label: 'Price in $'
         name: 'price'
         widget: 'number'
         valueType: 'int'
@@ -110,13 +110,4 @@ collections:
         widget: 'list'
         allow_multiple: true
         field: { label: Image, name: image, widget: image }
-        required: false
-      - label: 'Cloudinary photo'
-        name: 'cloudinary'
-        widget: 'image'
-        allow_multiple: false
-        required: false
-      - label: 'Write up'
-        name: 'writeUp'
-        widget: 'markdown'
         required: false
