@@ -17,9 +17,9 @@ thumb_medium_prefix: thumb-med-
 thumb_small_prefix: thumb-sm-
 
 # Cloudinary
-cloudinary: https://res.cloudinary.com/azellaz/image/upload/q_auto:eco/
-trnsfrm_med: w_0.25/
-trnsfrm_thumb: w_100,h_100,c_limit
+cloudinary: https://res.cloudinary.com/azellaz/image/upload/q_auto:eco
+trnsfrm_med: /w_0.25
+trnsfrm_thumb: /w_100,h_100,c_limit
 
 # Content
 in_stock: This item is in stock and ready to ship. Items are individually dyed and may vary slightly from these images.
