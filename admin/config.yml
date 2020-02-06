@@ -14,7 +14,7 @@ collections:
     folder: '_data/products'
     format: 'json'
     create: true
-    identifier_field: permalink
+    identifier_field: name
     fields:
       - label: 'Layout'
         name: 'layout'
@@ -27,7 +27,7 @@ collections:
         required: false
       - label: 'Page URL (lowercase, hyphenated words, ie: backpack-tan)'
         name: 'permalink'
-        widget: 'text'
+        widget: 'string'
       - { label: 'id', name: 'id', widget: 'string', default: 'AZ00' }
       - label: 'Include item in shop?'
         name: 'currentListing'
@@ -58,7 +58,7 @@ collections:
         required: false
       - label: 'Short description (one sentence)'
         name: 'descriptionShort'
-        widget: 'text'
+        widget: 'string'
         required: false
       - label: 'Long description'
         name: 'body'
