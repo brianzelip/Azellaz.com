@@ -11,6 +11,7 @@ data.forEach((obj, i) => {
     displayName: obj.displayName,
     id: obj.id,
     slug: obj.slug,
+    permalink: `/${obj.slug}/`,
     currentListing: obj.currentListing,
     inStock: obj.inStock,
     stockOnHand: obj.stockOnHand,
