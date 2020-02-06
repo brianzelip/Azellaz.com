@@ -14,25 +14,20 @@ collections:
     folder: '_data/products'
     format: 'json'
     create: true
-    identifier_field: name
+    identifier_field: permalink
     fields:
       - label: 'Layout'
         name: 'layout'
         widget: 'hidden'
         default: 'product'
       - { label: 'Name', name: 'name', widget: 'string' }
-      - {
-          label: 'Full display name',
-          name: 'displayName',
-          widget: 'string',
-          required: false,
-        }
-      - {
-          label: "Page URL (lowercase, with hyphens between words, ie: 'backpack-tan')",
-          name: 'slug',
-          widget: 'string',
-          required: false,
-        }
+      - label: 'Full display name'
+        name: 'displayName'
+        widget: 'string'
+        required: false
+      - label: 'Page URL (lowercase, hyphenated words, ie: backpack-tan)'
+        name: 'permalink'
+        widget: 'text'
       - { label: 'id', name: 'id', widget: 'string', default: 'AZ00' }
       - label: 'Include item in shop?'
         name: 'currentListing'
