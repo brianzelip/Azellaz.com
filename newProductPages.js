@@ -51,7 +51,7 @@ function createNewProductPages() {
       count++;
       const pageContent = `---
 layout: product
-permalink: "${data.permalink}"
+permalink: "/${data.slug}/"
 name: "${data.name}"
 displayName: "${data.displayName}"
 slug: "${data.slug}"
