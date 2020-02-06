@@ -9,7 +9,8 @@
   "layout": "product",
   "name": "Gandalf's Pipe",
   "currentListing": true,
-  "permalink": "gandalf-pipe",
+  "slug": "gandalf-pipe",
+  "permalink": "/gandalf-pipe/",
   "materials": [
     "leather"
   ],
