@@ -26,7 +26,7 @@ collections:
         widget: 'string'
         required: false
       - label: 'Page URL (lowercase, hyphenated words, ie: backpack-tan)'
-        name: 'permalink'
+        name: 'slug'
         widget: 'string'
       - { label: 'id', name: 'id', widget: 'string', default: 'AZ00' }
       - label: 'Include item in shop?'
