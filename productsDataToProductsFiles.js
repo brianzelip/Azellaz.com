@@ -2,7 +2,7 @@ const fs = require('fs');
 const data = require('./_data/products.json');
 
 function img(str) {
-  return `/${str}`;
+  return `https://res.cloudinary.com/azellaz/image/upload/${str}`;
 }
 
 data.forEach((obj, i) => {
