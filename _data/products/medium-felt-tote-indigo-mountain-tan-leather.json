@@ -14,5 +14,5 @@
   "inStock": true,
   "type": "medium tote",
   "id": "AZ004910",
-  "imgPrimary": "/IMG_2081_ufbp6q.jpg"
+  "imgPrimary": "https://res.cloudinary.com/azellaz/image/upload/IMG_2081_ufbp6q.jpg"
 }
