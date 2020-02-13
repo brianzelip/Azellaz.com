@@ -59,9 +59,43 @@ function createNewProductPages() {
   let count = 0;
 
   dataFiles.forEach(path => {
-    const data = JSON.parse(fs.readFileSync(`${productDataDir}${path}`));
-    if (data.currentListing) {
+    const _data = JSON.parse(fs.readFileSync(`${productDataDir}${path}`));
+    if (_data.currentListing) {
       count++;
+
+      function cleanData(obj) {
+        // since not all product fields are required in the cms,
+        // some expected keys might not be present,
+        // so we have to clean the product data by adding the
+        // missing keys, each with an empty string value
+        function c(key) {
+          return obj.hasOwnProperty(key) ? obj[key] : '';
+        }
+        return {
+          slug: c('slug'),
+          name: c('name'),
+          displayName: c('displayName'),
+          slug: c('slug'),
+          id: c('id'),
+          currentListing: c('currentListing'),
+          inStock: c('inStock'),
+          stockOnHand: c('stockOnHand'),
+          type: c('type'),
+          descriptionShort: c('descriptionShort'),
+          materials: c('materials'),
+          price: c('price'),
+          weight: c('weight'),
+          height: c('height'),
+          width: c('width'),
+          length: c('length'),
+          imgPrimary: c('imgPrimary'),
+          imgSecondarySet: c('imgSecondarySet'),
+          body: c('body')
+        };
+      }
+
+      const data = cleanData(_data);
+
       const pageContent = `---
 layout: product
 permalink: "/${data.slug}/"
