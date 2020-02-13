@@ -41,6 +41,19 @@ function createNewProductPages() {
       : ``;
   }
 
+  function imgFileName(url) {
+    const fileNameIndex = url.split('/').length - 1;
+    return `/${url.split('/')[fileNameIndex]}`;
+  }
+
+  function secondaryImgFileNames(arr) {
+    if (arr.length < 1) {
+      return arr;
+    }
+
+    return arr.map(img => imgFileName(img));
+  }
+
   const dataFiles = fs.readdirSync(productDataDir);
 
   let count = 0;
@@ -67,8 +80,8 @@ weight: ${data.weight}
 height: ${data.height}
 width: ${data.width}
 length: ${data.length}
-imgPrimary: "${data.imgPrimary}"
-imgSecondarySet: ${jsArray2Yaml(data.imgSecondarySet)}
+imgPrimary: "${imgFileName(data.imgPrimary)}"
+imgSecondarySet: ${jsArray2Yaml(secondaryImgFileNames(data.imgSecondarySet))}
 ---
 
 ${data.body}
