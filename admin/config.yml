@@ -6,7 +6,6 @@ media_library:
   config:
     cloud_name: azellaz
     api_key: 598778136512764
-  output_filename_only: true
 site_url: https://dev--azellaz.netlify.com/
 collections:
   - label: 'Products'
