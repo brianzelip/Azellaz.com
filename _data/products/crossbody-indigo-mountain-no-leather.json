@@ -18,10 +18,10 @@
   "height": "25",
   "width": "6",
   "length": "28",
-  "imgPrimary": "/crossbody-indigo-mountain-no-leather-front-by-Azellaz.jpg",
+  "imgPrimary": "https://res.cloudinary.com/azellaz/image/upload/crossbody-indigo-mountain-no-leather-front-by-Azellaz.jpg",
   "imgSecondarySet": [
-    "/crossbody-indigo-mountain-no-leather-back-by-Azellaz.jpg",
-    "/crossbody-indigo-mountain-no-leather-side-by-Azellaz.jpg",
-    "/crossbody-indigo-mountain-no-leather-inside-by-Azellaz.jpg"
+    "https://res.cloudinary.com/azellaz/image/upload/crossbody-indigo-mountain-no-leather-back-by-Azellaz.jpg",
+    "https://res.cloudinary.com/azellaz/image/upload/crossbody-indigo-mountain-no-leather-side-by-Azellaz.jpg",
+    "https://res.cloudinary.com/azellaz/image/upload/crossbody-indigo-mountain-no-leather-inside-by-Azellaz.jpg"
   ]
 }

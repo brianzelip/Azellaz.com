@@ -17,10 +17,10 @@
   "height": "10",
   "width": "8",
   "length": "16",
-  "imgPrimary": "/circle-pouch-mini-black-ganges-hand2-by-Azellaz.jpg",
+  "imgPrimary": "https://res.cloudinary.com/azellaz/image/upload/circle-pouch-mini-black-ganges-hand2-by-Azellaz.jpg",
   "imgSecondarySet": [
-    "/circle-pouch-mini-black-ganges-front-by-Azellaz.jpg",
-    "/circle-pouch-mini-black-ganges-hand-by-Azellaz.jpg",
-    "/circle-pouch-mini-black-ganges-top-by-Azellaz.jpg"
+    "https://res.cloudinary.com/azellaz/image/upload/circle-pouch-mini-black-ganges-front-by-Azellaz.jpg",
+    "https://res.cloudinary.com/azellaz/image/upload/circle-pouch-mini-black-ganges-hand-by-Azellaz.jpg",
+    "https://res.cloudinary.com/azellaz/image/upload/circle-pouch-mini-black-ganges-top-by-Azellaz.jpg"
   ]
 }

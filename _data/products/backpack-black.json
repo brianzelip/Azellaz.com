@@ -18,11 +18,11 @@
   "height": "38",
   "width": "13",
   "length": "38",
-  "imgPrimary": "/backpack-black-front-by-Azellaz.jpg",
+  "imgPrimary": "https://res.cloudinary.com/azellaz/image/upload/backpack-black-front-by-Azellaz.jpg",
   "imgSecondarySet": [
-    "/backpack-black-back-by-Azellaz.jpg",
-    "/backpack-black-side-by-Azellaz.jpg",
-    "/backpack-black-inside-by-Azellaz.jpg",
-    "/backpack-black-front2-by-Azellaz.jpg"
+    "https://res.cloudinary.com/azellaz/image/upload/backpack-black-back-by-Azellaz.jpg",
+    "https://res.cloudinary.com/azellaz/image/upload/backpack-black-side-by-Azellaz.jpg",
+    "https://res.cloudinary.com/azellaz/image/upload/backpack-black-inside-by-Azellaz.jpg",
+    "https://res.cloudinary.com/azellaz/image/upload/backpack-black-front2-by-Azellaz.jpg"
   ]
 }

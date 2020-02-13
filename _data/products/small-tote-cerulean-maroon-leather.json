@@ -18,8 +18,8 @@
   "height": "33",
   "width": "9",
   "length": "33",
-  "imgPrimary": "/small-tote-cerulean-maroon-leather-front-by-Azellaz.jpg",
+  "imgPrimary": "https://res.cloudinary.com/azellaz/image/upload/small-tote-cerulean-maroon-leather-front-by-Azellaz.jpg",
   "imgSecondarySet": [
-    "/small-tote-cerulean-maroon-leather-side-by-Azellaz.jpg"
+    "https://res.cloudinary.com/azellaz/image/upload/small-tote-cerulean-maroon-leather-side-by-Azellaz.jpg"
   ]
 }

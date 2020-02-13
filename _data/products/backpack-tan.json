@@ -18,8 +18,8 @@
   "height": "38",
   "width": "13",
   "length": "38",
-  "imgPrimary": "/backpack-tan-front-by-Azellaz.jpg",
+  "imgPrimary": "https://res.cloudinary.com/azellaz/image/upload/backpack-tan-front-by-Azellaz.jpg",
   "imgSecondarySet": [
-    "/backpacks-by-Azellaz.jpg"
+    "https://res.cloudinary.com/azellaz/image/upload/backpacks-by-Azellaz.jpg"
   ]
 }

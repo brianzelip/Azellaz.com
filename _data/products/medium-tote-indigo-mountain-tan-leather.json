@@ -18,9 +18,9 @@
   "height": "31",
   "width": "10",
   "length": "42",
-  "imgPrimary": "/medium-tote-indigo-mountain-tan-leather-front-by-Azellaz.jpg",
+  "imgPrimary": "https://res.cloudinary.com/azellaz/image/upload/medium-tote-indigo-mountain-tan-leather-front-by-Azellaz.jpg",
   "imgSecondarySet": [
-    "/medium-tote-indigo-mountain-tan-leather-side-by-Azellaz.jpg",
-    "/medium-tote-indigo-mountain-tan-leather-inside-by-Azellaz.jpg"
+    "https://res.cloudinary.com/azellaz/image/upload/medium-tote-indigo-mountain-tan-leather-side-by-Azellaz.jpg",
+    "https://res.cloudinary.com/azellaz/image/upload/medium-tote-indigo-mountain-tan-leather-inside-by-Azellaz.jpg"
   ]
 }

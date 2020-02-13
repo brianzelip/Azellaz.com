@@ -18,9 +18,9 @@
   "height": "36",
   "width": "13",
   "length": "48",
-  "imgPrimary": "/medium-tote-felt-indigo-mountain-maroon-leather-front-by-Azellaz.jpg",
+  "imgPrimary": "https://res.cloudinary.com/azellaz/image/upload/medium-tote-felt-indigo-mountain-maroon-leather-front-by-Azellaz.jpg",
   "imgSecondarySet": [
-    "/medium-tote-felt-indigo-mountain-maroon-leather-side-by-Azellaz.jpg",
-    "/medium-tote-felt-indigo-mountain-maroon-leather-inside-by-Azellaz.jpg"
+    "https://res.cloudinary.com/azellaz/image/upload/medium-tote-felt-indigo-mountain-maroon-leather-side-by-Azellaz.jpg",
+    "https://res.cloudinary.com/azellaz/image/upload/medium-tote-felt-indigo-mountain-maroon-leather-inside-by-Azellaz.jpg"
   ]
 }

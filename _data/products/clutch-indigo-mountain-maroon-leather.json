@@ -18,11 +18,11 @@
   "height": "11",
   "width": "4",
   "length": "18",
-  "imgPrimary": "/clutch-indigo-mountain-maroon-leather-front-by-Azellaz.jpg",
+  "imgPrimary": "https://res.cloudinary.com/azellaz/image/upload/clutch-indigo-mountain-maroon-leather-front-by-Azellaz.jpg",
   "imgSecondarySet": [
-    "/clutch-indigo-mountain-maroon-leather-inside-by-Azellaz.jpg",
-    "/clutch-indigo-mountain-maroon-leather-strap1-by-Azellaz.jpg",
-    "/clutch-indigo-mountain-maroon-leather-strap2-by-Azellaz.jpg",
-    "/clutch-indigo-mountain-maroon-leather-strap3-by-Azellaz.jpg"
+    "https://res.cloudinary.com/azellaz/image/upload/clutch-indigo-mountain-maroon-leather-inside-by-Azellaz.jpg",
+    "https://res.cloudinary.com/azellaz/image/upload/clutch-indigo-mountain-maroon-leather-strap1-by-Azellaz.jpg",
+    "https://res.cloudinary.com/azellaz/image/upload/clutch-indigo-mountain-maroon-leather-strap2-by-Azellaz.jpg",
+    "https://res.cloudinary.com/azellaz/image/upload/clutch-indigo-mountain-maroon-leather-strap3-by-Azellaz.jpg"
   ]
 }

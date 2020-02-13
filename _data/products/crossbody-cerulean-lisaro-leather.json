@@ -18,11 +18,11 @@
   "height": "25",
   "width": "6",
   "length": "28",
-  "imgPrimary": "/crossbody-cerulean-lisaro-leather-front-by-Azellaz.jpg",
+  "imgPrimary": "https://res.cloudinary.com/azellaz/image/upload/crossbody-cerulean-lisaro-leather-front-by-Azellaz.jpg",
   "imgSecondarySet": [
-    "/crossbody-cerulean-lisaro-leather-back-by-Azellaz.jpg",
-    "/crossbody-cerulean-lisaro-leather-side-by-Azellaz.jpg",
-    "/crossbody-cerulean-lisaro-leather-inside-by-Azellaz.jpg",
-    "/crossbody-cerulean-lisaro-leather-strap1-by-Azellaz.jpg"
+    "https://res.cloudinary.com/azellaz/image/upload/crossbody-cerulean-lisaro-leather-back-by-Azellaz.jpg",
+    "https://res.cloudinary.com/azellaz/image/upload/crossbody-cerulean-lisaro-leather-side-by-Azellaz.jpg",
+    "https://res.cloudinary.com/azellaz/image/upload/crossbody-cerulean-lisaro-leather-inside-by-Azellaz.jpg",
+    "https://res.cloudinary.com/azellaz/image/upload/crossbody-cerulean-lisaro-leather-strap1-by-Azellaz.jpg"
   ]
 }

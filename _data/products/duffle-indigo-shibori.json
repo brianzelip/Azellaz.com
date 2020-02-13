@@ -18,9 +18,9 @@
   "height": "23",
   "width": "31",
   "length": "53",
-  "imgPrimary": "/duffle-indigo-shibori-front-by-Azellaz.jpg",
+  "imgPrimary": "https://res.cloudinary.com/azellaz/image/upload/duffle-indigo-shibori-front-by-Azellaz.jpg",
   "imgSecondarySet": [
-    "/duffle-indigo-shibori-back-by-Azellaz.jpg",
-    "/duffle-indigo-shibori-side-by-Azellaz.jpg"
+    "https://res.cloudinary.com/azellaz/image/upload/duffle-indigo-shibori-back-by-Azellaz.jpg",
+    "https://res.cloudinary.com/azellaz/image/upload/duffle-indigo-shibori-side-by-Azellaz.jpg"
   ]
 }
