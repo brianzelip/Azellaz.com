@@ -4,7 +4,11 @@
   "name": "AZ0067-003 Medium Felt Tote - Eucalyptus",
   "slug": "AZ0067-003-Medium-Felt-Tote-Eucalyptus",
   "currentListing": true,
+  "displayName": "Medium Felt Tote / Eucalyptus Print",
   "inStock": true,
+  "imgSecondarySet": [
+    "https://res.cloudinary.com/azellaz/image/upload/v1581963867/AZ0067-003-02_r90x9u.jpg"
+  ],
   "type": "medium tote",
   "id": "AZ0067-003",
   "imgPrimary": "https://res.cloudinary.com/azellaz/image/upload/v1581953209/IMG_2289_wcuzfx.jpg"
