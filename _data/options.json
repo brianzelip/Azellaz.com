@@ -2,11 +2,7 @@
   "types": [
     "backpack",
     "circular pouch",
-    "clutch",
-    "crossbody",
-    "duffle",
-    "medium tote",
-    "small tote"
+    "tote"
   ],
   "materials": [
     "felt",
