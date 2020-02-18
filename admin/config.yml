@@ -45,16 +45,8 @@ collections:
       - label: 'Bag type'
         name: 'type'
         widget: 'select'
-        options:
-          [
-            'backpack',
-            'circular pouch',
-            'clutch',
-            'crossbody',
-            'duffle',
-            'medium tote',
-            'small tote',
-          ]
+        multiple: true
+        options: ['backpack', 'circular pouch', 'tote']
         required: false
       - label: 'Short description (one sentence)'
         name: 'descriptionShort'
