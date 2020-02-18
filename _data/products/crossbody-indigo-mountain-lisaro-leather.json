@@ -21,7 +21,9 @@
     "https://res.cloudinary.com/azellaz/image/upload/crossbody-indigo-mountain-lisaro-leather-inside-by-Azellaz.jpg"
   ],
   "weight": "284",
-  "type": "crossbody",
+  "type": [
+    "crossbody"
+  ],
   "id": "AZ0013-02",
   "imgPrimary": "https://res.cloudinary.com/azellaz/image/upload/crossbody-indigo-mountain-lisaro-leather-front-by-Azellaz.jpg"
 }

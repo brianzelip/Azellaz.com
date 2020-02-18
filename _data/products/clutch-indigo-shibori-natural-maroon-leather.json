@@ -22,7 +22,9 @@
     "https://res.cloudinary.com/azellaz/image/upload/clutch-indigo-shibori-natural-maroon-leather-strap3-by-Azellaz.jpg"
   ],
   "weight": "85",
-  "type": "pouch",
+  "type": [
+    "pouch"
+  ],
   "id": "AZ0010-05",
   "imgPrimary": "https://res.cloudinary.com/azellaz/image/upload/clutch-indigo-shibori-natural-maroon-leather-front-by-Azellaz.jpg"
 }

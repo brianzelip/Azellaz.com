@@ -16,7 +16,9 @@
   "inStock": false,
   "imgSecondarySet": [],
   "weight": "57",
-  "type": "pouch",
+  "type": [
+    "pouch"
+  ],
   "id": "AZ0052-003",
   "imgPrimary": "https://res.cloudinary.com/azellaz/image/upload/circle-pouch-small-red-circle-front-by-Azellaz.jpg"
 }

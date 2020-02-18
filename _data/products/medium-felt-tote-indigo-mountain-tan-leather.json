@@ -12,7 +12,9 @@
   ],
   "displayName": "Medium Felt Tote - Indigo Mountain - Tan Leather",
   "inStock": true,
-  "type": "medium tote",
+  "type": [
+    "tote"
+  ],
   "id": "AZ0067-001",
   "imgPrimary": "https://res.cloudinary.com/azellaz/image/upload/IMG_2081_ufbp6q.jpg"
 }

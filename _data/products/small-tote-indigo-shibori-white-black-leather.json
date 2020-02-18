@@ -19,7 +19,9 @@
     "https://res.cloudinary.com/azellaz/image/upload/small-tote-indigo-shibori-white-black-leather-side-by-Azellaz.jpg"
   ],
   "weight": "454",
-  "type": "tote",
+  "type": [
+    "tote"
+  ],
   "id": "AZ0062-004",
   "imgPrimary": "https://res.cloudinary.com/azellaz/image/upload/small-tote-indigo-shibori-white-black-leather-front-by-Azellaz.jpg"
 }

@@ -20,7 +20,9 @@
     "https://res.cloudinary.com/azellaz/image/upload/medium-tote-indigo-mountain-tan-leather-inside-by-Azellaz.jpg"
   ],
   "weight": "595",
-  "type": "tote",
+  "type": [
+    "tote"
+  ],
   "id": "AZ0061-002",
   "imgPrimary": "https://res.cloudinary.com/azellaz/image/upload/medium-tote-indigo-mountain-tan-leather-front-by-Azellaz.jpg"
 }

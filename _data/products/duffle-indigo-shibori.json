@@ -20,7 +20,9 @@
     "https://res.cloudinary.com/azellaz/image/upload/duffle-indigo-shibori-side-by-Azellaz.jpg"
   ],
   "weight": "907",
-  "type": "duffle",
+  "type": [
+    "duffle"
+  ],
   "id": "AZ0014-01",
   "imgPrimary": "https://res.cloudinary.com/azellaz/image/upload/duffle-indigo-shibori-front-by-Azellaz.jpg"
 }
