@@ -22,7 +22,7 @@
 
   <div class="col col-12 md-col-5 p2">
     <h1 class="m0 h2 serif light-black">{{ page.displayName }}</h1>
-    <p class="h2 serif light-black">${{ page.price }}{% if page.type == 'clutch'  %}+{% endif %}</p>
+    <p class="h2 serif light-black">${{ page.price }}{% if page.type contains 'clutch'  %}+{% endif %}</p>
 
     <div data-markdown="product-description">{{ content }}</div>
 

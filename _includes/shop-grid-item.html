@@ -1,6 +1,6 @@
 <div
   class="col-12 sm-col-6 md-col-4 py1 px2 sm-p2 iso-item"
-  data-type="{{ product.type }}"
+  data-type="{% for type in product.type %}{{ type }}{% if forloop.last == false %}{{ ' ' }}{% endif %}{% endfor %}"
   data-materials="{% for material in product.materials %}{{ material }}{% if forloop.last == false %}{{ ' ' }}{% endif %}{% endfor %}"
 >
                 <div class="ih-item circle effect13 from_left_and_right not-rounded">
@@ -16,7 +16,7 @@
                     <div class="info overflow-hidden">
                       <div class="info-back">
                         <h3 class="name">{{ product.displayName }}</h3>
-                        <p>$<span class="price">{{ product.price }}</span>{% if product.type == 'clutch'  %}+{% endif %}</p>
+                        <p>$<span class="price">{{ product.price }}</span>{% if product.type contains 'clutch' %}+{% endif %}</p>
                       </div>
                     </div>
                   </a>
