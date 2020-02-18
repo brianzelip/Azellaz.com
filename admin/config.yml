@@ -9,6 +9,7 @@ media_library:
 site_url: https://dev--azellaz.netlify.com/
 collections:
   - label: 'Products'
+    label_singular: 'Product'
     name: 'products'
     folder: '_data/products'
     format: 'json'
