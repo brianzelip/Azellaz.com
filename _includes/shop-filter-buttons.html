@@ -2,7 +2,7 @@
           <button type="button" class="btn btn-filter btn-outline border-dark-gray light-black not-rounded is-active regular" data-filter="[data-type]">All Types</button>
           {% for type in site.data.options.types %}
           {% assign words = type | split: ' ' %}
-          <button type="button" class="btn btn-filter btn-outline border-dark-gray light-black not-rounded regular" data-filter="[data-type='{{ type }}']">{% for word in words %}{{ word | capitalize | prepend: ' ' }} {% endfor %}</button>
+          <button type="button" class="btn btn-filter btn-outline border-dark-gray light-black not-rounded regular" data-filter="[data-type~='{{ type }}']">{% for word in words %}{{ word | capitalize | prepend: ' ' }} {% endfor %}</button>
           {% endfor %}
         </div>
 
@@ -10,7 +10,8 @@
           <button type="button" class="btn btn-filter btn-outline border-dark-gray light-black not-rounded is-active regular" data-filter="[data-materials]">All Materials</button>
           {% for material in site.data.options.materials %}
           {% assign words = material | split: ' ' %}
-          <button type="button" class="btn btn-filter btn-outline border-dark-gray light-black not-rounded regular" data-filter="[data-materials~='{{ material }}']">{% for word in words %}{{ word | capitalize | prepend: ' ' }} {% endfor %}</button>
+          <button type="button" class="btn btn-filter btn-outline border-dark-gray light-black not-rounded regular" data-filter="[data-materials~='{% if material == 'waxed canvas' %}canvas{% else %}{{ material }}{% endif %}']">{% for word in words %}{{ word | capitalize | prepend: ' ' }} {% endfor %}</button>
+          {%- comment -%} isotope data-filters only work with one-word strings, that's why the waxed canvas rigamorol {%- endcomment -%}
           {% endfor %}
         </div>
 
