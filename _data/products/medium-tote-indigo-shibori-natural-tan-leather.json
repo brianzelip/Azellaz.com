@@ -7,16 +7,16 @@
   "height": "31",
   "price": "170.00",
   "name": "AZ0061-004 Medium tote - indigo shibori natural - tan",
-  "slug": "medium-tote-indigo-shibori-natural-tan-leather",
+  "slug": "AZ0061-004 medium-tote-indigo-shibori-natural-tan-leather",
   "currentListing": true,
   "materials": [
     "waxed canvas",
     "leather"
   ],
   "displayName": "Indigo Shibori Medium Tote / Tan Leather",
-  "inStock": false,
+  "inStock": true,
   "imgSecondarySet": [
-    "https://res.cloudinary.com/azellaz/image/upload/medium-tote-indigo-shibori-natural-tan-leather-side-by-Azellaz.jpg",
+    "https://res.cloudinary.com/azellaz/image/upload/v1582134298/AZ0061-004-02_xcieo0.jpg",
     "https://res.cloudinary.com/azellaz/image/upload/medium-tote-indigo-shibori-natural-tan-leather-inside-by-Azellaz.jpg"
   ],
   "weight": "595",
@@ -24,5 +24,5 @@
     "tote"
   ],
   "id": "AZ0061-004",
-  "imgPrimary": "https://res.cloudinary.com/azellaz/image/upload/medium-tote-indigo-shibori-natural-tan-leather-front-by-Azellaz.jpg"
+  "imgPrimary": "https://res.cloudinary.com/azellaz/image/upload/v1582134298/AZ0061-004-01_stdfrb.jpg"
 }
