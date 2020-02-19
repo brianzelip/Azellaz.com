@@ -8,7 +8,7 @@
   "price": "265",
   "name": "AZ0069-001 Backpack - black",
   "slug": "backpack-black",
-  "currentListing": true,
+  "currentListing": false,
   "materials": [
     "felt",
     "leather"
