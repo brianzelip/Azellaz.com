@@ -8,7 +8,7 @@
   "price": "265",
   "name": "AZ0069-002 Backpack - english tan",
   "slug": "backpack-tan",
-  "currentListing": true,
+  "currentListing": false,
   "materials": [
     "felt",
     "leather"
