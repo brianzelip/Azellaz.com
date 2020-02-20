@@ -1,12 +1,12 @@
 backend:
   name: git-gateway
-  branch: dev # Branch to update (optional; defaults to master)
+  branch: master
 media_library:
   name: cloudinary
   config:
     cloud_name: azellaz
     api_key: 598778136512764
-site_url: https://dev--azellaz.netlify.com/
+site_url: https://www.azellaz.com/
 collections:
   - label: 'Products'
     label_singular: 'Product'
