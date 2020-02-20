@@ -33,6 +33,20 @@ This document started at v1.6.10 and only documents work after v1.6.10.
 - branch: dev
 - description: Merge latest dev work on implementing Netlify CMS into master branch. The major change comes in because there is a new product data model and product page creation/editing/publication workflow via Netlify CMS.
 
+### Notes
+
+For updating product info using the cms, go to azellaz.com/admin.
+
+Add users to cms login via Netlify Identity.
+
+Only the current product pages are built at build time via `newProductPages.js` before the jekyll build. They are generated in `products/`.
+
+All product data, not just current live products, have associated json files in `_data/products/`. These are the files edited by netlify cms.
+
+The bag options (types and materials) have been abstracted into `_data/options.json`. In the future, I can make a netlify cms "file collection" out of this file which will allow AZ to update the filter option buttons on the shop.
+
+### Added
+
 ## [1.13.0] - 2020-01-29
 
 - branch: cloudinary
