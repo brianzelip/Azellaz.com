@@ -106,7 +106,7 @@ id: "${data.id}"
 currentListing: ${data.currentListing}
 inStock: ${data.inStock}
 stockOnHand: ${data.stockOnHand}
-type: "${data.type}"
+type: ${jsArray2Yaml(data.type)}
 descriptionShort: "${data.descriptionShort}"
 materials: ${jsArray2Yaml(data.materials)}
 price: ${data.price}
