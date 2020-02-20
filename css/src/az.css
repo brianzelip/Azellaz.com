@@ -54,6 +54,8 @@
   --bagBlue: rgb(146, 190, 209);
   --bagBlue2: rgb(80, 121, 140);
   --bagBlue3: rgb(103, 151, 171);
+
+  --serif: Athelas, Georgia, serif;
 }
 
 /*!
@@ -159,11 +161,10 @@ h6 {
   background-image: url(/images/hero-medium-tote-felt-indigo-mountain-tan-leather-at-Rawlings-Conservatory-by-Azellaz.jpg);
 }
 .mainBag4 {
-  background-image: url(/images/hero-small-tote-indigo-shibori-white-maroon-leather-at-Rawlings-Conservatory-by-Azellaz.jpg);
+  background-image: url(https://res.cloudinary.com/azellaz/image/upload/q_auto:eco/hero-at-97-percent-optimized_small-tote-indigo-shibori-white-maroon-leather-lookbook3.jpg);
 }
-
 .serif {
-  font-family: Athelas, Georgia, serif;
+  font-family: var(--serif);
 } /*mods*/
 
 .border-red {
@@ -1097,4 +1098,12 @@ Important: using a flex value of something like 1 0 0px can still be a problem b
   color: var(--color-warning);
   background-color: var(--bg-color-warning);
   border: 1px solid var(--border-color-warning);
+}
+
+/**
+ * Markdown product pages
+ */
+[data-markdown='product-description'] p {
+  font-family: var(--serif);
+  color: var(--light-black);
 }

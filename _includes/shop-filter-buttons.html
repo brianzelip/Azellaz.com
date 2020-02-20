@@ -1,16 +1,17 @@
 <div class="mx1 mb2 h6 sm-h4 flex justify-center filter-buttons-group filter-buttons x-btn-group" data-filter-group="type">
           <button type="button" class="btn btn-filter btn-outline border-dark-gray light-black not-rounded is-active regular" data-filter="[data-type]">All Types</button>
-          <button type="button" class="btn btn-filter btn-outline border-dark-gray light-black not-rounded regular" data-filter="[data-type='duffle']">Duffle</button>
-          <button type="button" class="btn btn-filter btn-outline border-dark-gray light-black not-rounded before-backpack regular" data-filter="[data-type='backpack']">pack</button>
-          <button type="button" class="btn btn-filter btn-outline border-dark-gray light-black not-rounded regular" data-filter="[data-type='tote']">Tote</button>
-          <button type="button" class="btn btn-filter btn-outline border-dark-gray light-black not-rounded before-crossbody regular" data-filter="[data-type='crossbody']">body</button>
-          <button type="button" class="btn btn-filter btn-outline border-dark-gray light-black not-rounded regular" data-filter="[data-type='pouch']">Pouch</button>
+          {% for type in site.data.options.types %}
+          {% assign words = type | split: ' ' %}
+          <button type="button" class="btn btn-filter btn-outline border-dark-gray light-black not-rounded regular" data-filter="[data-type~='{{ type }}']">{% for word in words %}{{ word | capitalize | prepend: ' ' }} {% endfor %}</button>
+          {% endfor %}
         </div>
 
         <div class="mx1 mb2 h6 sm-h4 flex justify-center blue filter-buttons-group filter-buttons x-btn-group" data-filter-group="materials">
           <button type="button" class="btn btn-filter btn-outline border-dark-gray light-black not-rounded is-active regular" data-filter="[data-materials]">All Materials</button>
-          <button type="button" class="btn btn-filter btn-outline border-dark-gray light-black not-rounded regular" data-filter="[data-materials~='felt']">Felt</button>
-          <button type="button" class="btn btn-filter btn-outline border-dark-gray light-black not-rounded regular" data-filter="[data-materials~='leather']">Leather</button>
-          <button type="button" class="btn btn-filter btn-outline border-dark-gray light-black not-rounded regular" data-filter="[data-materials~='canvas']">Waxed Canvas</button>
+          {% for material in site.data.options.materials %}
+          {% assign words = material | split: ' ' %}
+          <button type="button" class="btn btn-filter btn-outline border-dark-gray light-black not-rounded regular" data-filter="[data-materials~='{% if material == 'waxed canvas' %}canvas{% else %}{{ material }}{% endif %}']">{% for word in words %}{{ word | capitalize | prepend: ' ' }} {% endfor %}</button>
+          {%- comment -%} isotope data-filters only work with one-word strings, that's why the waxed canvas rigamorol {%- endcomment -%}
+          {% endfor %}
         </div>
 

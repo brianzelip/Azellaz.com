@@ -11,6 +11,237 @@ This document started at v1.6.10 and only documents work after v1.6.10.
 
 ## [Unreleased]
 
+### TODO
+
+- cms admin
+  - ~~each product has its own .md page, and this is what is edited in the cms~~
+  - ability to create create a page with certain UI and design
+    - like a grid of items, regardless of if for shop or portfolio
+    - this means having a talk with Abbie about what kinds of different views she wants
+- carousel landing page
+- validate that for each product that is to be included in the shop, each product has a unique ID; currently, `AZ00` is the default `id` for new products. This is helpful for data input, but hairy for making snipcart work via unique ids for each product. (The thin-ness isn't only due to not-validating here, it's the fact that the snipcart database is distinct from this front end pipeline. ie: It's a much bigger issue!)
+- Update `_includes/shop-grid-item.html` to render "OUT OF STOCK" when `product.inStock === 0`
+
+### Talk w/ Abbie
+
+- do you like call out sections with bigger text, a la https://crosby-demo.squarespace.com/our-story?
+- have a stories/articles/info-sharing section - something that doesn't have to be updated, a la https://hester-demo.squarespace.com/blog
+- have a stockists page, a la https://ventura-demo.squarespace.com/stockists
+
+## [2.0.0] - 2020-01-25
+
+- branch: dev
+- description: Merge latest dev work on implementing Netlify CMS into master branch. The major change comes in because there is a new product data model and product page creation/editing/publication workflow via Netlify CMS.
+
+### Notes
+
+For updating product info using the cms, go to azellaz.com/admin.
+
+Add users to cms login via Netlify Identity.
+
+Only the current product pages are built at build time via `newProductPages.js` before the jekyll build. They are generated in `products/`.
+
+All product data, not just current live products, have associated json files in `_data/products/`. These are the files edited by netlify cms.
+
+The bag options (types and materials) have been abstracted into `_data/options.json`. In the future, I can make a netlify cms "file collection" out of this file which will allow AZ to update the filter option buttons on the shop.
+
+### Added
+
+## [1.13.0] - 2020-01-29
+
+- branch: cloudinary
+- description: refactor media library via Cloudinary
+
+### Audit of current image transformations
+
+1. Minimally process raw JPG from camera
+2. ~~Make a new directory called `PHOTOS`, then copy all of the edited photos into `PHOTOS`~~ (don't have to do this)
+3. Run ImageOptim
+4. ~~Rename raw file extensions from `.JPG` to `.jpg`~~ (don't have to do this)
+5. ~~Create two new directories titled `thumbs-med` and `thumbs-sm`~~ (don't have to do this)
+6. ~~Copy all photos in `PHOTOS` to each of the `thumbs` directories~~ (don't have to do this)
+7. ~~Add the appropriate prefix to each of the `thumbs` directories~~ (don't have to do this)
+8. Resize the photos in each of the thumbnail directories as appropriate
+
+- `mogrify -resize 25% thumbs-med/*.jpg && mogrify -resize 100x100 thumbs-sm/*.jpg`
+
+9. ~~Move all of the photos inside `PHOTOS/` to `../products/` as the largest set of photos, then move (or add to) `thumbs-med/` and `thumbs-sm/` to `../products/`~~ (don't have to do this)
+
+### TODO via Cloudinary
+
+1. Minimally process raw JPG from camera
+2. Run ImageOptim
+3. Resize the photos in each of the thumbnail directories as appropriate
+
+```bash
+# Azellaz v1
+# REAL CODE
+mogrify -resize 25% thumbs-med/*.jpg && mogrify -resize 100x100 thumbs-sm/*.jpg
+```
+
+```html
+<!-- Azellaz v2 -->
+<!-- FAKE CODE EXCEPT FOR CLOUDINARY IMAGE TRANSFORMATIONS -->
+<img
+  src="https://res.cloudinary.com/demo/image/upload/azellaz/w_0.25/thumbs-med-product.jpg"
+/>
+<!-- see https://cloudinary.com/documentation/image_transformations?query=scale&c_query=Resizing%20and%20cropping%20images%20%E2%80%BA%20scale#limit -->
+<img
+  src="https://res.cloudinary.com/demo/image/upload/azellaz/w_100,h_100,c_limit/thumbs-sm-product.jpg"
+/>
+```
+
+### Thoughts on product data model re: images
+
+Maybe all image "fields" or units should have their associated metadata - no, because then the data inputter has to manually input all that. Go w/ the template being the source for how the base image is used.
+
+### Cloudinary test runs
+
+Steps taken:
+
+1. Make 3 copies of the original image (11 MB) of the current home page hero image (`images/staging/PHOTOS/carousel/small-tote-indigo-shibori-white-maroon-leather-lookbook3.jpg`).
+2. Apply the following ImageOptim config to each photo
+   1. Strip metadata, no lossy minification, optimization level `extra`; the output saved 5.3% (10.7 MB end size)
+   2. Strip metadata, enable lossy minification to 99% jpg quality, optimization level `extra`, the output saved 14.3% (7.9 MB end size)
+   3. Strip metadata, enable lossy minification to 97% jpg quality, optimization level `extra`, the output saved 50.3% (5.6 MB end size)
+
+```yaml
+image_2_with_q_auto_transformation:
+  - url: https://res.cloudinary.com/dn6buftkw/image/upload/v1580318832/q_auto/hero-at-97-percent-optimized_small-tote-indigo-shibori-white-maroon-leather-lookbook3.jpg
+  - transfer_size: 1.27 MB
+```
+
+### Lineage of initial Azellaz Cloudinary data
+
+1. Make a copy of all files in `images/raw-dog-and-others/archived-from-staging/edited thru 2017-06-28/new - needs to be optimized`
+
+2. Run imageoptim with standard jpg exif strip, no lossy minification, and insane optimization speed
+
+3. Upload to cloudinary under official Azellaz account
+
+It's number 2 above that needs to be repeated for each image before uploading to cloudinary
+
+### Added
+
+### Updated
+
+- az.css: Change `.mainBag4` background-image url to a cloudinary url that includes a quality transformation -- the difference is
+- every template that renders an image
+
+## [1.12.3] - 2020-01-25
+
+- branch: dev
+- description: Fix version number DOH!
+
+### Updated
+
+- package\*.json
+
+## [1.12.2] - 2020-01-25
+
+- branch: dev
+- description: Keep `products/` via .gitkeep for the Netlify build to succeed!
+
+### Added
+
+- products/.gitkeep
+
+### Updated
+
+- newProductPages.js: delete files in products/ only if not .gitkeep
+
+## [1.12.1] - 2020-01-25
+
+- branch: dev
+- description: update products data dir now that the product page creation flow is ready
+
+### Updated
+
+- \_data/allproducts/: rename \_data/products/
+- admin/config.yml: update products collection folder path
+- newProductPages.js: update productDataDir
+- productsDataToProductsFiles.js: Move to `archive/code/`
+
+## [1.12.0] - 2020-01-25
+
+- branch: dev
+- description: Update front end to implement new back end
+
+### Updated
+
+- admin/config.yml: fix `imgSecondarySet` value for yaml array in front matter
+- \_config.yml: Add `defaults` property for product json files for rendering the shop based on the new product data model (individual json files per product, vs one json file for all products)
+- newProductPages.js: add `jsArray2Yaml()` and update yaml front matter
+- .gitignore: ignore `products/*.md` dir since they are now auto-generated
+- package.json: Add `refreshProductPages` step to start script
+- \_includes/shop-grid.html: refactor around new product data model
+- \_includes/shop-grid-item.html: refactor around new product data model
+- \_includes/product-page.html: refactor around new product data model
+- \_includes/product-thumbnails.html: refactor around new product data model
+- \_includes/meta-product.html: refactor around new product data model
+
+## [1.11.0] - 2020-01-24
+
+- branch: dev
+- description: Get netlify cms back end working (ie: publishing new pages and editing old pages). The principle dynamic is between `admin/config.yml` and `_data/allproducts/*.json`, and then the yaml front matter in the auto-generated pages (via `newProductPages.js`) in `products/*.md`.
+
+This really represents v2, since the way for the staff user to update the site has now changed. Although it's still possible to edit json files in the repo; though doing so will always be possible.
+
+### Documentation with this bump:
+
+1. Make new cms users
+
+BZ Netlify > azellaz > Identity > Invite Users > input user email
+
+2. Login
+
+url: https://www.azellaz.com/admin
+
+3. Un/Publish a page
+
+a. Login
+b. Choose the collection of information to edit on the left (currently only "Products")
+c. Choose file to edit, or click the "New Products" button
+d. Toggle the "Include item in shop?" on to publish page, toggle it off to not publish or unpublish page
+
+1. `products/` is now auto-refreshed via
+
+`newProductPages.js` is called before `jekyll build` via `npm build`
+
+5. `_data/products.json` has been destructured into `_data/allproducts/*.json`
+
+6. Made data parity between each product json file and the Netlify CMS config
+
+### Added
+
+- productsDataToProductsFiles.js - single-purpose tool to use the work already put into defining the data in `_data/products.json` by creating new data files for each object
+- \_data/allproducts/: A json file for each product contained in \_data/products.json. This is the folder that Netlify CMS looks at for editing products collection data.
+
+### Updated
+
+- admin/config.yml:
+  - add the appropriate fields to match product data model
+  - change the branch and site_url fields for dev work
+- \_includes/meta-product.html: refactor use of slug
+- \_includes/product-page.html: refactor use of slug
+- \_includes/product-thumbnails.html: refactor use of slug
+- \_layouts/product.html: remove for loop and if statement at root of html
+
+## [1.10.0] - 2020-01-20
+
+- branch: init-netlifycms
+- description: Wire up Netlify CMS
+
+### Added
+
+- /admin
+  - index.html
+  - config.yml
+
+### Updated
+
+- index.html: Added netlify identity widget to bottom of page
+
 ## [1.9.5] - 2019-08-26
 
 ### Meta

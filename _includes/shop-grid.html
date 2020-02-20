@@ -1,5 +1,6 @@
 <div class="iso-grid">
-          {% for product in site.data.products %}
+          {% assign products = site.pages | where: "layout", product %}
+          {% for product in products %}
             {% if product.currentListing %}
               {% include shop-grid-item.html %}
             {% endif %}

@@ -10,8 +10,10 @@
 
 Set the currentListing property for each product to true or false depending on if Abbie considers the product currently available.
 
-**Whenever** the state of currently available products changes, run
+~~**Whenever** the state of currently available products changes, run~~
 
 ```bash
-npm run newPreJekyllBuildProductPages
+npm run refreshProductPages
 ```
+
+**Note**: this happens automatically via the new build process in v2.

@@ -1,0 +1,100 @@
+backend:
+  name: git-gateway
+  branch: master
+media_library:
+  name: cloudinary
+  config:
+    cloud_name: azellaz
+    api_key: 598778136512764
+site_url: https://www.azellaz.com/
+collections:
+  - label: 'Products'
+    label_singular: 'Product'
+    name: 'products'
+    folder: '_data/products'
+    format: 'json'
+    create: true
+    identifier_field: name
+    fields:
+      - label: 'Layout'
+        name: 'layout'
+        widget: 'hidden'
+        default: 'product'
+      - { label: 'Name', name: 'name', widget: 'string' }
+      - label: 'Full display name'
+        name: 'displayName'
+        widget: 'string'
+        required: false
+      - label: 'Page URL (lowercase, hyphenated words, ie: backpack-tan)'
+        name: 'slug'
+        widget: 'string'
+      - { label: 'id', name: 'id', widget: 'string', default: 'AZ00' }
+      - label: 'Include item in shop?'
+        name: 'currentListing'
+        widget: 'boolean'
+        default: false
+      - label: 'Number of stock currently on hand'
+        name: 'stockOnHand'
+        widget: 'number'
+        valueType: 'int'
+        default: 0
+      - label: 'Is currently in stock?'
+        name: 'inStock'
+        widget: 'boolean'
+        default: false
+      - label: 'Bag type'
+        name: 'type'
+        widget: 'select'
+        multiple: true
+        options: ['backpack', 'circular pouch', 'tote']
+        required: false
+      - label: 'Short description (one sentence)'
+        name: 'descriptionShort'
+        widget: 'string'
+        required: false
+      - label: 'Long description'
+        name: 'body'
+        widget: 'markdown'
+        required: false
+      - label: 'Materials'
+        name: 'materials'
+        widget: 'select'
+        multiple: true
+        options: ['felt', 'leather', 'waxed canvas']
+        required: false
+      - label: 'Price in $'
+        name: 'price'
+        widget: 'number'
+        valueType: 'int'
+        required: false
+      - label: 'Weight in grams'
+        name: 'weight'
+        widget: 'number'
+        valueType: 'int'
+        required: false
+      - label: 'Height in centimeters'
+        name: 'height'
+        widget: 'number'
+        valueType: 'int'
+        required: false
+      - label: 'Width in centimeters'
+        name: 'width'
+        widget: 'number'
+        valueType: 'int'
+        required: false
+      - label: 'Length in centimeters'
+        name: 'length'
+        widget: 'number'
+        valueType: 'int'
+        required: false
+      - label: 'Primary photo'
+        name: 'imgPrimary'
+        widget: 'image'
+        allow_multiple: false
+        required: false
+      - label: 'Secondary photos'
+        name: 'imgSecondarySet'
+        widget: 'list'
+        allow_multiple: true
+        field: { label: Image, name: image, widget: image }
+        required: false

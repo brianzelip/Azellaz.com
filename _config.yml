@@ -6,7 +6,7 @@ meta_about_page_image: images/Azellaz-work-bench.jpg
 
 # Paths
 base_url: https://www.azellaz.com/
-bas_url_no_trailing_slash: https://www.azellaz.com
+base_url_no_trailing_slash: https://www.azellaz.com
 images_dir: images/
 product_images_dir: images/products/
 product_thumb_sm_images_dir: images/products/thumbs-sm/
@@ -15,6 +15,11 @@ product_thumb_med_images_dir: images/products/thumbs-med/
 # Product images
 thumb_medium_prefix: thumb-med-
 thumb_small_prefix: thumb-sm-
+
+# Cloudinary
+cloudinary: https://res.cloudinary.com/azellaz/image/upload/q_auto:eco
+trnsfrm_med: /w_0.25
+trnsfrm_thumb: /w_100,h_100,c_limit
 
 # Content
 in_stock: This item is in stock and ready to ship. Items are individually dyed and may vary slightly from these images.
@@ -36,6 +41,8 @@ exclude:
   - LICENSE
   - '*.pptx'
   - newProductPages.js
+  - productsDataToProductsFiles.js
+  - notes/
 
 # Static files api
 defaults:
