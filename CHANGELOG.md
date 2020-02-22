@@ -13,11 +13,6 @@ This document started at v1.6.10 and only documents work after v1.6.10.
 
 ### TODO
 
-- cms admin
-  - ~~each product has its own .md page, and this is what is edited in the cms~~
-  - ability to create create a page with certain UI and design
-    - like a grid of items, regardless of if for shop or portfolio
-    - this means having a talk with Abbie about what kinds of different views she wants
 - carousel landing page
 - validate that for each product that is to be included in the shop, each product has a unique ID; currently, `AZ00` is the default `id` for new products. This is helpful for data input, but hairy for making snipcart work via unique ids for each product. (The thin-ness isn't only due to not-validating here, it's the fact that the snipcart database is distinct from this front end pipeline. ie: It's a much bigger issue!)
 - Update `_includes/shop-grid-item.html` to render "OUT OF STOCK" when `product.inStock === 0`
@@ -28,7 +23,16 @@ This document started at v1.6.10 and only documents work after v1.6.10.
 - have a stories/articles/info-sharing section - something that doesn't have to be updated, a la https://hester-demo.squarespace.com/blog
 - have a stockists page, a la https://ventura-demo.squarespace.com/stockists
 
-## [2.0.0] - 2020-01-25
+## [2.0.1] - 2020-02-21
+
+- branch: master
+- description: Refactor shop filter buttons to only look for the first word of a multi-word category, whether type or material (ie: "circular pouch")
+
+### Updated
+
+- shop-filter-buttons.html
+
+## [2.0.0] - 2020-02-20
 
 - branch: dev
 - description: Merge latest dev work on implementing Netlify CMS into master branch. The major change comes in because there is a new product data model and product page creation/editing/publication workflow via Netlify CMS.
