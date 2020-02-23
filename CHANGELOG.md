@@ -23,6 +23,19 @@ This document started at v1.6.10 and only documents work after v1.6.10.
 - have a stories/articles/info-sharing section - something that doesn't have to be updated, a la https://hester-demo.squarespace.com/blog
 - have a stockists page, a la https://ventura-demo.squarespace.com/stockists
 
+## [2.1.0] - 2020-02-23
+
+- branch: master
+- description: Add 'sold-out' context:
+  - add stickers to the appropriate shop items
+  - disable buy button on product pages with sold out text inside the button
+
+### Updated
+
+- \_includes/shop-grid-item.html
+- \_includes/product-page.html
+- az.css: add `.sticker` based on https://www.bookhou.com/collections/shop-update
+
 ## [2.0.1] - 2020-02-21
 
 - branch: master
