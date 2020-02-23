@@ -12,6 +12,7 @@
                         alt="{{ product.imgPrimary | remove: product.slug | remove_first: "-" | remove: "-by-Azellaz" | capitalize }} view of the {{ product.displayName }} by Azellaz"
                         title="{{ product.displayName }} by Azellaz"
                       />
+                      {% if product.stockOnHand == 0 %}<p class="sticker mb0">Sold Out</p>{% endif %}
                     </div>
                     <div class="info overflow-hidden">
                       <div class="info-back">
