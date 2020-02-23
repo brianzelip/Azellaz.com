@@ -1101,6 +1101,22 @@ Important: using a flex value of something like 1 0 0px can still be a problem b
 }
 
 /**
+ * Sold out stickers
+ */
+
+.sticker {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5px;
+  font-size: 0.8rem;
+  letter-spacing: 0.75px;
+  text-transform: uppercase;
+  background: var(--light-black);
+  color: #fff;
+}
+
+/**
  * Markdown product pages
  */
 [data-markdown='product-description'] p {
