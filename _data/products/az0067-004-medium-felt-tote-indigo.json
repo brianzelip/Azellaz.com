@@ -9,13 +9,13 @@
   "layout": "product",
   "name": "AZ0067-004 Medium Felt Tote - Indigo",
   "slug": "AZ0067-004-medium-felt-tote-indigo",
-  "currentListing": true,
+  "currentListing": false,
   "materials": [
     "felt",
     "leather"
   ],
   "displayName": "Medium Felt Tote / Indigo Mountain",
-  "inStock": true,
+  "inStock": false,
   "imgSecondarySet": [
     "https://res.cloudinary.com/azellaz/image/upload/v1581990607/AZ0067-004-02_mu7tyx.jpg"
   ],
