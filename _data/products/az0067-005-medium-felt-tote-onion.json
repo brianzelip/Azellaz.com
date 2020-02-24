@@ -7,15 +7,15 @@
   "height": 36,
   "price": 190,
   "layout": "product",
-  "name": "Medium Felt Tote - Onion",
+  "name": "AZ0067-005 Medium Felt Tote - Onion",
   "slug": "AZ0067-005-medium-felt-tote-onion",
-  "currentListing": true,
+  "currentListing": false,
   "materials": [
     "felt",
     "leather"
   ],
   "displayName": "Medium Felt Tote / Onion Skin",
-  "inStock": true,
+  "inStock": false,
   "imgSecondarySet": [
     "https://res.cloudinary.com/azellaz/image/upload/v1581990855/AZ0067-005-02_niisoj.jpg"
   ],
