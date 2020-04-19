@@ -9,13 +9,13 @@
   "layout": "product",
   "name": "AZ0067-009 Medium Felt Tote - Onion",
   "slug": "AZ0067-009-medium-felt-tote-onion",
-  "currentListing": true,
+  "currentListing": false,
   "materials": [
     "felt",
     "leather"
   ],
   "displayName": "Medium Felt Tote / Onion Skin",
-  "inStock": true,
+  "inStock": false,
   "imgSecondarySet": [
     "https://res.cloudinary.com/azellaz/image/upload/v1582132437/AZ0067-009-02_inpshy.jpg"
   ],
