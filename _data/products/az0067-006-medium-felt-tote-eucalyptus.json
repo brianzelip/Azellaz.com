@@ -9,13 +9,13 @@
   "layout": "product",
   "name": "AZ0067-006 Medium Felt Tote - Eucalyptus",
   "slug": "AZ0067-006-medium-felt-tote-eucalyptus",
-  "currentListing": true,
+  "currentListing": false,
   "materials": [
     "felt",
     "leather"
   ],
   "displayName": "Medium Felt Tote / Eucalyptus Print",
-  "inStock": true,
+  "inStock": false,
   "imgSecondarySet": [
     "https://res.cloudinary.com/azellaz/image/upload/v1582045451/AZ0067-006-02_rsoc2f.jpg"
   ],
