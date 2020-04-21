@@ -1123,3 +1123,22 @@ Important: using a flex value of something like 1 0 0px can still be a problem b
   font-family: var(--serif);
   color: var(--light-black);
 }
+
+/**
+ * Markdown about page
+ */
+[data-markdown='about-page'] h1,
+[data-markdown='about-page'] h2 {
+  font-size: 2rem;
+  font-family: var(--serif);
+  text-align: center;
+  color: var(--light-black);
+}
+[data-markdown='about-page'] p {
+  font-family: var(--serif);
+  color: var(--light-black);
+}
+[data-markdown='about-page'] a {
+  color: var(--light-black);
+  text-decoration: underline;
+}
