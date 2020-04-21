@@ -98,3 +98,10 @@ collections:
         allow_multiple: true
         field: { label: Image, name: image, widget: image }
         required: false
+  - label: 'Pages'
+    name: 'pages'
+    files:
+      - label: 'About'
+        name: 'about'
+        file: 'about.md'
+        fields:
