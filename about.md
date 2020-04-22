@@ -1,7 +1,7 @@
 ---
 permalink: /about/
 layout: about
-image: ''
+image: 'https://www.azellaz.com/images/Azellaz-work-bench.jpg'
 ---
 
 # About Azellaz
