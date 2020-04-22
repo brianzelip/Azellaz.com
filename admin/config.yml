@@ -105,3 +105,15 @@ collections:
         name: 'about'
         file: 'about.md'
         fields:
+          - {
+              label: Featured image,
+              name: image,
+              widget: image,
+              required: true,
+            }
+          - {
+              label: 'About page content',
+              name: body,
+              widget: markdown,
+              required: true,
+            }
