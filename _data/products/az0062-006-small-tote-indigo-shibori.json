@@ -6,8 +6,8 @@
   "length": "33",
   "height": "33",
   "price": 120,
-  "name": "AZ0062-006 Small tote - indigo shibori",
-  "slug": "AZ0062-006-small-tote-indigo-shibori",
+  "name": "AZ0062-008 Small tote - indigo shibori",
+  "slug": "AZ0062-008-small-tote-indigo-shibori",
   "currentListing": true,
   "materials": [
     "waxed canvas",
@@ -16,12 +16,12 @@
   "displayName": "Indigo Shibori Small Tote / Maroon Leather",
   "inStock": true,
   "imgSecondarySet": [
-    "https://res.cloudinary.com/azellaz/image/upload/v1582226558/AZ0062-006-02_uqt1nh.jpg"
+    "https://res.cloudinary.com/azellaz/image/upload/v1587496460/AZ0062-008-02_emc6tz.jpg"
   ],
   "weight": "454",
   "type": [
     "tote"
   ],
-  "id": "AZ0062-006",
-  "imgPrimary": "https://res.cloudinary.com/azellaz/image/upload/v1587495086/AZ0062-006-01_gfhfdw.jpg"
+  "id": "AZ0062-008",
+  "imgPrimary": "https://res.cloudinary.com/azellaz/image/upload/v1587496456/AZ0062-008-01_ztnjex.jpg"
 }
