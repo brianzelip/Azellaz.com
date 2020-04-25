@@ -14,11 +14,13 @@
   ],
   "displayName": "Small Felt Circle Pouch / Eucalyptus",
   "inStock": true,
-  "imgSecondarySet": [],
+  "imgSecondarySet": [
+  "https://res.cloudinary.com/azellaz/image/upload/v1587496440/AZ0052-011-01_pfle08.jpg"
+  ],
   "weight": "57",
   "type": [
     "circular pouch"
   ],
   "id": "AZ0052-011-1",
-  "imgPrimary": "https://res.cloudinary.com/azellaz/image/upload/v1587496440/AZ0052-011-01_pfle08.jpg"
+  "imgPrimary": "https://res.cloudinary.com/azellaz/image/upload/v1587496440/AZ0052-011-02_ts1bju.jpg"
 }
