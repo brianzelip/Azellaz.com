@@ -6,8 +6,8 @@
   "length": "16",
   "height": "10",
   "price": "25",
-  "name": "AZ0052-011 Circular pouch - felt - small - eucalyptus",
-  "slug": "AZ0052-011-circle-pouch-small-eucalyptus",
+  "name": "AZ0052-011-1 Circular pouch - felt - small - eucalyptus",
+  "slug": "AZ0052-011-1-circle-pouch-small-eucalyptus",
   "currentListing": false,
   "materials": [
     "felt"
@@ -19,6 +19,6 @@
   "type": [
     "circular pouch"
   ],
-  "id": "AZ0052-011",
+  "id": "AZ0052-011-1",
   "imgPrimary": ""
 }
