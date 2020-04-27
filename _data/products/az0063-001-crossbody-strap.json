@@ -14,9 +14,11 @@
   ],
   "displayName": "Crossbody Strap / Maroon Leather",
   "inStock": true,
-  "imgSecondarySet": [],
+  "imgSecondarySet": [
+  "https://res.cloudinary.com/azellaz/image/upload/v1588012080/AZ0063-001-01_pfhblg.jpg"
+  ],
   "weight": 600,
   "type": null,
   "id": "AZ0063-001",
-  "imgPrimary": ""
+  "imgPrimary": "https://res.cloudinary.com/azellaz/image/upload/v1588012069/AZ0063-001-02_fqfrvt.jpg"
 }
