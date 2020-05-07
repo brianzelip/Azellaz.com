@@ -78,7 +78,6 @@ function createNewProductPages() {
           slug: c('slug'),
           id: c('id'),
           currentListing: c('currentListing'),
-          inStock: c('inStock'),
           stockOnHand: c('stockOnHand'),
           type: c('type'),
           descriptionShort: c('descriptionShort'),
@@ -104,7 +103,6 @@ displayName: "${data.displayName}"
 slug: "${data.slug}"
 id: "${data.id}"
 currentListing: ${data.currentListing}
-inStock: ${data.inStock}
 stockOnHand: ${data.stockOnHand}
 type: ${jsArray2Yaml(data.type)}
 descriptionShort: "${data.descriptionShort}"
