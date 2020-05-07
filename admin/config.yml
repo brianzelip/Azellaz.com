@@ -38,10 +38,6 @@ collections:
         widget: 'number'
         valueType: 'int'
         default: 0
-      - label: 'Is currently in stock?'
-        name: 'inStock'
-        widget: 'boolean'
-        default: false
       - label: 'Bag type'
         name: 'type'
         widget: 'select'
