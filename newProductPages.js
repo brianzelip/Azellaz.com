@@ -10,8 +10,9 @@ function removeOldProductPages() {
   const oldFiles = fs.readdirSync(productPagesDir);
 
   console.log(
-    `Deleting ${oldFiles.length -
-      1} old Azellaz product files in ${productPagesDir} ...`
+    `Deleting ${
+      oldFiles.length - 1
+    } old Azellaz product files in ${productPagesDir} ...`
   );
 
   oldFiles.forEach((file, i) => {
@@ -33,7 +34,7 @@ function createNewProductPages() {
       ? arr.length > 0
         ? arr
             .map(
-              item => `
+              (item) => `
   - "${item}"`
             )
             .join('')
@@ -51,14 +52,14 @@ function createNewProductPages() {
       return arr;
     }
 
-    return arr.map(img => imgFileName(img));
+    return arr.map((img) => imgFileName(img));
   }
 
   const dataFiles = fs.readdirSync(productDataDir);
 
   let count = 0;
 
-  dataFiles.forEach(path => {
+  dataFiles.forEach((path) => {
     const _data = JSON.parse(fs.readFileSync(`${productDataDir}${path}`));
     if (_data.currentListing) {
       count++;
