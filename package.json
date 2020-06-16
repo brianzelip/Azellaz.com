@@ -33,11 +33,13 @@
     "autoprefixer": "^6.7.7",
     "babel-cli": "^6.26.0",
     "cssnano": "^4.1.10",
+    "dotenv": "^8.2.0",
     "postcss": "^5.2.16",
     "postcss-cli": "^6.0.1",
     "postcss-color-function": "^4.0.1",
     "postcss-custom-media": "^5.0.1",
     "postcss-custom-properties": "^5.0.2",
-    "postcss-import": "^9.1.0"
+    "postcss-import": "^9.1.0",
+    "simple-get": "^4.0.0"
   }
 }
