@@ -34,6 +34,7 @@ exclude:
   - whiteboard.md
   - test.html
   - node_modules/
+  - '*.env'
   - archive/
   - images/raw-dog-and-others/
   - 'package*'
