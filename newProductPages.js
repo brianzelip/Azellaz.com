@@ -1,6 +1,5 @@
 const fs = require('fs');
 const get = require('simple-get');
-require('dotenv').config();
 
 const productDataDir = './_data/products/';
 const productPagesDir = './products/';
@@ -32,7 +31,7 @@ function createNewProductPages() {
   console.log(`Generating new Azellaz product pages in ${productPagesDir} ...`);
 
   const snipApi = 'https://app.snipcart.com/api/products?limit=100';
-  const snipKey = process.env.SNIP_LIVE;
+  const snipKey = process.env.SNIPCART;
   const snipSecret = Buffer.from(`${snipKey}:`).toString('base64');
 
   const opts = {
@@ -46,6 +45,8 @@ function createNewProductPages() {
   get.concat(opts, function (err, res, data) {
     // data is a Buffer
     if (err) throw err;
+
+    const snipData = JSON.parse(data);
 
     const dataFiles = fs.readdirSync(productDataDir);
 
