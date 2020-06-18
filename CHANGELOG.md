@@ -23,6 +23,16 @@ This document started at v1.6.10 and only documents work after v1.6.10.
 - have a stories/articles/info-sharing section - something that doesn't have to be updated, a la https://hester-demo.squarespace.com/blog
 - have a stockists page, a la https://ventura-demo.squarespace.com/stockists
 
+## [2.3.1] - 2020-06-18
+
+- branch: dev
+- description: Remove `stockOnHand` from source files, instead handing over the source of truth for stock data to snipcart.
+
+### Updated
+
+- admin/config.yml
+- \_data/products/\*.json
+
 ## [2.3.0] - 2020-06-18
 
 - branch: dev
