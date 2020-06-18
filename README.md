@@ -2,7 +2,7 @@
 
 ## How to update product info
 
-1. Login at [https://dev--azellaz.netlify.com/admin](https://dev--azellaz.netlify.com/admin)
+1. Login at [https://azellaz.com/admin](https://azellaz.com/admin)
 
 2. Click "New Products" button to create new product, or click a product from the list to edit an existing product
 
