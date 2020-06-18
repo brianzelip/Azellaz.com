@@ -23,6 +23,31 @@ This document started at v1.6.10 and only documents work after v1.6.10.
 - have a stories/articles/info-sharing section - something that doesn't have to be updated, a la https://hester-demo.squarespace.com/blog
 - have a stockists page, a la https://ventura-demo.squarespace.com/stockists
 
+## [2.3.0] - 2020-06-18
+
+- branch: dev
+- description: Leverage Snipcart API and webhooks, and Netlify build hook, to auto fetch product stock data at build and build site on new order event
+  - snipcart API to get product stock number (so that snipcart product dashboard is the source of truth for product stock quantities, so that the front end never has to be updated manually when a product is sold out)
+  - snipcart webhook to send POST request to netlify; unfortunately, the snipcart webhook fires for all snipcart events, not just orders, so in our case, two webhookd POSTs are fired after each order (order event, and customer update event) - it's ineefficient, but it works!
+  - netlify build hook URL (created via netlify dashboard, not in project files), as an endpoint for snipcart to hit with its webhook
+
+### Updated
+
+- install simple-get for async http request for snipcart product data
+- newProductPages.js: Refactor stock data via snipcart fetch
+
+## [2.2.0] - 2020-04-22
+
+- branch: dev
+- description: Make the About page editable via cms
+
+### Updated
+
+- admin/config.yml: Define the about page
+- about.md: Create editable markdown file for about content
+- about.html: Move to \_layouts, extract editable content
+- az.css: Add about page markdown styles
+
 ## [2.1.0] - 2020-02-23
 
 - branch: master
