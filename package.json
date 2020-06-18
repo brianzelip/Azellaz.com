@@ -1,6 +1,6 @@
 {
   "name": "azellaz.com",
-  "version": "2.2.0",
+  "version": "2.3.0",
   "description": "Dev space for Azellaz.com. She's crafty, and she's just my type!",
   "main": "index.html",
   "scripts": {
@@ -38,6 +38,7 @@
     "postcss-color-function": "^4.0.1",
     "postcss-custom-media": "^5.0.1",
     "postcss-custom-properties": "^5.0.2",
-    "postcss-import": "^9.1.0"
+    "postcss-import": "^9.1.0",
+    "simple-get": "^4.0.0"
   }
 }

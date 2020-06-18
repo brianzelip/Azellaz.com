@@ -4,3 +4,4 @@ _site/
 *.log
 images/raw-dog-and-others/
 products/*.md
+*.env
