@@ -3,6 +3,9 @@ const https = require('https');
 console.log('Snipcart webhook received!');
 
 exports.handler = async (event, context) => {
+  console.log('Handler running...');
+  console.log('event is', event);
+
   const body = event.body;
 
   const method = 'POST';
