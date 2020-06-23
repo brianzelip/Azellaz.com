@@ -2,7 +2,7 @@ const https = require('https');
 
 console.log('Snipcart webhook received!');
 
-exports.handler = async (event, context) => {
+exports.handler = async (event) => {
   const body = JSON.parse(event.body);
 
   const method = 'POST';
@@ -18,15 +18,14 @@ exports.handler = async (event, context) => {
   if (body.eventName && body.eventName === 'order.completed') {
     console.log('ORDER UP 🎉');
 
-    const post = https.request(options, (res) => {
-      console.log(`POST response status: ${res.statusCode}`);
-    });
-
-    post.on('error', (e) => {
-      console.error(`Problem with POST: ${e.message}`);
-    });
-
-    post.end();
+    https
+      .request(options, function (res) {
+        console.log(`POST response status: ${res.statusCode}`);
+      })
+      .on('error', function (e) {
+        console.error(`Problem with POST: ${e.message}`);
+      })
+      .end();
   }
 
   return {
