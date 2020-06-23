@@ -9,7 +9,8 @@
     "css:build": "postcss -u postcss-custom-properties postcss-color-function postcss-import autoprefixer cssnano -d css/dist/ css/src/az.css --no-map",
     "refreshProductPages": "node newProductPages.js",
     "start": "npm run refreshProductPages && npm run css:dev & jekyll serve",
-    "build": "npm run refreshProductPages && npm run css:build && jekyll build"
+    "lambda": "cd lambda && npm i",
+    "build": "npm run refreshProductPages && npm run css:build && jekyll build && npm run lambda"
   },
   "repository": {
     "type": "git",
