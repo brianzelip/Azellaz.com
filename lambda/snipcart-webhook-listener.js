@@ -16,7 +16,9 @@ exports.handler = async (event) => {
 
     get.post(opts, (err, res) => {
       console.log('Response status code: ', res.statusCode);
-      if (err) throw err;
+      if (err) {
+        console.log('err!!!:::', err);
+      }
     });
   }
 
