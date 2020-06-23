@@ -7,6 +7,8 @@ exports.handler = async (event, context) => {
   console.log('event is', event);
 
   const body = event.body;
+  console.log('typeof body:::::', typeof body);
+  console.log('body', body);
 
   const method = 'POST';
   const host = 'api.netlify.com';
