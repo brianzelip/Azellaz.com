@@ -31,6 +31,7 @@ flash_holiday_orders_from_now: Orders placed today will be shipped in January 20
 plugins:
   - jekyll-sitemap
 exclude:
+  - lambda/
   - whiteboard.md
   - test.html
   - node_modules/

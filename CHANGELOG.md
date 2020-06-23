@@ -23,6 +23,20 @@ This document started at v1.6.10 and only documents work after v1.6.10.
 - have a stories/articles/info-sharing section - something that doesn't have to be updated, a la https://hester-demo.squarespace.com/blog
 - have a stockists page, a la https://ventura-demo.squarespace.com/stockists
 
+## [2.4.0] - 2020-06-22
+
+- branch: dev
+- description: Use Netlify Functions to create an endpoint for the Snipcart webhook to hit; this will fix the issue where the snipcart web hook hits the netlify build hook twice after a new purchase, which makes the build process run twice instead of the more efficient once.
+
+### Added
+
+- lambda/: where the snipcart webhook listener function lives
+- netlify.toml
+
+### Updated
+
+- \_config.yml: Exlude lambda/, clean up
+
 ## [2.3.1] - 2020-06-18
 
 - branch: dev

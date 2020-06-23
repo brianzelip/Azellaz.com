@@ -1,0 +1,10 @@
+{
+  "name": "lambda",
+  "version": "0.1.0",
+  "description": "Azellaz lambda dependencies",
+  "author": "Brian Zelip",
+  "license": "MIT",
+  "dependencies": {
+    "node-fetch": "^2.6.0"
+  }
+}
