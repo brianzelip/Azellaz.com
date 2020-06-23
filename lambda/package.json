@@ -1,7 +1,7 @@
 {
   "name": "lambda",
   "version": "0.1.0",
-  "description": "Netlify Function dependencies",
+  "description": "Azellaz lambda dependencies",
   "author": "Brian Zelip",
   "license": "MIT",
   "dependencies": {
