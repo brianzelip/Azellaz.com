@@ -3,12 +3,7 @@ const https = require('https');
 console.log('Snipcart webhook received!');
 
 exports.handler = async (event, context) => {
-  console.log('Handler running...');
-  console.log('event is', event);
-
-  const body = event.body;
-  console.log('typeof body:::::', typeof body);
-  console.log('body', body);
+  const body = JSON.parse(event.body);
 
   const method = 'POST';
   const host = 'api.netlify.com';
