@@ -1,0 +1,10 @@
+{
+  "name": "lambda",
+  "version": "0.1.0",
+  "description": "Netlify Function dependencies",
+  "author": "Brian Zelip",
+  "license": "MIT",
+  "dependencies": {
+    "simple-get": "^4.0.0"
+  }
+}

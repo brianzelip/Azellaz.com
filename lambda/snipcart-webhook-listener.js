@@ -1,33 +1,23 @@
-const http = require('http');
+const get = require('simple-get');
 
 console.log('Snipcart webhook received!');
 
 exports.handler = async (event) => {
   const body = JSON.parse(event.body);
+  console.log('Handler fired! body is:::', body, '\n\n');
 
-  const method = 'POST';
-  const protocol = 'https:';
-  const host = 'api.netlify.com';
-  const path =
-    '/build_hooks/5ef219aec0c4ea9331e5fe67?trigger_branch=master&trigger_title=Triggered+by+Netlify+Functions+via+Snipcart+webhook';
-  const options = {
-    method,
-    protocol,
-    host,
-    path
-  };
+  const netlifyBuildHook =
+    'https://api.netlify.com/build_hooks/5ef219aec0c4ea9331e5fe67?trigger_branch=master&trigger_title=Triggered+by+Netlify+Functions+via+Snipcart+webhook';
 
   if (body.eventName && body.eventName === 'order.completed') {
     console.log('ORDER UP 🎉');
 
-    http
-      .request(options, function (res) {
-        console.log(`POST response status: ${res.statusCode}`);
-      })
-      .on('error', function (e) {
-        console.error(`Problem with POST: ${e.message}`);
-      })
-      .end();
+    const opts = { url: netlifyBuildHook };
+
+    get.post(opts, (err, res) => {
+      console.log('Response status code: ', res.statusCode);
+      if (err) throw err;
+    });
   }
 
   return {
