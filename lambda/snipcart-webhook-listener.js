@@ -1,4 +1,4 @@
-const https = require('https');
+const http = require('http');
 
 console.log('Snipcart webhook received!');
 
@@ -6,11 +6,13 @@ exports.handler = async (event) => {
   const body = JSON.parse(event.body);
 
   const method = 'POST';
+  const protocol = 'https:';
   const host = 'api.netlify.com';
   const path =
     '/build_hooks/5ef219aec0c4ea9331e5fe67?trigger_branch=master&trigger_title=Triggered+by+Netlify+Functions+via+Snipcart+webhook';
   const options = {
     method,
+    protocol,
     host,
     path
   };
@@ -18,7 +20,7 @@ exports.handler = async (event) => {
   if (body.eventName && body.eventName === 'order.completed') {
     console.log('ORDER UP 🎉');
 
-    https
+    http
       .request(options, function (res) {
         console.log(`POST response status: ${res.statusCode}`);
       })
