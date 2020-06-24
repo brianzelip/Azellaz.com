@@ -34,6 +34,7 @@ This document started at v1.6.10 and only documents work after v1.6.10.
   - Delete ga script
   - Delete Etsy links
   - Add email icon and link
+  - Delete blurb about snipcart and netlify
 - css/src/font-awesome@4.7.0.CUSTOM.css: Add fa-envelope-o icon
 - contact.html: Remove Etsy link
 - \_config.yml: Remove Etsy data
