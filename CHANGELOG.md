@@ -23,6 +23,21 @@ This document started at v1.6.10 and only documents work after v1.6.10.
 - have a stories/articles/info-sharing section - something that doesn't have to be updated, a la https://hester-demo.squarespace.com/blog
 - have a stockists page, a la https://ventura-demo.squarespace.com/stockists
 
+## [2.4.1] - 2020-06-24
+
+- branch: dev
+- description: Delete google analytics; remove Etsy links
+
+### Updated
+
+- \_includes/footer.html:
+  - Delete ga script
+  - Delete Etsy links
+  - Add email icon and link
+- css/src/font-awesome@4.7.0.CUSTOM.css: Add fa-envelope-o icon
+- contact.html: Remove Etsy link
+- \_config.yml: Remove Etsy data
+
 ## [2.4.0] - 2020-06-22
 
 - branch: dev
