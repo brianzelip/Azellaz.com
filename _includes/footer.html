@@ -10,21 +10,16 @@
 
         <nav id="social" class="mt2 mb2 maxw-300px mx-auto sm-hide">
           <ul class="list-reset mb0 flex flex-center justify-around">
-            <li>
-              <a href="{{ site.etsy }}" class="light-black">
-                <i class="fa fa-etsy fa-h2"></i>
-              </a>
-            </li>
             <li class="">
               <a href="{{ site.instagram }}" class="light-black">
                 <i class="fa fa-instagram fa-2x"></i>
               </a>
             </li>
-            <!-- <li class="">
-                  <a href="" class="light-black">
-                    <i class="fa fa-facebook-official fa-2x"></i>
-                  </a>
-                </li> -->
+            <li class="">
+              <a href="mailto:{{ site.email }}" class="light-black">
+                <i class="fa fa-envelope-o fa-2x"></i>
+              </a>
+            </li>
             <li class="">
               <a href="{{ site.github }}" class="light-black">
                 <i class="fa fa-github fa-2x"></i>
@@ -36,11 +31,11 @@
         <p class="mb1 sm-mb0 h5 fw200">
           Quality bags built from scratch in Baltimore
         </p>
-        <p class="sm-mb0 h5 fw200">
+        <!-- <p class="sm-mb0 h5 fw200">
           Site powered and secured by
           <a href="https://snipcart.com" class="light-black">Snipcart</a> and
           <a href="https://netlify.com" class="light-black">Netlify</a>
-        </p>
+        </p> -->
         <p class="mb0 h5 fw200">&copy; {{ 'now' | date: '%Y' }} Azellaz.com</p>
       </div>
 
@@ -53,50 +48,21 @@
         <ul
           class="list-reset mb0 sm-flex sm-flex-center sm-justify-between center sm-right-align"
         >
-          <li class="mb1 sm-mb0 ">
-            <a href="{{ site.etsy }}" class="h5 fw200 light-black">Etsy</a>
-          </li>
-          <li class="mb1 sm-mb0 sm-ml3">
+          <li class="mb1 sm-mb0">
             <a href="{{ site.instagram }}" class="h5 fw200 light-black"
               >Instagram</a
             >
           </li>
-          <!-- <li class="mb1 sm-mb0 sm-ml3">
-                <a href="" class="h5 fw200 light-black">Facebook</a>
-              </li> -->
+          <li class="mb1 sm-mb0 sm-ml3">
+            <a href="mailto:{{ site.email }}" class="h5 fw200 light-black"
+              >Email</a
+            >
+          </li>
           <li class="mb1 sm-mb0 sm-ml3">
             <a href="{{ site.github }}" class="h5 fw200 light-black">GitHub</a>
-          </li>
-          <li class="sm-ml3">
-            <a href="/contact" class="h5 fw200 light-black">more...</a>
           </li>
         </ul>
       </nav>
     </section>
   </div>
 </footer>
-
-<script>
-  (function(i, s, o, g, r, a, m) {
-    i['GoogleAnalyticsObject'] = r;
-    (i[r] =
-      i[r] ||
-      function() {
-        (i[r].q = i[r].q || []).push(arguments);
-      }),
-      (i[r].l = 1 * new Date());
-    (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
-    a.async = 1;
-    a.src = g;
-    m.parentNode.insertBefore(a, m);
-  })(
-    window,
-    document,
-    'script',
-    'https://www.google-analytics.com/analytics.js',
-    'ga'
-  );
-
-  ga('create', 'UA-96621786-1', 'auto');
-  ga('send', 'pageview');
-</script>
