@@ -23,6 +23,16 @@ This document started at v1.6.10 and only documents work after v1.6.10.
 - have a stories/articles/info-sharing section - something that doesn't have to be updated, a la https://hester-demo.squarespace.com/blog
 - have a stockists page, a la https://ventura-demo.squarespace.com/stockists
 
+## [2.4.2] - 2020-12-02
+
+- branch: master
+- description: Reverse order of shop items, fix vulnerabilities
+
+### Updated
+
+- \_includes/shop-grid.html: manipulate products array to reverse shop items order
+- package-lock.json
+
 ## [2.4.1] - 2020-06-24
 
 - branch: dev
