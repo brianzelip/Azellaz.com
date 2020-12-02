@@ -1,5 +1,5 @@
 <div class="iso-grid">
-          {% assign products = site.pages | where: "layout", product %}
+          {% assign products = site.pages | where: "layout", product | sort_natural | reverse %}
           {% for product in products %}
             {% if product.currentListing %}
               {% include shop-grid-item.html %}
