@@ -28,6 +28,8 @@ function removeOldProductPages() {
 }
 
 function createNewProductPages() {
+  //TODO break this fn up into 2: abstract out the snipcart fetch,
+  // then call it from here
   console.log(`Generating new Azellaz product pages in ${productPagesDir} ...`);
 
   const snipApi = 'https://app.snipcart.com/api/products?limit=100';
@@ -86,44 +88,42 @@ function createNewProductPages() {
           };
         }
 
-        const data = cleanData(_data);
+        const d = cleanData(_data);
 
         const pageContent = `---
 layout: product
-permalink: "/${data.slug}/"
-name: "${data.name}"
-displayName: "${data.displayName}"
-slug: "${data.slug}"
-id: "${data.id}"
-currentListing: ${data.currentListing}
-stockOnHand: ${getStockFromSnipcart(data.id)}
-type: ${jsArray2Yaml(data.type)}
-descriptionShort: "${data.descriptionShort}"
-materials: ${jsArray2Yaml(data.materials)}
-price: ${data.price}
-weight: ${data.weight}
-height: ${data.height}
-width: ${data.width}
-length: ${data.length}
-imgPrimary: "${imgFileName(data.imgPrimary)}"
-imgSecondarySet: ${jsArray2Yaml(secondaryImgFileNames(data.imgSecondarySet))}
+permalink: "/${d.slug}/"
+name: "${d.name}"
+displayName: "${d.displayName}"
+slug: "${d.slug}"
+id: "${d.id}"
+currentListing: ${d.currentListing}
+stockOnHand: ${getStockFromSnipcart(d.id)}
+type: ${jsArray2Yaml(d.type)}
+descriptionShort: "${d.descriptionShort}"
+materials: ${jsArray2Yaml(d.materials)}
+price: ${d.price}
+weight: ${d.weight}
+height: ${d.height}
+width: ${d.width}
+length: ${d.length}
+imgPrimary: "${imgFileName(d.imgPrimary)}"
+imgSecondarySet: ${jsArray2Yaml(secondaryImgFileNames(d.imgSecondarySet))}
 ---
 
-${data.body}
+${d.body}
 `;
-        fs.writeFileSync(`${productPagesDir}${data.slug}.md`, pageContent);
-        console.log(`${count}. ${data.slug}.md`);
+        fs.writeFileSync(`${productPagesDir}${d.slug}.md`, pageContent);
+        console.log(`${count}. ${d.slug}.md`);
       } else {
         return;
       }
     });
 
     function getStockFromSnipcart(id) {
-      const item = snipData.items.filter(
-        (item) => item.userDefinedId === id
-      )[0];
+      const item = snipData.items.filter((item) => item.userDefinedId === id);
 
-      return item.stock;
+      return item.length > 0 ? item[0].stock : 0;
     }
   });
 
