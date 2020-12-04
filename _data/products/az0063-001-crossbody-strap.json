@@ -13,10 +13,12 @@
   ],
   "displayName": "Crossbody Strap",
   "imgSecondarySet": [
+    "https://res.cloudinary.com/azellaz/image/upload/v1607035866/AZ0063-001-02_h4fai8.jpg",
+    "https://res.cloudinary.com/azellaz/image/upload/v1607035869/AZ0063-001-03_ukhuge.jpg",
     "https://res.cloudinary.com/azellaz/image/upload/v1588012080/AZ0063-001-01_pfhblg.jpg"
   ],
   "weight": 600,
   "type": null,
   "id": "AZ0063-001",
-  "imgPrimary": "https://res.cloudinary.com/azellaz/image/upload/v1588012069/AZ0063-001-02_fqfrvt.jpg"
+  "imgPrimary": "https://res.cloudinary.com/azellaz/image/upload/v1607035861/AZ0063-001-01_qa1wob.jpg"
 }
