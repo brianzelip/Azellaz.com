@@ -27,9 +27,9 @@
     <div data-markdown="product-description">{{ content }}</div>
 
     <div class="md-mt4">
-      {% if page.stockOnHand > 0 %}
       <button
-        class="col-12 md-width-auto btn btn-outline fw200 light-black snipcart-add-item"
+        {% if page.stockOnHand == 0 %}disabled {% endif %}
+        class="buy-btn snipcart-add-item"
         data-item-id="{{ page.id }}"
         data-item-name="{{ page.displayName }}"
         data-item-image="{{ site.cloudinary }}{{ site.trnsfrm_thumb}}{{ page.imgPrimary }}"
@@ -43,11 +43,8 @@
         data-item-custom1-name="Strap options"
         data-item-custom1-required="true"
         data-item-custom1-options="No strap, $54|Wrist, $64[+10.00]|Crossbody, $74[+20.00]|Both straps, $84[+30.00]"{% endif %}>
-        Add to Cart
+        {% if page.stockOnHand == 0 %} Sold Out{% else %} Add to Cart{% endif %}
       </button>
-      {% else %}
-      <p class="btn btn-outline fw200 light-black cursor-default" style="box-shadow: none">Sold Out</p>
-      {% endif %}
     </div>
   </div>
 </div>

@@ -1101,6 +1101,55 @@ Important: using a flex value of something like 1 0 0px can still be a problem b
 }
 
 /**
+ * Product buy button
+ */
+
+.buy-btn {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0.5rem 1rem;
+  line-height: 1.125rem;
+  border: 1px solid currentColor;
+  border-radius: 3px;
+  font-weight: 200;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+  vertical-align: middle;
+  color: var(--light-black);
+  background-color: transparent;
+  appearance: none;
+}
+@media only screen and (min-width: 52em) {
+  .buy-btn {
+    width: auto;
+  }
+}
+
+.buy-btn:hover {
+  box-shadow: inset 0 0 0 20rem rgba(0, 0, 0, 0.0625);
+}
+.buy-btn:active {
+  box-shadow: inset 0 0 0 20rem rgba(0, 0, 0, 0.125),
+    inset 0 3px 4px 0 rgba(0, 0, 0, 0.25), 0 0 1px rgba(0, 0, 0, 0.125);
+}
+.buy-btn:focus {
+  outline: none;
+  border-color: rgba(0, 0, 0, 0.125);
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.25);
+}
+.buy-btn:disabled:hover,
+.buy-btn:disabled:active,
+.buy-btn:disabled:focus {
+  cursor: default;
+  box-shadow: none;
+  border-color: currentColor;
+  outline: none;
+}
+
+/**
  * Sold out stickers
  */
 
