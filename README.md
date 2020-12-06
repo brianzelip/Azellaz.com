@@ -1,23 +1,43 @@
 # Source code for [Azellaz.com](https://www.azellaz.com)
 
-## How to update product info
+## Add new products
 
-1. Login at [https://azellaz.com/admin](https://azellaz.com/admin)
+1. Go to the Azellaz content manager [https://azellaz.com/admin](https://azellaz.com/admin)
 
-2. Click "New Products" button to create new product, or click a product from the list to edit an existing product
+   1a. Click the "New Products" button
 
-3. Re: adding product images, you will need your Cloudinary login info to do so
+   1b. Fill out product details
+
+   1c. Login to Cloudinary for images
+
+   1d. Save product info
+
+2. Go to the Snipcart dashboard [https://snipcart.com/](https://snipcart.com/)
+
+   2a. Fetch the new product page (products > fetch)
+
+   2b. Set the stock amount (products, then click "Actions")
+
+3. Manually trigger deploy via Netlify dashboard [https://netlify.com](https://netlify.com)
+
+## Update existing products
+
+1. Go to the Azellaz content manager [https://azellaz.com/admin](https://azellaz.com/admin)
+
+   1a. Choose product from list
+
+   1b. Edit product info
+
+   1c. Save product info
 
 ## Development
 
 ```zsh
-# requires jekyll and node
-
 npm start
 ```
 
 ---
 
-Content &copy; 2019 [Abbie Zelip](https://www.azellaz.com)
+Content &copy; 2020 [Abbie Zelip](https://www.azellaz.com)
 
-Web app &copy; 2019 [Brian Zelip](http://zelip.me) via [MIT](LICENSE)
+Web app &copy; 2020 [Brian Zelip](http://zelip.me) via [MIT](LICENSE)
