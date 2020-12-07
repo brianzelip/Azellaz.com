@@ -23,6 +23,33 @@ This document started at v1.6.10 and only documents work after v1.6.10.
 - have a stories/articles/info-sharing section - something that doesn't have to be updated, a la https://hester-demo.squarespace.com/blog
 - have a stockists page, a la https://ventura-demo.squarespace.com/stockists
 
+## [2.6.0] - 2020-12-07
+
+- branch: master
+- description: Show product pic number 2 on shop item hover instead of product name and price
+
+### Updated
+
+- \_includes/shop-grid-item.html
+
+## [2.5.0] - 2020-12-06
+
+- branch: master
+- description
+  - Abstract out a flash component that can be used for various needs
+  - Abstract out a higher order holiday flash component that uses the flash component
+
+### Added
+
+- \_includes/ flash.html
+
+### Updated
+
+- \_config.yml
+- \_includes/shop.html
+- \_includes/product-page.html
+- \_includes/holiday-flash.html
+
 ## [2.4.2] - 2020-12-02
 
 - branch: master
