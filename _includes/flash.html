@@ -1,0 +1,15 @@
+<aside
+  class="px1{% if page.url == '/' %} mtn2 md-mtn3r mb2{% else %}{% endif %}"
+  data-js="flash-{{ include.id }}"
+>
+  <div class="{{ include.class }} p2 flex flex-center justify-between">
+    <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+    <span class="px2 flex-auto h5 sm-h4">{{ include.message }}</span>
+    <span class="cursor-default" data-js="x-{{ include.id }}">&times;</span>
+  </div>
+  <script>
+    $('[data-js="x-{{ include.id }}"]').click(function () {
+      $('[data-js="flash-{{ include.id }}"]').fadeOut();
+    });
+  </script>
+</aside>

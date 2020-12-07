@@ -1,10 +1,2 @@
-<aside id="flash" class="px1 mtn2 md-mtn3r mb2">
-  <div class="p2 info-flash flex flex-center justify-between">
-    <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
-    <span class="px2 flex-auto h5 sm-h4">{{ site.flash_holiday_orders_from_now }}</span>
-    <span id="x" class="cursor-default">&times;</span>
-  </div>
-  <script>
-    $('#x').click(function () { $('#flash').fadeOut() });
-  </script>
-</aside>
+{% include flash.html message=site.holiday_flash_message class="info-flash"
+id="holiday" %}
