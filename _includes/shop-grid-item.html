@@ -3,23 +3,31 @@
   data-type="{% for type in product.type %}{{ type }}{% if forloop.last == false %}{{ ' ' }}{% endif %}{% endfor %}"
   data-materials="{% for material in product.materials %}{{ material }}{% if forloop.last == false %}{{ ' ' }}{% endif %}{% endfor %}"
 >
-                <div class="ih-item circle effect13 from_left_and_right not-rounded">
-                  <a href="{{ product.slug }}">
-                    <div class="img">
-                      <img
-                        src="{{ site.cloudinary }}{{ site.trnsfrm_med }}{{ product.imgPrimary }}"
-                        class="mbn1"
-                        alt="{{ product.imgPrimary | remove: product.slug | remove_first: "-" | remove: "-by-Azellaz" | capitalize }} view of the {{ product.displayName }} by Azellaz"
-                        title="{{ product.displayName }} by Azellaz"
-                      />
-                      {% if product.stockOnHand == 0 %}<p class="sticker mb0">Sold Out</p>{% endif %}
-                    </div>
-                    <div class="info overflow-hidden">
-                      <div class="info-back">
-                        <h3 class="name">{{ product.displayName }}</h3>
-                        <p>$<span class="price">{{ product.price }}</span>{% if product.type contains 'clutch' %}+{% endif %}</p>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-              </div>
+  <div class="ih-item circle effect13 from_left_and_right not-rounded">
+    <a href="{{ product.slug }}">
+      <div class="img">
+        <img
+          src="{{ site.cloudinary }}{{ site.trnsfrm_med }}{{
+        product.imgPrimary }}"
+          class="mbn1"
+          alt="{{ product.displayName }} by Azellaz"
+          title="{{ product.displayName }} by Azellaz"
+        />
+      </div>
+      <div class="info overflow-hidden">
+        <div class="info-back">
+          <img
+            src="{{ site.cloudinary }}{{ site.trnsfrm_med }}{{ product.imgSecondarySet[0] }}"
+            class="mbn1"
+            alt="{{ product.displayName }} by Azellaz"
+            title="{{ product.displayName }} by Azellaz"
+          />
+        </div>
+      </div>
+
+      {% if product.stockOnHand == 0 %}
+      <p class="sticker mb0">Sold Out</p>
+      {% endif %}
+    </a>
+  </div>
+</div>
