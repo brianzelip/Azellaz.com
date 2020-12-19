@@ -29,7 +29,7 @@ holiday_flash_message: All orders made Dec 9-18 will ship Dec 19, 2020.
 html_test: "<a href='https://zelip.me'>LINK</a>"
 
 # Flash toggles
-holiday_flash_is_active: true
+holiday_flash_is_active: false
 
 # Build pipeline
 plugins:
