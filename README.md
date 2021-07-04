@@ -1,5 +1,7 @@
 # Source code for [Azellaz.com](https://www.azellaz.com)
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/21970328-5c87-4263-8b07-59810e5e7214/deploy-status)](https://app.netlify.com/sites/azellaz/deploys)
+
 ## Add new products
 
 1. Go to the Azellaz content manager [https://azellaz.com/admin](https://azellaz.com/admin)
