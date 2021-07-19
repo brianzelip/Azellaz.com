@@ -2,7 +2,7 @@ const fs = require('fs');
 const get = require('simple-get');
 
 const productDataDir = './_data/products/';
-const productPagesDir = './products/';
+const productPagesDir = './_products/';
 
 removeOldProductPages();
 createNewProductPages();

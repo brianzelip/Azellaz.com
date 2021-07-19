@@ -50,6 +50,11 @@ exclude:
   - productsDataToProductsFiles.js
   - notes/
 
+# Collections
+collections:
+  products:
+    output: true
+
 # Static files api
 defaults:
   - scope:
