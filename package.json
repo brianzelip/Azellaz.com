@@ -8,7 +8,7 @@
     "css:dev": "postcss -u postcss-custom-properties postcss-color-function postcss-import autoprefixer cssnano -d css/dist/ css/src/az.css --no-map --watch",
     "css:build": "postcss -u postcss-custom-properties postcss-color-function postcss-import autoprefixer cssnano -d css/dist/ css/src/az.css --no-map",
     "refreshProductPages": "node newProductPages.js",
-    "start": "npm run refreshProductPages && npm run css:dev & jekyll serve",
+    "start": "npm run refreshProductPages && npm run css:dev & bundle exec jekyll serve",
     "lambda": "cd lambda && npm i",
     "build": "npm run refreshProductPages && npm run css:build && jekyll build && npm run lambda"
   },

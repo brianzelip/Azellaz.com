@@ -5,3 +5,4 @@ _site/
 images/raw-dog-and-others/
 products/*.md
 *.env
+.jekyll-cache/
