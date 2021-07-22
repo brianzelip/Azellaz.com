@@ -23,6 +23,45 @@ This document started at v1.6.10 and only documents work after v1.6.10.
 - have a stories/articles/info-sharing section - something that doesn't have to be updated, a la https://hester-demo.squarespace.com/blog
 - have a stockists page, a la https://ventura-demo.squarespace.com/stockists
 
+## [3.0.0] - 2021-
+
+- Rewrite in 11ty
+
+### Notes on porting jekyll and liquid features to 11ty
+
+- data source as json files in a directory
+- includes
+- layouts
+- collections
+- single-file configuration (\_config.yml)
+- static files api for portfolio images
+- netlify cms
+- isotope.js
+
+## [2.7.0] - 2021-07-21
+
+- Bump Ruby version to v2.7.2 and update gems after local dev machine OS upgrade, and news of [Netlify EOL for the current Azellaz build image (Trusty)](https://answers.netlify.com/t/please-read-end-of-support-for-trusty-build-image-everything-you-need-to-know/39004).
+- Refactor product pages as jekyll collection as the liquid variable approach broke in jekyll v4.2.0.
+
+### Added
+
+- \_products/: `mv products/ _products` for jekyll collections directory syntax
+
+### Updated
+
+- .ruby-version
+- Gemfile.lock
+- package.json: new jekyll serve command
+- .gitignore: new .jekyll-cache
+- newProductPages.js: update productPagesDir
+- \_includes/shop-grid.html: Iterate over products collection
+- \_data/readme.md: Add note about \_data/options.json
+- css/src/az.css: Add `line-break` rule to sold out sticker to fix break between words on Safari
+
+### Removed
+
+- products/: rename \_products/ for new jekyll version
+
 ## [2.6.0] - 2020-12-07
 
 - branch: master
