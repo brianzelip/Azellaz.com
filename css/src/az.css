@@ -1160,6 +1160,7 @@ Important: using a flex value of something like 1 0 0px can still be a problem b
   padding: 5px;
   font-size: 0.8rem;
   letter-spacing: 0.75px;
+  line-break: loose; /* fix safari break */
   text-transform: uppercase;
   background: var(--light-black);
   color: #fff;
