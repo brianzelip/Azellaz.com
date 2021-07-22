@@ -17,3 +17,7 @@ npm run refreshProductPages
 ```
 
 **Note**: this happens automatically via the new build process in v2.
+
+## About options.json
+
+options.json is used in the shop-filter-buttons template.
