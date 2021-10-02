@@ -1,4 +1,4 @@
-{% if site.holiday_flash_is_active %}
+{% if site.flashToggles.holiday_flash_is_active %}
 <section class="container">
   {% include holiday-flash.html %}
 </section>
@@ -15,9 +15,9 @@
       <img
         id="large-image-view"
         class="mbn1"
-        src="{{ site.cloudinary }}{{ page.imgPrimary }}" 
-        alt="{{ page.imgPrimary | remove: page.slug | remove_first: "-" | remove: "-by-Azellaz" | capitalize }} view of the {{ page.displayName }} by Azellaz"
-        title="{{ page.displayName }} by Azellaz"
+        src="{{ site.cloudinary.cloudinary }}{{ product.imgPrimary }}" 
+        alt="{{ product.displayName }} {{ site.meta.byline }}"
+        title="{{ product.displayName }} {{ site.meta.byline }}"
       />
     </div>
 
@@ -27,29 +27,29 @@
   </div>
 
   <div class="col col-12 md-col-5 p2">
-    <h1 class="m0 h2 serif light-black">{{ page.displayName }}</h1>
-    <p class="h2 serif light-black">${{ page.price }}{% if page.type contains 'clutch'  %}+{% endif %}</p>
+    <h1 class="m0 h2 serif light-black">{{ product.displayName }}</h1>
+    <p class="h2 serif light-black">${{ product.price }}{% if product.type contains 'clutch'  %}+{% endif %}</p>
 
     <div data-markdown="product-description">{{ content }}</div>
 
     <div class="md-mt4">
       <button
-        {% if page.stockOnHand == 0 %}disabled {% endif %}
+        {% if product.stockOnHand == 0 %}disabled {% endif %}
         class="buy-btn snipcart-add-item"
-        data-item-id="{{ page.id }}"
-        data-item-name="{{ page.displayName }}"
-        data-item-image="{{ site.cloudinary }}{{ site.trnsfrm_thumb}}{{ page.imgPrimary }}"
-        data-item-price="{{ page.price }}"
-        data-item-weight="{{ page.weight }}"
-        data-item-height="{{ page.height }}"
-        data-item-width="{{ page.width }}"
-        data-item-length="{{ page.length }}"
-        data-item-url="{{ site.base_url_no_trailing_slash }}{{ page.url }}"
-        data-item-description="{{ page.descriptionShort }}"{% if page.slug contains 'clutch' %}
+        data-item-id="{{ product.id }}"
+        data-item-name="{{ product.displayName }}"
+        data-item-image="{{ site.cloudinary.cloudinary }}{{ site.trnsfrm_thumb}}{{ product.imgPrimary }}"
+        data-item-price="{{ product.price }}"
+        data-item-weight="{{ product.weight }}"
+        data-item-height="{{ product.height }}"
+        data-item-width="{{ product.width }}"
+        data-item-length="{{ product.length }}"
+        data-item-url="{{ site.paths.base_url_no_slash }}{{ page.url }}"
+        data-item-description="{{ product.descriptionShort }}"{% if product.slug contains 'clutch' %}
         data-item-custom1-name="Strap options"
         data-item-custom1-required="true"
         data-item-custom1-options="No strap, $54|Wrist, $64[+10.00]|Crossbody, $74[+20.00]|Both straps, $84[+30.00]"{% endif %}>
-        {% if page.stockOnHand == 0 %} Sold Out{% else %} Add to Cart{% endif %}
+        {% if product.stockOnHand == 0 %} Sold Out{% else %} Add to Cart{% endif %}
       </button>
     </div>
   </div>

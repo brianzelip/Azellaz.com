@@ -7,20 +7,19 @@
     <a href="{{ product.slug }}">
       <div class="img">
         <img
-          src="{{ site.cloudinary }}{{ site.trnsfrm_med }}{{
-        product.imgPrimary }}"
+          src="{{ site.cloudinary.cloudinary }}{{ site.cloudinary.trnsfrm_med }}{{ product.imgPrimary }}"
           class="mbn1"
-          alt="{{ product.displayName }} by Azellaz"
-          title="{{ product.displayName }} by Azellaz"
+          alt="{{ product.displayName }} {{ site.meta.byline }}"
+          title="{{ product.displayName }} {{ site.meta.byline }}"
         />
       </div>
       <div class="info overflow-hidden">
         <div class="info-back">
           <img
-            src="{{ site.cloudinary }}{{ site.trnsfrm_med }}{{ product.imgSecondarySet[0] }}"
+            src="{{ site.cloudinary.cloudinary }}{{ site.cloudinary.trnsfrm_med }}{{ product.imgSecondarySet[0] }}"
             class="mbn1"
-            alt="{{ product.displayName }} by Azellaz"
-            title="{{ product.displayName }} by Azellaz"
+            alt="{{ product.displayName }} {{ site.meta.byline }}"
+            title="{{ product.displayName }} {{ site.meta.byline }}"
           />
         </div>
       </div>

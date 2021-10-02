@@ -1,6 +1,5 @@
 <div class="flex flex-wrap">
-  {% assign portfolio = site.static_files | where: "portfolio", true %}
-  {% for image in portfolio %}
+  {% for img in portfolio %}
     {% include portfolio-grid-item.html %}
   {% endfor %}
 </div>

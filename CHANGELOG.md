@@ -37,8 +37,20 @@ This document started at v1.6.10 and only documents work after v1.6.10.
 - static files api for portfolio images
 - netlify cms
 - isotope.js
+- snipcart.js
+- css
+- images - some are cloudinary, prune all images on cloudinary from local dir that aren't the raw dogs
+- sitemap
 
-## [2.7.0] - 2021-07-21
+## [2.7.1] - 2021-07-22
+
+Fix sitemap missing product links from new products collection
+
+### Updated
+
+- sitemap.xml: loop over products collection data
+
+## [2.7.0] - 2021-07-22
 
 - Bump Ruby version to v2.7.2 and update gems after local dev machine OS upgrade, and news of [Netlify EOL for the current Azellaz build image (Trusty)](https://answers.netlify.com/t/please-read-end-of-support-for-trusty-build-image-everything-you-need-to-know/39004).
 - Refactor product pages as jekyll collection as the liquid variable approach broke in jekyll v4.2.0.

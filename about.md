@@ -1,7 +1,11 @@
 ---
-permalink: /about/
 layout: about
-image: 'https://www.azellaz.com/images/Azellaz-work-bench.jpg'
+permalink: /about/
+eleventyComputed:
+  title: '{{ site.meta.titles.about }}'
+  description: '{{ site.meta.descriptions.about }}'
+  image: '{{ site.meta.images.about }}'
+  imageAlt: '{{ site.meta.imageAlt.about }}'
 ---
 
 # About Azellaz

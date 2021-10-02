@@ -1192,3 +1192,17 @@ Important: using a flex value of something like 1 0 0px can still be a problem b
   color: var(--light-black);
   text-decoration: underline;
 }
+
+/*
+ * Fade in/out
+ * - add `.fade.opacity0` to start hidden
+ * - toggle `.opacity0` to fade in/out
+ * Used in portfolio.html include
+ */
+.opacity0 {
+  opacity: 0;
+}
+
+.fade {
+  transition: opacity 0.4s;
+}

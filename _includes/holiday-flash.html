@@ -1,2 +1,1 @@
-{% include flash.html message=site.holiday_flash_message class="info-flash"
-id="holiday" %}
+{% include flash.html, includeFlashClass: 'info-flash', includeFlashIdSuffix: 'holiday', includeFlashMessage: site.content.holiday_flash_message %}

@@ -1,9 +1,6 @@
 <div class="iso-grid">
-  <!-- prettier-ignore -->
-  {% assign products = site.products | reverse %}
-  {% for product in products %}
-    {% if product.currentListing %}
-      {% include shop-grid-item.html %}
-    {% endif %}
+  {% assign reversedProducts = currentProducts | reverse %}
+  {% for product in reversedProducts %}
+    {% include shop-grid-item.html %}
   {% endfor %}
 </div>

@@ -1,0 +1,15 @@
+css/src/
+lambda/
+webmaster/
+images/
+!images/meta/
+!images/portfolio/
+!images/products/
+!images/*.jpg
+!images/*.png
+!images/*.svg
+package*
+LICENSE
+maintenance.md
+README.md
+CHANGELOG.md

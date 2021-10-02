@@ -3,6 +3,4 @@ node_modules/
 _site/
 *.log
 images/raw-dog-and-others/
-_products/*.md
 *.env
-.jekyll-cache/

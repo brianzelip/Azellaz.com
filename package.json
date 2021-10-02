@@ -4,13 +4,13 @@
   "description": "Dev space for Azellaz.com. She's crafty, and she's just my type!",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rm -rf _site",
     "css:dev": "postcss -u postcss-custom-properties postcss-color-function postcss-import autoprefixer cssnano -d css/dist/ css/src/az.css --no-map --watch",
     "css:build": "postcss -u postcss-custom-properties postcss-color-function postcss-import autoprefixer cssnano -d css/dist/ css/src/az.css --no-map",
-    "refreshProductPages": "node newProductPages.js",
-    "start": "npm run refreshProductPages && npm run css:dev & bundle exec jekyll serve",
+    "start": "npm run clean && npm run css:dev & npx @11ty/eleventy --serve",
     "lambda": "cd lambda && npm i",
-    "build": "npm run refreshProductPages && npm run css:build && jekyll build && npm run lambda"
+    "build": "npm run clean && npm run css:build && npx @11ty/eleventy",
+    "build:ci": "npm run build && npm run lambda"
   },
   "repository": {
     "type": "git",
@@ -27,19 +27,15 @@
     "url": "https://github.com/brianzelip/Azellaz.com/issues"
   },
   "homepage": "https://github.com/brianzelip/Azellaz.com#readme",
-  "dependencies": {
-    "braces": "^2.3.2"
-  },
   "devDependencies": {
-    "autoprefixer": "^6.7.7",
-    "babel-cli": "^6.26.0",
-    "cssnano": "^4.1.10",
-    "postcss": "^5.2.16",
-    "postcss-cli": "^6.0.1",
-    "postcss-color-function": "^4.0.1",
-    "postcss-custom-media": "^5.0.1",
-    "postcss-custom-properties": "^5.0.2",
-    "postcss-import": "^9.1.0",
-    "simple-get": "^4.0.0"
+    "@11ty/eleventy": "^0.12.1",
+    "autoprefixer": "^10.3.6",
+    "axios": "^0.22.0",
+    "cssnano": "^5.0.8",
+    "postcss": "^8.3.8",
+    "postcss-cli": "^9.0.1",
+    "postcss-color-function": "^4.1.0",
+    "postcss-custom-properties": "^12.0.0",
+    "postcss-import": "^14.0.2"
   }
 }

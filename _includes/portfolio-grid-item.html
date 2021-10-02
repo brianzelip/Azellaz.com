@@ -1,13 +1,11 @@
 <figure class="col-12 sm-col-6 md-col-4 m0 py1 px2 sm-p2">
-  {% assign prefix = image.basename | split: '-' | first %}
-  {% assign byline = " by Azellaz" %}
-  {% assign title = image.basename | replace: '-by-Azellaz', '' | replace: '-', ' ' | replace: prefix, '' | lstrip | capitalize %}
+  {% assign prefix = img.basename | split: '-' | first %}
+  {% assign imgTitle = img.basename | replace: '-by-Azellaz', '' | replace: '-', ' ' | replace: prefix, '' | lstrip | capitalize %}
   {%- comment -%} replace '-by-Azellaz' b/c some file names contain string{%- endcomment -%}
-  {% assign alt = title | append: byline %}
   <img
-    src="{{ image.path }}"
+    src="{{ img.path }}"
     class="mbn1"
-    alt="{{ alt }}"
-    title="{{ title }}"
+    alt="{{ imgTitle }} {{ site.meta.byline }}"
+    title="{{ imgTitle }}"
   />
 </figure>
