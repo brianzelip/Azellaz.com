@@ -23,24 +23,9 @@ This document started at v1.6.10 and only documents work after v1.6.10.
 - have a stories/articles/info-sharing section - something that doesn't have to be updated, a la https://hester-demo.squarespace.com/blog
 - have a stockists page, a la https://ventura-demo.squarespace.com/stockists
 
-## [3.0.0] - 2021-
+## [3.0.0] - 2021-10-02
 
-- Rewrite in 11ty
-
-### Notes on porting jekyll and liquid features to 11ty
-
-- data source as json files in a directory
-- includes
-- layouts
-- collections
-- single-file configuration (\_config.yml)
-- static files api for portfolio images
-- netlify cms
-- isotope.js
-- snipcart.js
-- css
-- images - some are cloudinary, prune all images on cloudinary from local dir that aren't the raw dogs
-- sitemap
+Refactor the codebase from Jekyll to 11ty
 
 ## [2.7.1] - 2021-07-22
 

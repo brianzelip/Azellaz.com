@@ -1,7 +1,7 @@
 {
   "name": "azellaz.com",
-  "version": "2.7.0",
-  "description": "Dev space for Azellaz.com. She's crafty, and she's just my type!",
+  "version": "3.0.0",
+  "description": "Source code for Azellaz.com. She's crafty, and she's just my type!",
   "main": "index.html",
   "scripts": {
     "clean": "rm -rf _site",
@@ -26,7 +26,7 @@
   "bugs": {
     "url": "https://github.com/brianzelip/Azellaz.com/issues"
   },
-  "homepage": "https://github.com/brianzelip/Azellaz.com#readme",
+  "homepage": "https://www.azellaz.com",
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1",
     "autoprefixer": "^10.3.6",
