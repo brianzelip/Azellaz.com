@@ -23,6 +23,23 @@ This document started at v1.6.10 and only documents work after v1.6.10.
 - have a stories/articles/info-sharing section - something that doesn't have to be updated, a la https://hester-demo.squarespace.com/blog
 - have a stockists page, a la https://ventura-demo.squarespace.com/stockists
 
+## [3.1.0] - 2021-10-02
+
+The postcss-color-function plugin silently stopped working, I guess as a result of its deprecation due to W3G CSS activity. Also, it was an extra dependency to install at build time on netlify, so getting rid of it is nice for perf.
+
+### Updated
+
+- az.css: refactor all uses of `color()` with the output of the plugin via a past netlify preview
+- package.json: Update netlify build script key name
+
+### Removed
+
+- postcss-color-function dev dependency
+
+### Added
+
+- .node-version: to tell Netlify build image what Node version to use
+
 ## [3.0.0] - 2021-10-02
 
 Refactor the codebase from Jekyll to 11ty
