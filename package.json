@@ -10,7 +10,7 @@
     "start": "npm run clean && npm run css:dev & npx @11ty/eleventy --serve",
     "lambda": "cd lambda && npm i",
     "build": "npm run clean && npm run css:build && npx @11ty/eleventy",
-    "build:ci": "npm run build && npm run lambda"
+    "build:netlify": "npm run build && npm run lambda"
   },
   "repository": {
     "type": "git",
