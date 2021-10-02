@@ -5,8 +5,8 @@
   "main": "index.html",
   "scripts": {
     "clean": "rm -rf _site",
-    "css:dev": "postcss -u postcss-custom-properties postcss-color-function postcss-import autoprefixer cssnano -d css/dist/ css/src/az.css --no-map --watch",
-    "css:build": "postcss -u postcss-custom-properties postcss-color-function postcss-import autoprefixer cssnano -d css/dist/ css/src/az.css --no-map",
+    "css:dev": "postcss -u postcss-custom-properties postcss-import autoprefixer cssnano -d css/dist/ css/src/az.css --no-map --watch",
+    "css:build": "postcss -u postcss-custom-properties postcss-import autoprefixer cssnano -d css/dist/ css/src/az.css --no-map",
     "start": "npm run clean && npm run css:dev & npx @11ty/eleventy --serve",
     "lambda": "cd lambda && npm i",
     "build": "npm run clean && npm run css:build && npx @11ty/eleventy",
@@ -34,7 +34,6 @@
     "cssnano": "^5.0.8",
     "postcss": "^8.3.8",
     "postcss-cli": "^9.0.1",
-    "postcss-color-function": "^4.1.0",
     "postcss-custom-properties": "^12.0.0",
     "postcss-import": "^14.0.2"
   }
