@@ -23,6 +23,22 @@ This document started at v1.6.10 and only documents work after v1.6.10.
 - have a stories/articles/info-sharing section - something that doesn't have to be updated, a la https://hester-demo.squarespace.com/blog
 - have a stockists page, a la https://ventura-demo.squarespace.com/stockists
 
+## [3.3.0] - 2021-10-04
+
+Replace node-fetch dependency with axios in lambda.
+
+### Updated
+
+- lambda/:
+  - Replace node-fetch with axios
+  - bump minor
+- package.json:
+- readme.md: Add npm version badge
+
+### Removed
+
+- node-fetch dependency in lambda/package.json
+
 ## [3.2.0] - 2021-10-04
 
 Shift PostCSS processing to an 11ty JavaScript template, remove the postcss-cli dependency.

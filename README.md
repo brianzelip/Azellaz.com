@@ -1,6 +1,6 @@
 # Source code for [Azellaz.com](https://www.azellaz.com)
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/21970328-5c87-4263-8b07-59810e5e7214/deploy-status)](https://app.netlify.com/sites/azellaz/deploys)
+![GitHub package.json dynamic](https://img.shields.io/github/package-json/version/brianzelip/Azellaz.com) [![Netlify Status](https://api.netlify.com/api/v1/badges/21970328-5c87-4263-8b07-59810e5e7214/deploy-status)](https://app.netlify.com/sites/azellaz/deploys)
 
 ## Add new products
 
