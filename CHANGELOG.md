@@ -23,6 +23,32 @@ This document started at v1.6.10 and only documents work after v1.6.10.
 - have a stories/articles/info-sharing section - something that doesn't have to be updated, a la https://hester-demo.squarespace.com/blog
 - have a stockists page, a la https://ventura-demo.squarespace.com/stockists
 
+## [3.2.0] - 2021-10-04
+
+Shift PostCSS processing to an 11ty JavaScript template, remove the postcss-cli dependency.
+
+Adapted from [EleventyOne](https://github.com/philhawksworth/eleventyone/blob/master/src/site/css/styles.11ty.js).
+
+### Added
+
+- css/postcss.11ty.js: new JS template that processes az.css
+
+### Updated
+
+- css/src/ -> css/
+- package.json: update scripts
+- \_includes/head.html: update css link
+- .eleventy.js: update images passthrough
+- .eleventyignore: delete image ignores
+- humans.txt: Add tech metadata
+
+### Removed
+
+- postcss-cli dev dependency
+- css/src/
+- css/dist/
+- all images not used in production moved to webmaster/archive/images
+
 ## [3.1.0] - 2021-10-02
 
 The postcss-color-function plugin silently stopped working, I guess as a result of its deprecation due to W3G CSS activity. Also, it was an extra dependency to install at build time on netlify, so getting rid of it is nice for perf.

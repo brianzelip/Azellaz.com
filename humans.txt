@@ -4,5 +4,5 @@ Author: Abigal Zelip
 Location: Baltimore, Maryland, USA
                             
 /* SITE */
-Software: HTML/CSS/JS, Node.js, 11ty, Netlify, GitHub
+Software: HTML/CSS/JS, Node.js, PostCSS, 11ty, Netlify, GitHub
 Repository: https://github.com/brianzelip/Azellaz.com

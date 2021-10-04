@@ -1,15 +1,12 @@
 {
   "name": "azellaz.com",
-  "version": "3.1.0",
+  "version": "3.2.0",
   "description": "Source code for Azellaz.com. She's crafty, and she's just my type!",
-  "main": "index.html",
   "scripts": {
     "clean": "rm -rf _site",
-    "css:dev": "postcss -u postcss-custom-properties postcss-import autoprefixer cssnano -d css/dist/ css/src/az.css --no-map --watch",
-    "css:build": "postcss -u postcss-custom-properties postcss-import autoprefixer cssnano -d css/dist/ css/src/az.css --no-map",
-    "start": "npm run clean && npm run css:dev & npx @11ty/eleventy --serve",
+    "start": "npm run clean && npx @11ty/eleventy --serve",
     "lambda": "cd lambda && npm i",
-    "build": "npm run clean && npm run css:build && npx @11ty/eleventy",
+    "build": "npm run clean && npx @11ty/eleventy",
     "build:netlify": "npm run build && npm run lambda"
   },
   "repository": {
@@ -33,7 +30,6 @@
     "axios": "^0.22.0",
     "cssnano": "^5.0.8",
     "postcss": "^8.3.8",
-    "postcss-cli": "^9.0.1",
     "postcss-custom-properties": "^12.0.0",
     "postcss-import": "^14.0.2"
   }
