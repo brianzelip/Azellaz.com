@@ -1,0 +1,42 @@
+.btn-blue {
+  color: #fff;
+  background-color: rgb(103,151,171);
+  border-radius: 3px;
+}
+
+.btn-white {
+  color: rgb(103,151,171);
+  background-color: #fff;
+  border-radius: 3px;
+}
+
+.btn-hero {
+  line-height: 1.125em;
+}
+@media (min-height: 30em) {
+  .btn-hero { margin-bottom: 3rem; }
+}
+@media (min-height: 40em) {
+  .btn-hero { margin-bottom: 5rem; }
+}
+@media (min-width: 40em) and (min-height: 36.75em) {
+  .btn-hero { margin-bottom: 10rem; }
+}
+@media (min-width: 40em) and (min-height: 50em) {
+  .btn-hero { margin-bottom: 13rem; }
+}
+@media (min-width: 40em) and (min-height: 68em) {
+  .btn-hero {
+    margin-top: 10rem;
+    margin-bottom: 20rem;
+  }
+}
+
+@media (max-width: 30em) {
+  .btn-small {
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+    padding-right: .5rem;
+    padding-left: .5rem;
+  }
+}
