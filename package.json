@@ -1,9 +1,10 @@
 {
   "name": "azellaz.com",
-  "version": "3.3.0",
+  "version": "3.3.1",
   "description": "Source code for Azellaz.com. She's crafty, and she's just my type!",
   "scripts": {
     "clean": "rm -rf _site",
+    "debug": "DEBUG=Eleventy* npx @11ty/eleventy",
     "start": "npm run clean && npx @11ty/eleventy --serve",
     "build:raw": "npx @11ty/eleventy",
     "build": "npm run clean && npm run build:raw",

@@ -23,6 +23,28 @@ This document started at v1.6.10 and only documents work after v1.6.10.
 - have a stories/articles/info-sharing section - something that doesn't have to be updated, a la https://hester-demo.squarespace.com/blog
 - have a stockists page, a la https://ventura-demo.squarespace.com/stockists
 
+## [3.3.1] - 2021-10-06
+
+Miscellaneous fixes, refactors, and edits.
+
+### Added
+
+- crawlers/: Collect files for robots here
+
+### Updated
+
+- admin/: remove front matter, 11ty ignore it, 11ty pass through it
+- robots.txt: move to crawlers/
+- humans.txt: move to crawlers/
+- sitemap.njk: move to crawlers/
+- \_data/currentProducts.js: Add comments on why the data is not 11ty computed
+- .eleventy.js:
+  - refactor passthrough of pages for robots
+  - watch css/
+  - explicitly list templates
+- .eleventyignore: ignore admin/
+- package.json: add debug script
+
 ## [3.3.0] - 2021-10-04
 
 Replace node-fetch dependency with axios in lambda.
