@@ -21,7 +21,7 @@
 /*!
  * 1/4 - Basscss
  */
-@import '../node_modules/basscss/css/basscss.min.css';
+@import '@bzelip/basscss7.1.1';
 
 /*!
  * 2/4 - iHover

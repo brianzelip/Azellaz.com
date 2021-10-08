@@ -23,6 +23,15 @@ This document started at v1.6.10 and only documents work after v1.6.10.
 - have a stories/articles/info-sharing section - something that doesn't have to be updated, a la https://hester-demo.squarespace.com/blog
 - have a stockists page, a la https://ventura-demo.squarespace.com/stockists
 
+## [3.4.1] - 2021-10-08
+
+Replace official Basscss dependency with [@bzelip/basscss7.1.1](https://www.npmjs.com/package/@bzelip/basscss7.1.1) (smaller module, no dependencies, etc.).
+
+### Updated
+
+- package.json: replaced basscss@7.1.1 with @bzelip/basscss7.1.1
+- az.css: import Basscss by module name
+
 ## [3.4.0] - 2021-10-06
 
 Replace local Basscss with npm.

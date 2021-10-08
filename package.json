@@ -1,6 +1,6 @@
 {
   "name": "azellaz.com",
-  "version": "3.4.0",
+  "version": "3.4.1",
   "description": "Source code for Azellaz.com. She's crafty, and she's just my type!",
   "scripts": {
     "clean": "rm -rf _site",
@@ -35,6 +35,6 @@
     "postcss-import": "^14.0.2"
   },
   "dependencies": {
-    "basscss": "^7.1.1"
+    "@bzelip/basscss7.1.1": "^1.0.0-beta.1"
   }
 }
