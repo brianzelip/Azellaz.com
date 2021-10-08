@@ -23,6 +23,14 @@ This document started at v1.6.10 and only documents work after v1.6.10.
 - have a stories/articles/info-sharing section - something that doesn't have to be updated, a la https://hester-demo.squarespace.com/blog
 - have a stockists page, a la https://ventura-demo.squarespace.com/stockists
 
+## [3.5.2] - 2021-10-08
+
+Update Basscss dependency.
+
+### Updated
+
+- package\*: Update to @bzelip/basscss7.1.1@1.0.0
+
 ## [3.5.1] - 2021-10-08
 
 Update netlifycms config about page path.
