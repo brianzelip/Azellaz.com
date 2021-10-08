@@ -96,7 +96,7 @@ collections:
     files:
       - label: 'About'
         name: 'about'
-        file: 'about.md'
+        file: 'src/about.md'
         fields:
           - {
               label: 'About page content',
