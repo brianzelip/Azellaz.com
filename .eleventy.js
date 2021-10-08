@@ -1,11 +1,11 @@
 module.exports = function (eleventyConfig) {
-  eleventyConfig.addPassthroughCopy('js');
-  eleventyConfig.addPassthroughCopy('fonts');
-  eleventyConfig.addPassthroughCopy('images');
-  eleventyConfig.addPassthroughCopy('admin');
-  eleventyConfig.addPassthroughCopy({ 'crawlers/*.txt': '/' });
+  eleventyConfig.addPassthroughCopy('src/js');
+  eleventyConfig.addPassthroughCopy('src/fonts');
+  eleventyConfig.addPassthroughCopy('src/images');
+  eleventyConfig.addPassthroughCopy('src/admin');
+  eleventyConfig.addPassthroughCopy({ 'src/crawlers/*.txt': '/' });
 
-  eleventyConfig.addWatchTarget('./css/');
+  eleventyConfig.addWatchTarget('./src/css/');
 
   eleventyConfig.setLiquidOptions({
     dynamicPartials: false,
@@ -15,6 +15,7 @@ module.exports = function (eleventyConfig) {
   return {
     templateFormats: ['md', 'html', '11ty.js', 'njk'],
     dir: {
+      input: 'src',
       includes: '_includes',
       layouts: '_layouts'
     }

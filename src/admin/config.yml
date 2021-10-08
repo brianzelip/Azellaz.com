@@ -13,7 +13,7 @@ collections:
   - label: 'Products'
     label_singular: 'Product'
     name: 'products'
-    folder: '_data/products'
+    folder: 'src/_data/products'
     format: 'json'
     create: true
     identifier_field: name

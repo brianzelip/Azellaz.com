@@ -23,6 +23,33 @@ This document started at v1.6.10 and only documents work after v1.6.10.
 - have a stories/articles/info-sharing section - something that doesn't have to be updated, a la https://hester-demo.squarespace.com/blog
 - have a stockists page, a la https://ventura-demo.squarespace.com/stockists
 
+## [3.5.0] - 2021-10-08
+
+Reorganize codebase around src/ dir.
+
+### Updated
+
+- Move the following from / to /src/
+  - \_data
+  - \_includes
+  - \_layouts
+  - admin
+  - crawlers
+  - css
+  - fonts
+  - images
+  - js
+  - lambda
+  - .eleventyignore
+  - about.md
+  - contact.md
+  - index.md
+  - portfolio.md
+  - product.md
+- .eleventy.js: update config paths
+- netlify.toml: update lambda path
+- admin/config.yml: update data path
+
 ## [3.4.1] - 2021-10-08
 
 Replace official Basscss dependency with [@bzelip/basscss7.1.1](https://www.npmjs.com/package/@bzelip/basscss7.1.1) (smaller module, no dependencies, etc.).
