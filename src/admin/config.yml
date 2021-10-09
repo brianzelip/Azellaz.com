@@ -112,12 +112,12 @@ collections:
         name: 'portfolioImages'
         file: 'src/_data/portfolio.json'
         field:
-          - {
-              label: 'Images',
-              label_singular: 'image',
-              name: 'images',
-              widget: 'list',
-              collapsed: true,
-              summary: '{{fields.image}}',
-              field: { label: Image, name: image, widget: image }
-            }
+          {
+            label: 'Images',
+            label_singular: 'image',
+            name: 'images',
+            widget: 'list',
+            collapsed: true,
+            summary: '{{fields.image}}',
+            field: { label: Image, name: image, widget: image }
+          }
