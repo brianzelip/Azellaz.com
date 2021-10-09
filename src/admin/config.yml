@@ -113,6 +113,6 @@ collections:
         file: 'src/_data/portfolio.json'
         label_singular: 'Portfolio image'
         widget: 'list'
-        allow_multiple: true,
+        allow_multiple: true
         fields:
           - { label: Image, name: url, widget: image }
