@@ -7,6 +7,7 @@ media_library:
   config:
     cloud_name: azellaz
     api_key: 598778136512764
+    multiple: true
 site_url: https://www.azellaz.com/
 logo_url: https://www.azellaz.com/images/Azellaz_Logo_Soft_Black_v6.svg
 collections:
@@ -106,6 +107,7 @@ collections:
             }
   - label: 'Portfolio'
     name: 'portfolio'
+    format: json
     files:
       - label: 'Portfolio images'
         name: 'portfolio images'
@@ -114,6 +116,7 @@ collections:
         widget: 'list'
         fields:
           - label: Image
-            name: image
+            name: url
             widget: image
             allow_multiple: false
+            required: true
