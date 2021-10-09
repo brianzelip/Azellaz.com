@@ -114,4 +114,5 @@ collections:
         label_singular: 'Portfolio image'
         widget: 'list'
         allow_multiple: true,
-        field: { label: Image, name: url, widget: image }
+        fields:
+          - { label: Image, name: url, widget: image }
