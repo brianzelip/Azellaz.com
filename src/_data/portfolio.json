@@ -1,3 +1,13 @@
 {
-  "images": []
+  "images": [
+    [
+      "https://res.cloudinary.com/azellaz/image/upload/v1633789467/portfolio/01-clutch-indigo-fire-lisaro-leather_c6t4ic.jpg"
+    ],
+    [
+      "https://res.cloudinary.com/azellaz/image/upload/v1633789464/portfolio/02-medium-tote-felt-indigo-mountain-tan-leather-lookbook1_ggo6no.jpg"
+    ],
+    [
+      "https://res.cloudinary.com/azellaz/image/upload/v1633789464/portfolio/03-crossbody-indigo-shibori-white-maroon-leather-front-by-Azellaz_b6wvah.jpg"
+    ]
+  ]
 }
