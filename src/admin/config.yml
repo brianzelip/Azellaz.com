@@ -119,6 +119,6 @@ collections:
               label: Image,
               name: url,
               widget: image,
-              allow_multiple: false,
+              allow_multiple: true,
               required: true
             }
