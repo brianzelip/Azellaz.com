@@ -1,11 +1,9 @@
 <figure class="col-12 sm-col-6 md-col-4 m0 py1 px2 sm-p2">
-  {% assign prefix = img.basename | split: '-' | first %}
-  {% assign imgTitle = img.basename | replace: '-by-Azellaz', '' | replace: '-', ' ' | replace: prefix, '' | lstrip | capitalize %}
-  {%- comment -%} replace '-by-Azellaz' b/c some file names contain string{%- endcomment -%}
+  
   <img
-    src="{{ img.path }}"
+    src="{{ url }}"
     class="mbn1"
-    alt="{{ imgTitle }} {{ site.meta.byline }}"
-    title="{{ imgTitle }}"
+    alt="{{ url | pfolioImgName }} {{ site.meta.byline }}"
+    title="{{ url | pfolioImgName }}"
   />
 </figure>

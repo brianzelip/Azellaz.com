@@ -104,3 +104,16 @@ collections:
               widget: markdown,
               required: true
             }
+  - label: 'Portfolio'
+    name: 'portfolio'
+    files:
+      - label: 'Portfolio images'
+        name: 'portfolio images'
+        file: 'src/_data/portfolio.json'
+        label_singular: 'Portfolio image'
+        widget: 'list'
+        fields:
+          - label: Image
+            name: image
+            widget: image
+            allow_multiple: false
