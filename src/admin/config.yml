@@ -111,8 +111,9 @@ collections:
       - label: 'Portfolio images'
         name: 'portfolioImages'
         file: 'src/_data/portfolio.json'
-        label_singular: 'Portfolio image'
-        widget: 'list'
-        allow_multiple: true
         fields:
-          - { label: Image, name: url, widget: image }
+          - label: 'Images'
+            name: 'images'
+            widget: 'list'
+            summary: '{{fields.image}}'
+            field: { label: Image, name: image, widget: image }
