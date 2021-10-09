@@ -107,18 +107,11 @@ collections:
             }
   - label: 'Portfolio'
     name: 'portfolio'
-    format: json
     files:
       - label: 'Portfolio images'
         name: 'portfolioImages'
         file: 'src/_data/portfolio.json'
         label_singular: 'Portfolio image'
         widget: 'list'
-        fields:
-          - {
-              label: Image,
-              name: url,
-              widget: image,
-              allow_multiple: true,
-              required: true
-            }
+        allow_multiple: true,
+        field: { label: Image, name: url, widget: image }
