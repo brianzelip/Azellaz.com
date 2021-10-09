@@ -118,4 +118,10 @@ collections:
             widget: 'list'
             collapsed: true
             summary: '{{fields.image}}'
-            field: { label: Image, name: image, widget: image }
+            field:
+              {
+                label: Image,
+                name: image,
+                widget: image,
+                allow_multiple: false
+              }
