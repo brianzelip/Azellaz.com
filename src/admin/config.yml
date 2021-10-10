@@ -118,5 +118,10 @@ collections:
             widget: 'list'
             collapsed: true
             summary: '{{fields.image}}'
-            allow_multiple: false
-            field: { label: Image, name: image, widget: image }
+            field:
+              {
+                label: Image,
+                name: image,
+                widget: image,
+                media_library: { config: { multiple: false } }
+              }
