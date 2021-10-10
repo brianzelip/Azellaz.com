@@ -23,6 +23,30 @@ This document started at v1.6.10 and only documents work after v1.6.10.
 - have a stories/articles/info-sharing section - something that doesn't have to be updated, a la https://hester-demo.squarespace.com/blog
 - have a stockists page, a la https://ventura-demo.squarespace.com/stockists
 
+## [3.6.0] - 2021-10-10
+
+Offload all photos in images to Cloudinary and organize image assets.
+
+### Added
+
+- src/\_data/portfolio.json: add portfolio image cloudinary urls as array of arrays of a url string in a NetlifyCMS controlled file
+- src/utils/filters/: add 11ty filter function to derive image name (description) from url
+
+### Updated
+
+- src/admin/config.yml: add file collection for portfolio.json; got it working but the data shape is undesired (array of arrays), still looking to create an array of strings
+- src/\_includes/portfolio-grid.html: reference new data
+- src/\_includes/portfolio-grid-item.html: use new data and filter to render each portfolio image
+- az.css: removed some unused classes regarding hero image and logo styles
+- images/portfolio: archived
+- images/meta: archived
+- images/\*.{png|jpg}: archived
+- images/\*.svg: archived those unused in markup
+
+### Removed
+
+- src/\_data/portfolio.js
+
 ## [3.5.2] - 2021-10-08
 
 Update Basscss dependency.
