@@ -3,8 +3,6 @@
     "title": "Azellaz",
     "tagline": "Quality bags built from scratch in Baltimore",
     "byline": "by Azellaz",
-    "meta_home_page_image": "images/meta/medium-tote-felt-cutch-iron-maroon-leather.jpeg",
-    "meta_about_page_image": "images/Azellaz-work-bench.jpg",
     "titles": {
       "about": "About Azellaz",
       "contact": "Contact Azellaz",
@@ -16,8 +14,8 @@
       "portfolio": "Portfolio of Azellaz bags."
     },
     "images": {
-      "main": "https://www.azellaz.com/images/meta/medium-tote-felt-cutch-iron-maroon-leather.jpeg",
-      "about": "https://www.azellaz.com/images/Azellaz-work-bench.jpg"
+      "main": "https://res.cloudinary.com/azellaz/image/upload/v1633864706/meta/medium-tote-felt-clutch-iron-maroon-leather_h3lzij.jpg",
+      "about": "https://res.cloudinary.com/azellaz/image/upload/v1587577970/Azellaz-work-bench_kkthtr.jpg"
     },
     "imageAlt": {
       "main": "Quality bags built from scratch in Baltimore by Azellaz",

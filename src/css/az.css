@@ -139,30 +139,14 @@ h6 {
   left: 0;
 }
 
-.logo {
-  position: absolute;
-  height: 200px;
-  background-image: url(/images/Azellaz_logo.png);
-  background-position: bottom;
-}
-
 .background-center {
   background-position: center;
 }
 
-.mainBag {
-  background-image: url(/images/hero-indigo-shibori-duffle-front-by-Azellaz.jpg);
-}
-
-.mainBag2 {
-  background-image: url(/images/hero-clutch-indigo-mountain-lisaro-leather-at-Rawlings-Conservatory-by-Azellaz.jpg);
-}
-.mainBag3 {
-  background-image: url(/images/hero-medium-tote-felt-indigo-mountain-tan-leather-at-Rawlings-Conservatory-by-Azellaz.jpg);
-}
-.mainBag4 {
+.heroImg {
   background-image: url(https://res.cloudinary.com/azellaz/image/upload/q_auto:eco/hero-at-97-percent-optimized_small-tote-indigo-shibori-white-maroon-leather-lookbook3.jpg);
 }
+
 .serif {
   font-family: var(--serif);
 } /*mods*/
