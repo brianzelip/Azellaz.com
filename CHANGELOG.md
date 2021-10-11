@@ -23,6 +23,14 @@ This document started at v1.6.10 and only documents work after v1.6.10.
 - have a stories/articles/info-sharing section - something that doesn't have to be updated, a la https://hester-demo.squarespace.com/blog
 - have a stockists page, a la https://ventura-demo.squarespace.com/stockists
 
+## [3.6.1] - 2021-10-11
+
+Deprecate this repo in favor of https://github.com/brianzelip/Azellaz.
+
+### Updated
+
+- README.md: add deprecation notice
+
 ## [3.6.0] - 2021-10-10
 
 Offload all photos in images to Cloudinary and organize image assets.
